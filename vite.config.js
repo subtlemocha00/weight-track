@@ -8,13 +8,36 @@ export default defineConfig({
 
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg'],
 
       manifest: {
-        name: 'App',
-        short_name: 'App',
-        theme_color: '#000000',
+        name: 'WeightTrack',
+        short_name: 'WeightTrack',
+        description: 'A minimal, performance-focused workout tracker.',
+        theme_color: '#111111',
         background_color: '#ffffff',
-        display: 'standalone'
+        display: 'standalone',
+        orientation: 'portrait',
+        start_url: '/',
+        scope: '/',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png'
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable'
+          }
+        ]
       }
     })
   ]

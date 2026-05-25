@@ -1,0 +1,51 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  max-width: 22rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 0.9375rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.button:hover {
+  background: #000;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.error {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #d94c4c;
+  background: #fdecec;
+  color: #8a1a1a;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  width: 100%;
+  text-align: left;
+}

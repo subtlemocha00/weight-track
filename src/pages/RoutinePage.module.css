@@ -1,0 +1,14 @@
+.state {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #555;
+}
+
+.error {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #d94c4c;
+  background: #fdecec;
+  color: #8a1a1a;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}

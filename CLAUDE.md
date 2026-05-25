@@ -409,3 +409,97 @@ WeightTrack is intentionally NOT trying to become:
 It is a focused workout tracking tool.
 
 All future development decisions should reinforce this identity.
+
+# ADDENDUM — Phase Control Enforcement
+
+## Architecture Stability Rule
+
+The project is being built in strict phases.
+
+Each phase MUST be completed independently before the next begins.
+
+Do NOT combine phase responsibilities.
+
+---
+
+## Current Phase Boundaries
+
+### Phase 1
+
+* Infrastructure only
+* No product logic
+
+### Phase 2
+
+* Exercise dataset
+* Search + filtering only
+
+### Phase 3 (CURRENT FOCUS)
+
+* Routine creation and editing ONLY
+* No workout execution
+* No history
+* No analytics
+
+---
+
+## Forbidden Cross-Phase Logic
+
+You must NOT:
+
+* implement workout session tracking during routine work
+* persist exercise performance data in routines
+* build history features early
+* introduce timers or metrics systems
+* introduce engagement mechanics
+
+---
+
+## Data Separation Rule (CRITICAL)
+
+These are separate concepts:
+
+### Routine (Phase 3)
+
+* template structure
+* editable
+* reusable
+
+### Workout Session (FUTURE PHASE)
+
+* immutable record of execution
+* performance tracking
+* historical data
+
+Never merge these.
+
+---
+
+## Engineering Constraint
+
+If a feature feels like it belongs in a future phase:
+
+STOP and stub it only.
+
+Do NOT implement it early.
+
+---
+
+## Scope Discipline Rule
+
+If a request expands scope beyond the current phase:
+
+* do not implement it
+* do not partially implement it
+* explicitly defer it to the correct phase
+
+## Authentication Assumption Rule
+
+Firebase Authentication is fully implemented.
+
+All Firestore operations must assume:
+* a real authenticated user exists
+* uid is sourced from firebase auth currentUser
+* no mock or placeholder user identifiers are allowed
+
+If auth state is not ready, operations must be deferred or disabled, not simulated.

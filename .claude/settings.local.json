@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -q \"ready in\" \"C:\\\\\\\\Users\\\\\\\\Owner\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Owner-Desktop-GettingStarted-new-code-repos-weight-track\\\\\\\\93675258-bdf0-4c6b-9f3d-960d555dbbaf\\\\\\\\tasks\\\\\\\\bspfrvmla.output\")",
+      "Bash(npm uninstall *)",
+      "Bash(grep -q \"ready in\" \"C:\\\\\\\\Users\\\\\\\\Owner\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Owner-Desktop-GettingStarted-new-code-repos-weight-track\\\\\\\\93675258-bdf0-4c6b-9f3d-960d555dbbaf\\\\\\\\tasks\\\\\\\\bionzds7t.output\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl -fsSL \"https://api.github.com/repos/wrkout/exercises.json\")",
+      "Bash(curl -fsSL \"https://api.github.com/repos/wrkout/exercises.json/contents/?ref=master\")",
+      "Bash(curl -fsSL \"https://raw.githubusercontent.com/wrkout/exercises.json/master/exercises/Bench_Press/exercise.json\")",
+      "Bash(curl -fsSL \"https://api.github.com/repos/wrkout/exercises.json/contents/exercises/Bench_Press?ref=master\")",
+      "Bash(curl -fsSL \"https://api.github.com/repos/wrkout/exercises.json/contents/exercises/3_4_Sit-Up?ref=master\")",
+      "Bash(curl -fsSL \"https://raw.githubusercontent.com/wrkout/exercises.json/master/exercises/3_4_Sit-Up/exercise.json\")",
+      "Bash(curl -fsSL -o .tmp/wrkout.tar.gz \"https://codeload.github.com/wrkout/exercises.json/tar.gz/refs/heads/master\")",
+      "Bash(tar -xzf wrkout.tar.gz --wildcards '*/exercise.json')",
+      "Bash(node src/data/normalizeExercises.js)",
+      "Bash(grep -q \"ready in\" \"C:\\\\\\\\Users\\\\\\\\Owner\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Owner-Desktop-GettingStarted-new-code-repos-weight-track\\\\\\\\93675258-bdf0-4c6b-9f3d-960d555dbbaf\\\\\\\\tasks\\\\\\\\b2k3bdn61.output\")",
+      "Bash(grep -E \"Local:|http://localhost\" \"C:\\\\\\\\Users\\\\\\\\Owner\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Owner-Desktop-GettingStarted-new-code-repos-weight-track\\\\\\\\93675258-bdf0-4c6b-9f3d-960d555dbbaf\\\\\\\\tasks\\\\\\\\b2k3bdn61.output\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{time_total}s\\\\n\" http://localhost:5177/exercises)",
+      "Bash(curl -s http://localhost:5177/exercises)",
+      "Bash(node -e ' *)",
+      "Bash(grep -q \"ready in\" \"C:\\\\\\\\Users\\\\\\\\Owner\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Owner-Desktop-GettingStarted-new-code-repos-weight-track\\\\\\\\93675258-bdf0-4c6b-9f3d-960d555dbbaf\\\\\\\\tasks\\\\\\\\bs5hrh3q3.output\")",
+      "Bash(grep -E \"Local:\" \"C:\\\\\\\\Users\\\\\\\\Owner\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Owner-Desktop-GettingStarted-new-code-repos-weight-track\\\\\\\\93675258-bdf0-4c6b-9f3d-960d555dbbaf\\\\\\\\tasks\\\\\\\\bs5hrh3q3.output\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5178/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5178/home)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5178/routine/new)",
+      "Bash(node --input-type=module -e ' *)",
+      "Bash(grep -q \"ready in\" \"C:\\\\\\\\Users\\\\\\\\Owner\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Owner-Desktop-GettingStarted-new-code-repos-weight-track\\\\\\\\93675258-bdf0-4c6b-9f3d-960d555dbbaf\\\\\\\\tasks\\\\\\\\b6ivzj3n9.output\")",
+      "Bash(grep \"Local:\" \"C:\\\\\\\\Users\\\\\\\\Owner\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Owner-Desktop-GettingStarted-new-code-repos-weight-track\\\\\\\\93675258-bdf0-4c6b-9f3d-960d555dbbaf\\\\\\\\tasks\\\\\\\\b6ivzj3n9.output\")",
+      "Bash(curl -s -o /dev/null -w \"/home → %{http_code}\\\\n\" http://localhost:5179/home)",
+      "Bash(curl -s -o /dev/null -w \"/workout/abc → %{http_code}\\\\n\" http://localhost:5179/workout/abc)"
+    ]
+  }
+}

@@ -1,55 +1,37 @@
-# Custom React Starter Template with Vite
+# WeightTrack
 
-This repository serves as a custom starter template for React projects using Vite. It's designed to provide a minimal setup, removing the default boilerplate that comes with Vite's React template. Ideal for quickly bootstrapping new projects without the need to remove unwanted files or dependencies.
+A minimal, performance-focused workout tracking Progressive Web App.
 
-## Features
+WeightTrack is a personal utility for creating reusable workout routines, logging sets/reps/weight quickly in the gym, and tracking progression over time. No social features, no gamification, no AI coaching.
 
-**Minimal Setup**: Only includes the essential files and configurations needed to start a React project.
-**Vite Powered**: Leverages Vite for an incredibly fast development environment and build tool.
-**Pre-configured React**: React and ReactDOM are pre-installed and configured.
+See [CLAUDE.md](CLAUDE.md), [docs/product-spec.md](docs/product-spec.md), and [docs/architecture.md](docs/architecture.md) for the full product and architecture spec.
 
-## How to Use This Template
+## Stack
 
-To create a new project based on this template, follow these steps:
+- React (JavaScript)
+- Vite
+- CSS Modules
+- Firebase Authentication + Firestore
+- Vercel (hosting)
+- PWA (`vite-plugin-pwa`)
 
-### Using `degit`
+## Local development
 
-[`degit`](https://github.com/Rich-Harris/degit) makes copies of git repositories. Install it globally if you haven't already:
+Requires Node `>=22`.
 
-npm install -g degit
-
-Then, scaffold your new project with:
-
-degit subtlemocha00/vite-react-template [project-name]  
-cd [project-name]  
-npm install  
-
-Replace [project-name] with your desired project name, no []'s.
-
-## Running Your Project
-
-After installing the dependencies, you can start the development server by running:
-
+```sh
+npm install
 npm run dev
+```
 
-This command starts the Vite development server. Open http://localhost:3000 to view your project in the browser.
+Vite will start the dev server on the first available port (default `5173`).
 
-## Building for Production
+## Scripts
 
-To build your project for production, use:
-
-npm run build
-
-Vite generates the production build in the dist folder. You can serve it with any static file server or deploy it to a hosting service.
-
-## Customizing Your Template
-
-Feel free to modify this template to fit your needs. You can add or remove configurations, dependencies, or even alter the project structure. This template is just a starting point to help get up and running with React and Vite more quickly.
-
-## Contributing
-
-Contributions to this template are welcome. If you have improvements or fixes, please open a pull request or issue.
-
-## License
-
-This project is open source and available under the MIT License.
+- `npm run dev` — start the Vite dev server
+- `npm run build` — produce a production build in `dist/`
+- `npm run preview` — preview the production build locally
+- `npm run lint` / `npm run lint:fix` — run ESLint
+- `npm run format` — run Prettier
+- `npm run check` — lint + build
+- `npm test` / `npm run test:ui` — run Vitest

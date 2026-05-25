@@ -1,48 +1,65 @@
-import js from "@eslint/js";
-import globals from "globals";
-import reactHooks from "eslint-plugin-react-hooks";
-import reactRefresh from "eslint-plugin-react-refresh";
-import prettier from "eslint-config-prettier";
+import js from '@eslint/js'
+import globals from 'globals'
+import react from 'eslint-plugin-react'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import prettier from 'eslint-config-prettier'
 
 export default [
-    {
-        ignores: ["dist"]
-    },
+  { ignores: ['dist', 'dev-dist'] },
 
-    js.configs.recommended,
+  js.configs.recommended,
 
-    {
-        files: ["**/*.{js,jsx}"],
+  {
+    files: ['**/*.{js,jsx}'],
 
-        languageOptions: {
-            ecmaVersion: "latest",
-            sourceType: "module",
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
 
-            globals: {
-                ...globals.browser
-            },
+      globals: {
+        ...globals.browser
+      },
 
-            parserOptions: {
-                ecmaFeatures: {
-                    jsx: true
-                }
-            }
-        },
-
-        plugins: {
-            "react-hooks": reactHooks,
-            "react-refresh": reactRefresh
-        },
-
-        rules: {
-            ...reactHooks.configs.recommended.rules,
-
-            "react-refresh/only-export-components": [
-                "warn",
-                { allowConstantExport: true }
-            ]
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true
         }
+      }
     },
 
-    prettier
-];
+    settings: {
+      react: {
+        version: 'detect'
+      }
+    },
+
+    plugins: {
+      react,
+      'react-hooks': reactHooks,
+      'react-refresh': reactRefresh
+    },
+
+    rules: {
+      'react/jsx-uses-react': 'error',
+      'react/jsx-uses-vars': 'error',
+      ...reactHooks.configs.recommended.rules,
+
+      'react-refresh/only-export-components': [
+        'warn',
+        { allowConstantExport: true }
+      ]
+    }
+  },
+
+  {
+    files: ['src/data/normalizeExercises.js', 'scripts/**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.node
+      }
+    }
+  },
+
+  prettier
+]
