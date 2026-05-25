@@ -23,14 +23,19 @@ export function AppLayout() {
           WeightTrack
         </Link>
         {user && (
-          <button
-            type="button"
-            className={styles.signOut}
-            onClick={handleSignOut}
-            disabled={signingOut}
-          >
-            {signingOut ? 'Signing out…' : 'Sign out'}
-          </button>
+          <div className={styles.headerActions}>
+            <Link to="/settings" className={styles.headerLink} aria-label="Settings">
+              Settings
+            </Link>
+            <button
+              type="button"
+              className={styles.signOut}
+              onClick={handleSignOut}
+              disabled={signingOut}
+            >
+              {signingOut ? 'Signing out…' : 'Sign out'}
+            </button>
+          </div>
         )}
       </header>
       <main className={styles.content}>

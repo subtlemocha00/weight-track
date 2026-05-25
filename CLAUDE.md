@@ -503,3 +503,132 @@ All Firestore operations must assume:
 * no mock or placeholder user identifiers are allowed
 
 If auth state is not ready, operations must be deferred or disabled, not simulated.
+
+# ADDENDUM — Phase 5 History Constraints
+
+## History System Rule
+
+Workout history is strictly a read-only representation of completed workout sessions.
+
+---
+
+## Data Source Integrity Rule
+
+All history data MUST come directly from:
+
+/users/{uid}/workoutSessions/
+
+No duplication or derived storage is allowed.
+
+---
+
+## Forbidden Expansions
+
+The history system must NOT evolve into:
+
+* analytics dashboards
+* performance scoring systems
+* progression tracking systems
+* insights or summaries
+* AI-generated feedback
+* charts or graphs
+
+---
+
+## Scope Boundary Rule
+
+History is ONLY:
+
+* list sessions
+* view session details
+* basic sorting (date-based)
+
+Nothing beyond this is permitted in this phase.
+
+---
+
+## Engineering Constraint
+
+If any feature requires derived metrics or aggregation:
+* defer it to a future phase
+* do not implement it in Phase 5
+# ADDENDUM — Global Rest Timer Constraints
+
+## Rest Timer Philosophy
+
+The rest timer is intentionally lightweight and globally configured.
+
+It exists ONLY to provide contextual rest visibility between sets.
+
+---
+
+## Global Timer Rule
+
+The application uses ONE global user-configurable rest duration.
+
+The timer duration comes ONLY from:
+
+settings.defaultRestSeconds
+
+Per-exercise or per-set timer customization is explicitly out of scope for the current architecture phase.
+
+---
+
+## Timer Behavior Rules
+
+The timer must:
+
+* appear inline between sets
+* start immediately after set completion
+* disappear automatically at completion
+* remain local runtime state only
+
+The timer must NOT:
+
+* persist to Firestore
+* survive refresh
+* synchronize between devices
+* generate notifications
+* run in background contexts
+
+---
+
+## Settings Scope Rule
+
+Settings are intentionally minimal.
+
+Allowed settings:
+* weight units
+* timer enable/disable
+* global timer duration
+* theme preference
+
+Do NOT expand settings into:
+* profile systems
+* health metrics platforms
+* notification centers
+* account management systems
+
+---
+
+## Theme System Rule
+
+Theme infrastructure may exist.
+
+Full visual theming should NOT yet be implemented unless explicitly requested later.
+
+---
+
+## UI Design Rule
+
+A dedicated UI implementation phase is planned separately.
+
+Current development phases should prioritize:
+* functionality
+* architecture
+* maintainability
+
+NOT:
+* visual polish
+* advanced styling
+* animation systems

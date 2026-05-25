@@ -1,0 +1,126 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.group {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0.625rem 0.875rem 0.75rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.legend {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #555;
+  padding: 0 0.25rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  color: #222;
+  cursor: pointer;
+}
+
+.numberRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.numberLabel {
+  flex: 1;
+  color: #444;
+}
+
+.numberInput {
+  width: 5.5rem;
+  padding: 0.4375rem 0.5rem;
+  font-size: 0.9375rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  background: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.numberInput:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.unit {
+  font-size: 0.8125rem;
+  color: #666;
+}
+
+.hint {
+  margin: 0.25rem 0 0;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.submitRow {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.save {
+  padding: 0.5rem 0.875rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.save:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.savedTag {
+  font-size: 0.8125rem;
+  color: #1d5a2b;
+}
+
+.error {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #d94c4c;
+  background: #fdecec;
+  color: #8a1a1a;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.loading {
+  padding: 0.5rem 0;
+  color: #777;
+  font-size: 0.875rem;
+}

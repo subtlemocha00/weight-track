@@ -21,6 +21,23 @@
   color: #111;
 }
 
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.headerLink {
+  font-size: 0.8125rem;
+  padding: 0.375rem 0.625rem;
+  border-radius: 6px;
+  color: #222;
+}
+
+.headerLink:hover {
+  background: #f5f5f5;
+}
+
 .signOut {
   font-size: 0.8125rem;
   padding: 0.375rem 0.625rem;

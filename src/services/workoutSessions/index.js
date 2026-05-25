@@ -1,6 +1,18 @@
-import { doc, getDoc, setDoc } from 'firebase/firestore'
+import {
+  collection,
+  doc,
+  getDoc,
+  getDocs,
+  orderBy,
+  query,
+  setDoc
+} from 'firebase/firestore'
 import { firestore } from '../firebase'
 import { createSessionFromRoutine } from '../../features/workoutSessions/sessionFactory'
+
+function sessionsCollection(uid) {
+  return collection(firestore, 'users', uid, 'workoutSessions')
+}
 
 function sessionDocRef(uid, sessionId) {
   return doc(firestore, 'users', uid, 'workoutSessions', sessionId)
@@ -10,6 +22,26 @@ export async function getSession(uid, sessionId) {
   const snap = await getDoc(sessionDocRef(uid, sessionId))
   if (!snap.exists()) return null
   return { id: snap.id, ...snap.data() }
+}
+
+/**
+ * List completed workout sessions, sorted by completion time.
+ *
+ * In-progress sessions are filtered out client-side so the same single-field
+ * orderBy works without requiring a composite Firestore index.
+ */
+export async function listCompletedSessions(uid, { sort = 'desc' } = {}) {
+  const snap = await getDocs(
+    query(sessionsCollection(uid), orderBy('startedAt', 'desc'))
+  )
+  const sessions = snap.docs
+    .map((d) => ({ id: d.id, ...d.data() }))
+    .filter((s) => s.status === 'completed' && s.completedAt)
+
+  sessions.sort((a, b) =>
+    sort === 'asc' ? a.completedAt - b.completedAt : b.completedAt - a.completedAt
+  )
+  return sessions
 }
 
 export async function saveSession(uid, session) {

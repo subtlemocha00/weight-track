@@ -1,5 +1,7 @@
-import { memo } from 'react'
+import { memo, useCallback, useEffect, useState } from 'react'
+import { useSettings } from '../../hooks/useSettings'
 import { SessionSetRow, SessionSetRowHeader } from './SessionSetRow'
+import { RestTimer } from './RestTimer'
 import styles from './SessionExerciseItem.module.css'
 
 function SessionExerciseItemImpl({
@@ -14,6 +16,49 @@ function SessionExerciseItemImpl({
   onToggleSetCompleted,
   onSetUnit
 }) {
+  const { settings } = useSettings()
+  const timerEnabled = !readOnly && settings.restTimerEnabled
+  const timerSeconds = settings.defaultRestSeconds
+
+  // `restAfter.index` is the set index that just got completed and is currently
+  // showing a countdown below it. `stamp` is bumped each time we (re)start so a
+  // new instance of RestTimer mounts with a fresh countdown even if the same
+  // set is re-completed.
+  const [restAfter, setRestAfter] = useState(null)
+
+  // If the user un-completes the set that owns the active timer (or the timer
+  // was disabled mid-rest, or read-only kicked in), drop the timer.
+  useEffect(() => {
+    if (restAfter === null) return
+    if (!timerEnabled) {
+      setRestAfter(null)
+      return
+    }
+    const owningSet = exercise.sets[restAfter.index]
+    if (!owningSet || !owningSet.completed) {
+      setRestAfter(null)
+    }
+  }, [restAfter, timerEnabled, exercise.sets])
+
+  const handleToggleSetCompleted = useCallback(
+    (setIndex) => {
+      const wasCompleted = exercise.sets[setIndex]?.completed
+      onToggleSetCompleted(setIndex)
+
+      const willBeCompleted = !wasCompleted
+      const hasNextSet = setIndex < exercise.sets.length - 1
+
+      if (willBeCompleted && timerEnabled && hasNextSet) {
+        setRestAfter({ index: setIndex, stamp: Date.now() })
+      } else if (!willBeCompleted && restAfter?.index === setIndex) {
+        setRestAfter(null)
+      }
+    },
+    [exercise.sets, onToggleSetCompleted, timerEnabled, restAfter]
+  )
+
+  const handleRestDone = useCallback(() => setRestAfter(null), [])
+
   const allUnit = exercise.sets.every((s) => s.unit === exercise.sets[0]?.unit)
     ? exercise.sets[0]?.unit
     : null
@@ -76,14 +121,22 @@ function SessionExerciseItemImpl({
         <SessionSetRowHeader />
         <div className={styles.sets}>
           {exercise.sets.map((set, setIndex) => (
-            <SessionSetRow
-              key={setIndex}
-              set={set}
-              index={setIndex}
-              disabled={readOnly}
-              onUpdate={(patch) => onUpdateSet(setIndex, patch)}
-              onToggleCompleted={() => onToggleSetCompleted(setIndex)}
-            />
+            <div key={setIndex} className={styles.setBlock}>
+              <SessionSetRow
+                set={set}
+                index={setIndex}
+                disabled={readOnly}
+                onUpdate={(patch) => onUpdateSet(setIndex, patch)}
+                onToggleCompleted={() => handleToggleSetCompleted(setIndex)}
+              />
+              {restAfter?.index === setIndex && (
+                <RestTimer
+                  key={restAfter.stamp}
+                  seconds={timerSeconds}
+                  onDone={handleRestDone}
+                />
+              )}
+            </div>
           ))}
         </div>
       </div>

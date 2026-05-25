@@ -16,39 +16,25 @@
   font-weight: 600;
 }
 
-.actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.secondary {
-  padding: 0.5rem 0.75rem;
-  font-size: 0.875rem;
-  font-weight: 600;
+.sortToggle {
+  display: inline-flex;
   border: 1px solid #d0d0d0;
-  background: #fff;
-  color: #222;
   border-radius: 6px;
+  overflow: hidden;
+  font-size: 0.8125rem;
 }
 
-.secondary:hover {
-  border-color: #aaa;
-  color: #111;
+.sortToggle button {
+  padding: 0.375rem 0.625rem;
+  background: #fff;
+  border: none;
+  color: #444;
+  cursor: pointer;
 }
 
-.cta {
-  padding: 0.5rem 0.875rem;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  border: 1px solid #111;
+.sortToggle button.active {
   background: #111;
   color: #fff;
-  border-radius: 6px;
-}
-
-.cta:hover {
-  background: #000;
 }
 
 .list {
@@ -61,9 +47,6 @@
 }
 
 .row {
-  display: flex;
-  align-items: stretch;
-  gap: 0.5rem;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   background: #fff;
@@ -77,8 +60,6 @@
 
 .rowMain {
   display: block;
-  flex: 1;
-  min-width: 0;
   padding: 0.75rem 0.875rem;
   color: inherit;
 }
@@ -93,27 +74,7 @@
   margin-top: 0.125rem;
   font-size: 0.8125rem;
   color: #666;
-}
-
-.start {
-  padding: 0 1rem;
-  font-size: 0.875rem;
-  font-weight: 700;
-  border: none;
-  border-left: 1px solid #e5e5e5;
-  background: #f7f7f7;
-  color: #111;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.start:hover {
-  background: #efefef;
-}
-
-.start:disabled {
-  opacity: 0.5;
-  cursor: default;
+  font-variant-numeric: tabular-nums;
 }
 
 .empty {

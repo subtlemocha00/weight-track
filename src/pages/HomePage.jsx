@@ -68,9 +68,14 @@ export function HomePage() {
     <section className={styles.page}>
       <div className={styles.titleRow}>
         <h1 className={styles.title}>Your routines</h1>
-        <Link to="/routine/new" className={styles.cta}>
-          + New routine
-        </Link>
+        <div className={styles.actions}>
+          <Link to="/history" className={styles.secondary}>
+            History
+          </Link>
+          <Link to="/routine/new" className={styles.cta}>
+            + New routine
+          </Link>
+        </div>
       </div>
 
       {error && <div className={styles.error}>{error}</div>}
