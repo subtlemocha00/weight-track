@@ -1,40 +1,46 @@
 .timer {
   display: flex;
   align-items: center;
-  gap: 0.625rem;
-  padding: 0.4375rem 0.625rem;
-  margin: 0.25rem 0;
-  border: 1px solid #d4e3f4;
-  background: #eef4fb;
-  color: #1f3b5c;
-  border-radius: 6px;
-  font-size: 0.875rem;
+  gap: 8px;
+  padding: 7px 10px;
+  margin: 4px 0;
+  background: rgba(0, 194, 255, 0.06);
+  border: 1px solid rgba(0, 194, 255, 0.3);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  color: var(--neon-blue);
 }
 
 .label {
-  font-size: 0.6875rem;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #4a5b73;
+  color: rgba(0, 194, 255, 0.7);
 }
 
 .value {
   flex: 1;
-  font-variant-numeric: tabular-nums;
-  font-weight: 600;
-  font-size: 1rem;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px rgba(0, 194, 255, 0.6);
 }
 
 .skip {
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  border: 1px solid #b6c8de;
-  background: #fff;
-  color: #1f3b5c;
-  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: transparent;
+  color: rgba(0, 194, 255, 0.7);
+  border: 1px solid rgba(0, 194, 255, 0.3);
+  clip-path: polygon(0 0, calc(100% - 3px) 0, 100% 3px, 100% 100%, 3px 100%, 0 calc(100% - 3px));
+  transition: all 0.1s;
 }
 
 .skip:hover {
-  background: #f5f8fc;
+  color: var(--neon-blue);
+  border-color: var(--neon-blue);
 }

@@ -18,14 +18,14 @@ export function AppLayout() {
 
   return (
     <div className={styles.app}>
-      <header className={styles.header}>
-        <Link to={user ? '/home' : '/'} className={styles.brand}>
-          WeightTrack
-        </Link>
-        {user && (
+      {user && (
+        <header className={styles.header}>
+          <Link to="/home" className={styles.brand}>
+            WeightTrack
+          </Link>
           <div className={styles.headerActions}>
-            <Link to="/settings" className={styles.headerLink} aria-label="Settings">
-              Settings
+            <Link to="/settings" className={styles.settingsLink} aria-label="Settings">
+              ⚙
             </Link>
             <button
               type="button"
@@ -36,8 +36,8 @@ export function AppLayout() {
               {signingOut ? 'Signing out…' : 'Sign out'}
             </button>
           </div>
-        )}
-      </header>
+        </header>
+      )}
       <main className={styles.content}>
         <Outlet />
       </main>

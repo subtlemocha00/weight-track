@@ -48,7 +48,7 @@ function RoutineExerciseItemImpl({
         </button>
         <button
           type="button"
-          className={styles.iconButton}
+          className={`${styles.iconButton} ${styles.danger}`}
           onClick={onRemove}
           aria-label="Remove exercise"
           title="Remove"

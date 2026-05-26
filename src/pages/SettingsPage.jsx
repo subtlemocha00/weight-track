@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useAuth } from '../hooks/useAuth'
 import { useSettings } from '../hooks/useSettings'
 import {
   REST_SECONDS_MAX,
@@ -8,6 +9,7 @@ import {
 import styles from './SettingsPage.module.css'
 
 export function SettingsPage() {
+  const { user, signOut } = useAuth()
   const { settings, isLoading, loadError, updateSettings } = useSettings()
 
   const [form, setForm] = useState(settings)
@@ -15,8 +17,8 @@ export function SettingsPage() {
   const [saving, setSaving] = useState(false)
   const [saveError, setSaveError] = useState(null)
   const [savedAt, setSavedAt] = useState(null)
+  const [signingOut, setSigningOut] = useState(false)
 
-  // Resync local form when settings are (re)loaded from Firestore.
   useEffect(() => {
     setForm(settings)
     setRestInput(String(settings.defaultRestSeconds))
@@ -41,6 +43,15 @@ export function SettingsPage() {
     }
   }
 
+  const handleSignOut = async () => {
+    setSigningOut(true)
+    try {
+      await signOut()
+    } finally {
+      setSigningOut(false)
+    }
+  }
+
   return (
     <section className={styles.page}>
       <h1 className={styles.title}>Settings</h1>
@@ -49,101 +60,108 @@ export function SettingsPage() {
       {isLoading && <div className={styles.loading}>Loading…</div>}
 
       <form className={styles.form} onSubmit={handleSubmit}>
-        <fieldset className={styles.group}>
-          <legend className={styles.legend}>Weight unit</legend>
-          <label className={styles.option}>
-            <input
-              type="radio"
-              name="weightUnit"
-              value="lb"
-              checked={form.weightUnit === 'lb'}
-              onChange={() => setForm({ ...form, weightUnit: 'lb' })}
-            />
-            <span>lb</span>
-          </label>
-          <label className={styles.option}>
-            <input
-              type="radio"
-              name="weightUnit"
-              value="kg"
-              checked={form.weightUnit === 'kg'}
-              onChange={() => setForm({ ...form, weightUnit: 'kg' })}
-            />
-            <span>kg</span>
-          </label>
-        </fieldset>
+        <div className={styles.card}>
+          <span className={styles.cardLabel}>Appearance</span>
+          <div className={styles.settingRow}>
+            <div>
+              <div className={styles.settingLabel}>Theme</div>
+              <div className={styles.settingSub}>Dark or light display</div>
+            </div>
+            <div className={styles.toggleGroup}>
+              {[['dark', 'Dark'], ['light', 'Light'], ['system', 'Auto']].map(([val, label]) => (
+                <button
+                  key={val}
+                  type="button"
+                  className={`${styles.toggleOption} ${form.themePreference === val ? styles.toggleActive : ''}`}
+                  onClick={() => setForm({ ...form, themePreference: val })}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
 
-        <fieldset className={styles.group}>
-          <legend className={styles.legend}>Rest timer</legend>
-          <label className={styles.option}>
-            <input
-              type="checkbox"
-              checked={form.restTimerEnabled}
-              onChange={(e) =>
-                setForm({ ...form, restTimerEnabled: e.target.checked })
-              }
-            />
-            <span>Show countdown after completing a set</span>
-          </label>
+        <div className={styles.card}>
+          <span className={styles.cardLabel}>Units</span>
+          <div className={styles.settingRow}>
+            <div>
+              <div className={styles.settingLabel}>Default unit</div>
+              <div className={styles.settingSub}>Weight unit for new exercises</div>
+            </div>
+            <div className={styles.toggleGroup}>
+              {['lb', 'kg'].map((u) => (
+                <button
+                  key={u}
+                  type="button"
+                  className={`${styles.toggleOption} ${form.weightUnit === u ? styles.toggleActive : ''}`}
+                  onClick={() => setForm({ ...form, weightUnit: u })}
+                >
+                  {u}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
 
-          <label className={styles.numberRow}>
-            <span className={styles.numberLabel}>
-              Default rest ({REST_SECONDS_MIN}–{REST_SECONDS_MAX}s)
-            </span>
-            <input
-              type="number"
-              inputMode="numeric"
-              min={REST_SECONDS_MIN}
-              max={REST_SECONDS_MAX}
-              step="5"
-              className={styles.numberInput}
-              value={restInput}
-              onChange={(e) => setRestInput(e.target.value)}
-              disabled={!form.restTimerEnabled}
-            />
-            <span className={styles.unit}>s</span>
-          </label>
-        </fieldset>
+        <div className={styles.card}>
+          <span className={styles.cardLabel}>Rest Timer</span>
+          <div className={styles.settingRow}>
+            <div>
+              <div className={styles.settingLabel}>Countdown timer</div>
+              <div className={styles.settingSub}>Show countdown after completing a set</div>
+            </div>
+            <label className={styles.checkboxLabel}>
+              <input
+                type="checkbox"
+                className={styles.checkbox}
+                checked={form.restTimerEnabled}
+                onChange={(e) =>
+                  setForm({ ...form, restTimerEnabled: e.target.checked })
+                }
+              />
+            </label>
+          </div>
 
-        <fieldset className={styles.group}>
-          <legend className={styles.legend}>Theme</legend>
-          <label className={styles.option}>
-            <input
-              type="radio"
-              name="themePreference"
-              value="system"
-              checked={form.themePreference === 'system'}
-              onChange={() =>
-                setForm({ ...form, themePreference: 'system' })
-              }
-            />
-            <span>System</span>
-          </label>
-          <label className={styles.option}>
-            <input
-              type="radio"
-              name="themePreference"
-              value="light"
-              checked={form.themePreference === 'light'}
-              onChange={() => setForm({ ...form, themePreference: 'light' })}
-            />
-            <span>Light</span>
-          </label>
-          <label className={styles.option}>
-            <input
-              type="radio"
-              name="themePreference"
-              value="dark"
-              checked={form.themePreference === 'dark'}
-              onChange={() => setForm({ ...form, themePreference: 'dark' })}
-            />
-            <span>Dark</span>
-          </label>
-          <p className={styles.hint}>
-            Theme is stored but not yet applied — actual theming arrives in a
-            later phase.
-          </p>
-        </fieldset>
+          <div className={styles.divider} />
+
+          <div className={styles.settingRow}>
+            <div>
+              <div className={styles.settingLabel}>
+                Rest duration ({REST_SECONDS_MIN}–{REST_SECONDS_MAX}s)
+              </div>
+            </div>
+            <div className={styles.numberRow}>
+              <input
+                type="number"
+                inputMode="numeric"
+                min={REST_SECONDS_MIN}
+                max={REST_SECONDS_MAX}
+                step="5"
+                className={styles.numberInput}
+                value={restInput}
+                onChange={(e) => setRestInput(e.target.value)}
+                disabled={!form.restTimerEnabled}
+              />
+              <span className={styles.unit}>s</span>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.card}>
+          <span className={styles.cardLabel}>Account</span>
+          <div className={styles.settingRow}>
+            <span className={styles.settingLabel}>{user?.email}</span>
+            <button
+              type="button"
+              className={styles.signOutBtn}
+              onClick={handleSignOut}
+              disabled={signingOut}
+            >
+              {signingOut ? 'Signing out…' : 'Sign out'}
+            </button>
+          </div>
+        </div>
 
         {saveError && <div className={styles.error}>{saveError}</div>}
 

@@ -7,11 +7,27 @@ import {
 } from '../services/settings'
 import { SettingsContext } from './SettingsContext'
 
+function applyTheme(themePreference) {
+  let resolved = themePreference
+  if (resolved === 'system') {
+    resolved = window.matchMedia('(prefers-color-scheme: light)').matches
+      ? 'light'
+      : 'dark'
+  }
+  const attr = resolved === 'light' ? 'light' : ''
+  document.documentElement.setAttribute('data-theme', attr)
+  localStorage.setItem('wt-theme', attr || 'dark')
+}
+
 export function SettingsProvider({ children }) {
   const { user } = useAuth()
   const [settings, setSettings] = useState(DEFAULT_SETTINGS)
   const [isLoading, setIsLoading] = useState(false)
   const [loadError, setLoadError] = useState(null)
+
+  useEffect(() => {
+    applyTheme(settings.themePreference)
+  }, [settings.themePreference])
 
   useEffect(() => {
     if (!user) {

@@ -1,14 +1,14 @@
 .state {
   padding: 1.5rem 1rem;
   text-align: center;
-  color: #555;
+  color: var(--t2);
 }
 
 .error {
   padding: 0.625rem 0.75rem;
-  border: 1px solid #d94c4c;
-  background: #fdecec;
-  color: #8a1a1a;
-  border-radius: 6px;
+  border: 1px solid rgba(255, 0, 128, 0.4);
+  background: rgba(255, 0, 128, 0.08);
+  color: var(--neon-pink);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
   font-size: 0.875rem;
 }

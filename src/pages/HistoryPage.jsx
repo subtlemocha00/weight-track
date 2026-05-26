@@ -81,6 +81,7 @@ export function HistoryPage() {
             )
             return (
               <li key={session.id} className={styles.row}>
+                <div className={styles.accentBar} />
                 <Link
                   to={`/history/${session.id}`}
                   className={styles.rowMain}
@@ -94,6 +95,7 @@ export function HistoryPage() {
                     {` · ${formatExerciseCount(exerciseCount)}`}
                   </div>
                 </Link>
+                <span className={styles.rowArrow}>→</span>
               </li>
             )
           })}

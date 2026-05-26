@@ -9,12 +9,15 @@ export function HistorySetRow({ set, index }) {
   const rowClass = [styles.row, set.completed && styles.rowCompleted]
     .filter(Boolean)
     .join(' ')
+  const cellClass = [styles.cell, set.completed && styles.cellCompleted]
+    .filter(Boolean)
+    .join(' ')
 
   return (
     <div className={rowClass}>
       <span className={styles.index}>{index + 1}</span>
-      <span className={styles.cell}>{set.reps ?? 0}</span>
-      <span className={styles.cell}>{formatWeight(set.weight, set.unit)}</span>
+      <span className={cellClass}>{set.reps ?? 0}</span>
+      <span className={cellClass}>{formatWeight(set.weight, set.unit)}</span>
       <span
         className={styles.status}
         aria-label={set.completed ? 'Completed' : 'Not completed'}

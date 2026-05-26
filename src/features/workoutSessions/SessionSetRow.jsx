@@ -24,17 +24,23 @@ export function SessionSetRow({
   const rowClass = [styles.row, set.completed && styles.rowCompleted]
     .filter(Boolean)
     .join(' ')
+  const indexClass = [styles.index, set.completed && styles.indexCompleted]
+    .filter(Boolean)
+    .join(' ')
+  const inputClass = [styles.input, set.completed && styles.inputCompleted]
+    .filter(Boolean)
+    .join(' ')
 
   return (
     <div className={rowClass}>
-      <span className={styles.index}>{index + 1}</span>
+      <span className={indexClass}>{index + 1}</span>
 
       <input
         type="number"
         inputMode="numeric"
         min="0"
         step="1"
-        className={styles.input}
+        className={inputClass}
         value={set.reps ?? ''}
         aria-label={`Set ${index + 1} reps`}
         disabled={disabled}
@@ -46,7 +52,7 @@ export function SessionSetRow({
         inputMode="decimal"
         min="0"
         step="0.5"
-        className={styles.input}
+        className={inputClass}
         value={set.weight ?? ''}
         placeholder="—"
         aria-label={`Set ${index + 1} weight`}
@@ -58,9 +64,7 @@ export function SessionSetRow({
 
       <button
         type="button"
-        className={`${styles.completed} ${
-          set.completed ? styles.completedOn : ''
-        }`}
+        className={`${styles.completed} ${set.completed ? styles.completedOn : ''}`}
         onClick={onToggleCompleted}
         disabled={disabled}
         aria-pressed={set.completed}
@@ -70,7 +74,7 @@ export function SessionSetRow({
             : `Mark set ${index + 1} complete`
         }
       >
-        {set.completed ? '✓' : ' '}
+        {set.completed ? '✓' : ''}
       </button>
     </div>
   )

@@ -31,19 +31,26 @@ export function LoginPage() {
 
   return (
     <section className={styles.page}>
-      <h1 className={styles.title}>Sign in</h1>
-      <p className={styles.subtitle}>
-        Sign in with Google to create and save workout routines.
-      </p>
-      {error && <div className={styles.error}>{error}</div>}
-      <button
-        type="button"
-        className={styles.button}
-        onClick={handleSignIn}
-        disabled={signingIn}
-      >
-        {signingIn ? 'Signing in…' : 'Continue with Google'}
-      </button>
+      <div className={styles.center}>
+        <div className={styles.eyebrow}>── Track Your Progress ──</div>
+        <h1 className={styles.logo}>WeightTrack</h1>
+        <p className={styles.tagline}>
+          Fast, focused workout tracking.<br />No fluff. Just reps.
+        </p>
+
+        {error && <div className={styles.error}>{error}</div>}
+
+        <button
+          type="button"
+          className={styles.button}
+          onClick={handleSignIn}
+          disabled={signingIn}
+        >
+          {signingIn ? 'Signing in…' : 'Continue with Google'}
+        </button>
+
+        <div className={styles.version}>v0.1 · Alpha Build</div>
+      </div>
     </section>
   )
 }

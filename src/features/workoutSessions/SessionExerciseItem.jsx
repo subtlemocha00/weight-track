@@ -20,14 +20,8 @@ function SessionExerciseItemImpl({
   const timerEnabled = !readOnly && settings.restTimerEnabled
   const timerSeconds = settings.defaultRestSeconds
 
-  // `restAfter.index` is the set index that just got completed and is currently
-  // showing a countdown below it. `stamp` is bumped each time we (re)start so a
-  // new instance of RestTimer mounts with a fresh countdown even if the same
-  // set is re-completed.
   const [restAfter, setRestAfter] = useState(null)
 
-  // If the user un-completes the set that owns the active timer (or the timer
-  // was disabled mid-rest, or read-only kicked in), drop the timer.
   useEffect(() => {
     if (restAfter === null) return
     if (!timerEnabled) {
@@ -63,14 +57,24 @@ function SessionExerciseItemImpl({
     ? exercise.sets[0]?.unit
     : null
 
+  const doneSets = exercise.sets.filter((s) => s.completed).length
+  const totalSets = exercise.sets.length
+  const allDone = doneSets === totalSets && totalSets > 0
+
+  const itemClass = [styles.item, allDone && styles.allDone].filter(Boolean).join(' ')
+  const orderClass = [styles.order, allDone && styles.orderDone].filter(Boolean).join(' ')
+  const setCountClass = [styles.setCount, allDone && styles.setCountDone].filter(Boolean).join(' ')
+  const headerClass = [styles.header, allDone && styles.headerDone].filter(Boolean).join(' ')
+
   return (
-    <div className={styles.item}>
-      <div className={styles.header}>
-        <span className={styles.order}>{index + 1}.</span>
+    <div className={itemClass}>
+      <div className={headerClass}>
+        <span className={orderClass}>{String(index + 1).padStart(2, '0')}</span>
         <span className={styles.name}>{exercise.name}</span>
         {exercise.supersetGroup && (
           <span className={styles.superset}>SS {exercise.supersetGroup}</span>
         )}
+        <span className={setCountClass}>{doneSets}/{totalSets}</span>
         <button
           type="button"
           className={styles.iconButton}

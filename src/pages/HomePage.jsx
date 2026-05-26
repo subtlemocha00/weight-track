@@ -5,6 +5,8 @@ import { listRoutines } from '../services/routines'
 import { startWorkout } from '../services/workoutSessions'
 import styles from './HomePage.module.css'
 
+const ACCENT_CLASSES = ['accentGreen', 'accentBlue', 'accentPurple', 'accentOrange']
+
 function formatExerciseCount(n) {
   if (n === 0) return 'No exercises'
   if (n === 1) return '1 exercise'
@@ -68,14 +70,9 @@ export function HomePage() {
     <section className={styles.page}>
       <div className={styles.titleRow}>
         <h1 className={styles.title}>Your routines</h1>
-        <div className={styles.actions}>
-          <Link to="/history" className={styles.secondary}>
-            History
-          </Link>
-          <Link to="/routine/new" className={styles.cta}>
-            + New routine
-          </Link>
-        </div>
+        <Link to="/routine/new" className={styles.cta}>
+          + New
+        </Link>
       </div>
 
       {error && <div className={styles.error}>{error}</div>}
@@ -92,11 +89,13 @@ export function HomePage() {
 
       {routines !== null && routines.length > 0 && (
         <ul className={styles.list}>
-          {routines.map((routine) => {
+          {routines.map((routine, i) => {
             const exerciseCount = routine.exercises?.length ?? 0
             const isStarting = startingId === routine.id
+            const accentClass = ACCENT_CLASSES[i % ACCENT_CLASSES.length]
             return (
               <li key={routine.id} className={styles.row}>
+                <div className={`${styles.accentBar} ${styles[accentClass]}`} />
                 <Link
                   to={`/routine/${routine.id}`}
                   className={styles.rowMain}
@@ -122,13 +121,23 @@ export function HomePage() {
                       : 'Start workout'
                   }
                 >
-                  {isStarting ? '…' : 'Start ▶'}
+                  {isStarting ? '…' : '▶ Start'}
                 </button>
               </li>
             )
           })}
         </ul>
       )}
+
+      <Link to="/exercises" className={styles.navLink}>
+        <span>Exercise Library</span>
+        <span className={`${styles.navArrow} ${styles.navArrowBlue}`}>→</span>
+      </Link>
+
+      <Link to="/history" className={styles.navLink}>
+        <span>Workout History</span>
+        <span className={`${styles.navArrow} ${styles.navArrowPurple}`}>→</span>
+      </Link>
     </section>
   )
 }
