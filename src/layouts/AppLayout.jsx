@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { OfflineBanner } from '../components/OfflineBanner'
+import { InstallBanner } from '../components/InstallBanner'
 import styles from './AppLayout.module.css'
 
 export function AppLayout() {
@@ -20,6 +21,7 @@ export function AppLayout() {
   return (
     <div className={styles.app}>
       <OfflineBanner />
+      <InstallBanner />
       {user && (
         <header className={styles.header}>
           <Link to="/home" className={styles.brand}>

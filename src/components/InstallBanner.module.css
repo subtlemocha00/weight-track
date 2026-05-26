@@ -1,0 +1,60 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 16px;
+  background: rgba(0, 255, 157, 0.06);
+  border-bottom: 1px solid rgba(0, 255, 157, 0.18);
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--t2);
+  line-height: 1.4;
+}
+
+.label strong {
+  color: var(--t1);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.installBtn {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--neon-green);
+  padding: 4px 12px;
+  border: 1px solid rgba(0, 255, 157, 0.4);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  background: transparent;
+  transition: all 0.1s;
+}
+
+.installBtn:hover {
+  background: rgba(0, 255, 157, 0.08);
+  border-color: rgba(0, 255, 157, 0.7);
+}
+
+.dismissBtn {
+  font-size: 13px;
+  color: var(--t3);
+  padding: 4px 6px;
+  background: transparent;
+  flex-shrink: 0;
+  transition: color 0.1s;
+}
+
+.dismissBtn:hover {
+  color: var(--t2);
+}
