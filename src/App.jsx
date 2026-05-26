@@ -9,13 +9,19 @@ import { HomePage } from './pages/HomePage'
 import { NewRoutinePage } from './pages/NewRoutinePage'
 import { RoutinePage } from './pages/RoutinePage'
 import { WorkoutSessionPage } from './pages/WorkoutSessionPage'
-import { HistoryPage } from './pages/HistoryPage'
-import { HistoryDetailPage } from './pages/HistoryDetailPage'
-import { SettingsPage } from './pages/SettingsPage'
 
-// Lazy-loaded so the bundled exercise dataset isn't pulled into the initial chunk.
+// Non-critical routes: lazy-loaded to keep the initial bundle small
 const ExercisesPage = lazy(() =>
   import('./pages/ExercisesPage').then((m) => ({ default: m.ExercisesPage }))
+)
+const HistoryPage = lazy(() =>
+  import('./pages/HistoryPage').then((m) => ({ default: m.HistoryPage }))
+)
+const HistoryDetailPage = lazy(() =>
+  import('./pages/HistoryDetailPage').then((m) => ({ default: m.HistoryDetailPage }))
+)
+const SettingsPage = lazy(() =>
+  import('./pages/SettingsPage').then((m) => ({ default: m.SettingsPage }))
 )
 
 function Protected({ element }) {
@@ -58,15 +64,39 @@ export function App() {
               />
               <Route
                 path="history"
-                element={<Protected element={<HistoryPage />} />}
+                element={
+                  <Protected
+                    element={
+                      <Suspense fallback={null}>
+                        <HistoryPage />
+                      </Suspense>
+                    }
+                  />
+                }
               />
               <Route
                 path="history/:sessionId"
-                element={<Protected element={<HistoryDetailPage />} />}
+                element={
+                  <Protected
+                    element={
+                      <Suspense fallback={null}>
+                        <HistoryDetailPage />
+                      </Suspense>
+                    }
+                  />
+                }
               />
               <Route
                 path="settings"
-                element={<Protected element={<SettingsPage />} />}
+                element={
+                  <Protected
+                    element={
+                      <Suspense fallback={null}>
+                        <SettingsPage />
+                      </Suspense>
+                    }
+                  />
+                }
               />
             </Route>
           </Routes>

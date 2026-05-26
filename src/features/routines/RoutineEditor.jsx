@@ -1,6 +1,7 @@
-import { useCallback, useReducer, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useCallback, useReducer, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
+import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { deleteRoutine, saveRoutine } from '../../services/routines'
 import { AddExercisePanel } from './AddExercisePanel'
 import { RoutineExerciseItem } from './RoutineExerciseItem'
@@ -14,9 +15,26 @@ export function RoutineEditor({ initialRoutine, mode }) {
   const [routine, dispatch] = useReducer(routineReducer, initialRoutine)
   const [saveState, setSaveState] = useState({ status: 'idle', message: '' })
   const [deleting, setDeleting] = useState(false)
+  const [isDirty, setIsDirty] = useState(false)
+  // Track whether this is the initial mount dispatch (LOAD after save)
+  const suppressDirty = useRef(false)
 
   const isNew = mode === 'new'
   const canSave = routine.name.trim().length > 0 && saveState.status !== 'saving'
+
+  // Warn on browser close / refresh when there are unsaved changes
+  useBeforeUnload(isDirty)
+
+  const dirtyDispatch = useCallback(
+    (action) => {
+      dispatch(action)
+      // LOAD is dispatched after a successful save — don't mark dirty
+      if (action.type !== 'LOAD' && !suppressDirty.current) {
+        setIsDirty(true)
+      }
+    },
+    []
+  )
 
   const handleSave = useCallback(async () => {
     if (!user) return
@@ -26,7 +44,10 @@ export function RoutineEditor({ initialRoutine, mode }) {
         ...routine,
         name: routine.name.trim()
       })
+      suppressDirty.current = true
       dispatch({ type: 'LOAD', routine: saved })
+      suppressDirty.current = false
+      setIsDirty(false)
       setSaveState({ status: 'saved', message: 'Saved' })
       if (isNew) {
         navigate(`/routine/${saved.id}`, { replace: true })
@@ -55,9 +76,17 @@ export function RoutineEditor({ initialRoutine, mode }) {
     }
   }, [user, isNew, routine.id, routine.name, navigate])
 
+  const handleBack = useCallback(() => {
+    if (isDirty) {
+      const ok = window.confirm('You have unsaved changes. Leave without saving?')
+      if (!ok) return
+    }
+    navigate('/home')
+  }, [isDirty, navigate])
+
   const handleAddExercise = useCallback((exercise) => {
-    dispatch({ type: 'ADD_EXERCISE', exercise })
-  }, [])
+    dirtyDispatch({ type: 'ADD_EXERCISE', exercise })
+  }, [dirtyDispatch])
 
   const saveMsgClass = [
     styles.saveMsg,
@@ -70,9 +99,9 @@ export function RoutineEditor({ initialRoutine, mode }) {
   return (
     <div className={styles.editor}>
       <div className={styles.headerRow}>
-        <Link to="/home" className={styles.back}>
+        <button type="button" className={styles.back} onClick={handleBack}>
           ← Back
-        </Link>
+        </button>
       </div>
 
       <label className={styles.nameField}>
@@ -81,7 +110,7 @@ export function RoutineEditor({ initialRoutine, mode }) {
           className={styles.nameInput}
           type="text"
           value={routine.name}
-          onChange={(e) => dispatch({ type: 'SET_NAME', name: e.target.value })}
+          onChange={(e) => dirtyDispatch({ type: 'SET_NAME', name: e.target.value })}
           placeholder="e.g. Push Day"
           maxLength={80}
           autoFocus={isNew}
@@ -103,23 +132,23 @@ export function RoutineEditor({ initialRoutine, mode }) {
               index={index}
               isFirst={index === 0}
               isLast={index === routine.exercises.length - 1}
-              onRemove={() => dispatch({ type: 'REMOVE_EXERCISE', index })}
+              onRemove={() => dirtyDispatch({ type: 'REMOVE_EXERCISE', index })}
               onMoveUp={() =>
-                dispatch({ type: 'MOVE_EXERCISE', from: index, to: index - 1 })
+                dirtyDispatch({ type: 'MOVE_EXERCISE', from: index, to: index - 1 })
               }
               onMoveDown={() =>
-                dispatch({ type: 'MOVE_EXERCISE', from: index, to: index + 1 })
+                dirtyDispatch({ type: 'MOVE_EXERCISE', from: index, to: index + 1 })
               }
-              onAddSet={() => dispatch({ type: 'ADD_SET', index })}
+              onAddSet={() => dirtyDispatch({ type: 'ADD_SET', index })}
               onRemoveSet={(setIndex) =>
-                dispatch({
+                dirtyDispatch({
                   type: 'REMOVE_SET',
                   exerciseIndex: index,
                   setIndex
                 })
               }
               onUpdateSet={(setIndex, patch) =>
-                dispatch({
+                dirtyDispatch({
                   type: 'UPDATE_SET',
                   exerciseIndex: index,
                   setIndex,
@@ -127,14 +156,14 @@ export function RoutineEditor({ initialRoutine, mode }) {
                 })
               }
               onUpdateNotes={(notes) =>
-                dispatch({ type: 'UPDATE_EXERCISE_NOTES', index, notes })
+                dirtyDispatch({ type: 'UPDATE_EXERCISE_NOTES', index, notes })
               }
               onUpdateSupersetGroup={(group) =>
-                dispatch({ type: 'UPDATE_SUPERSET_GROUP', index, group })
+                dirtyDispatch({ type: 'UPDATE_SUPERSET_GROUP', index, group })
               }
               onUpdateAllUnits={(unit) =>
                 exercise.sets.forEach((_, setIndex) =>
-                  dispatch({
+                  dirtyDispatch({
                     type: 'UPDATE_SET',
                     exerciseIndex: index,
                     setIndex,

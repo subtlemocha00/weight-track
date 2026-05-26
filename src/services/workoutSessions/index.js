@@ -5,7 +5,8 @@ import {
   getDocs,
   orderBy,
   query,
-  setDoc
+  setDoc,
+  updateDoc
 } from 'firebase/firestore'
 import { firestore } from '../firebase'
 import { createSessionFromRoutine } from '../../features/workoutSessions/sessionFactory'
@@ -58,4 +59,16 @@ export async function startWorkout(uid, routine) {
   const session = createSessionFromRoutine(routine)
   await saveSession(uid, session)
   return session
+}
+
+/**
+ * Mark an abandoned in-progress session so it no longer appears as active.
+ * Fire-and-forget safe — errors are suppressed by the caller.
+ */
+export async function markSessionAbandoned(uid, sessionId) {
+  try {
+    await updateDoc(sessionDocRef(uid, sessionId), { status: 'abandoned' })
+  } catch {
+    // Ignore — doc may not exist or user may be offline
+  }
 }

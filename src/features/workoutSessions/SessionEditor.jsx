@@ -1,12 +1,14 @@
-import { useCallback, useReducer, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useCallback, useEffect, useReducer, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
+import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { saveSession } from '../../services/workoutSessions'
 import { getRoutine, saveRoutine } from '../../services/routines'
 import { applySessionToRoutine } from './applyToRoutine'
 import { sessionReducer } from './sessionReducer'
 import { SessionExerciseItem } from './SessionExerciseItem'
 import { ElapsedTime } from './ElapsedTime'
+import { writeActiveWorkout, clearActiveWorkout } from '../../utils/activeWorkout'
 import styles from './SessionEditor.module.css'
 
 export function SessionEditor({ initialSession }) {
@@ -18,13 +20,21 @@ export function SessionEditor({ initialSession }) {
   const [error, setError] = useState(null)
 
   const isCompleted = session.status === 'completed'
+  const isActive = !isCompleted && !finishing
+
+  // Autosave every state change to localStorage for crash recovery
+  useEffect(() => {
+    writeActiveWorkout(session)
+  }, [session])
+
+  // Warn on browser close / tab close / hard refresh while workout is active
+  useBeforeUnload(isActive)
 
   const handleFinish = useCallback(async () => {
     if (!user || isCompleted) return
     setError(null)
     setFinishing(true)
 
-    // Step 1: mark completed in local state.
     const completedAt = Date.now()
     const finalized = {
       ...session,
@@ -34,10 +44,10 @@ export function SessionEditor({ initialSession }) {
     dispatch({ type: 'FINISH', completedAt })
 
     try {
-      // Step 2: persist the finalized session.
       await saveSession(user.uid, finalized)
+      // Workout is safely persisted — clear the local recovery state
+      clearActiveWorkout()
 
-      // Step 3: ask if the user wants to update the source routine.
       const confirmed = window.confirm(
         'Update routine with changes made during workout?'
       )
@@ -52,17 +62,27 @@ export function SessionEditor({ initialSession }) {
 
       navigate('/home', { replace: true })
     } catch (err) {
-      setError(err?.message || 'Failed to finish workout.')
+      setError(err?.message || 'Failed to finish workout. Try again — your progress is saved.')
       setFinishing(false)
     }
   }, [user, isCompleted, session, navigate])
 
+  const handleBack = useCallback(() => {
+    if (isActive) {
+      const ok = window.confirm(
+        'Leave this workout? Your progress is saved — resume from the home screen at any time.'
+      )
+      if (!ok) return
+    }
+    navigate('/home')
+  }, [isActive, navigate])
+
   return (
     <div className={styles.editor}>
       <div className={styles.backRow}>
-        <Link to="/home" className={styles.back}>
+        <button type="button" className={styles.back} onClick={handleBack}>
           ← Home
-        </Link>
+        </button>
       </div>
 
       <div className={styles.header}>

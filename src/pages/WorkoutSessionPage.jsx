@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { getSession } from '../services/workoutSessions'
 import { SessionEditor } from '../features/workoutSessions/SessionEditor'
+import { readActiveWorkout } from '../utils/activeWorkout'
 import styles from './WorkoutSessionPage.module.css'
 
 export function WorkoutSessionPage() {
@@ -18,6 +19,15 @@ export function WorkoutSessionPage() {
     setSession(null)
     setError(null)
     setNotFound(false)
+
+    // Check localStorage first — if we have in-progress state for this exact
+    // session it is always more current than the Firestore snapshot (which only
+    // stores the initial template until the workout is finished).
+    const saved = readActiveWorkout()
+    if (saved && saved.id === sessionId && saved.status !== 'completed') {
+      if (!cancelled) setSession(saved)
+      return
+    }
 
     getSession(user.uid, sessionId)
       .then((data) => {

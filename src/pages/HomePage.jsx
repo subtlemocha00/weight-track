@@ -2,7 +2,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { listRoutines } from '../services/routines'
-import { startWorkout } from '../services/workoutSessions'
+import { markSessionAbandoned, startWorkout } from '../services/workoutSessions'
+import { readActiveWorkout, clearActiveWorkout } from '../utils/activeWorkout'
 import styles from './HomePage.module.css'
 
 const ACCENT_CLASSES = ['accentGreen', 'accentBlue', 'accentPurple', 'accentOrange']
@@ -26,12 +27,25 @@ function formatUpdatedAt(timestamp) {
   }
 }
 
+function formatStartedAt(timestamp) {
+  if (!timestamp) return ''
+  try {
+    return new Date(timestamp).toLocaleTimeString(undefined, {
+      hour: 'numeric',
+      minute: '2-digit'
+    })
+  } catch {
+    return ''
+  }
+}
+
 export function HomePage() {
   const { user } = useAuth()
   const navigate = useNavigate()
   const [routines, setRoutines] = useState(null)
   const [error, setError] = useState(null)
   const [startingId, setStartingId] = useState(null)
+  const [recoverySession, setRecoverySession] = useState(() => readActiveWorkout())
 
   useEffect(() => {
     if (!user) return
@@ -49,6 +63,23 @@ export function HomePage() {
       cancelled = true
     }
   }, [user])
+
+  const handleResume = useCallback(() => {
+    if (recoverySession) {
+      navigate(`/workout/${recoverySession.id}`)
+    }
+  }, [recoverySession, navigate])
+
+  const handleDiscard = useCallback(() => {
+    if (!recoverySession) return
+    const sessionId = recoverySession.id
+    clearActiveWorkout()
+    setRecoverySession(null)
+    // Fire-and-forget: mark the orphaned Firestore doc as abandoned
+    if (user && sessionId) {
+      markSessionAbandoned(user.uid, sessionId).catch(() => {})
+    }
+  }, [recoverySession, user])
 
   const handleStart = useCallback(
     async (routine) => {
@@ -68,6 +99,36 @@ export function HomePage() {
 
   return (
     <section className={styles.page}>
+      {recoverySession && (
+        <div className={styles.recoveryBanner}>
+          <div className={styles.recoveryInfo}>
+            <span className={styles.recoveryLabel}>Unfinished workout</span>
+            <span className={styles.recoveryName}>
+              {recoverySession.routineName || 'Workout'}
+              {recoverySession.startedAt
+                ? ` · started ${formatStartedAt(recoverySession.startedAt)}`
+                : ''}
+            </span>
+          </div>
+          <div className={styles.recoveryActions}>
+            <button
+              type="button"
+              className={styles.recoveryResume}
+              onClick={handleResume}
+            >
+              Resume
+            </button>
+            <button
+              type="button"
+              className={styles.recoveryDiscard}
+              onClick={handleDiscard}
+            >
+              Discard
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className={styles.titleRow}>
         <h1 className={styles.title}>Your routines</h1>
         <Link to="/routine/new" className={styles.cta}>
@@ -114,11 +175,13 @@ export function HomePage() {
                   type="button"
                   className={styles.start}
                   onClick={() => handleStart(routine)}
-                  disabled={exerciseCount === 0 || isStarting}
+                  disabled={exerciseCount === 0 || isStarting || !!recoverySession}
                   title={
-                    exerciseCount === 0
-                      ? 'Add exercises before starting'
-                      : 'Start workout'
+                    recoverySession
+                      ? 'Resume or discard your current workout first'
+                      : exerciseCount === 0
+                        ? 'Add exercises before starting'
+                        : 'Start workout'
                   }
                 >
                   {isStarting ? '…' : '▶ Start'}

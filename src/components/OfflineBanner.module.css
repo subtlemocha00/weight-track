@@ -1,0 +1,20 @@
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(255, 140, 26, 0.08);
+  border-bottom: 1px solid rgba(255, 140, 26, 0.3);
+  color: var(--neon-orange);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--neon-orange);
+  flex-shrink: 0;
+}
