@@ -1,0 +1,220 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--t3);
+}
+
+.distanceRow {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 10px;
+  font-size: 13px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  transition: border-color 0.1s;
+}
+
+.input:focus {
+  border-color: var(--neon-green);
+}
+
+.unitToggle {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.unitBtn,
+.unitActive {
+  padding: 5px 9px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  clip-path: polygon(0 0, calc(100% - 3px) 0, 100% 3px, 100% 100%, 3px 100%, 0 calc(100% - 3px));
+  transition: all 0.08s;
+}
+
+.unitBtn {
+  background: transparent;
+  color: var(--t2);
+  border: 1px solid var(--border);
+}
+
+.unitActive {
+  background: var(--neon-green);
+  color: #07070f;
+  border: 1px solid var(--neon-green);
+}
+
+.durationRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.inputSmall {
+  width: 52px;
+  padding: 7px 8px;
+  font-size: 13px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  transition: border-color 0.1s;
+}
+
+.inputSmall:focus {
+  border-color: var(--neon-green);
+}
+
+.durationSep {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--t2);
+  line-height: 1;
+}
+
+.durationHint {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--t3);
+  letter-spacing: 0.05em;
+  margin-left: 2px;
+}
+
+.envToggle {
+  display: flex;
+  gap: 6px;
+}
+
+.envBtn,
+.envActive {
+  flex: 1;
+  padding: 7px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  transition: all 0.08s;
+}
+
+.envBtn {
+  background: transparent;
+  color: var(--t2);
+  border: 1.5px solid var(--border);
+}
+
+.envActive {
+  background: rgba(0, 194, 255, 0.1);
+  color: var(--neon-blue);
+  border: 1.5px solid var(--neon-blue);
+}
+
+.textarea {
+  padding: 8px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  resize: none;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  transition: border-color 0.1s;
+}
+
+.textarea:focus {
+  border-color: var(--neon-green);
+}
+
+.error {
+  padding: 8px 10px;
+  border: 1.5px solid var(--neon-pink);
+  background: rgba(255, 45, 120, 0.08);
+  color: var(--neon-pink);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+.cancelBtn {
+  padding: 7px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--t2);
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  transition: all 0.1s;
+}
+
+.cancelBtn:hover {
+  color: var(--t1);
+  border-color: var(--bright);
+}
+
+.cancelBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.submitBtn {
+  padding: 7px 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: var(--neon-blue);
+  color: #07070f;
+  border: 1.5px solid var(--neon-blue);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  box-shadow: 0 0 14px rgba(0, 194, 255, 0.3);
+  transition: all 0.08s;
+}
+
+.submitBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}

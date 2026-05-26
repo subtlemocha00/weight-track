@@ -14,6 +14,21 @@ function formatExerciseCount(n) {
   return `${n} exercises`
 }
 
+function formatRunMeta(session) {
+  const rd = session.runData
+  if (!rd) return ''
+  const dist = rd.distance != null ? `${rd.distance} ${rd.unit ?? ''}`.trim() : ''
+  const dur = rd.duration > 0 ? formatRunDuration(rd.duration) : ''
+  return [dist, dur].filter(Boolean).join(' · ')
+}
+
+function formatRunDuration(totalSeconds) {
+  if (!totalSeconds) return ''
+  const m = Math.floor(totalSeconds / 60)
+  const s = totalSeconds % 60
+  return `${m}:${String(s).padStart(2, '0')}`
+}
+
 export function HistoryPage() {
   const { user } = useAuth()
   const [sessions, setSessions] = useState(null)
@@ -74,25 +89,33 @@ export function HistoryPage() {
       {sessions !== null && sessions.length > 0 && (
         <ul className={styles.list}>
           {sessions.map((session) => {
-            const exerciseCount = session.exercises?.length ?? 0
-            const duration = formatDuration(
-              session.startedAt,
-              session.completedAt
-            )
+            const isRun = session.type === 'run'
+            const rowName = isRun ? 'Run' : (session.routineName || 'Workout')
+            const rowMeta = isRun
+              ? formatRunMeta(session)
+              : (() => {
+                  const exerciseCount = session.exercises?.length ?? 0
+                  const duration = formatDuration(session.startedAt, session.completedAt)
+                  return [
+                    formatDate(session.completedAt),
+                    duration,
+                    formatExerciseCount(exerciseCount)
+                  ].filter(Boolean).join(' · ')
+                })()
             return (
               <li key={session.id} className={styles.row}>
-                <div className={styles.accentBar} />
+                <div className={`${styles.accentBar} ${isRun ? styles.accentRun : ''}`} />
                 <Link
                   to={`/history/${session.id}`}
                   className={styles.rowMain}
                 >
                   <div className={styles.rowName}>
-                    {session.routineName || 'Workout'}
+                    {rowName}
+                    {isRun && <span className={styles.runBadge}>RUN</span>}
                   </div>
                   <div className={styles.rowMeta}>
-                    {formatDate(session.completedAt)}
-                    {duration ? ` · ${duration}` : ''}
-                    {` · ${formatExerciseCount(exerciseCount)}`}
+                    {isRun && formatDate(session.completedAt)}
+                    {isRun && rowMeta ? ` · ${rowMeta}` : rowMeta}
                   </div>
                 </Link>
                 <span className={styles.rowArrow}>→</span>

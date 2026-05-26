@@ -82,6 +82,24 @@
   box-shadow: 0 0 8px rgba(180, 74, 255, 0.6);
 }
 
+.accentRun {
+  background: var(--neon-blue);
+  box-shadow: 0 0 8px rgba(0, 194, 255, 0.6);
+}
+
+.runBadge {
+  display: inline-block;
+  margin-left: 7px;
+  padding: 1px 5px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--neon-blue);
+  border: 1px solid rgba(0, 194, 255, 0.4);
+  vertical-align: middle;
+  clip-path: polygon(0 0, calc(100% - 2px) 0, 100% 2px, 100% 100%, 2px 100%, 0 calc(100% - 2px));
+}
+
 .rowMain {
   display: block;
   flex: 1;

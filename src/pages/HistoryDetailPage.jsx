@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { getSession } from '../services/workoutSessions'
 import { HistoryExerciseItem } from '../features/history/HistoryExerciseItem'
+import { RunDetail } from '../features/history/RunDetail'
 import {
   formatDateTime,
   formatDuration
@@ -67,8 +68,10 @@ export function HistoryDetailPage() {
     return <div className={styles.state}>Loading…</div>
   }
 
+  const isRun = session.type === 'run'
   const inProgress = session.status !== 'completed'
-  const duration = formatDuration(session.startedAt, session.completedAt)
+  const sessionTitle = isRun ? 'Run' : (session.routineName || 'Workout')
+  const duration = isRun ? null : formatDuration(session.startedAt, session.completedAt)
 
   return (
     <div className={styles.detail}>
@@ -80,19 +83,28 @@ export function HistoryDetailPage() {
 
       <div className={styles.header}>
         <h1 className={styles.routineName}>
-          {session.routineName || 'Workout'}
+          {sessionTitle}
+          {isRun && <span className={styles.runBadge}>RUN</span>}
         </h1>
         <dl className={styles.meta}>
           <div className={styles.metaRow}>
-            <dt>Started</dt>
-            <dd>{formatDateTime(session.startedAt)}</dd>
+            <dt>Date</dt>
+            <dd>{formatDateTime(session.completedAt || session.startedAt)}</dd>
           </div>
-          <div className={styles.metaRow}>
-            <dt>Completed</dt>
-            <dd>
-              {session.completedAt ? formatDateTime(session.completedAt) : '—'}
-            </dd>
-          </div>
+          {!isRun && (
+            <>
+              <div className={styles.metaRow}>
+                <dt>Started</dt>
+                <dd>{formatDateTime(session.startedAt)}</dd>
+              </div>
+              <div className={styles.metaRow}>
+                <dt>Completed</dt>
+                <dd>
+                  {session.completedAt ? formatDateTime(session.completedAt) : '—'}
+                </dd>
+              </div>
+            </>
+          )}
           {duration && (
             <div className={styles.metaRow}>
               <dt>Duration</dt>
@@ -102,13 +114,15 @@ export function HistoryDetailPage() {
         </dl>
       </div>
 
-      {inProgress && (
+      {inProgress && !isRun && (
         <div className={styles.banner}>
           This workout is still in progress.
         </div>
       )}
 
-      {session.exercises?.length > 0 ? (
+      {isRun ? (
+        <RunDetail session={session} />
+      ) : session.exercises?.length > 0 ? (
         <div className={styles.exercises}>
           {session.exercises.map((exercise, index) => (
             <HistoryExerciseItem

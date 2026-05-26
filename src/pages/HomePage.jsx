@@ -4,6 +4,7 @@ import { useAuth } from '../hooks/useAuth'
 import { listRoutines } from '../services/routines'
 import { markSessionAbandoned, startWorkout } from '../services/workoutSessions'
 import { readActiveWorkout, clearActiveWorkout } from '../utils/activeWorkout'
+import { QuickRunForm } from '../features/runs/QuickRunForm'
 import styles from './HomePage.module.css'
 
 const ACCENT_CLASSES = ['accentGreen', 'accentBlue', 'accentPurple', 'accentOrange']
@@ -46,6 +47,7 @@ export function HomePage() {
   const [error, setError] = useState(null)
   const [startingId, setStartingId] = useState(null)
   const [recoverySession, setRecoverySession] = useState(() => readActiveWorkout())
+  const [showRunForm, setShowRunForm] = useState(false)
 
   useEffect(() => {
     if (!user) return
@@ -191,6 +193,24 @@ export function HomePage() {
           })}
         </ul>
       )}
+
+      <div className={styles.runSection}>
+        <div className={styles.runHeader}>
+          <span className={styles.runTitle}>Quick Run</span>
+          {!showRunForm && (
+            <button
+              type="button"
+              className={styles.runStart}
+              onClick={() => setShowRunForm(true)}
+            >
+              + Log Run
+            </button>
+          )}
+        </div>
+        {showRunForm && (
+          <QuickRunForm onCancel={() => setShowRunForm(false)} />
+        )}
+      </div>
 
       <Link to="/exercises" className={styles.navLink}>
         <span>Exercise Library</span>
