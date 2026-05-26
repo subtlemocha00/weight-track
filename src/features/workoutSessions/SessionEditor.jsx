@@ -9,11 +9,13 @@ import { sessionReducer } from './sessionReducer'
 import { SessionExerciseItem } from './SessionExerciseItem'
 import { ElapsedTime } from './ElapsedTime'
 import { writeActiveWorkout, clearActiveWorkout } from '../../utils/activeWorkout'
+import { useConfirm } from '../../hooks/useConfirm'
 import styles from './SessionEditor.module.css'
 
 export function SessionEditor({ initialSession }) {
   const { user } = useAuth()
   const navigate = useNavigate()
+  const { confirm } = useConfirm()
 
   const [session, dispatch] = useReducer(sessionReducer, initialSession)
   const [finishing, setFinishing] = useState(false)
@@ -48,9 +50,12 @@ export function SessionEditor({ initialSession }) {
       // Workout is safely persisted — clear the local recovery state
       clearActiveWorkout()
 
-      const confirmed = window.confirm(
-        'Update routine with changes made during workout?'
-      )
+      const confirmed = await confirm({
+        title: 'Update routine?',
+        message: 'Apply the changes made during this workout back to the original routine?',
+        confirmLabel: 'Update',
+        cancelLabel: 'Skip'
+      })
 
       if (confirmed) {
         const sourceRoutine = await getRoutine(user.uid, finalized.routineId)
@@ -67,15 +72,18 @@ export function SessionEditor({ initialSession }) {
     }
   }, [user, isCompleted, session, navigate])
 
-  const handleBack = useCallback(() => {
+  const handleBack = useCallback(async () => {
     if (isActive) {
-      const ok = window.confirm(
-        'Leave this workout? Your progress is saved — resume from the home screen at any time.'
-      )
+      const ok = await confirm({
+        title: 'Leave workout?',
+        message: 'Your progress is saved — resume from the home screen at any time.',
+        confirmLabel: 'Leave',
+        cancelLabel: 'Stay'
+      })
       if (!ok) return
     }
     navigate('/home')
-  }, [isActive, navigate])
+  }, [isActive, navigate, confirm])
 
   return (
     <div className={styles.editor}>

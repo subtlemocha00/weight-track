@@ -1,0 +1,91 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(7, 7, 15, 0.82);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 340px;
+  background: var(--card);
+  border: 1px solid var(--bright);
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  padding: 22px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--t1);
+  margin: 0;
+}
+
+.message {
+  font-size: 13px;
+  color: var(--t2);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 6px;
+}
+
+/* ── Cancel button ───────────────────────────────────────────────────────────── */
+.cancel {
+  padding: 8px 15px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--t2);
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  transition: border-color 0.1s, color 0.1s;
+}
+
+.cancel:hover,
+.cancel:focus-visible {
+  border-color: var(--bright);
+  color: var(--t1);
+}
+
+/* ── Confirm button ──────────────────────────────────────────────────────────── */
+.confirm {
+  padding: 8px 15px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: var(--neon-green);
+  color: #07070f;
+  border: 1.5px solid transparent;
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  transition: opacity 0.1s;
+}
+
+.confirm:hover,
+.confirm:focus-visible {
+  opacity: 0.85;
+}
+
+/* ── Destructive variant (delete / irreversible) ─────────────────────────────── */
+.confirmDestructive {
+  background: var(--neon-pink);
+  color: #fff;
+}

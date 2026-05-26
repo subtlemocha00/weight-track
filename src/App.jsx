@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthProvider'
 import { SettingsProvider } from './contexts/SettingsProvider'
+import { ConfirmModalProvider } from './contexts/ConfirmModalProvider'
 import { AppLayout } from './layouts/AppLayout'
 import { ProtectedRoute } from './components/ProtectedRoute'
 import { LoginPage } from './pages/LoginPage'
@@ -32,7 +33,8 @@ export function App() {
   return (
     <AuthProvider>
       <SettingsProvider>
-        <BrowserRouter>
+        <ConfirmModalProvider>
+          <BrowserRouter>
           <Routes>
             <Route element={<AppLayout />}>
               <Route index element={<Navigate to="/home" replace />} />
@@ -100,7 +102,8 @@ export function App() {
               />
             </Route>
           </Routes>
-        </BrowserRouter>
+          </BrowserRouter>
+        </ConfirmModalProvider>
       </SettingsProvider>
     </AuthProvider>
   )

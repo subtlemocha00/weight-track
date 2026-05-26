@@ -2,6 +2,7 @@ import { useCallback, useReducer, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
+import { useConfirm } from '../../hooks/useConfirm'
 import { deleteRoutine, saveRoutine } from '../../services/routines'
 import { AddExercisePanel } from './AddExercisePanel'
 import { RoutineExerciseItem } from './RoutineExerciseItem'
@@ -19,6 +20,7 @@ export function RoutineEditor({ initialRoutine, mode }) {
   // Track whether this is the initial mount dispatch (LOAD after save)
   const suppressDirty = useRef(false)
 
+  const { confirm } = useConfirm()
   const isNew = mode === 'new'
   const canSave = routine.name.trim().length > 0 && saveState.status !== 'saving'
 
@@ -62,7 +64,14 @@ export function RoutineEditor({ initialRoutine, mode }) {
 
   const handleDelete = useCallback(async () => {
     if (!user || isNew) return
-    if (!window.confirm(`Delete "${routine.name || 'this routine'}"?`)) return
+    const ok = await confirm({
+      title: 'Delete routine?',
+      message: `"${routine.name || 'This routine'}" will be permanently deleted and cannot be recovered.`,
+      confirmLabel: 'Delete',
+      cancelLabel: 'Cancel',
+      destructive: true
+    })
+    if (!ok) return
     setDeleting(true)
     try {
       await deleteRoutine(user.uid, routine.id)
@@ -76,13 +85,18 @@ export function RoutineEditor({ initialRoutine, mode }) {
     }
   }, [user, isNew, routine.id, routine.name, navigate])
 
-  const handleBack = useCallback(() => {
+  const handleBack = useCallback(async () => {
     if (isDirty) {
-      const ok = window.confirm('You have unsaved changes. Leave without saving?')
+      const ok = await confirm({
+        title: 'Unsaved changes',
+        message: 'Leave without saving your changes?',
+        confirmLabel: 'Leave',
+        cancelLabel: 'Keep editing'
+      })
       if (!ok) return
     }
     navigate('/home')
-  }, [isDirty, navigate])
+  }, [isDirty, navigate, confirm])
 
   const handleAddExercise = useCallback((exercise) => {
     dirtyDispatch({ type: 'ADD_EXERCISE', exercise })
