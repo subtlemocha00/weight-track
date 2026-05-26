@@ -1,34 +1,35 @@
 /* ── CSS Custom Properties ─────────────────────────────────────────────────── */
 :root {
-  --bg:       #07070f;
-  --surface:  #0c0c1c;
-  --card:     #111126;
+  --bg: #07070f;
+  --surface: #0c0c1c;
+  --card: #111126;
   --card-hov: #16163a;
-  --border:   #1d1d38;
-  --bright:   #28284e;
-  --t1:       #dcd8f0;
-  --t2:       #6e6aa0;
-  --t3:       #363558;
-  --dot:      rgba(255, 255, 255, 0.032);
+  --border: #1d1d38;
+  --bright: #28284e;
+  --t1: #dcd8f0;
+  --t2: #6e6aa0;
+  --t3: #363558;
+  --dot: rgba(255, 255, 255, 0.032);
 
-  --neon-green:  #00ff9d;
-  --neon-blue:   #00c2ff;
-  --neon-pink:   #ff2d78;
+  /* --neon-green:  #00ff9d; */
+  --neon-green: #00ff26;
+  --neon-blue: #00c2ff;
+  --neon-pink: #ff2d78;
   --neon-purple: #b44aff;
   --neon-orange: #ff8c1a;
 }
 
 [data-theme="light"] {
-  --bg:       #ece7dd;
-  --surface:  #e2ddd3;
-  --card:     #f5f0e7;
+  --bg: #ece7dd;
+  --surface: #e2ddd3;
+  --card: #f5f0e7;
   --card-hov: #faf6ef;
-  --border:   #c9c3b5;
-  --bright:   #b5af9f;
-  --t1:       #1a1628;
-  --t2:       #5c5578;
-  --t3:       #9898b8;
-  --dot:      rgba(0, 0, 0, 0.052);
+  --border: #c9c3b5;
+  --bright: #b5af9f;
+  --t1: #1a1628;
+  --t2: #5c5578;
+  --t3: #9898b8;
+  --dot: rgba(0, 0, 0, 0.052);
 }
 
 /* ── Resets ────────────────────────────────────────────────────────────────── */
@@ -92,10 +93,12 @@ textarea:focus {
 
 /* ── Tap Flash ─────────────────────────────────────────────────────────────── */
 @keyframes tapFlash {
+
   0%,
   100% {
     opacity: 1;
   }
+
   40% {
     opacity: 0.6;
   }
