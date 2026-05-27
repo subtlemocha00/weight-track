@@ -120,11 +120,31 @@
   font-family: 'Space Mono', monospace;
 }
 
-.rowArrow {
-  color: var(--t3);
-  font-size: 15px;
-  font-weight: 700;
+.deleteBtn {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: 1.5px solid transparent;
+  color: var(--t3);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  cursor: pointer;
+}
+
+.deleteBtn:hover:not(:disabled) {
+  color: var(--neon-pink);
+  border-color: rgba(255, 45, 120, 0.4);
+  background: rgba(255, 45, 120, 0.07);
+}
+
+.deleteBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 .empty {

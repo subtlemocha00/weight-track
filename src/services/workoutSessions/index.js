@@ -1,5 +1,6 @@
 import {
   collection,
+  deleteDoc,
   doc,
   getDoc,
   getDocs,
@@ -59,6 +60,10 @@ export async function startWorkout(uid, routine) {
   const session = createSessionFromRoutine(routine)
   await saveSession(uid, session)
   return session
+}
+
+export async function deleteSession(uid, sessionId) {
+  await deleteDoc(sessionDocRef(uid, sessionId))
 }
 
 /**
