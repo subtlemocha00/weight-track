@@ -1,0 +1,366 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--t1);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--t3);
+}
+
+.input {
+  min-width: 0;
+  padding: 7px 10px;
+  font-size: 13px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  transition: border-color 0.1s;
+}
+
+.input:focus {
+  border-color: var(--neon-green);
+}
+
+.distanceRow {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.distanceRow .input {
+  flex: 1;
+}
+
+.unitToggle {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.unitBtn,
+.unitActive {
+  padding: 5px 9px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  clip-path: polygon(0 0, calc(100% - 3px) 0, 100% 3px, 100% 100%, 3px 100%, 0 calc(100% - 3px));
+  transition: all 0.08s;
+}
+
+.unitBtn {
+  background: transparent;
+  color: var(--t2);
+  border: 1px solid var(--border);
+}
+
+.unitActive {
+  background: var(--neon-green);
+  color: #07070f;
+  border: 1px solid var(--neon-green);
+}
+
+.durationRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.inputSmall {
+  width: 52px;
+  padding: 7px 8px;
+  font-size: 13px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  transition: border-color 0.1s;
+}
+
+.inputSmall:focus {
+  border-color: var(--neon-green);
+}
+
+.durationSep {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--t2);
+  line-height: 1;
+}
+
+.durationHint {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--t3);
+  letter-spacing: 0.05em;
+  margin-left: 2px;
+}
+
+.envToggle {
+  display: flex;
+  gap: 6px;
+}
+
+.envBtn,
+.envActive {
+  flex: 1;
+  padding: 7px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  transition: all 0.08s;
+}
+
+.envBtn {
+  background: transparent;
+  color: var(--t2);
+  border: 1.5px solid var(--border);
+}
+
+.envActive {
+  background: rgba(0, 194, 255, 0.1);
+  color: var(--neon-blue);
+  border: 1.5px solid var(--neon-blue);
+}
+
+.textarea {
+  padding: 8px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  resize: none;
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  transition: border-color 0.1s;
+}
+
+.textarea:focus {
+  border-color: var(--neon-green);
+}
+
+/* ---- workout exercise blocks ---- */
+
+.exercise {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.exerciseHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.order {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: var(--t3);
+}
+
+.exerciseName {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--t1);
+  flex: 1;
+  min-width: 0;
+}
+
+.superset {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--neon-blue);
+  border: 1px solid rgba(0, 194, 255, 0.4);
+  padding: 1px 5px;
+  flex-shrink: 0;
+}
+
+.setHeader,
+.setRow {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr 1fr 3.5rem;
+  gap: 6px;
+  align-items: center;
+}
+
+.setHeader {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--t3);
+  padding: 0 2px;
+}
+
+.sets {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.setIndex {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  color: var(--t3);
+  text-align: center;
+}
+
+.setInput {
+  min-width: 0;
+  padding: 6px 8px;
+  font-size: 13px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  transition: border-color 0.1s;
+}
+
+.setInput:focus {
+  border-color: var(--neon-green);
+}
+
+.unitSelect {
+  min-width: 0;
+  padding: 6px 4px;
+  font-size: 12px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+}
+
+.unitSelect:focus {
+  border-color: var(--neon-green);
+}
+
+.notes {
+  padding: 7px 9px;
+  font-size: 12px;
+  line-height: 1.45;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--t1);
+  resize: none;
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  transition: border-color 0.1s;
+}
+
+.notes:focus {
+  border-color: var(--neon-green);
+}
+
+.empty {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  color: var(--t2);
+  font-size: 13px;
+  border: 1px dashed var(--border);
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+/* ---- shared footer ---- */
+
+.error {
+  padding: 8px 10px;
+  border: 1.5px solid var(--neon-pink);
+  background: rgba(255, 45, 120, 0.08);
+  color: var(--neon-pink);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  font-size: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+.cancelBtn {
+  padding: 7px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--t2);
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  transition: all 0.1s;
+}
+
+.cancelBtn:hover {
+  color: var(--t1);
+  border-color: var(--bright);
+}
+
+.cancelBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.saveBtn {
+  padding: 7px 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: var(--neon-green);
+  color: #07070f;
+  border: 1.5px solid var(--neon-green);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  box-shadow: 0 0 14px rgba(0, 255, 157, 0.3);
+  transition: all 0.08s;
+}
+
+.saveBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}

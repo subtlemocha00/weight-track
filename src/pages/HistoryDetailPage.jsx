@@ -4,6 +4,7 @@ import { useAuth } from '../hooks/useAuth'
 import { getSession } from '../services/workoutSessions'
 import { HistoryExerciseItem } from '../features/history/HistoryExerciseItem'
 import { RunDetail } from '../features/history/RunDetail'
+import { SessionEditForm } from '../features/history/SessionEditForm'
 import {
   formatDateTime,
   formatDuration
@@ -16,6 +17,7 @@ export function HistoryDetailPage() {
   const [session, setSession] = useState(null)
   const [error, setError] = useState(null)
   const [notFound, setNotFound] = useState(false)
+  const [editing, setEditing] = useState(false)
 
   useEffect(() => {
     if (!user || !sessionId) return
@@ -23,6 +25,7 @@ export function HistoryDetailPage() {
     setSession(null)
     setError(null)
     setNotFound(false)
+    setEditing(false)
 
     getSession(user.uid, sessionId)
       .then((data) => {
@@ -73,12 +76,34 @@ export function HistoryDetailPage() {
   const sessionTitle = isRun ? 'Run' : (session.routineName || 'Workout')
   const duration = isRun ? null : formatDuration(session.startedAt, session.completedAt)
 
+  if (editing) {
+    return (
+      <div className={styles.detail}>
+        <SessionEditForm
+          session={session}
+          onCancel={() => setEditing(false)}
+          onSaved={(updated) => {
+            setSession(updated)
+            setEditing(false)
+          }}
+        />
+      </div>
+    )
+  }
+
   return (
     <div className={styles.detail}>
       <div className={styles.backRow}>
         <Link to="/history" className={styles.back}>
           ← History
         </Link>
+        <button
+          type="button"
+          className={styles.editBtn}
+          onClick={() => setEditing(true)}
+        >
+          Edit
+        </button>
       </div>
 
       <div className={styles.header}>

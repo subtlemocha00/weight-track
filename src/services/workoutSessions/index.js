@@ -53,6 +53,16 @@ export async function saveSession(uid, session) {
 }
 
 /**
+ * Apply a partial edit to a single existing session document.
+ *
+ * Only the provided fields are written — no other session, routine, or template
+ * is touched. Used by the history edit flow to correct logged workouts/runs.
+ */
+export async function updateSession(uid, sessionId, fields) {
+  await updateDoc(sessionDocRef(uid, sessionId), fields)
+}
+
+/**
  * Snapshot a routine into a new in-progress session document, then return the
  * full session so the caller can navigate to /workout/:sessionId.
  */

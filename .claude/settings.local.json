@@ -29,7 +29,8 @@
       "Bash(grep \"Local:\" \"C:\\\\\\\\Users\\\\\\\\Owner\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Owner-Desktop-GettingStarted-new-code-repos-weight-track\\\\\\\\93675258-bdf0-4c6b-9f3d-960d555dbbaf\\\\\\\\tasks\\\\\\\\b6ivzj3n9.output\")",
       "Bash(curl -s -o /dev/null -w \"/home → %{http_code}\\\\n\" http://localhost:5179/home)",
       "Bash(curl -s -o /dev/null -w \"/workout/abc → %{http_code}\\\\n\" http://localhost:5179/workout/abc)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npx eslint *)"
     ]
   }
 }
