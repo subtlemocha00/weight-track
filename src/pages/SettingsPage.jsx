@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useAuth } from '../hooks/useAuth'
 import { useSettings } from '../hooks/useSettings'
+import { useInstallPrompt } from '../hooks/useInstallPrompt'
 import {
   REST_SECONDS_MAX,
   REST_SECONDS_MIN,
@@ -11,6 +12,7 @@ import styles from './SettingsPage.module.css'
 export function SettingsPage() {
   const { user, signOut } = useAuth()
   const { settings, isLoading, loadError, updateSettings } = useSettings()
+  const { canInstall, showIOSGuide, isInstalled, triggerInstall } = useInstallPrompt()
 
   const [form, setForm] = useState(settings)
   const [restInput, setRestInput] = useState(String(settings.defaultRestSeconds))
@@ -145,6 +147,35 @@ export function SettingsPage() {
               />
               <span className={styles.unit}>s</span>
             </div>
+          </div>
+        </div>
+
+        <div className={styles.card}>
+          <span className={styles.cardLabel}>App</span>
+          <div className={styles.settingRow}>
+            <div>
+              <div className={styles.settingLabel}>Install WeightTrack</div>
+              <div className={styles.settingSub}>
+                {isInstalled
+                  ? 'Installed on this device'
+                  : canInstall
+                    ? 'Add to your home screen for quick access'
+                    : showIOSGuide
+                      ? 'Tap Share → Add to Home Screen to install'
+                      : 'Open in Chrome or Edge to install this app'}
+              </div>
+            </div>
+            {isInstalled ? (
+              <span className={styles.installedTag}>Installed</span>
+            ) : canInstall ? (
+              <button
+                type="button"
+                className={styles.installBtn}
+                onClick={triggerInstall}
+              >
+                Install
+              </button>
+            ) : null}
           </div>
         </div>
 
