@@ -3,6 +3,7 @@ import { firestore } from '../firebase'
 
 export const DEFAULT_SETTINGS = {
   weightUnit: 'lb',
+  distanceUnit: 'km',
   restTimerEnabled: true,
   defaultRestSeconds: 90,
   themePreference: 'system'
@@ -25,6 +26,10 @@ function withDefaults(partial) {
       partial?.weightUnit === 'kg' || partial?.weightUnit === 'lb'
         ? partial.weightUnit
         : DEFAULT_SETTINGS.weightUnit,
+    distanceUnit:
+      partial?.distanceUnit === 'km' || partial?.distanceUnit === 'mi'
+        ? partial.distanceUnit
+        : DEFAULT_SETTINGS.distanceUnit,
     restTimerEnabled:
       typeof partial?.restTimerEnabled === 'boolean'
         ? partial.restTimerEnabled

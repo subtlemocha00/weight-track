@@ -88,7 +88,7 @@ export function SettingsPage() {
           <span className={styles.cardLabel}>Units</span>
           <div className={styles.settingRow}>
             <div>
-              <div className={styles.settingLabel}>Default unit</div>
+              <div className={styles.settingLabel}>Default weight unit</div>
               <div className={styles.settingSub}>Weight unit for new exercises</div>
             </div>
             <div className={styles.toggleGroup}>
@@ -98,6 +98,27 @@ export function SettingsPage() {
                   type="button"
                   className={`${styles.toggleOption} ${form.weightUnit === u ? styles.toggleActive : ''}`}
                   onClick={() => setForm({ ...form, weightUnit: u })}
+                >
+                  {u}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.divider} />
+
+          <div className={styles.settingRow}>
+            <div>
+              <div className={styles.settingLabel}>Default distance unit</div>
+              <div className={styles.settingSub}>Distance unit for new runs</div>
+            </div>
+            <div className={styles.toggleGroup}>
+              {['km', 'mi'].map((u) => (
+                <button
+                  key={u}
+                  type="button"
+                  className={`${styles.toggleOption} ${form.distanceUnit === u ? styles.toggleActive : ''}`}
+                  onClick={() => setForm({ ...form, distanceUnit: u })}
                 >
                   {u}
                 </button>

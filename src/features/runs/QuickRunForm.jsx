@@ -11,7 +11,7 @@ export function QuickRunForm({ onCancel }) {
   const { settings } = useSettings()
   const navigate = useNavigate()
 
-  const defaultUnit = settings.weightUnit === 'kg' ? 'km' : 'mi'
+  const defaultUnit = settings.distanceUnit ?? 'km'
 
   const [distance, setDistance] = useState('')
   const [minutes, setMinutes] = useState('')

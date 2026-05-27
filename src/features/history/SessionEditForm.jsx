@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useAuth } from '../../hooks/useAuth'
+import { useSettings } from '../../hooks/useSettings'
 import { useConfirm } from '../../hooks/useConfirm'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { updateSession } from '../../services/workoutSessions'
@@ -39,7 +40,7 @@ function toFloatOrNull(value) {
 
 /* ---------- initial draft from session ---------- */
 
-function deriveInit(session) {
+function deriveInit(session, fallbackDistanceUnit) {
   const isRun = session.type === 'run'
   const rd = session.runData ?? {}
   const duration = Number(rd.duration) || 0
@@ -52,7 +53,7 @@ function deriveInit(session) {
     distance: rd.distance != null ? String(rd.distance) : '',
     minutes: String(Math.floor(duration / 60)),
     seconds: String(duration % 60),
-    runUnit: rd.unit ?? 'mi',
+    runUnit: rd.unit ?? fallbackDistanceUnit,
     environment: rd.environment ?? '',
     runNotes: rd.notes ?? '',
     exercises: (session.exercises ?? []).map((ex) => ({
@@ -130,9 +131,14 @@ function validate(session, patch) {
 
 export function SessionEditForm({ session, onCancel, onSaved }) {
   const { user } = useAuth()
+  const { settings } = useSettings()
   const { confirm } = useConfirm()
 
-  const init = useMemo(() => deriveInit(session), [session])
+  const fallbackDistanceUnit = settings.distanceUnit ?? 'km'
+  const init = useMemo(
+    () => deriveInit(session, fallbackDistanceUnit),
+    [session, fallbackDistanceUnit]
+  )
 
   // Session-level (workout)
   const [startedAt, setStartedAt] = useState(init.startedAt)
