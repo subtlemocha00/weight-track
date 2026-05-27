@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useSyncExternalStore } from 'react'
 
 function isIOSSafari() {
   const ua = navigator.userAgent
@@ -15,52 +15,114 @@ function isStandalone() {
   )
 }
 
-export function useInstallPrompt() {
-  const [deferredPrompt, setDeferredPrompt] = useState(null)
-  const [isInstalled, setIsInstalled] = useState(() => isStandalone())
-  const [showIOSGuide, setShowIOSGuide] = useState(false)
+/**
+ * Shared, module-level install-prompt store.
+ *
+ * `beforeinstallprompt` fires once, early, and dispatches the same event to
+ * every listener — and its `prompt()` can only be called once. So we capture it
+ * a single time at module load and let any number of `useInstallPrompt()`
+ * consumers (banner, settings, …) read the same state. Per-component listeners
+ * would each hold their own (possibly stale or already-consumed) prompt.
+ */
+let deferredPrompt = null
+let isInstalled = false
+let showIOSGuide = false
+let prompting = false
+let initialized = false
 
-  useEffect(() => {
-    if (isStandalone()) return
+const listeners = new Set()
 
-    if (isIOSSafari()) {
-      setShowIOSGuide(true)
-      return
-    }
+let snapshot = { canInstall: false, showIOSGuide: false, isInstalled: false }
 
-    const handleBeforeInstall = (e) => {
-      e.preventDefault()
-      setDeferredPrompt(e)
-    }
-
-    const handleAppInstalled = () => {
-      setIsInstalled(true)
-      setDeferredPrompt(null)
-    }
-
-    window.addEventListener('beforeinstallprompt', handleBeforeInstall)
-    window.addEventListener('appinstalled', handleAppInstalled)
-
-    return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstall)
-      window.removeEventListener('appinstalled', handleAppInstalled)
-    }
-  }, [])
-
-  const triggerInstall = async () => {
-    if (!deferredPrompt) return
-    deferredPrompt.prompt()
-    const { outcome } = await deferredPrompt.userChoice
-    if (outcome === 'accepted') {
-      setIsInstalled(true)
-    }
-    setDeferredPrompt(null)
-  }
-
+function buildSnapshot() {
   return {
     canInstall: !isInstalled && !!deferredPrompt,
     showIOSGuide: !isInstalled && showIOSGuide,
-    isInstalled,
-    triggerInstall,
+    isInstalled
+  }
+}
+
+function emit() {
+  const next = buildSnapshot()
+  if (
+    next.canInstall === snapshot.canInstall &&
+    next.showIOSGuide === snapshot.showIOSGuide &&
+    next.isInstalled === snapshot.isInstalled
+  ) {
+    return
+  }
+  // New reference only when something actually changed, so useSyncExternalStore
+  // doesn't loop on an unstable snapshot.
+  snapshot = next
+  listeners.forEach((listener) => listener())
+}
+
+function init() {
+  if (initialized || typeof window === 'undefined') return
+  initialized = true
+
+  isInstalled = isStandalone()
+  if (isInstalled) {
+    snapshot = buildSnapshot()
+    return
+  }
+
+  if (isIOSSafari()) {
+    showIOSGuide = true
+    snapshot = buildSnapshot()
+    return
+  }
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault()
+    deferredPrompt = e
+    emit()
+  })
+  window.addEventListener('appinstalled', () => {
+    isInstalled = true
+    deferredPrompt = null
+    emit()
+  })
+
+  snapshot = buildSnapshot()
+}
+
+init()
+
+function subscribe(listener) {
+  listeners.add(listener)
+  return () => listeners.delete(listener)
+}
+
+function getSnapshot() {
+  return snapshot
+}
+
+export async function triggerInstall() {
+  if (!deferredPrompt || prompting) return
+  prompting = true
+  try {
+    deferredPrompt.prompt()
+    const { outcome } = await deferredPrompt.userChoice
+    if (outcome === 'accepted') {
+      isInstalled = true
+    }
+  } catch {
+    // The prompt may already have been used; nothing actionable to do.
+  } finally {
+    // A prompt can only be consumed once, so drop it regardless of outcome.
+    deferredPrompt = null
+    prompting = false
+    emit()
+  }
+}
+
+export function useInstallPrompt() {
+  const state = useSyncExternalStore(subscribe, getSnapshot, getSnapshot)
+  return {
+    canInstall: state.canInstall,
+    showIOSGuide: state.showIOSGuide,
+    isInstalled: state.isInstalled,
+    triggerInstall
   }
 }

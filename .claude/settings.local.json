@@ -30,7 +30,8 @@
       "Bash(curl -s -o /dev/null -w \"/home → %{http_code}\\\\n\" http://localhost:5179/home)",
       "Bash(curl -s -o /dev/null -w \"/workout/abc → %{http_code}\\\\n\" http://localhost:5179/workout/abc)",
       "Bash(npm run *)",
-      "Bash(npx eslint *)"
+      "Bash(npx eslint *)",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('react', p.dependencies.react\\)\")"
     ]
   }
 }
