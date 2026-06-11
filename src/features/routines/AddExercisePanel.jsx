@@ -14,8 +14,6 @@ const INITIAL_FILTERS = {
   difficulty: ''
 }
 
-const MAX_RESULTS = 60
-
 export function AddExercisePanel({ onAdd }) {
   const [filters, setFilters] = useState(INITIAL_FILTERS)
   const options = useMemo(() => getFilterOptions(), [])
@@ -24,7 +22,6 @@ export function AddExercisePanel({ onAdd }) {
     setFilters((prev) => ({ ...prev, [key]: value }))
 
   const results = useMemo(() => filterExercises(filters), [filters])
-  const visible = results.slice(0, MAX_RESULTS)
 
   return (
     <details className={styles.panel}>
@@ -58,14 +55,13 @@ export function AddExercisePanel({ onAdd }) {
 
         <p className={styles.count}>
           {results.length.toLocaleString()} results
-          {results.length > MAX_RESULTS && ` — showing first ${MAX_RESULTS}`}
         </p>
 
-        {visible.length === 0 ? (
+        {results.length === 0 ? (
           <div className={styles.empty}>No exercises match these filters.</div>
         ) : (
           <ul className={styles.list}>
-            {visible.map((exercise) => {
+            {results.map((exercise) => {
               const primary = exercise.targetMuscles[0] ?? '—'
               return (
                 <li key={exercise.id} className={styles.row}>
