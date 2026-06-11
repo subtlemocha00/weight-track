@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useAuth } from '../hooks/useAuth'
+import { AppHeader } from '../components/AppHeader'
 import { useSettings } from '../hooks/useSettings'
 import { useInstallPrompt } from '../hooks/useInstallPrompt'
 import {
@@ -56,7 +57,7 @@ export function SettingsPage() {
 
   return (
     <section className={styles.page}>
-      <h1 className={styles.title}>Settings</h1>
+      <AppHeader title="Settings" />
 
       {loadError && <div className={styles.error}>{loadError}</div>}
       {isLoading && <div className={styles.loading}>Loading…</div>}

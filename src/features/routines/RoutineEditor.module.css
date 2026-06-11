@@ -8,24 +8,6 @@
   background-size: 20px 20px;
 }
 
-.headerRow {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.back {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--neon-green);
-  transition: opacity 0.1s;
-}
-
-.back:hover {
-  opacity: 0.8;
-}
-
 .nameField {
   display: flex;
   flex-direction: column;

@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { AppHeader } from '../components/AppHeader'
 import { filterExercises, getFilterOptions } from '../services/exercises'
 import { ExerciseCard } from '../features/exercises/ExerciseCard'
 import { ExerciseFilters } from '../features/exercises/ExerciseFilters'
@@ -26,7 +27,7 @@ export function ExercisesPage() {
 
   return (
     <section className={styles.page}>
-      <h1 className={styles.title}>Exercises</h1>
+      <AppHeader title="Exercises" />
 
       <input
         className={styles.search}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
+import { AppHeader } from '../components/AppHeader'
 import { useConfirm } from '../hooks/useConfirm'
 import { deleteSession, listCompletedSessions } from '../services/workoutSessions'
 import {
@@ -82,8 +83,7 @@ export function HistoryPage() {
 
   return (
     <section className={styles.page}>
-      <div className={styles.titleRow}>
-        <h1 className={styles.title}>History</h1>
+      <AppHeader title="History">
         <div className={styles.sortToggle} role="group" aria-label="Sort order">
           <button
             type="button"
@@ -100,7 +100,7 @@ export function HistoryPage() {
             Oldest
           </button>
         </div>
-      </div>
+      </AppHeader>
 
       {error && <div className={styles.error}>{error}</div>}
 

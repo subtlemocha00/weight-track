@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+
+.back {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--neon-green);
+  padding: 0;
+  flex-shrink: 0;
+  transition: opacity 0.1s;
+}
+
+.back:hover {
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--t1);
+  margin: 0;
+  min-width: 0;
+  overflow-wrap: break-word;
+}

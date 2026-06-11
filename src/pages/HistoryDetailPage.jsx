@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
+import { AppHeader } from '../components/AppHeader'
 import { getSession } from '../services/workoutSessions'
 import { HistoryExerciseItem } from '../features/history/HistoryExerciseItem'
 import { RunDetail } from '../features/history/RunDetail'
@@ -93,10 +94,7 @@ export function HistoryDetailPage() {
 
   return (
     <div className={styles.detail}>
-      <div className={styles.backRow}>
-        <Link to="/history" className={styles.back}>
-          ← History
-        </Link>
+      <AppHeader backTo="/history">
         <button
           type="button"
           className={styles.editBtn}
@@ -104,7 +102,7 @@ export function HistoryDetailPage() {
         >
           Edit
         </button>
-      </div>
+      </AppHeader>
 
       <div className={styles.header}>
         <h1 className={styles.routineName}>

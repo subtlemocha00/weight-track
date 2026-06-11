@@ -4,6 +4,7 @@ import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { useConfirm } from '../../hooks/useConfirm'
 import { deleteRoutine, saveRoutine } from '../../services/routines'
+import { AppHeader } from '../../components/AppHeader'
 import { AddExercisePanel } from './AddExercisePanel'
 import { RoutineExerciseItem } from './RoutineExerciseItem'
 import { routineReducer } from './routineReducer'
@@ -112,11 +113,7 @@ export function RoutineEditor({ initialRoutine, mode }) {
 
   return (
     <div className={styles.editor}>
-      <div className={styles.headerRow}>
-        <button type="button" className={styles.back} onClick={handleBack}>
-          ← Back
-        </button>
-      </div>
+      <AppHeader onBack={handleBack} />
 
       <label className={styles.nameField}>
         <span className={styles.nameLabel}>Routine name</span>

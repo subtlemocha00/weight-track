@@ -10,6 +10,7 @@ import { SessionExerciseItem } from './SessionExerciseItem'
 import { ElapsedTime } from './ElapsedTime'
 import { writeActiveWorkout, clearActiveWorkout } from '../../utils/activeWorkout'
 import { useConfirm } from '../../hooks/useConfirm'
+import { AppHeader } from '../../components/AppHeader'
 import styles from './SessionEditor.module.css'
 
 export function SessionEditor({ initialSession }) {
@@ -87,11 +88,7 @@ export function SessionEditor({ initialSession }) {
 
   return (
     <div className={styles.editor}>
-      <div className={styles.backRow}>
-        <button type="button" className={styles.back} onClick={handleBack}>
-          ← Home
-        </button>
-      </div>
+      <AppHeader onBack={handleBack} />
 
       <div className={styles.header}>
         <div className={styles.titleBlock}>
