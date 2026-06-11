@@ -171,7 +171,8 @@ export function SettingsPage() {
           </div>
         </div>
 
-        <div className={styles.card}>
+        {/* Don't need this and it doesn't even work anyways */}
+        {/*<div className={styles.card}>
           <span className={styles.cardLabel}>App</span>
           <div className={styles.settingRow}>
             <div>
@@ -198,7 +199,7 @@ export function SettingsPage() {
               </button>
             ) : null}
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.card}>
           <span className={styles.cardLabel}>Account</span>
