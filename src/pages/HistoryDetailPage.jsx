@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { AppHeader } from '../components/AppHeader'
-import { getSession } from '../services/workoutSessions'
+import { getSession, listCompletedSessions } from '../services/workoutSessions'
 import { HistoryExerciseItem } from '../features/history/HistoryExerciseItem'
 import { RunDetail } from '../features/history/RunDetail'
 import { SessionEditForm } from '../features/history/SessionEditForm'
 import {
   formatDateTime,
-  formatDuration
+  formatDuration,
+  ordinal
 } from '../features/history/formatSession'
 import styles from './HistoryDetailPage.module.css'
 
@@ -19,6 +20,10 @@ export function HistoryDetailPage() {
   const [error, setError] = useState(null)
   const [notFound, setNotFound] = useState(false)
   const [editing, setEditing] = useState(false)
+  // Which completion of its routine this session was (1 = first ever), counting
+  // up to and including this session. null when it doesn't apply (run / not
+  // completed / no routine link) or hasn't loaded yet.
+  const [completionNumber, setCompletionNumber] = useState(null)
 
   useEffect(() => {
     if (!user || !sessionId) return
@@ -45,6 +50,42 @@ export function HistoryDetailPage() {
       cancelled = true
     }
   }, [user, sessionId])
+
+  // Derive "this was the Nth completion of this routine" from workout history —
+  // the single source of truth. We count completed sessions sharing this
+  // routineId whose completion time is at or before this one's. Recomputes when
+  // the session changes (e.g. after an edit that moves its date).
+  useEffect(() => {
+    setCompletionNumber(null)
+    if (
+      !user ||
+      !session ||
+      session.type === 'run' ||
+      !session.routineId ||
+      session.status !== 'completed' ||
+      session.completedAt == null
+    ) {
+      return
+    }
+    let cancelled = false
+    listCompletedSessions(user.uid)
+      .then((sessions) => {
+        if (cancelled) return
+        const n = sessions.filter(
+          (s) =>
+            s.routineId === session.routineId &&
+            s.completedAt != null &&
+            s.completedAt <= session.completedAt
+        ).length
+        setCompletionNumber(n)
+      })
+      .catch(() => {
+        // Non-fatal: the line is simply omitted if history can't be read.
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [user, session])
 
   if (error) {
     return (
@@ -132,6 +173,17 @@ export function HistoryDetailPage() {
             <div className={styles.metaRow}>
               <dt>Duration</dt>
               <dd>{duration}</dd>
+            </div>
+          )}
+          {completionNumber != null && (
+            <div className={styles.metaRow}>
+              <dt>Completion</dt>
+              <dd>
+                <span className={styles.completionNum}>
+                  {ordinal(completionNumber)}
+                </span>{' '}
+                time
+              </dd>
             </div>
           )}
         </dl>

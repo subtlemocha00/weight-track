@@ -91,6 +91,11 @@
   font-size: 12px;
 }
 
+.completionNum {
+  color: var(--neon-green);
+  font-weight: 700;
+}
+
 .exercises {
   display: flex;
   flex-direction: column;

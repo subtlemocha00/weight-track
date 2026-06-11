@@ -175,6 +175,18 @@
   font-family: 'Space Mono', monospace;
 }
 
+.rowCount {
+  margin-top: 3px;
+  font-size: 11px;
+  color: var(--t2);
+  font-family: 'Space Mono', monospace;
+}
+
+.rowCountNum {
+  color: var(--neon-green);
+  font-weight: 700;
+}
+
 .start {
   flex-shrink: 0;
   padding: 7px 13px;
