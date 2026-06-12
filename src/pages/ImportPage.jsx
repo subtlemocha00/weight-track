@@ -33,10 +33,10 @@ export function ImportPage() {
     setError('')
     setParsing(true)
     try {
-      const rawImport = await parseXlsxFile(file, {
+      const { raw, skipped } = await parseXlsxFile(file, {
         fallbackName: deriveRoutineName(file.name)
       })
-      navigate('/import/preview', { state: { rawImport } })
+      navigate('/import/preview', { state: { rawImport: raw, skipped } })
     } catch (err) {
       setError(err?.message || 'Could not read this spreadsheet.')
     } finally {

@@ -24,6 +24,8 @@ export function ImportPreviewPage() {
   const navigate = useNavigate()
   const location = useLocation()
   const rawImport = location.state?.rawImport ?? MOCK_IMPORT
+  // Row-level skips reported by the parser (empty for the sample/mock path).
+  const skipped = location.state?.skipped ?? []
 
   const [model, setModel] = useState(null)
   const [saving, setSaving] = useState(false)
@@ -93,6 +95,7 @@ export function ImportPreviewPage() {
         <ImportPreview
           resolved={model.resolved}
           validation={model.validation}
+          skipped={skipped}
           saving={saving}
           error={saveError}
           onImport={handleImport}

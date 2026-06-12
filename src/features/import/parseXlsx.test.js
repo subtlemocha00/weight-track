@@ -27,8 +27,11 @@ describe('parseXlsxFile', () => {
       'My_Program.xlsx'
     )
 
-    const raw = await parseXlsxFile(file, { fallbackName: 'My Program' })
+    const { raw, skipped } = await parseXlsxFile(file, {
+      fallbackName: 'My Program'
+    })
 
+    expect(skipped).toEqual([])
     expect(raw.name).toBe('My Program')
     expect(raw.days).toHaveLength(2)
     expect(raw.days[0].name).toBe('Push Day')
@@ -49,7 +52,7 @@ describe('parseXlsxFile', () => {
       ['day', 'EXERCISE', 'Sets', 'reps', 'Weight (optional)', 'Notes (optional)'],
       ['Legs', 'Squat', 5, 5, 185, '']
     ])
-    const raw = await parseXlsxFile(file)
+    const { raw } = await parseXlsxFile(file)
     expect(raw.days[0].exercises[0]).toMatchObject({ name: 'Squat', sets: 5, reps: 5 })
   })
 
@@ -60,8 +63,9 @@ describe('parseXlsxFile', () => {
       ['', '', '', '', '', ''],
       ['Push', 'Dips', 3, 12, '', '']
     ])
-    const raw = await parseXlsxFile(file)
+    const { raw, skipped } = await parseXlsxFile(file)
     expect(raw.days[0].exercises).toHaveLength(2)
+    expect(skipped).toEqual([])
   })
 
   it('rejects non-.xlsx files', async () => {
@@ -79,17 +83,39 @@ describe('parseXlsxFile', () => {
 
   it('rejects spreadsheets with no exercise rows', async () => {
     const file = makeXlsxFile([HEADERS])
-    await expect(parseXlsxFile(file)).rejects.toThrow(/No exercise rows/i)
+    await expect(parseXlsxFile(file)).rejects.toThrow(/No valid exercise rows/i)
   })
 
-  it('passes blank exercise names / non-numeric counts through for the validator', async () => {
+  it('skips malformed rows (non-blocking) and reports them with row numbers', async () => {
     const file = makeXlsxFile([
       HEADERS,
-      ['Push', '', 'abc', 8, '', '']
+      ['Push', 'Bench Press', 4, 8, '', ''], // row 2 — valid
+      ['Push', '', 3, 8, '', ''], // row 3 — missing exercise name
+      ['Push', 'Curl', 'abc', 10, '', ''], // row 4 — non-numeric sets
+      ['', 'Squat', 5, 5, '', ''] // row 5 — missing day
     ])
-    const raw = await parseXlsxFile(file)
-    // Parser keeps the raw values; normalize+validate handle them downstream.
-    expect(raw.days[0].exercises[0].name).toBe('')
-    expect(raw.days[0].exercises[0].sets).toBe('abc')
+    const { raw, skipped } = await parseXlsxFile(file)
+
+    // Only the one valid row survives.
+    expect(raw.days[0].exercises).toHaveLength(1)
+    expect(raw.days[0].exercises[0].name).toBe('Bench Press')
+
+    // Each bad row is reported with its real spreadsheet row number + reason.
+    expect(skipped).toHaveLength(3)
+    expect(skipped[0]).toMatchObject({ row: 3, reason: 'Missing Exercise name' })
+    expect(skipped[1]).toMatchObject({ row: 4 })
+    expect(skipped[1].reason).toMatch(/Sets must be a whole number/i)
+    expect(skipped[2]).toMatchObject({ row: 5, reason: 'Missing Day' })
+  })
+
+  it('throws (blocking) when every data row is malformed, noting the skip count', async () => {
+    const file = makeXlsxFile([
+      HEADERS,
+      ['Push', '', 0, 8, '', ''],
+      ['', 'Squat', 5, 5, '', '']
+    ])
+    await expect(parseXlsxFile(file)).rejects.toThrow(
+      /No valid exercise rows.*2 row\(s\) had problems/is
+    )
   })
 })

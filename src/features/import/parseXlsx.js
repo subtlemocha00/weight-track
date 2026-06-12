@@ -1,18 +1,28 @@
 import * as XLSX from 'xlsx'
+import { MIN_SETS, MAX_SETS, MIN_REPS, MAX_REPS } from './importTypes'
 
 /**
  * XLSX → RawImport adapter.
  *
  * Deterministic only — no fuzzy column matching, no heuristics, no auto-fix.
- * The parser's sole job is to read a .xlsx file into the Phase 2 `RawImport`
- * shape ({ name, days: [{ name, exercises: [{ name, sets, reps, weight, notes }] }] }).
+ * Reads a .xlsx file into the `RawImport` shape
+ * ({ name, days: [{ name, exercises: [{ name, sets, reps, weight, notes }] }] }).
  * Everything after that (normalize → validate → resolve → preview → save) is
  * the shared pipeline.
  *
- * Structural problems (unreadable file, wrong type, missing required columns,
- * no data rows) throw here so the import screen can show them BEFORE preview.
- * Row-level data problems (blank exercise name, non-numeric sets/reps) are left
- * intact and caught by the existing validation layer on the preview screen.
+ * Two error tiers (per the Phase 5 brief):
+ *
+ *   STRUCTURAL (blocking) — unreadable file, wrong type, missing required
+ *   columns, or zero valid rows. These THROW so the import screen can show them
+ *   before the preview stage; no preview is possible.
+ *
+ *   ROW-LEVEL (non-blocking) — a single row with a missing Day/Exercise name or
+ *   an out-of-range Sets/Reps value. The offending row is SKIPPED (never
+ *   silently kept) and reported in the returned `skipped` array with its
+ *   spreadsheet row number, so the preview can show exactly what was dropped and
+ *   why while still importing the valid rows.
+ *
+ * Returns `{ raw, skipped }` rather than a bare RawImport.
  */
 
 export const REQUIRED_COLUMNS = ['Day', 'Exercise', 'Sets', 'Reps']
@@ -32,6 +42,31 @@ function cellAt(row, index) {
   return index >= 0 && index < row.length ? row[index] : ''
 }
 
+/** Whole-number coercion that preserves NaN for non-numeric input. */
+function toCount(value) {
+  const n = Math.trunc(Number(value))
+  return Number.isFinite(n) ? n : NaN
+}
+
+/**
+ * Deterministic row-level check. Returns the first problem found (as a
+ * user-facing reason string), or null when the row is importable. Uses the same
+ * set/rep bounds as the validator so the preview reflects exactly what saves.
+ */
+function rowProblem({ day, exerciseName, sets, reps }) {
+  if (!day) return 'Missing Day'
+  if (!exerciseName) return 'Missing Exercise name'
+  const s = toCount(sets)
+  if (!Number.isInteger(s) || s < MIN_SETS || s > MAX_SETS) {
+    return `Sets must be a whole number between ${MIN_SETS} and ${MAX_SETS}`
+  }
+  const r = toCount(reps)
+  if (!Number.isInteger(r) || r < MIN_REPS || r > MAX_REPS) {
+    return `Reps must be a whole number between ${MIN_REPS} and ${MAX_REPS}`
+  }
+  return null
+}
+
 /**
  * Parse a user-selected .xlsx File into a RawImport.
  *
@@ -39,7 +74,7 @@ function cellAt(row, index) {
  * @param {{ fallbackName?: string }} [options] fallbackName seeds the program
  *        name (typically derived from the filename) since spreadsheets carry no
  *        routine-name column.
- * @returns {Promise<import('./importTypes').RawImport>}
+ * @returns {Promise<{raw: import('./importTypes').RawImport, skipped: Array<{row: number, exercise: string, reason: string}>}>}
  * @throws {Error} with a user-friendly message on any structural problem.
  */
 export async function parseXlsxFile(file, { fallbackName = '' } = {}) {
@@ -61,9 +96,12 @@ export async function parseXlsxFile(file, { fallbackName = '' } = {}) {
     throw new Error('The spreadsheet has no sheets.')
   }
 
+  // blankrows: true keeps blank rows as empty arrays so a row's array index
+  // stays aligned with its real spreadsheet row number (used in skip reports).
+  // We drop the blanks ourselves below.
   const rows = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName], {
     header: 1,
-    blankrows: false,
+    blankrows: true,
     defval: ''
   })
 
@@ -91,7 +129,12 @@ export async function parseXlsxFile(file, { fallbackName = '' } = {}) {
   }
 
   const parsedRows = []
-  for (const row of rows.slice(headerRowIndex + 1)) {
+  const skipped = []
+
+  rows.slice(headerRowIndex + 1).forEach((row, offset) => {
+    // 1-based spreadsheet row number, as the user sees it in Excel. The header
+    // sits at array index headerRowIndex; data rows follow.
+    const rowNumber = headerRowIndex + offset + 2
     const day = String(cellAt(row, colIndex.Day)).trim()
     const exerciseName = String(cellAt(row, colIndex.Exercise)).trim()
     const sets = cellAt(row, colIndex.Sets)
@@ -100,7 +143,7 @@ export async function parseXlsxFile(file, { fallbackName = '' } = {}) {
     const notes =
       colIndex.Notes >= 0 ? String(cellAt(row, colIndex.Notes)).trim() : ''
 
-    // Skip fully-empty rows; they are not an error.
+    // Fully-empty rows are spacer/padding — silently ignored, not reported.
     const isEmpty =
       !day &&
       !exerciseName &&
@@ -108,16 +151,28 @@ export async function parseXlsxFile(file, { fallbackName = '' } = {}) {
       String(reps).trim() === '' &&
       String(weight).trim() === '' &&
       !notes
-    if (isEmpty) continue
+    if (isEmpty) return
+
+    // A row that carries data but is malformed is SKIPPED and reported, never
+    // silently kept and never blocking the rest of the import.
+    const problem = rowProblem({ day, exerciseName, sets, reps })
+    if (problem) {
+      skipped.push({ row: rowNumber, exercise: exerciseName, reason: problem })
+      return
+    }
 
     parsedRows.push({ day, exerciseName, sets, reps, weight, notes })
-  }
+  })
 
   if (parsedRows.length === 0) {
-    throw new Error('No exercise rows found in the spreadsheet.')
+    const detail =
+      skipped.length > 0
+        ? ` ${skipped.length} row(s) had problems and were skipped.`
+        : ''
+    throw new Error(`No valid exercise rows found in the spreadsheet.${detail}`)
   }
 
-  return groupRowsToRawImport(parsedRows, fallbackName)
+  return { raw: groupRowsToRawImport(parsedRows, fallbackName), skipped }
 }
 
 /**

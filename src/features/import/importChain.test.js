@@ -30,7 +30,7 @@ describe('XLSX → pipeline chain', () => {
       ['Push Day', 'Bench Press', 4, 8, 135, '']
     ])
 
-    const raw = await parseXlsxFile(file, { fallbackName: 'program' })
+    const { raw } = await parseXlsxFile(file, { fallbackName: 'program' })
     const normalized = normalizeImport(raw)
     const validation = validateImport(normalized)
     const resolved = resolveImport(normalized, [])
@@ -43,18 +43,22 @@ describe('XLSX → pipeline chain', () => {
     expect(normalized.days[0].exercises[0].weight).toBe(50)
   })
 
-  it('flags row-level problems via the existing validator (not the parser)', async () => {
+  it('skips malformed rows at parse time so the validated model stays valid', async () => {
     const file = makeXlsxFile([
       HEADERS,
-      ['', 'Squat', 0, 8, '', ''] // blank day, zero sets
+      ['Push Day', 'Incline Dumbbell Press', 3, 10, 50, ''], // valid
+      ['', 'Squat', 0, 8, '', ''] // blank day + zero sets → skipped
     ])
 
-    const raw = await parseXlsxFile(file)
+    const { raw, skipped } = await parseXlsxFile(file, { fallbackName: 'program' })
     const validation = validateImport(normalizeImport(raw))
 
-    expect(validation.valid).toBe(false)
-    const messages = validation.errors.map((e) => e.message).join(' ')
-    expect(messages).toMatch(/workout day name is required/i)
-    expect(messages).toMatch(/set count/i)
+    // The bad row never reaches the validator; the surviving model is valid.
+    expect(validation.valid).toBe(true)
+    expect(raw.days).toHaveLength(1)
+    expect(raw.days[0].exercises).toHaveLength(1)
+    // The drop is surfaced (non-blocking) with a reason for the preview.
+    expect(skipped).toHaveLength(1)
+    expect(skipped[0].row).toBe(3)
   })
 })
