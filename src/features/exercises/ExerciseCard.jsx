@@ -1,4 +1,5 @@
 import { memo } from 'react'
+import { WatchVideoButton } from './WatchVideoButton'
 import styles from './ExerciseCard.module.css'
 
 function ExerciseCardImpl({ exercise, onEdit }) {
@@ -53,6 +54,8 @@ function ExerciseCardImpl({ exercise, onEdit }) {
             ))}
           </ol>
         )}
+
+        <WatchVideoButton exercise={exercise} />
 
         {canEdit && (
           <button

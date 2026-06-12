@@ -3,26 +3,34 @@ import { createPortal } from 'react-dom'
 import styles from './CustomExerciseEditor.module.css'
 
 /**
- * Edit modal for a single custom exercise.
+ * Create/edit modal for a single custom exercise.
+ *
+ * One component serves both flows (`mode`): creating a brand-new exercise from
+ * the library and editing an existing one share the same fields, validation and
+ * Firestore write path. In create mode the parent passes a blank exercise and no
+ * `onDelete`, so the delete affordance is hidden automatically.
  *
  * Owns its own form state and basic validation (name required); the parent
- * performs the Firestore write via `onSave` and controls `saving`/`error`.
- * Built-in exercises never reach this component — the library only wires
- * `onEdit` for custom cards.
+ * performs the Firestore write via `onSave` (including duplicate-name rejection)
+ * and controls `saving`/`error`. Built-in exercises never reach this component.
  *
- * Body part / equipment use the existing built-in filter options so an edited
- * exercise stays aligned with the filter dropdowns. Muscles are entered as a
+ * Body part / equipment use the existing built-in filter options so the exercise
+ * stays aligned with the filter dropdowns. Muscles are entered as a
  * comma-separated list, instructions as one step per line — both mirror the
  * built-in exercise shape (string arrays).
  */
 export function CustomExerciseEditor({
   exercise,
   options,
+  mode = 'edit',
   saving = false,
+  deleting = false,
   error = '',
   onSave,
+  onDelete,
   onCancel
 }) {
+  const isCreate = mode === 'create'
   const [name, setName] = useState(exercise.name ?? '')
   const [bodyPart, setBodyPart] = useState(exercise.bodyPart ?? '')
   const [equipment, setEquipment] = useState(exercise.equipment ?? '')
@@ -35,8 +43,13 @@ export function CustomExerciseEditor({
   const [instructions, setInstructions] = useState(
     linesToText(exercise.instructions)
   )
+  const [videoUrl, setVideoUrl] = useState(exercise.videoUrl ?? '')
+  const [confirmingDelete, setConfirmingDelete] = useState(false)
 
   const nameRef = useRef(null)
+
+  // While a save or delete is in flight the modal can't be dismissed.
+  const busy = saving || deleting
 
   useEffect(() => {
     nameRef.current?.focus()
@@ -44,17 +57,17 @@ export function CustomExerciseEditor({
     document.body.style.overflow = 'hidden'
 
     const handleKeyDown = (e) => {
-      if (e.key === 'Escape' && !saving) onCancel()
+      if (e.key === 'Escape' && !busy) onCancel()
     }
     document.addEventListener('keydown', handleKeyDown)
     return () => {
       document.removeEventListener('keydown', handleKeyDown)
       document.body.style.overflow = prevOverflow
     }
-  }, [onCancel, saving])
+  }, [onCancel, busy])
 
   const trimmedName = name.trim()
-  const canSave = trimmedName.length > 0 && !saving
+  const canSave = trimmedName.length > 0 && !busy
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -68,7 +81,9 @@ export function CustomExerciseEditor({
       equipment: equipment || null,
       targetMuscles: textToList(targetMuscles),
       secondaryMuscles: textToList(secondaryMuscles),
-      instructions: textToLines(instructions)
+      instructions: textToLines(instructions),
+      // Blank input removes the link; the factory trims and stores null/string.
+      videoUrl: videoUrl.trim() || null
     })
   }
 
@@ -78,7 +93,7 @@ export function CustomExerciseEditor({
       role="dialog"
       aria-modal="true"
       aria-labelledby="cee-title"
-      onClick={() => !saving && onCancel()}
+      onClick={() => !busy && onCancel()}
     >
       <form
         className={styles.modal}
@@ -86,7 +101,7 @@ export function CustomExerciseEditor({
         onSubmit={handleSubmit}
       >
         <h2 id="cee-title" className={styles.title}>
-          Edit custom exercise
+          {isCreate ? 'Add custom exercise' : 'Edit custom exercise'}
         </h2>
 
         <label className={styles.field}>
@@ -171,21 +186,79 @@ export function CustomExerciseEditor({
           />
         </label>
 
+        <label className={styles.field}>
+          <span className={styles.label}>Video URL</span>
+          <input
+            className={styles.input}
+            type="url"
+            inputMode="url"
+            value={videoUrl}
+            onChange={(e) => setVideoUrl(e.target.value)}
+            placeholder="https://… (optional)"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+          />
+        </label>
+
         {error && <div className={styles.error}>{error}</div>}
 
-        <div className={styles.actions}>
-          <button
-            type="button"
-            className={styles.cancel}
-            onClick={onCancel}
-            disabled={saving}
-          >
-            Cancel
-          </button>
-          <button type="submit" className={styles.save} disabled={!canSave}>
-            {saving ? 'Saving…' : 'Save'}
-          </button>
-        </div>
+        {confirmingDelete ? (
+          <div className={styles.confirmDelete}>
+            <span className={styles.confirmText}>
+              Permanently delete this exercise from your custom library? This
+              can&rsquo;t be undone.
+            </span>
+            <div className={styles.actions}>
+              <button
+                type="button"
+                className={styles.cancel}
+                onClick={() => setConfirmingDelete(false)}
+                disabled={deleting}
+              >
+                Keep
+              </button>
+              <button
+                type="button"
+                className={styles.deleteConfirm}
+                onClick={() => onDelete(exercise)}
+                disabled={deleting}
+              >
+                {deleting ? 'Deleting…' : 'Delete'}
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className={styles.actions}>
+            {typeof onDelete === 'function' && (
+              <button
+                type="button"
+                className={styles.deleteTrigger}
+                onClick={() => setConfirmingDelete(true)}
+                disabled={busy}
+              >
+                Delete
+              </button>
+            )}
+            <button
+              type="button"
+              className={styles.cancel}
+              onClick={onCancel}
+              disabled={busy}
+            >
+              Cancel
+            </button>
+            <button type="submit" className={styles.save} disabled={!canSave}>
+              {saving
+                ? isCreate
+                  ? 'Creating…'
+                  : 'Saving…'
+                : isCreate
+                  ? 'Create'
+                  : 'Save'}
+            </button>
+          </div>
+        )}
       </form>
     </div>,
     document.body

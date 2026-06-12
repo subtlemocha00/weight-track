@@ -10,6 +10,7 @@ import {
 } from 'firebase/firestore'
 import { firestore } from '../firebase'
 import { createCustomExercise } from '../../features/exercises/customExerciseFactory'
+import { normalizeExercise } from '../exercises'
 
 /**
  * Firestore access for user-owned custom exercises.
@@ -34,14 +35,16 @@ export async function listCustomExercises(uid) {
   const snap = await getDocs(
     query(customExercisesCollection(uid), orderBy('name'))
   )
-  return snap.docs.map((d) => ({ id: d.id, ...d.data() }))
+  // Normalize on read so docs written before videoUrl existed still surface the
+  // field (as null) — keeps every exercise object in the app uniformly shaped.
+  return snap.docs.map((d) => normalizeExercise({ id: d.id, ...d.data() }))
 }
 
 export async function getCustomExerciseById(uid, exerciseId) {
   if (!exerciseId) return null
   const snap = await getDoc(customExerciseDocRef(uid, exerciseId))
   if (!snap.exists()) return null
-  return { id: snap.id, ...snap.data() }
+  return normalizeExercise({ id: snap.id, ...snap.data() })
 }
 
 /**

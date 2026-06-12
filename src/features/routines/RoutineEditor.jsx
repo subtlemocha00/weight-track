@@ -5,6 +5,7 @@ import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { useConfirm } from '../../hooks/useConfirm'
 import { deleteRoutine, duplicateRoutine, saveRoutine } from '../../services/routines'
 import { AppHeader } from '../../components/AppHeader'
+import { downloadRoutineExport } from './exportRoutine'
 import { AddExercisePanel } from './AddExercisePanel'
 import { RoutineExerciseItem } from './RoutineExerciseItem'
 import { routineReducer } from './routineReducer'
@@ -104,6 +105,21 @@ export function RoutineEditor({ initialRoutine, mode }) {
       setDuplicating(false)
     }
   }, [user, isNew, duplicating, routine, navigate])
+
+  const handleExport = useCallback(() => {
+    if (isNew) return
+    try {
+      // Exports the routine as currently shown — a single pass over the
+      // in-memory object, no Firestore read.
+      downloadRoutineExport(routine)
+      setSaveState({ status: 'idle', message: '' })
+    } catch (err) {
+      setSaveState({
+        status: 'error',
+        message: err?.message || 'Could not export this routine.'
+      })
+    }
+  }, [isNew, routine])
 
   const handleBack = useCallback(async () => {
     if (isDirty) {
@@ -218,6 +234,16 @@ export function RoutineEditor({ initialRoutine, mode }) {
             disabled={duplicating || deleting}
           >
             {duplicating ? 'Duplicating…' : 'Duplicate'}
+          </button>
+        )}
+        {!isNew && (
+          <button
+            type="button"
+            className={styles.export}
+            onClick={handleExport}
+            disabled={duplicating || deleting}
+          >
+            Export
           </button>
         )}
         {!isNew && (

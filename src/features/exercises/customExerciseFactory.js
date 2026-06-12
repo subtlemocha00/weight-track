@@ -31,10 +31,18 @@ export const CUSTOM_EXERCISE_SOURCE = 'custom'
  * @param {string[]} [input.instructions]
  * @param {string|null} [input.difficulty]
  * @param {boolean} [input.isBodyweight]
+ * @param {string|null} [input.videoUrl] Optional instructional video link.
  */
 export function createCustomExercise(input = {}) {
   const now = Date.now()
   const name = typeof input.name === 'string' ? input.name.trim() : ''
+  // Optional instructional video link. Stored as a trimmed string, or null when
+  // omitted/blank — never an empty string, so the "has video" check is a simple
+  // truthiness test everywhere downstream.
+  const videoUrl =
+    typeof input.videoUrl === 'string' && input.videoUrl.trim()
+      ? input.videoUrl.trim()
+      : null
 
   return {
     id: input.id || newId(),
@@ -50,6 +58,7 @@ export function createCustomExercise(input = {}) {
     difficulty: input.difficulty ?? null,
     isBodyweight:
       typeof input.isBodyweight === 'boolean' ? input.isBodyweight : false,
+    videoUrl,
     createdAt: input.createdAt || now,
     updatedAt: now
   }

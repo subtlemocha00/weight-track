@@ -1,4 +1,41 @@
-import exercises from '../../data/exercises.json'
+import rawExercises from '../../data/exercises.json'
+
+/**
+ * Runtime normalization for any exercise object (built-in, custom, or imported).
+ * Guarantees an optional `videoUrl` property always exists — defaulting to null
+ * — so every consumer can read `exercise.videoUrl` without a presence check and
+ * a future import never has to backfill the field. Additive only: all other
+ * fields are passed through untouched.
+ */
+export function normalizeExercise(exercise) {
+  if (!exercise) return exercise
+  return {
+    ...exercise,
+    videoUrl: exercise.videoUrl ?? null
+  }
+}
+
+/**
+ * Whether a stored video URL is safe to open in a new tab. Only absolute
+ * http(s) URLs qualify; this blocks `javascript:`/`data:` schemes and empty
+ * values. Used by both the storage normalizer and the watch button so the
+ * "show button" and "open link" decisions never diverge.
+ */
+export function isSafeVideoUrl(url) {
+  if (typeof url !== 'string') return false
+  const trimmed = url.trim()
+  if (!trimmed) return false
+  try {
+    const { protocol } = new URL(trimmed)
+    return protocol === 'http:' || protocol === 'https:'
+  } catch {
+    return false
+  }
+}
+
+// The static built-in library, normalized once at module load so every exercise
+// object carries `videoUrl` (built-in data has none today, so all default null).
+const exercises = rawExercises.map(normalizeExercise)
 
 let byIdIndex = null
 function getByIdIndex() {
@@ -55,11 +92,14 @@ export function searchExercises(query) {
 // built-in and custom exercises: custom exercises have null bodyPart/equipment
 // and empty muscle arrays, so an active metadata filter naturally excludes them
 // (e.g. null !== 'chest'), while a plain name search still matches them.
-function matchesFilters(ex, { q, bodyPart, muscle, equipment, difficulty }) {
+function matchesFilters(ex, { q, bodyPart, muscle, equipment, difficulty, source }) {
   if (q && !ex.name.toLowerCase().includes(q)) return false
   if (bodyPart && ex.bodyPart !== bodyPart) return false
   if (equipment && ex.equipment !== equipment) return false
   if (difficulty && ex.difficulty !== difficulty) return false
+  // Source: custom exercises carry source: 'custom'; built-ins have no source.
+  if (source === 'custom' && ex.source !== 'custom') return false
+  if (source === 'builtin' && ex.source === 'custom') return false
   if (muscle) {
     const hit =
       ex.targetMuscles.includes(muscle) || ex.secondaryMuscles.includes(muscle)
@@ -68,8 +108,8 @@ function matchesFilters(ex, { q, bodyPart, muscle, equipment, difficulty }) {
   return true
 }
 
-function hasNoFilters({ query, bodyPart, muscle, equipment, difficulty }) {
-  return !query && !bodyPart && !muscle && !equipment && !difficulty
+function hasNoFilters({ query, bodyPart, muscle, equipment, difficulty, source }) {
+  return !query && !bodyPart && !muscle && !equipment && !difficulty && !source
 }
 
 export function filterExercises(filters = {}) {

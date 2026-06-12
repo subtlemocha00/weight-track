@@ -31,7 +31,9 @@
       "Bash(curl -s -o /dev/null -w \"/workout/abc → %{http_code}\\\\n\" http://localhost:5179/workout/abc)",
       "Bash(npm run *)",
       "Bash(npx eslint *)",
-      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('react', p.dependencies.react\\)\")"
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('react', p.dependencies.react\\)\")",
+      "PowerShell(npx vitest run 2>&1 | Select-Object -Last 8; Write-Output \"=== LINT ===\"; npx eslint src/features/routines 2>&1; Write-Output \"LINT_EXIT=$LASTEXITCODE\")",
+      "PowerShell(npx vite build 2>&1 | Select-String -Pattern \"RoutinePage|NewRoutine|built in|error\" | Select-Object -Last 6; Write-Output \"BUILD_EXIT=$LASTEXITCODE\")"
     ]
   }
 }

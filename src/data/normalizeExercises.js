@@ -82,7 +82,11 @@ function normalizeOne(raw, folderName) {
     equipment: typeof raw.equipment === 'string' ? raw.equipment : 'other',
     instructions: Array.isArray(raw.instructions) ? raw.instructions : [],
     difficulty: DIFFICULTY_MAP[raw.level] ?? null,
-    isBodyweight: raw.equipment === 'body only'
+    isBodyweight: raw.equipment === 'body only',
+    // Optional instructional video link. The wrkout dataset has none, so this
+    // defaults to null; the field is kept so regenerating the dataset preserves
+    // the app's normalized exercise shape (see normalizeExercise at runtime).
+    videoUrl: typeof raw.videoUrl === 'string' ? raw.videoUrl : null
   }
 }
 

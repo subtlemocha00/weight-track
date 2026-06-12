@@ -26,13 +26,27 @@ export function ExerciseFilters({
   muscle,
   equipment,
   difficulty,
+  source,
   onBodyPartChange,
   onMuscleChange,
   onEquipmentChange,
-  onDifficultyChange
+  onDifficultyChange,
+  onSourceChange
 }) {
   return (
     <div className={styles.filters}>
+      <label className={styles.field}>
+        <span className={styles.label}>Source</span>
+        <select
+          className={styles.select}
+          value={source}
+          onChange={(e) => onSourceChange(e.target.value)}
+        >
+          <option value="">All exercises</option>
+          <option value="builtin">Built-in only</option>
+          <option value="custom">Custom only</option>
+        </select>
+      </label>
       <Select
         label="Body part"
         value={bodyPart}

@@ -50,6 +50,26 @@
   cursor: default;
 }
 
+.addCustom {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--neon-blue);
+  border: 1.5px solid var(--neon-blue);
+  clip-path: polygon(0 0, calc(100% - 7px) 0, 100% 7px, 100% 100%, 7px 100%, 0 calc(100% - 7px));
+  transition: all 0.12s;
+  cursor: pointer;
+}
+
+.addCustom:hover {
+  background: rgba(0, 194, 255, 0.08);
+  box-shadow: 0 0 16px rgba(0, 194, 255, 0.25);
+}
+
 .list {
   list-style: none;
   margin: 0;

@@ -2,7 +2,10 @@ import { describe, it, expect } from 'vitest'
 import {
   filterExercises,
   filterAllExercises,
-  getCombinedFilterOptions
+  getCombinedFilterOptions,
+  getAllExercises,
+  normalizeExercise,
+  isSafeVideoUrl
 } from './index'
 
 const customExercises = [
@@ -56,6 +59,18 @@ describe('filterAllExercises', () => {
   it('falls back to built-in-only behavior with no custom list', () => {
     expect(filterAllExercises({})).toBe(filterExercises({}))
   })
+
+  it('source=custom returns only custom exercises', () => {
+    const results = filterAllExercises({ source: 'custom' }, customExercises)
+    expect(results.length).toBe(customExercises.length)
+    expect(results.every((e) => e.source === 'custom')).toBe(true)
+  })
+
+  it('source=builtin excludes all custom exercises', () => {
+    const results = filterAllExercises({ source: 'builtin' }, customExercises)
+    expect(results.some((e) => e.source === 'custom')).toBe(false)
+    expect(results.length).toBe(filterExercises({}).length)
+  })
 })
 
 describe('getCombinedFilterOptions', () => {
@@ -69,5 +84,34 @@ describe('getCombinedFilterOptions', () => {
   it('returns the cached built-in options when no custom exercises', () => {
     const options = getCombinedFilterOptions([])
     expect(options.muscles).not.toContain('custom-pec')
+  })
+})
+
+describe('normalizeExercise', () => {
+  it('defaults a missing videoUrl to null', () => {
+    expect(normalizeExercise({ id: 'x', name: 'X' }).videoUrl).toBe(null)
+  })
+
+  it('preserves an existing videoUrl and all other fields', () => {
+    const ex = { id: 'x', name: 'X', videoUrl: 'https://v', bodyPart: 'chest' }
+    expect(normalizeExercise(ex)).toEqual(ex)
+  })
+
+  it('every built-in exercise carries a videoUrl property', () => {
+    expect(getAllExercises().every((e) => 'videoUrl' in e)).toBe(true)
+  })
+})
+
+describe('isSafeVideoUrl', () => {
+  it('accepts http(s) URLs', () => {
+    expect(isSafeVideoUrl('https://youtu.be/abc')).toBe(true)
+    expect(isSafeVideoUrl('http://example.com/v')).toBe(true)
+  })
+
+  it('rejects unsafe schemes, blanks, and non-strings', () => {
+    expect(isSafeVideoUrl('javascript:alert(1)')).toBe(false)
+    expect(isSafeVideoUrl('not a url')).toBe(false)
+    expect(isSafeVideoUrl('')).toBe(false)
+    expect(isSafeVideoUrl(null)).toBe(false)
   })
 })
