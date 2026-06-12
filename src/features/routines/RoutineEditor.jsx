@@ -1,9 +1,11 @@
-import { useCallback, useReducer, useRef, useState } from 'react'
+import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { useConfirm } from '../../hooks/useConfirm'
 import { deleteRoutine, duplicateRoutine, saveRoutine } from '../../services/routines'
+import { resolveExerciseById } from '../../services/exercises'
+import { listCustomExercises } from '../../services/customExercises'
 import { AppHeader } from '../../components/AppHeader'
 import { downloadRoutineExport } from './exportRoutine'
 import { AddExercisePanel } from './AddExercisePanel'
@@ -16,6 +18,10 @@ export function RoutineEditor({ initialRoutine, mode }) {
   const navigate = useNavigate()
 
   const [routine, dispatch] = useReducer(routineReducer, initialRoutine)
+  // Loaded once so an exercise's instructions (which live on the exercise
+  // database, not on the routine template) can be resolved for both built-in
+  // and custom exercises. Non-fatal if it fails — items just omit the panel.
+  const [customExercises, setCustomExercises] = useState([])
   const [saveState, setSaveState] = useState({ status: 'idle', message: '' })
   const [deleting, setDeleting] = useState(false)
   const [duplicating, setDuplicating] = useState(false)
@@ -29,6 +35,21 @@ export function RoutineEditor({ initialRoutine, mode }) {
 
   // Warn on browser close / refresh when there are unsaved changes
   useBeforeUnload(isDirty)
+
+  useEffect(() => {
+    if (!user) return
+    let cancelled = false
+    listCustomExercises(user.uid)
+      .then((list) => {
+        if (!cancelled) setCustomExercises(list)
+      })
+      .catch(() => {
+        // Non-fatal: built-in exercises still resolve their instructions.
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [user])
 
   const dirtyDispatch = useCallback(
     (action) => {
@@ -178,6 +199,10 @@ export function RoutineEditor({ initialRoutine, mode }) {
               index={index}
               isFirst={index === 0}
               isLast={index === routine.exercises.length - 1}
+              instructions={
+                resolveExerciseById(exercise.exerciseId, customExercises)
+                  ?.instructions ?? []
+              }
               onRemove={() => dirtyDispatch({ type: 'REMOVE_EXERCISE', index })}
               onMoveUp={() =>
                 dirtyDispatch({ type: 'MOVE_EXERCISE', from: index, to: index - 1 })

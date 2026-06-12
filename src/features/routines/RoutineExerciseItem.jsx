@@ -7,6 +7,7 @@ function RoutineExerciseItemImpl({
   index,
   isFirst,
   isLast,
+  instructions = [],
   onRemove,
   onMoveUp,
   onMoveDown,
@@ -58,6 +59,17 @@ function RoutineExerciseItemImpl({
       </div>
 
       <div className={styles.body}>
+        {instructions.length > 0 && (
+          <details className={styles.instructionsPanel}>
+            <summary className={styles.instructionsToggle}>Instructions</summary>
+            <ol className={styles.instructions}>
+              {instructions.map((step, stepIndex) => (
+                <li key={stepIndex}>{step}</li>
+              ))}
+            </ol>
+          </details>
+        )}
+
         <div className={styles.unitRow}>
           <span className={styles.unitLabel}>Unit</span>
           <div
