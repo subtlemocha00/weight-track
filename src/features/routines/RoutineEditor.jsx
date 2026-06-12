@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { useConfirm } from '../../hooks/useConfirm'
-import { deleteRoutine, saveRoutine } from '../../services/routines'
+import { deleteRoutine, duplicateRoutine, saveRoutine } from '../../services/routines'
 import { AppHeader } from '../../components/AppHeader'
 import { AddExercisePanel } from './AddExercisePanel'
 import { RoutineExerciseItem } from './RoutineExerciseItem'
@@ -17,6 +17,7 @@ export function RoutineEditor({ initialRoutine, mode }) {
   const [routine, dispatch] = useReducer(routineReducer, initialRoutine)
   const [saveState, setSaveState] = useState({ status: 'idle', message: '' })
   const [deleting, setDeleting] = useState(false)
+  const [duplicating, setDuplicating] = useState(false)
   const [isDirty, setIsDirty] = useState(false)
   // Track whether this is the initial mount dispatch (LOAD after save)
   const suppressDirty = useRef(false)
@@ -85,6 +86,24 @@ export function RoutineEditor({ initialRoutine, mode }) {
       setDeleting(false)
     }
   }, [user, isNew, routine.id, routine.name, navigate])
+
+  const handleDuplicate = useCallback(async () => {
+    if (!user || isNew || duplicating) return
+    setSaveState({ status: 'idle', message: '' })
+    setDuplicating(true)
+    try {
+      // Copies the routine as currently shown (single write, no re-fetch). On
+      // failure nothing is created and the user stays on the original.
+      const created = await duplicateRoutine(user.uid, routine)
+      navigate(`/routine/${created.id}`)
+    } catch (err) {
+      setSaveState({
+        status: 'error',
+        message: err?.message || 'Could not duplicate this routine.'
+      })
+      setDuplicating(false)
+    }
+  }, [user, isNew, duplicating, routine, navigate])
 
   const handleBack = useCallback(async () => {
     if (isDirty) {
@@ -194,9 +213,19 @@ export function RoutineEditor({ initialRoutine, mode }) {
         {!isNew && (
           <button
             type="button"
+            className={styles.duplicate}
+            onClick={handleDuplicate}
+            disabled={duplicating || deleting}
+          >
+            {duplicating ? 'Duplicating…' : 'Duplicate'}
+          </button>
+        )}
+        {!isNew && (
+          <button
+            type="button"
             className={styles.delete}
             onClick={handleDelete}
-            disabled={deleting}
+            disabled={deleting || duplicating}
           >
             {deleting ? 'Deleting…' : 'Delete'}
           </button>
