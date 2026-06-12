@@ -1,8 +1,9 @@
 import { memo } from 'react'
 import { WatchVideoButton } from './WatchVideoButton'
+import { AddToRoutineSelect } from './AddToRoutineSelect'
 import styles from './ExerciseCard.module.css'
 
-function ExerciseCardImpl({ exercise, onEdit }) {
+function ExerciseCardImpl({ exercise, onEdit, routines, onAddToRoutine }) {
   const isCustom = exercise.source === 'custom'
   const primaryMuscle = exercise.targetMuscles[0] ?? null
   const canEdit = isCustom && typeof onEdit === 'function'
@@ -56,6 +57,13 @@ function ExerciseCardImpl({ exercise, onEdit }) {
         )}
 
         <WatchVideoButton exercise={exercise} />
+
+        {typeof onAddToRoutine === 'function' && (
+          <AddToRoutineSelect
+            routines={routines}
+            onAdd={(routineId) => onAddToRoutine(exercise, routineId)}
+          />
+        )}
 
         {canEdit && (
           <button

@@ -11,6 +11,8 @@ import {
   listCustomExercises,
   saveCustomExercise
 } from '../services/customExercises'
+import { getRoutine, listRoutines, saveRoutine } from '../services/routines'
+import { createRoutineExercise } from '../features/routines/routineFactory'
 import { ExerciseCard } from '../features/exercises/ExerciseCard'
 import { ExerciseFilters } from '../features/exercises/ExerciseFilters'
 import { CustomExerciseEditor } from '../features/exercises/CustomExerciseEditor'
@@ -44,6 +46,10 @@ export function ExercisesPage() {
   // Custom exercises are loaded once per session and kept in state, so every
   // keystroke filters in-memory with no further Firestore reads.
   const [customExercises, setCustomExercises] = useState([])
+  // Routines populate each card's "Add to routine" dropdown. Only id + name are
+  // needed here; the append always re-fetches the routine fresh before saving,
+  // so this cached list never goes stale in a way that matters.
+  const [routines, setRoutines] = useState([])
 
   const [editing, setEditing] = useState(null)
   const [creating, setCreating] = useState(false)
@@ -61,6 +67,21 @@ export function ExercisesPage() {
       })
       .catch(() => {
         // Non-fatal: the library still shows built-in exercises.
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [user])
+
+  useEffect(() => {
+    if (!user) return
+    let cancelled = false
+    listRoutines(user.uid)
+      .then((list) => {
+        if (!cancelled) setRoutines(list)
+      })
+      .catch(() => {
+        // Non-fatal: the "Add to routine" dropdown just shows no routines.
       })
     return () => {
       cancelled = true
@@ -164,6 +185,32 @@ export function ExercisesPage() {
     [user, nameConflicts]
   )
 
+  // Append an exercise to the end of an existing routine and persist it. The
+  // routine is re-fetched fresh so a concurrently edited routine isn't clobbered
+  // by stale cached data, then the new exercise (default sets/reps via the same
+  // factory the routine builder uses) is added last and saved. The user fills in
+  // sets/reps/weight later inside the routine page as usual.
+  const handleAddToRoutine = useCallback(
+    async (exercise, routineId) => {
+      if (!user) return
+      const routine = await getRoutine(user.uid, routineId)
+      if (!routine) throw new Error('That routine no longer exists.')
+      const exercises = Array.isArray(routine.exercises) ? routine.exercises : []
+      const updated = {
+        ...routine,
+        exercises: [...exercises, createRoutineExercise(exercise, exercises.length)]
+      }
+      const saved = await saveRoutine(user.uid, updated)
+      // Keep the cached list ordered like Home (most-recently-updated first) so
+      // the dropdown reflects the new order without a re-read.
+      setRoutines((prev) => [
+        { id: saved.id, name: saved.name },
+        ...prev.filter((r) => r.id !== saved.id)
+      ])
+    },
+    [user]
+  )
+
   const handleDeleteEdit = useCallback(
     async (target) => {
       if (!user || !target) return
@@ -239,7 +286,12 @@ export function ExercisesPage() {
         <ul className={styles.list}>
           {results.map((exercise) => (
             <li key={exercise.id}>
-              <ExerciseCard exercise={exercise} onEdit={handleEdit} />
+              <ExerciseCard
+                exercise={exercise}
+                onEdit={handleEdit}
+                routines={routines}
+                onAddToRoutine={handleAddToRoutine}
+              />
             </li>
           ))}
         </ul>
