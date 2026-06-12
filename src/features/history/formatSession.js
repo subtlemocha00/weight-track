@@ -42,10 +42,3 @@ export function countCompletedSets(exercise) {
   if (!exercise?.sets) return 0
   return exercise.sets.filter((s) => s.completed).length
 }
-
-/** Format an integer as an English ordinal: 1 -> "1st", 2 -> "2nd", 11 -> "11th". */
-export function ordinal(n) {
-  const suffixes = ['th', 'st', 'nd', 'rd']
-  const v = n % 100
-  return `${n}${suffixes[(v - 20) % 10] || suffixes[v] || suffixes[0]}`
-}

@@ -8,8 +8,7 @@ import { RunDetail } from '../features/history/RunDetail'
 import { SessionEditForm } from '../features/history/SessionEditForm'
 import {
   formatDateTime,
-  formatDuration,
-  ordinal
+  formatDuration
 } from '../features/history/formatSession'
 import styles from './HistoryDetailPage.module.css'
 
@@ -180,9 +179,9 @@ export function HistoryDetailPage() {
               <dt>Completion</dt>
               <dd>
                 <span className={styles.completionNum}>
-                  {ordinal(completionNumber)}
+                  {completionNumber}
                 </span>{' '}
-                time
+                {completionNumber === 1 ? 'time' : 'times'}
               </dd>
             </div>
           )}
