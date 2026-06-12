@@ -1,8 +1,17 @@
-import { useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useAuth } from '../hooks/useAuth'
 import { AppHeader } from '../components/AppHeader'
-import { filterExercises, getFilterOptions } from '../services/exercises'
+import {
+  filterAllExercises,
+  getCombinedFilterOptions
+} from '../services/exercises'
+import {
+  listCustomExercises,
+  saveCustomExercise
+} from '../services/customExercises'
 import { ExerciseCard } from '../features/exercises/ExerciseCard'
 import { ExerciseFilters } from '../features/exercises/ExerciseFilters'
+import { CustomExerciseEditor } from '../features/exercises/CustomExerciseEditor'
 import styles from './ExercisesPage.module.css'
 
 const INITIAL_FILTERS = {
@@ -14,16 +23,76 @@ const INITIAL_FILTERS = {
 }
 
 export function ExercisesPage() {
+  const { user } = useAuth()
   const [filters, setFilters] = useState(INITIAL_FILTERS)
+  // Custom exercises are loaded once per session and kept in state, so every
+  // keystroke filters in-memory with no further Firestore reads.
+  const [customExercises, setCustomExercises] = useState([])
 
-  const options = useMemo(() => getFilterOptions(), [])
+  const [editing, setEditing] = useState(null)
+  const [saving, setSaving] = useState(false)
+  const [saveError, setSaveError] = useState('')
 
-  const results = useMemo(() => filterExercises(filters), [filters])
+  useEffect(() => {
+    if (!user) return
+    let cancelled = false
+    listCustomExercises(user.uid)
+      .then((list) => {
+        if (!cancelled) setCustomExercises(list)
+      })
+      .catch(() => {
+        // Non-fatal: the library still shows built-in exercises.
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [user])
+
+  const options = useMemo(
+    () => getCombinedFilterOptions(customExercises),
+    [customExercises]
+  )
+
+  const results = useMemo(
+    () => filterAllExercises(filters, customExercises),
+    [filters, customExercises]
+  )
 
   const update = (key) => (value) =>
     setFilters((prev) => ({ ...prev, [key]: value }))
 
   const hasAnyFilter = Object.values(filters).some(Boolean)
+
+  const handleEdit = useCallback((exercise) => {
+    setSaveError('')
+    setEditing(exercise)
+  }, [])
+
+  const handleCancelEdit = useCallback(() => {
+    if (!saving) setEditing(null)
+  }, [saving])
+
+  const handleSaveEdit = useCallback(
+    async (updated) => {
+      if (!user) return
+      setSaving(true)
+      setSaveError('')
+      try {
+        const saved = await saveCustomExercise(user.uid, updated)
+        // Update the cached list in place so the library + filters reflect the
+        // edit immediately, without re-reading Firestore.
+        setCustomExercises((prev) =>
+          prev.map((e) => (e.id === saved.id ? saved : e))
+        )
+        setEditing(null)
+      } catch (err) {
+        setSaveError(err?.message || 'Failed to save changes.')
+      } finally {
+        setSaving(false)
+      }
+    },
+    [user]
+  )
 
   return (
     <section className={styles.page}>
@@ -70,10 +139,21 @@ export function ExercisesPage() {
         <ul className={styles.list}>
           {results.map((exercise) => (
             <li key={exercise.id}>
-              <ExerciseCard exercise={exercise} />
+              <ExerciseCard exercise={exercise} onEdit={handleEdit} />
             </li>
           ))}
         </ul>
+      )}
+
+      {editing && (
+        <CustomExerciseEditor
+          exercise={editing}
+          options={options}
+          saving={saving}
+          error={saveError}
+          onSave={handleSaveEdit}
+          onCancel={handleCancelEdit}
+        />
       )}
     </section>
   )

@@ -1,8 +1,10 @@
 import { memo } from 'react'
 import styles from './ExerciseCard.module.css'
 
-function ExerciseCardImpl({ exercise }) {
-  const primaryMuscle = exercise.targetMuscles[0] ?? '—'
+function ExerciseCardImpl({ exercise, onEdit }) {
+  const isCustom = exercise.source === 'custom'
+  const primaryMuscle = exercise.targetMuscles[0] ?? null
+  const canEdit = isCustom && typeof onEdit === 'function'
 
   return (
     <details className={styles.card}>
@@ -10,9 +12,20 @@ function ExerciseCardImpl({ exercise }) {
         <div className={styles.summaryContent}>
           <span className={styles.name}>{exercise.name}</span>
           <div className={styles.meta}>
-            <span className={styles.metaItem}>{exercise.bodyPart}</span>
-            <span className={styles.metaItem}>{exercise.equipment}</span>
-            <span className={styles.metaItem}>{primaryMuscle}</span>
+            {isCustom && (
+              <span className={`${styles.metaItem} ${styles.customBadge}`}>
+                Custom
+              </span>
+            )}
+            {exercise.bodyPart && (
+              <span className={styles.metaItem}>{exercise.bodyPart}</span>
+            )}
+            {exercise.equipment && (
+              <span className={styles.metaItem}>{exercise.equipment}</span>
+            )}
+            {primaryMuscle && (
+              <span className={styles.metaItem}>{primaryMuscle}</span>
+            )}
           </div>
         </div>
         <span className={styles.expandIcon} aria-hidden="true">+</span>
@@ -39,6 +52,16 @@ function ExerciseCardImpl({ exercise }) {
               <li key={idx}>{step}</li>
             ))}
           </ol>
+        )}
+
+        {canEdit && (
+          <button
+            type="button"
+            className={styles.edit}
+            onClick={() => onEdit(exercise)}
+          >
+            Edit exercise
+          </button>
         )}
       </div>
     </details>

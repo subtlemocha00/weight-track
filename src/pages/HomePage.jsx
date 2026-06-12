@@ -160,9 +160,14 @@ export function HomePage() {
 
       <div className={styles.titleRow}>
         <h1 className={styles.title}>Your routines</h1>
-        <Link to="/routine/new" className={styles.cta}>
-          + New
-        </Link>
+        <div className={styles.titleActions}>
+          <Link to="/import" className={styles.ctaSecondary}>
+            ⤓ Import
+          </Link>
+          <Link to="/routine/new" className={styles.cta}>
+            + New
+          </Link>
+        </div>
       </div>
 
       {error && <div className={styles.error}>{error}</div>}

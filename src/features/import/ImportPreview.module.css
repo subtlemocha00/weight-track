@@ -1,0 +1,239 @@
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 13px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.headLabel {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--t2);
+}
+
+.routineName {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--t1);
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.badgeBuiltin,
+.badgeCustom,
+.badgeMissing {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 7px;
+  font-family: 'Space Mono', monospace;
+  border: 1px solid var(--border);
+}
+
+.badgeBuiltin {
+  color: var(--neon-green);
+}
+
+.badgeCustom {
+  color: var(--neon-blue);
+}
+
+.badgeMissing {
+  color: var(--neon-orange);
+}
+
+.errors {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 11px 14px;
+  border: 1.5px solid var(--neon-pink);
+  background: rgba(255, 45, 120, 0.08);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+
+.errorsTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--neon-pink);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.errorList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--t1);
+}
+
+.errorPath {
+  font-weight: 700;
+  color: var(--neon-pink);
+  margin-right: 6px;
+  font-family: 'Space Mono', monospace;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.day {
+  background: var(--card);
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  padding: 12px 16px;
+}
+
+.dayName {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--t1);
+  margin-bottom: 8px;
+}
+
+.exerciseList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exercise {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 0;
+  border-top: 1px solid var(--border);
+}
+
+.exercise:first-child {
+  border-top: none;
+}
+
+.exerciseMain {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.exerciseName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--t1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.setsReps {
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--neon-green);
+  font-family: 'Space Mono', monospace;
+}
+
+.tagBuiltin,
+.tagCustom,
+.tagMissing {
+  flex-shrink: 0;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 5px;
+  font-family: 'Space Mono', monospace;
+}
+
+.tagBuiltin {
+  color: var(--neon-green);
+  border: 1px solid rgba(0, 255, 38, 0.4);
+}
+
+.tagCustom {
+  color: var(--neon-blue);
+  border: 1px solid rgba(0, 194, 255, 0.4);
+}
+
+.tagMissing {
+  color: var(--neon-orange);
+  border: 1px solid rgba(255, 140, 26, 0.4);
+}
+
+.saveError {
+  padding: 10px 12px;
+  border: 1.5px solid var(--neon-pink);
+  background: rgba(255, 45, 120, 0.08);
+  color: var(--neon-pink);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.cancel {
+  padding: 9px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--t2);
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+
+.import {
+  padding: 9px 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: var(--neon-green);
+  color: #07070f;
+  border: 1.5px solid var(--neon-green);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  box-shadow: 0 0 18px rgba(0, 255, 38, 0.33);
+  transition: all 0.08s;
+}
+
+.import:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  box-shadow: none;
+}

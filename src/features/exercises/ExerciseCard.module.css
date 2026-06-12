@@ -58,6 +58,12 @@
   white-space: nowrap;
 }
 
+.customBadge {
+  color: var(--neon-blue);
+  border-color: rgba(0, 194, 255, 0.45);
+  background: rgba(0, 194, 255, 0.08);
+}
+
 .expandIcon {
   font-size: 18px;
   line-height: 1;
@@ -109,4 +115,19 @@
   font-size: 12px;
   line-height: 1.65;
   color: var(--t1);
+}
+
+.edit {
+  align-self: flex-start;
+  margin-top: 2px;
+  padding: 7px 13px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--neon-blue);
+  border: 1.5px solid var(--neon-blue);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  transition: all 0.1s;
 }

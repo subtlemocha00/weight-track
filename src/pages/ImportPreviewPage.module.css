@@ -1,0 +1,16 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background-image: radial-gradient(circle, var(--dot) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.loading {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: var(--t2);
+  font-size: 13px;
+}
