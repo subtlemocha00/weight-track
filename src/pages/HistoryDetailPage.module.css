@@ -8,12 +8,6 @@
   background-size: 20px 20px;
 }
 
-.backRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .editBtn {
   padding: 5px 14px;
   font-size: 11px;
@@ -30,19 +24,6 @@
 .editBtn:hover {
   background: rgba(0, 255, 157, 0.08);
   border-color: var(--neon-green);
-}
-
-.back {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--neon-green);
-  padding: 4px 0;
-  transition: opacity 0.1s;
-}
-
-.back:hover {
-  opacity: 0.8;
 }
 
 .header {
@@ -108,6 +89,11 @@
   color: var(--t2);
   font-family: 'Space Mono', monospace;
   font-size: 12px;
+}
+
+.completionNum {
+  color: var(--neon-green);
+  font-weight: 700;
 }
 
 .exercises {

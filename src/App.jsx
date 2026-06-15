@@ -24,6 +24,14 @@ const HistoryDetailPage = lazy(() =>
 const SettingsPage = lazy(() =>
   import('./pages/SettingsPage').then((m) => ({ default: m.SettingsPage }))
 )
+const ImportPage = lazy(() =>
+  import('./pages/ImportPage').then((m) => ({ default: m.ImportPage }))
+)
+const ImportPreviewPage = lazy(() =>
+  import('./pages/ImportPreviewPage').then((m) => ({
+    default: m.ImportPreviewPage
+  }))
+)
 
 function Protected({ element }) {
   return <ProtectedRoute>{element}</ProtectedRoute>
@@ -55,6 +63,30 @@ export function App() {
               <Route
                 path="routine/new"
                 element={<Protected element={<NewRoutinePage />} />}
+              />
+              <Route
+                path="import"
+                element={
+                  <Protected
+                    element={
+                      <Suspense fallback={null}>
+                        <ImportPage />
+                      </Suspense>
+                    }
+                  />
+                }
+              />
+              <Route
+                path="import/preview"
+                element={
+                  <Protected
+                    element={
+                      <Suspense fallback={null}>
+                        <ImportPreviewPage />
+                      </Suspense>
+                    }
+                  />
+                }
               />
               <Route
                 path="routine/:id"

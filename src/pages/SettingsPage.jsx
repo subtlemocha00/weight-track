@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useAuth } from '../hooks/useAuth'
+import { AppHeader } from '../components/AppHeader'
 import { useSettings } from '../hooks/useSettings'
 import { useInstallPrompt } from '../hooks/useInstallPrompt'
 import {
@@ -56,7 +57,7 @@ export function SettingsPage() {
 
   return (
     <section className={styles.page}>
-      <h1 className={styles.title}>Settings</h1>
+      <AppHeader title="Settings" />
 
       {loadError && <div className={styles.error}>{loadError}</div>}
       {isLoading && <div className={styles.loading}>Loading…</div>}
@@ -171,7 +172,8 @@ export function SettingsPage() {
           </div>
         </div>
 
-        <div className={styles.card}>
+        {/* Don't need this and it doesn't even work anyways */}
+        {/*<div className={styles.card}>
           <span className={styles.cardLabel}>App</span>
           <div className={styles.settingRow}>
             <div>
@@ -198,7 +200,7 @@ export function SettingsPage() {
               </button>
             ) : null}
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.card}>
           <span className={styles.cardLabel}>Account</span>

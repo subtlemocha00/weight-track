@@ -1,9 +1,13 @@
-import { useCallback, useReducer, useRef, useState } from 'react'
+import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { useConfirm } from '../../hooks/useConfirm'
-import { deleteRoutine, saveRoutine } from '../../services/routines'
+import { deleteRoutine, duplicateRoutine, saveRoutine } from '../../services/routines'
+import { resolveExerciseById } from '../../services/exercises'
+import { listCustomExercises } from '../../services/customExercises'
+import { AppHeader } from '../../components/AppHeader'
+import { downloadRoutineExport } from './exportRoutine'
 import { AddExercisePanel } from './AddExercisePanel'
 import { RoutineExerciseItem } from './RoutineExerciseItem'
 import { routineReducer } from './routineReducer'
@@ -14,8 +18,13 @@ export function RoutineEditor({ initialRoutine, mode }) {
   const navigate = useNavigate()
 
   const [routine, dispatch] = useReducer(routineReducer, initialRoutine)
+  // Loaded once so an exercise's instructions (which live on the exercise
+  // database, not on the routine template) can be resolved for both built-in
+  // and custom exercises. Non-fatal if it fails — items just omit the panel.
+  const [customExercises, setCustomExercises] = useState([])
   const [saveState, setSaveState] = useState({ status: 'idle', message: '' })
   const [deleting, setDeleting] = useState(false)
+  const [duplicating, setDuplicating] = useState(false)
   const [isDirty, setIsDirty] = useState(false)
   // Track whether this is the initial mount dispatch (LOAD after save)
   const suppressDirty = useRef(false)
@@ -26,6 +35,21 @@ export function RoutineEditor({ initialRoutine, mode }) {
 
   // Warn on browser close / refresh when there are unsaved changes
   useBeforeUnload(isDirty)
+
+  useEffect(() => {
+    if (!user) return
+    let cancelled = false
+    listCustomExercises(user.uid)
+      .then((list) => {
+        if (!cancelled) setCustomExercises(list)
+      })
+      .catch(() => {
+        // Non-fatal: built-in exercises still resolve their instructions.
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [user])
 
   const dirtyDispatch = useCallback(
     (action) => {
@@ -85,6 +109,39 @@ export function RoutineEditor({ initialRoutine, mode }) {
     }
   }, [user, isNew, routine.id, routine.name, navigate])
 
+  const handleDuplicate = useCallback(async () => {
+    if (!user || isNew || duplicating) return
+    setSaveState({ status: 'idle', message: '' })
+    setDuplicating(true)
+    try {
+      // Copies the routine as currently shown (single write, no re-fetch). On
+      // failure nothing is created and the user stays on the original.
+      const created = await duplicateRoutine(user.uid, routine)
+      navigate(`/routine/${created.id}`)
+    } catch (err) {
+      setSaveState({
+        status: 'error',
+        message: err?.message || 'Could not duplicate this routine.'
+      })
+      setDuplicating(false)
+    }
+  }, [user, isNew, duplicating, routine, navigate])
+
+  const handleExport = useCallback(() => {
+    if (isNew) return
+    try {
+      // Exports the routine as currently shown — a single pass over the
+      // in-memory object, no Firestore read.
+      downloadRoutineExport(routine)
+      setSaveState({ status: 'idle', message: '' })
+    } catch (err) {
+      setSaveState({
+        status: 'error',
+        message: err?.message || 'Could not export this routine.'
+      })
+    }
+  }, [isNew, routine])
+
   const handleBack = useCallback(async () => {
     if (isDirty) {
       const ok = await confirm({
@@ -112,11 +169,7 @@ export function RoutineEditor({ initialRoutine, mode }) {
 
   return (
     <div className={styles.editor}>
-      <div className={styles.headerRow}>
-        <button type="button" className={styles.back} onClick={handleBack}>
-          ← Back
-        </button>
-      </div>
+      <AppHeader onBack={handleBack} />
 
       <label className={styles.nameField}>
         <span className={styles.nameLabel}>Routine name</span>
@@ -146,6 +199,10 @@ export function RoutineEditor({ initialRoutine, mode }) {
               index={index}
               isFirst={index === 0}
               isLast={index === routine.exercises.length - 1}
+              instructions={
+                resolveExerciseById(exercise.exerciseId, customExercises)
+                  ?.instructions ?? []
+              }
               onRemove={() => dirtyDispatch({ type: 'REMOVE_EXERCISE', index })}
               onMoveUp={() =>
                 dirtyDispatch({ type: 'MOVE_EXERCISE', from: index, to: index - 1 })
@@ -197,9 +254,29 @@ export function RoutineEditor({ initialRoutine, mode }) {
         {!isNew && (
           <button
             type="button"
+            className={styles.duplicate}
+            onClick={handleDuplicate}
+            disabled={duplicating || deleting}
+          >
+            {duplicating ? 'Duplicating…' : 'Duplicate'}
+          </button>
+        )}
+        {!isNew && (
+          <button
+            type="button"
+            className={styles.export}
+            onClick={handleExport}
+            disabled={duplicating || deleting}
+          >
+            Export
+          </button>
+        )}
+        {!isNew && (
+          <button
+            type="button"
             className={styles.delete}
             onClick={handleDelete}
-            disabled={deleting}
+            disabled={deleting || duplicating}
           >
             {deleting ? 'Deleting…' : 'Delete'}
           </button>

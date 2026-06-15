@@ -2,7 +2,11 @@ import { useCallback, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { listRoutines } from '../services/routines'
-import { markSessionAbandoned, startWorkout } from '../services/workoutSessions'
+import {
+  listCompletedSessions,
+  markSessionAbandoned,
+  startWorkout
+} from '../services/workoutSessions'
 import { readActiveWorkout, clearActiveWorkout } from '../utils/activeWorkout'
 import { QuickRunForm } from '../features/runs/QuickRunForm'
 import styles from './HomePage.module.css'
@@ -44,6 +48,7 @@ export function HomePage() {
   const { user } = useAuth()
   const navigate = useNavigate()
   const [routines, setRoutines] = useState(null)
+  const [completionCounts, setCompletionCounts] = useState({})
   const [error, setError] = useState(null)
   const [startingId, setStartingId] = useState(null)
   const [recoverySession, setRecoverySession] = useState(() => readActiveWorkout())
@@ -54,6 +59,8 @@ export function HomePage() {
     let cancelled = false
     setRoutines(null)
     setError(null)
+    setCompletionCounts({})
+
     listRoutines(user.uid)
       .then((data) => {
         if (!cancelled) setRoutines(data)
@@ -61,6 +68,26 @@ export function HomePage() {
       .catch((err) => {
         if (!cancelled) setError(err?.message || 'Failed to load routines.')
       })
+
+    // Completion counts are derived from workout history — the single source of
+    // truth. One query for all completed sessions, tallied by routineId, so
+    // there is no per-routine query (no N+1). Runs carry no routineId and are
+    // naturally excluded. Failures here are non-fatal: cards fall back to 0.
+    listCompletedSessions(user.uid)
+      .then((sessions) => {
+        if (cancelled) return
+        const counts = {}
+        for (const session of sessions) {
+          if (session.routineId) {
+            counts[session.routineId] = (counts[session.routineId] || 0) + 1
+          }
+        }
+        setCompletionCounts(counts)
+      })
+      .catch(() => {
+        // Non-fatal: leave counts empty so cards render "Completed: 0 times".
+      })
+
     return () => {
       cancelled = true
     }
@@ -133,9 +160,14 @@ export function HomePage() {
 
       <div className={styles.titleRow}>
         <h1 className={styles.title}>Your routines</h1>
-        <Link to="/routine/new" className={styles.cta}>
-          + New
-        </Link>
+        <div className={styles.titleActions}>
+          <Link to="/import" className={styles.ctaSecondary}>
+            ⤓ Import
+          </Link>
+          <Link to="/routine/new" className={styles.cta}>
+            + New
+          </Link>
+        </div>
       </div>
 
       {error && <div className={styles.error}>{error}</div>}
@@ -171,6 +203,13 @@ export function HomePage() {
                     {routine.updatedAt
                       ? ` · Updated ${formatUpdatedAt(routine.updatedAt)}`
                       : ''}
+                  </div>
+                  <div className={styles.rowCount}>
+                    Completed:{' '}
+                    <span className={styles.rowCountNum}>
+                      {completionCounts[routine.id] || 0}
+                    </span>{' '}
+                    times
                   </div>
                 </Link>
                 <button

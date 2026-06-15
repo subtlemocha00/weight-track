@@ -9,6 +9,7 @@ import {
   setDoc
 } from 'firebase/firestore'
 import { firestore } from '../firebase'
+import { createRoutineDuplicate } from '../../features/routines/routineFactory'
 
 function routinesCollection(uid) {
   return collection(firestore, 'users', uid, 'routines')
@@ -47,4 +48,20 @@ export async function saveRoutine(uid, routine) {
 
 export async function deleteRoutine(uid, routineId) {
   await deleteDoc(routineDocRef(uid, routineId))
+}
+
+/**
+ * Create an independent copy of a routine.
+ *
+ * Builds a deep-cloned duplicate (new id, "(Copy)" name, no original timestamps
+ * or history) and persists it through the normal saveRoutine path — a single
+ * write that stamps createdAt/updatedAt to now. The result is indistinguishable
+ * from a manually created routine.
+ *
+ * @param {string} uid
+ * @param {object} routine the source routine to copy
+ * @returns {Promise<object>} the saved duplicate (with its new id)
+ */
+export async function duplicateRoutine(uid, routine) {
+  return saveRoutine(uid, createRoutineDuplicate(routine))
 }
