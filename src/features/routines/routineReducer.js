@@ -2,6 +2,7 @@ import {
   createBlankSet,
   createRoutineExercise
 } from './routineFactory'
+import { assignSuperset } from '../../utils/supersets'
 
 function touch(state) {
   return { ...state, updatedAt: Date.now() }
@@ -67,11 +68,11 @@ export function routineReducer(state, action) {
         notes: action.notes
       }))
 
-    case 'UPDATE_SUPERSET_GROUP':
-      return updateExerciseAt(state, action.index, (exercise) => ({
-        ...exercise,
-        supersetGroup: action.group || null
-      }))
+    case 'ASSIGN_SUPERSET': {
+      const exercises = assignSuperset(state.exercises, action.index, action.supersetId)
+      if (exercises === state.exercises) return state
+      return touch({ ...state, exercises })
+    }
 
     case 'ADD_SET':
       return updateExerciseAt(state, action.index, (exercise) => ({

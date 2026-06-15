@@ -1,4 +1,5 @@
 import { createSessionExercise } from './sessionFactory'
+import { assignSuperset } from '../../utils/supersets'
 
 function reorderOrders(exercises) {
   return exercises.map((exercise, index) =>
@@ -81,6 +82,14 @@ export function sessionReducer(state, action) {
       const [moved] = next.splice(from, 1)
       next.splice(to, 0, moved)
       return { ...state, exercises: reorderOrders(next) }
+    }
+
+    case 'ASSIGN_SUPERSET': {
+      // Affects the active session only — superset edits never touch the routine
+      // template here (only the opt-in completion flow can).
+      const exercises = assignSuperset(state.exercises, action.index, action.supersetId)
+      if (exercises === state.exercises) return state
+      return { ...state, exercises }
     }
 
     case 'FINISH':

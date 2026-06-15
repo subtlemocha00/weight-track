@@ -7,6 +7,16 @@
   flex-direction: column;
 }
 
+/* Assigned to a superset: colored outline + accent strip down the left edge. */
+.item.assigned {
+  border-color: var(--ss-color);
+  box-shadow: inset 4px 0 0 0 var(--ss-color);
+}
+
+.item.assigned .header {
+  border-bottom-color: color-mix(in srgb, var(--ss-color) 40%, var(--border));
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -181,8 +191,7 @@
   color: var(--t3);
 }
 
-.notes,
-.superset {
+.notes {
   width: 100%;
   padding: 7px 10px;
   font-size: 13px;
@@ -192,12 +201,5 @@
   clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
   transition: border-color 0.15s;
   resize: vertical;
-}
-
-.notes {
   min-height: 2.5rem;
-}
-
-.superset {
-  font-family: 'Space Mono', monospace;
 }

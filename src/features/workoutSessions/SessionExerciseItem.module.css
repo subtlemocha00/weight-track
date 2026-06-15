@@ -10,6 +10,12 @@
   border-color: rgba(0, 255, 157, 0.4);
 }
 
+/* Assigned to a superset: colored outline + left accent strip. */
+.item.assigned {
+  border-color: var(--ss-color);
+  box-shadow: inset 4px 0 0 0 var(--ss-color);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -91,11 +97,12 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--t2);
+  color: var(--ss-color, var(--t2));
   padding: 2px 7px;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--ss-color) 14%, transparent);
+  border: 1px solid var(--ss-color, var(--border));
   clip-path: polygon(0 0, calc(100% - 3px) 0, 100% 3px, 100% 100%, 3px 100%, 0 calc(100% - 3px));
+  white-space: nowrap;
 }
 
 .body {

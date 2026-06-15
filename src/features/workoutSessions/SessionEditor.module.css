@@ -88,6 +88,24 @@
   gap: 8px;
 }
 
+/* Superset group banner shown above a run of exercises sharing a superset. */
+.supersetBanner {
+  margin-top: 4px;
+  padding: 5px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ss-color);
+  background: color-mix(in srgb, var(--ss-color) 12%, transparent);
+  border-left: 4px solid var(--ss-color);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+}
+
+.supersetBanner:first-child {
+  margin-top: 0;
+}
+
 .empty {
   padding: 1.25rem 1rem;
   text-align: center;

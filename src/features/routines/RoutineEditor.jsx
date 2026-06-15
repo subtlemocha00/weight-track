@@ -11,6 +11,7 @@ import { downloadRoutineExport } from './exportRoutine'
 import { AddExercisePanel } from './AddExercisePanel'
 import { RoutineExerciseItem } from './RoutineExerciseItem'
 import { routineReducer } from './routineReducer'
+import { getSupersetCount } from '../../utils/supersets'
 import styles from './RoutineEditor.module.css'
 
 export function RoutineEditor({ initialRoutine, mode }) {
@@ -32,6 +33,7 @@ export function RoutineEditor({ initialRoutine, mode }) {
   const { confirm } = useConfirm()
   const isNew = mode === 'new'
   const canSave = routine.name.trim().length > 0 && saveState.status !== 'saving'
+  const supersetCount = getSupersetCount(routine.exercises)
 
   // Warn on browser close / refresh when there are unsaved changes
   useBeforeUnload(isDirty)
@@ -199,6 +201,7 @@ export function RoutineEditor({ initialRoutine, mode }) {
               index={index}
               isFirst={index === 0}
               isLast={index === routine.exercises.length - 1}
+              supersetCount={supersetCount}
               instructions={
                 resolveExerciseById(exercise.exerciseId, customExercises)
                   ?.instructions ?? []
@@ -229,8 +232,8 @@ export function RoutineEditor({ initialRoutine, mode }) {
               onUpdateNotes={(notes) =>
                 dirtyDispatch({ type: 'UPDATE_EXERCISE_NOTES', index, notes })
               }
-              onUpdateSupersetGroup={(group) =>
-                dirtyDispatch({ type: 'UPDATE_SUPERSET_GROUP', index, group })
+              onAssignSuperset={(supersetId) =>
+                dirtyDispatch({ type: 'ASSIGN_SUPERSET', index, supersetId })
               }
               onUpdateAllUnits={(unit) =>
                 exercise.sets.forEach((_, setIndex) =>

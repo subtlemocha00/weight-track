@@ -54,6 +54,6 @@ function buildRoutineExercise(exercise, order) {
       targetWeight: exercise.weight ?? null
     })),
     notes: exercise.notes ?? '',
-    supersetGroup: null
+    supersetId: null
   }
 }

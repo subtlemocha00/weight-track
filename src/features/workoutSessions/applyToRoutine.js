@@ -19,7 +19,7 @@ function sessionExerciseToRoutineExercise(sessionExercise, order) {
       restSeconds: null
     })),
     notes: sessionExercise.notes ?? '',
-    supersetGroup: sessionExercise.supersetGroup ?? null
+    supersetId: sessionExercise.supersetId ?? null
   }
 }
 
@@ -31,11 +31,12 @@ function sessionExerciseToRoutineExercise(sessionExercise, order) {
  * The session's exercise list is treated as the desired routine shape, so all
  * edits made during the workout are reflected:
  *   - set values (reps/weight/unit) and exercise ordering are applied
+ *   - superset assignments made during the workout are applied
  *   - exercises added during the workout are materialized into the routine
  *   - exercises removed during the workout are dropped from the routine
  *
- * Routine-only fields not edited during a workout (restSeconds, notes,
- * supersetGroup) are preserved for exercises that existed before the session.
+ * Routine-only fields not edited during a workout (restSeconds, notes) are
+ * preserved for exercises that existed before the session.
  */
 export function applySessionToRoutine(routine, session) {
   const routineExercisesById = new Map(
@@ -65,7 +66,9 @@ export function applySessionToRoutine(routine, session) {
     return {
       ...original,
       order,
-      sets: updatedSets
+      sets: updatedSets,
+      // Carry the superset assignment edited during the workout.
+      supersetId: sessionExercise.supersetId ?? null
     }
   })
 

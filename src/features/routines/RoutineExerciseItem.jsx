@@ -1,5 +1,7 @@
 import { memo } from 'react'
 import { SetRow, SetRowHeader } from './SetRow'
+import { SupersetControl } from '../../components/SupersetControl'
+import { supersetColor } from '../../utils/supersets'
 import styles from './RoutineExerciseItem.module.css'
 
 function RoutineExerciseItemImpl({
@@ -8,6 +10,7 @@ function RoutineExerciseItemImpl({
   isFirst,
   isLast,
   instructions = [],
+  supersetCount,
   onRemove,
   onMoveUp,
   onMoveDown,
@@ -15,15 +18,18 @@ function RoutineExerciseItemImpl({
   onRemoveSet,
   onUpdateSet,
   onUpdateNotes,
-  onUpdateSupersetGroup,
+  onAssignSuperset,
   onUpdateAllUnits
 }) {
   const allUnit = exercise.sets.every((s) => s.unit === exercise.sets[0]?.unit)
     ? exercise.sets[0]?.unit
     : null
 
+  const ssColor = supersetColor(exercise.supersetId)
+  const itemClass = `${styles.item} ${ssColor ? styles.assigned : ''}`
+
   return (
-    <div className={styles.item}>
+    <div className={itemClass} style={ssColor ? { '--ss-color': ssColor } : undefined}>
       <div className={styles.header}>
         <span className={styles.order}>{index + 1}.</span>
         <span className={styles.name}>{exercise.name}</span>
@@ -122,17 +128,11 @@ function RoutineExerciseItemImpl({
           />
         </label>
 
-        <label className={styles.field}>
-          <span className={styles.fieldLabel}>Superset group</span>
-          <input
-            type="text"
-            className={styles.superset}
-            value={exercise.supersetGroup ?? ''}
-            onChange={(e) => onUpdateSupersetGroup(e.target.value)}
-            placeholder="A, B, … (leave blank for none)"
-            maxLength={16}
-          />
-        </label>
+        <SupersetControl
+          supersetId={exercise.supersetId ?? null}
+          supersetCount={supersetCount}
+          onAssign={onAssignSuperset}
+        />
       </div>
     </div>
   )

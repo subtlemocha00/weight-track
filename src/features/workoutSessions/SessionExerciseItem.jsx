@@ -2,6 +2,8 @@ import { memo, useCallback, useEffect, useState } from 'react'
 import { useSettings } from '../../hooks/useSettings'
 import { SessionSetRow, SessionSetRowHeader } from './SessionSetRow'
 import { RestTimer } from './RestTimer'
+import { SupersetControl } from '../../components/SupersetControl'
+import { supersetColor, supersetLabel } from '../../utils/supersets'
 import styles from './SessionExerciseItem.module.css'
 
 function SessionExerciseItemImpl({
@@ -10,9 +12,11 @@ function SessionExerciseItemImpl({
   isFirst,
   isLast,
   readOnly,
+  supersetCount,
   onMoveUp,
   onMoveDown,
   onRemove,
+  onAssignSuperset,
   onUpdateSet,
   onToggleSetCompleted,
   onSetUnit
@@ -62,18 +66,20 @@ function SessionExerciseItemImpl({
   const totalSets = exercise.sets.length
   const allDone = doneSets === totalSets && totalSets > 0
 
-  const itemClass = [styles.item, allDone && styles.allDone].filter(Boolean).join(' ')
+  const ssColor = supersetColor(exercise.supersetId)
+
+  const itemClass = [styles.item, allDone && styles.allDone, ssColor && styles.assigned].filter(Boolean).join(' ')
   const orderClass = [styles.order, allDone && styles.orderDone].filter(Boolean).join(' ')
   const setCountClass = [styles.setCount, allDone && styles.setCountDone].filter(Boolean).join(' ')
   const headerClass = [styles.header, allDone && styles.headerDone].filter(Boolean).join(' ')
 
   return (
-    <div className={itemClass}>
+    <div className={itemClass} style={ssColor ? { '--ss-color': ssColor } : undefined}>
       <div className={headerClass}>
         <span className={orderClass}>{String(index + 1).padStart(2, '0')}</span>
         <span className={styles.name}>{exercise.name}</span>
-        {exercise.supersetGroup && (
-          <span className={styles.superset}>SS {exercise.supersetGroup}</span>
+        {ssColor && (
+          <span className={styles.superset}>{supersetLabel(exercise.supersetId)}</span>
         )}
         <span className={setCountClass}>{doneSets}/{totalSets}</span>
         <button
@@ -110,6 +116,14 @@ function SessionExerciseItemImpl({
 
       <div className={styles.body}>
         {exercise.notes && <p className={styles.notes}>{exercise.notes}</p>}
+
+        {!readOnly && (
+          <SupersetControl
+            supersetId={exercise.supersetId ?? null}
+            supersetCount={supersetCount}
+            onAssign={onAssignSuperset}
+          />
+        )}
 
         <div className={styles.unitRow}>
           <span className={styles.unitLabel}>Unit</span>

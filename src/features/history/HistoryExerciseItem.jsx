@@ -1,19 +1,31 @@
 import { memo } from 'react'
 import { HistorySetRow, HistorySetRowHeader } from './HistorySetRow'
 import { countCompletedSets } from './formatSession'
+import { supersetColor, supersetLabel } from '../../utils/supersets'
 import styles from './HistoryExerciseItem.module.css'
 
 function HistoryExerciseItemImpl({ exercise, index }) {
   const totalSets = exercise.sets?.length ?? 0
   const doneSets = countCompletedSets(exercise)
 
+  // New sessions store a numeric supersetId; legacy completed sessions may carry
+  // the old freeform supersetGroup string — show whichever exists (read-only).
+  const ssColor = supersetColor(exercise.supersetId)
+  const ssText = ssColor
+    ? supersetLabel(exercise.supersetId)
+    : exercise.supersetGroup
+      ? `SS ${exercise.supersetGroup}`
+      : null
+
   return (
     <div className={styles.item}>
       <div className={styles.header}>
         <span className={styles.order}>{index + 1}.</span>
         <span className={styles.name}>{exercise.name}</span>
-        {exercise.supersetGroup && (
-          <span className={styles.superset}>SS {exercise.supersetGroup}</span>
+        {ssText && (
+          <span className={styles.superset} style={ssColor ? { '--ss-color': ssColor } : undefined}>
+            {ssText}
+          </span>
         )}
         <span className={styles.summary}>
           {doneSets}/{totalSets}

@@ -1,0 +1,45 @@
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--t3);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.slot {
+  padding: 6px 11px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: var(--surface);
+  color: var(--t2);
+  border: 1.5px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  transition: all 0.1s;
+  white-space: nowrap;
+}
+
+/* The slot the exercise is currently assigned to: filled with its color. */
+.slot.active {
+  background: var(--ss-color);
+  border-color: var(--ss-color);
+  color: #07070f;
+  box-shadow: 0 0 12px color-mix(in srgb, var(--ss-color) 45%, transparent);
+}
+
+.slot:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

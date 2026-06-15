@@ -31,7 +31,7 @@ export function createRoutineExercise(exercise, order) {
     order,
     sets: Array.from({ length: DEFAULT_SETS_PER_EXERCISE }, createBlankSet),
     notes: '',
-    supersetGroup: null
+    supersetId: null
   }
 }
 

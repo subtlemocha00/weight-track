@@ -32,7 +32,7 @@ export function createSessionExercise(exercise, order) {
     order,
     sets: Array.from({ length: DEFAULT_SETS_PER_EXERCISE }, createSessionSet),
     notes: '',
-    supersetGroup: null
+    supersetId: null
   }
 }
 
@@ -64,7 +64,7 @@ export function createSessionFromRoutine(routine) {
         timestamp: null
       })),
       notes: exercise.notes ?? '',
-      supersetGroup: exercise.supersetGroup ?? null
+      supersetId: exercise.supersetId ?? null
     }))
   }
 }

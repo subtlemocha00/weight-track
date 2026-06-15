@@ -4,6 +4,7 @@ import { useSettings } from '../../hooks/useSettings'
 import { useConfirm } from '../../hooks/useConfirm'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { updateSession } from '../../services/workoutSessions'
+import { supersetColor, supersetLabel } from '../../utils/supersets'
 import styles from './SessionEditForm.module.css'
 
 /* ---------- value helpers ---------- */
@@ -483,9 +484,16 @@ function WorkoutFields({
             <div className={styles.exerciseHeader}>
               <span className={styles.order}>{exIndex + 1}.</span>
               <span className={styles.exerciseName}>{exercise.name}</span>
-              {exercise.supersetGroup && (
+              {supersetColor(exercise.supersetId) ? (
+                <span
+                  className={styles.superset}
+                  style={{ '--ss-color': supersetColor(exercise.supersetId) }}
+                >
+                  {supersetLabel(exercise.supersetId)}
+                </span>
+              ) : exercise.supersetGroup ? (
                 <span className={styles.superset}>SS {exercise.supersetGroup}</span>
-              )}
+              ) : null}
             </div>
 
             {exercise.sets.length > 0 && (
