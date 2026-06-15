@@ -6771,11 +6771,21 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-preacher-curl.html",
     "id": "one-armdumbbellpreachercurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Biceps"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "dumbbell",
+    "instructions": [
+      "Adjust the height of the seat on the preacher bench so that when you sit on it, the back of your upper arms sit comfortably flat on the padding.",
+      "Grab a dumbbell with your left hand and sit on the preacher bench.",
+      "The back of your left arm should rest flat on the padding with your arm fully extended.",
+      "Place your right forearm on the padding for support.",
+      "Execute the exercise by slowly raising the dumbbell and squeezing the bicep at the top of the movement.",
+      "Slowly lower the dumbbell until your arm is fully extended.",
+      "Repeat for desired reps, and then repeat the same for the right arm."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -6783,11 +6793,21 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-one-arm-dumbbell-reverse-curl.html",
     "id": "one-armdumbbellreversegripcurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "dumbbell",
+    "instructions": [
+      "Grab a dumbbell and stand up holding the dumbbell on your thigh with your palm facing you (reverse grip).",
+      "Take the weight off your body, so the forearms and biceps are contracted. This is the starting position for the exercise.",
+      "Keeping your elbow fixed in place and shoulders back, slowly curl the dumbbell up as far as possible.",
+      "Squeeze, and then slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps and, then repeat with your opposite arm."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -6816,47 +6836,90 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-neutral-dumbbell-wrist-curl-over-bench.html",
     "id": "one-armneutralgripdumbbellwristcurloverbench",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "dumbbell",
+    "instructions": [
+      "Grab a dumbbell using a neutral grip (palm facing in) and kneel in front of a flat bench.",
+      "Rest the back of your forearm on top of the bench so that your writ is just off the end of it.",
+      "Bending only at the wrist, let the dumbbell drop as far as possible. This is the starting position for the exercise.",
+      "Slowly curl the dumbbell up towards your body using your wrist. Squeeze the forearm muscles at the top of the movement.",
+      "Pause, and then slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps, and then repeat on your other wrist."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "One-Arm Prone Hammer Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-prone-hammer-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-prone-hammer-dumbbell-curl.html",
     "id": "one-armpronehammercurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Biceps"
+    ],
+    "secondaryMuscles": [
+      "Forearms"
+    ],
+    "equipment": "dumbbell",
+    "instructions": [
+      "Set up for the one-arm prone hammer curl by setting an adjustable back bench to an angle of around 30-40 degrees.",
+      "Grab a dumbbell with one arm and position yourself with your chest against the bench (prone position).",
+      "Your feet should be used for stability on the floor, your shoulders should be about level with the top of the back padding and your arm should be hanging - holding the dumbbell with a neutral grip (palm facing towards your body).",
+      "Put the tension on your bicep by slightly bending your arm. This is the starting position for the exercise.",
+      "Keeping your elbow fixed, slowly curl the dumbbell up as far as possible.",
+      "Squeeze the bicep and slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps, and then repeat the same on the other arm."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "One-Arm Prone Incline Dumbbell Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-prone-incline-dumbbell-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-prone-dumbbell-curl.html",
     "id": "one-armproneinclinedumbbellcurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Biceps"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "dumbbell",
+    "instructions": [
+      "Set up for the one-arm prone incline dumbbell curl by setting an adjustable bench to an angle of around 30-40 degrees.",
+      "Grab a dumbbell with one arm and position yourself with your chest on the back of the bench (prone position).",
+      "Use your feet to stabilize yourself, and position your shoulders to be level with the top of the bench. One arm should be hanging, holding the dumbbell with an underhand grip (palms facing up).",
+      "You can use the free arm for stability.",
+      "Put the tension on your bicep by slightly bending your hanging arm. This is the starting position for the exercise.",
+      "With your elbow fixed, slowly curl the dumbbell up as far as possible.",
+      "Squeeze the bicep and slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps, and then repeat for the other arm."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "One-Arm Reverse Grip Dumbbell Preacher Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-reverse-grip-dumbbell-preacher-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-reverse-dumbbell-preacher-curl.html",
     "id": "one-armreversegripdumbbellpreachercurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "dumbbell",
+    "instructions": [
+      "Select a dumbbell and sit in an upright position with your chest flat against the preacher bench.",
+      "Keep your upper arm pressed into the pad and hold the dumbbell with an overhand grip (palms facing down).",
+      "Extend your arm until your bicep is fully lengthened. This is the starting position.",
+      "Take a deep breath and curl the weight by bending at the elbow until the dumbbell is at shoulder height.",
+      "Squeeze the biceps at the top of the movement and slowly lower the dumbbell back to the starting position.",
+      "Repeat for the desired number of repetitions, and then repeat on your opposite arm."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -6927,26 +6990,42 @@
   },
   {
     "name": "One-Arm Seated Neutral Grip Dumbbell Wrist Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-neutral-grip-dumbbell-wrist-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-neutral-dumbbell-wrist-curl.html",
     "id": "one-armseatedneutralgripdumbbellwristcurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "dumbbell",
+    "instructions": [
+      "Grab a dumbbell using a neutral grip (palm facing in) and sit down on the end of a flat bench.",
+      "Bending only at the wrists, let the dumbbell drop as far as possible. This is the starting position for the exercise.",
+      "Slowly curl the dumbbell towards your body using your wrists. Squeeze the forearm muscles at the top of the movement.",
+      "Pause, and then slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps, then repeat on the other wrist."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "One-Arm Seated Reverse Grip Dumbbell Wrist Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-reverse-grip-dumbbell-wrist-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-reverse-dumbbell-wrist-curl.html",
     "id": "one-armseatedreversegripdumbbellwristcurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "dumbbell",
+    "instructions": [
+      "Grab a dumbbell using a pronated grip (palm facing down) and sit on the end of a bench.",
+      "Bending only at the wrists, let the dumbbell drop as far as possible. This is the starting position for the exercise.",
+      "Slowly curl the dumbbell up towards your body using your wrists. Squeeze the forearm muscles at the top of the movement.",
+      "Pause, and then slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps, then repeat on the other wrist."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -7104,50 +7183,93 @@
   },
   {
     "name": "One-Leg Smith Machine Calf Raise",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/one-leg-smith-machine-calf-raise.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-leg-smith-machine-seated-calf-raise.html",
     "id": "one-legsmithmachinecalfraise",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Calves"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "machine",
+    "instructions": [
+      "Set up for the one-leg smith machine seated calf raise by placing a flat bench in the smith machine and putting a step or calf Block under the bar.",
+      "Lower the bar and add the weight you want to use.",
+      "Sit on the end of the bench with your feet and knees together and place your left foot on the block with the balls of your feet on the edge.",
+      "Take the bar off the rack and rest it on your left thigh.",
+      "Allow your heel to drop as far as possible without touching the floor. This is the exerting position.",
+      "Execute the movement by raising your heel up as far as possible.",
+      "Squeeze the calf muscle, and then slowly lower your heel back to the starting position.",
+      "Repeat for desired reps, and then repeat on the right leg."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "One-Leg Smith Machine Toe Raise",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/one-leg-smith-machine-toe-raise.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-one-leg-toe-raise.html",
     "id": "one-legsmithmachinetoeraise",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Calves"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "machine",
+    "instructions": [
+      "Set up by placing the smith machine bar to shoulder height and adding the weight you want to use.",
+      "Grab a step or calf raise block and place it under the bar.",
+      "Place one foot on the block so that your heel is on the front edge, and the top of your foot is hanging off the end.",
+      "Grasp the bar with a wide grip and position it across the back of your shoulders (not on your neck).",
+      "Push up to take the weight off the rack and slowly allow your toes to drop down as far as possible. This is the starting position for the exercise.",
+      "Slowly raise your toes up as far as possible, pause, and then slowly lower them back down.",
+      "Repeat for desired reps, and then repeat the process on your alternate leg."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "One-Leg Standing Bodyweight Calf Raise",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/one-leg-standing-bodyweight-calf-raise.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-leg-standing-calf-raise.html",
     "id": "one-legstandingbodyweightcalfraise",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Calves"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "bodyweight",
+    "instructions": [
+      "Stand on the block with your left foot, the ball of your foot should be resting on the edge of the block.",
+      "Hook your right ankle around your left ankle.",
+      "Slowly let the heel drop as far as possible. This is the starting position.",
+      "Slowly raise the heel up as far as possible.",
+      "Pause, and then slowly lower the heel down.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Overhand Close Grip Lateral Pulldown",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/overhand-close-grip-lateral-pulldown.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/overhand-close-grip-lat-pull-down.html",
     "id": "overhandclosegriplateralpulldown",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Middle Back",
+      "Shoulders"
+    ],
+    "equipment": "machine",
+    "instructions": [
+      "Set up for the overhand close grip lat pulldown by attaching a small straight bar to the machine (you can use the wide grip bar if you prefer), setting the weight on the stack, and adjusting the knee pad.",
+      "Grasp the bar with an overhand grip, hands around 10-12 inches apart.",
+      "Sit down on the machine with your arms fully outstretched. This is the starting position.",
+      "Keeping your back and body straight, slowly pull the weight down to your upper chest.",
+      "Pause, and then slowly lower the weight back to the start position. Do not let the stack drop.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -7241,14 +7363,27 @@
   },
   {
     "name": "Partner Assisted Nordic Hamstring Curls",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/partner-assisted-nordic-hamstring-curls.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/partner-assisted-nordic-hamstring-curl",
     "id": "partnerassistednordichamstringcurls",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Hamstrings"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Calves",
+      "Glutes"
+    ],
+    "equipment": "bodyweight",
+    "instructions": [
+      "Setup in a tall kneeling position with your hips extended and torso upright.",
+      "Have a partner hold your ankles and use their bodyweight as a counterweight.",
+      "Keeping your hips extended, begin to lower yourself as slowly as possible until you can no longer control the descent.",
+      "At this point, allow yourself to fall to the floor in a controlled fashion and “catch” yourself with your arms.",
+      "Give yourself just enough of a push off the floor to get back into a position where you can pull yourself back to the start using your hamstrings.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Advanced",
     "isBodyweight": false
   },
   {
@@ -7279,26 +7414,46 @@
   },
   {
     "name": "Pec Deck",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/pec-deck.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/pec-dec.html",
     "id": "pecdeck",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Shoulders"
+    ],
+    "equipment": "machine",
+    "instructions": [
+      "Adjust the seat and set the height so your elbows are at chest level when sitting.",
+      "Place your arms on the pads or grips with elbows bent at 90 degrees.",
+      "Keep your feet flat on the floor for stability. This is the starting position.",
+      "Slowly bring your arms forward, squeezing your chest.",
+      "Briefly squeeze your chest at the peak of the movement.",
+      "Control the movement as you slowly return to the starting position. This is one rep.",
+      "Repeat for desired repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Pec Foam Rolling",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/pec-foam-rolling.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/foam-rolling-pecs",
     "id": "pecfoamrolling",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Chest"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "foam roll",
+    "instructions": [
+      "In a prone position, position the foam roller near your armpit on the base of your pec.",
+      "Support yourself with your free hand and feet.",
+      "Adjust pressure into the roller by raising your hips higher or lower or applying more force through your free hand into the ground.",
+      "Slowly roll up and down the length of the pec for 20-30 seconds. This is a fairly small region so there shouldn’t be a large range of motion.",
+      "Repeat on the other side."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -7344,14 +7499,25 @@
   },
   {
     "name": "Plank",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/plank.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/hover.html",
     "id": "plank",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Abs"
+    ],
+    "secondaryMuscles": [
+      "Lower Back"
+    ],
+    "equipment": "bodyweight",
+    "instructions": [
+      "Start by lying face down on the floor. Place your forearms on the ground, elbows directly below your shoulders.",
+      "Position your feet hip-width apart with your toes tucked under.",
+      "Push through your forearms and toes to lift your body off the floor.",
+      "Your body should form a straight line from your head to your heels. Keep your neck neutral by looking straight down, not forward.",
+      "Tighten your core (imagine pulling your belly button toward your spine) and squeeze your glutes to prevent your hips from sagging or rising.",
+      "Hold the position for as long as you can while maintaining good form."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -7684,26 +7850,50 @@
   },
   {
     "name": "Resistance Band Assisted Pull Up (From Foot)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/resistance-band-assisted-pull-up-from-foot.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/band-assisted-pull-up-from-foot",
     "id": "resistancebandassistedpullupfromfoot",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "bands",
+    "instructions": [
+      "Attach a band to the bar and loop the end around your foot.",
+      "Using a pronated grip, grasp the pull up bar with a slightly wider than shoulder width grip.",
+      "Take a deep breath, squeeze your glutes and brace your abs. Depress the shoulder blades and then drive the elbows straight down to the floor while activating the lats.",
+      "Pull your chin towards the bar until the lats are fully contracted, then slowly lower yourself back to the start position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Resistance Band Assisted Pull Up (From Knee)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/resistance-band-assisted-pull-up-from-knee.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/band-assisted-pull-up-from-knee",
     "id": "resistancebandassistedpullupfromknee",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "bands",
+    "instructions": [
+      "Attach a band to the bar and loop the end around your knee.",
+      "Using a pronated grip, grasp the pull up bar with a slightly wider than shoulder width grip.",
+      "Take a deep breath, squeeze your glutes and brace your abs. Depress the shoulder blades and then drive the elbows straight down to the floor while activating the lats.",
+      "Pull your chin towards the bar until the lats are fully contracted, then slowly lower yourself back to the start position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -7727,50 +7917,89 @@
   },
   {
     "name": "Reverse Grip Barbell Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-barbell-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-barbell-curl.html",
     "id": "reversegripbarbellcurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "barbell",
+    "instructions": [
+      "Load a barbell with the desired weight, grasp it with a pronated grip (palms facing down), and position your hands around shoulder width apart. The bar should not be touching your body. This is the starting position.",
+      "Slowly curl the bar while looking forward and keeping your elbows tucked in at your sides.",
+      "Do not pause, and slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Reverse Grip Barbell Curl (EZ Bar)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-barbell-curl-ez-bar.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/ez-bar-reverse-grip-barbell-curl.html",
     "id": "reversegripbarbellcurlezbar",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "ez bar",
+    "instructions": [
+      "Grasp an EZ bar with a pronated grip (palms facing down) and position your hands around shoulder width apart. The bar should not be touching your body. This is the starting position.",
+      "Slowly curl the bar while looking forward and keeping your elbows tucked in at your sides.",
+      "Do not pause, and slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Reverse Grip Barbell Wrist Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-barbell-wrist-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-barbell-wrist-curl.html",
     "id": "reversegripbarbellwristcurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "barbell",
+    "instructions": [
+      "",
+      "Select a barbell and sit on a bench with your forearms resting on your thighs, palms facing down.",
+      "Hold the barbell with an overhand grip, hands shoulder-width apart.",
+      "Position your wrists by letting the bar hang in front of you, wrists slightly hanging off your knees.",
+      "Use your wrists to curl the bar upwards, exhaling as you lift.",
+      "Pause and squeeze your forearms at the top.",
+      "Slowly lower the bar back down, inhaling as you descend. This is one rep.",
+      "Perform the desired reps, focusing on wrist control and forearm activation.",
+      ""
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Reverse Grip Barbell Wrist Curl (Over Bench)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-barbell-wrist-curl-over-bench.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-barbell-wrist-curl-over-bench.html",
     "id": "reversegripbarbellwristcurloverbench",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "barbell",
+    "instructions": [
+      "Grab a barbell using a pronated grip (palm facing down) and kneel in front of a flat bench. Position your hands around shoulder-width apart.",
+      "Rest the back of your forearms on top of the bench so that your writs are just off the end of it.",
+      "Bending only at the wrists, let the barbell drop as far as possible. This is the starting position for the exercise.",
+      "Slowly curl the barbell up towards your body using your wrists. Squeeze the forearm muscles at the top of the movement.",
+      "Pause, and then slowly lower the barbell back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -7798,62 +8027,119 @@
   },
   {
     "name": "Reverse Grip Cable Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-cable-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-cable-curl.html",
     "id": "reversegripcablecurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "cable",
+    "instructions": [
+      "Set up for the exercise by attaching a straight or EZ bar to the lower pulley cable and selecting the weight you want to use on the stack.",
+      "Grasp the bar using a reverse (or overhand) grip with your hands no wider than shoulder-width apart.",
+      "Stand up straight with your elbows tucked in at your sides.",
+      "Take up any slack in the cable so the stack is raised. This is the starting position for the exercise.",
+      "To execute, keep your elbows in at your sides and slowly curl the bar up as far as possible.",
+      "Pause, and then slowly lower the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Reverse Grip Cable Preacher Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-cable-preacher-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-cable-preacher-curl.html",
     "id": "reversegripcablepreachercurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "cable",
+    "instructions": [
+      "Set up for the exercise by attaching a straight bar or EZ bar extension to the lower pulley cable machine and selecting the weight you want to use.",
+      "Now grab a preacher bench and position it in front of the cable machine with the arm padding facing the machine.",
+      "Grasp the bar with a reverse grip (palms facing down) at around shoulder width and sit on the preacher bench with your upper arms on the padding.",
+      "Keep your shoulders back and your arms out straight. This is the starting position.",
+      "To execute, slowly curl the bar up towards your shoulders as far as possible.",
+      "Pause, and then then slowly lower the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Reverse Grip Concentration Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-concentration-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-concentration-curl.html",
     "id": "reversegripconcentrationcurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack, and sit in an upright position on a flat bench.",
+      "Hinge forward and position your elbow near the base of your knee. Place your free hand on the other knee to stabilize yourself.",
+      "Using a pronated grip (palms facing down), take a deep breath and curl the dumbbell towards your shoulder.",
+      "Once the bicep is fully shortened, slowly lower the weight back to the starting position.",
+      "Repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Reverse Grip Dumbbell Bench Press",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-dumbbell-bench-press.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-dumbbell-bench-press.html",
     "id": "reversegripdumbbellbenchpress",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "dumbbell",
+    "instructions": [
+      "Set up for the exercise by grasping a set of dumbbells and sitting on the end of a flat bench with the ends of the dumbbells resting on your knees.",
+      "Slowly lay back on the bench and push the dumbbells straight up above your chest.",
+      "Twist the dumbbells so that your palms are facing your shoulders. This is the starting position for the exercise.",
+      "Slowly lower the dumbbells down, keeping your palms in line with the middle of your chest.",
+      "When the handles get to around chest height, pause and raise the dumbbells back to the starting position.",
+      "Repeat movement for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Reverse Grip Dumbbell Preacher Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-dumbbell-preacher-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-reverse-preacher-curl.html",
     "id": "reversegripdumbbellpreachercurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "dumbbell",
+    "instructions": [
+      "Select a pair of dumbbells and sit in an upright position with your chest flat against the preacher bench.",
+      "Keep your upper arm pressed into the pad and grab the dumbbells with an overhand grip (palms facing down).",
+      "Extend your arms until your biceps are fully lengthened. This is the starting position.",
+      "Take a deep breath and curl the weight by bending at the elbows until the dumbbells are at shoulder height.",
+      "Squeeze the biceps at the top of the movement and slowly lower the dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -7881,14 +8167,23 @@
   },
   {
     "name": "Reverse Grip Dumbbell Wrist Curl (Over Bench)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-dumbbell-wrist-curl-over-bench.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-dumbbell-wrist-curl-over-bench.html",
     "id": "reversegripdumbbellwristcurloverbench",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells using a pronated grip (palm facing down) and kneel in front of a flat bench.",
+      "Rest the back of your forearms on top of the bench so that your writs are just off the end of it.",
+      "Bending only at the wrists, let the dumbbells drop as far as possible. This is the starting position for the exercise.",
+      "Slowly curl the dumbbells up towards your body using your wrists. Squeeze the forearm muscles at the top of the movement.",
+      "Pause, and then slowly lower the dumbbells back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -7941,26 +8236,47 @@
   },
   {
     "name": "Reverse Grip Preacher Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-preacher-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-preacher-curl.html",
     "id": "reversegrippreachercurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "barbell",
+    "instructions": [
+      "Load the desired weight on the barbell, and sit in an upright position with your chest flat against the preacher bench.",
+      "Keep your upper arm pressed into the pad and grab the bar with an overhand grip (palms facing down).",
+      "Extend your arms until your biceps are fully lengthened. This is the starting position.",
+      "Take a deep breath and curl the weight by bending at the elbows until the bar is at shoulder height.",
+      "Squeeze the biceps at the top of the movement and slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Reverse Grip Preacher Curl (EZ Bar)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-preacher-curl-ez-bar.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/ez-bar-reverse-grip-preacher-curl.html",
     "id": "reversegrippreachercurlezbar",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "ez bar",
+    "instructions": [
+      "Setup for the exercise by adjusting the seat height of the preacher bench so that the back of your upper arms rest flat on the pads.",
+      "Select an EZ bar, grasp it using a pronated grip (palms facing down), and sit on the bench.",
+      "Keeping your arms fixed, curl the weight until your forearms are around 90 degrees to the floor.",
+      "Do not pause, and slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -8107,14 +8423,21 @@
   },
   {
     "name": "Rocking Gastrocnemius Emphasis Ankle Mobilization",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/rocking-gastrocnemius-emphasis-ankle-mobilization.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rocking-gastroc-emphasis-ankle-mobilization",
     "id": "rockinggastrocnemiusemphasisanklemobilization",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Calves"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "bodyweight",
+    "instructions": [
+      "Set up with your foot on a slanted surface with your knee locked out.",
+      "Rock your entire body forward while keeping the heel down.",
+      "Move forward until you feel a significant stretch in the calf.",
+      "Then, rock back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -8182,50 +8505,95 @@
   },
   {
     "name": "Roman Chair Knee Raise",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/roman-chair-knee-raise.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/chair-knee-raise.html",
     "id": "romanchairkneeraise",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Abs"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "bodyweight",
+    "instructions": [
+      "Position yourself on the Roman chair with your back against the pad and your legs hanging straight down.",
+      "Grip the handles for support. This is the starting position.",
+      "Lift your knees by squeezing your lower abs.",
+      "Stop when your knees are about parallel to the floor or higher if you can.",
+      "Pause, then slowly lower your knees and extend your legs back down to the starting position with control, avoiding letting them drop quickly. This is one rep.",
+      "Perform the desired number of reps, focusing on keeping your core engaged throughout the movement."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Roman Chair Leg Raise",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/roman-chair-leg-raise.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/horizontal-leg-raise.html",
     "id": "romanchairlegraise",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Abs"
+    ],
+    "secondaryMuscles": [
+      "Hip Flexors",
+      "Lower Back"
+    ],
+    "equipment": "bodyweight",
+    "instructions": [
+      "Position yourself on the Roman chair with your back against the pad and your legs hanging straight down.",
+      "Grip the handles for support. This is the starting position.",
+      "Lift your legs toward the ceiling by squeezing your lower abs. Keep your legs straight as you raise them.",
+      "Stop when your legs are about parallel to the floor or higher if you can.",
+      "Slowly lower your legs back down to the starting position with control, avoiding letting them drop quickly. This is one rep.",
+      "Perform the desired number of reps, focusing on keeping your core engaged throughout the movement."
+    ],
+    "difficulty": "Intermediate",
     "isBodyweight": false
   },
   {
     "name": "Roman Chair Twisting Knee Raise",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/roman-chair-twisting-knee-raise.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/chair-twisting-knee-raise.html",
     "id": "romanchairtwistingkneeraise",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Abs"
+    ],
+    "secondaryMuscles": [
+      "Hip Flexors"
+    ],
+    "equipment": "bodyweight",
+    "instructions": [
+      "Position yourself on the Roman chair with your back against the pad and your legs hanging straight down.",
+      "Grip the handles for support. This is the starting position.",
+      "Slowly raise your knees up and across your body as far as possible to one side.",
+      "Stop when your knees are about parallel to the floor or higher if you can.",
+      "Pause, then slowly lower back to starting position with control, avoiding letting them drop quickly.",
+      "Repeat that movement on the opposite side. That is one repetition.",
+      "Perform the desired number of reps, focusing on keeping your core engaged throughout the movement."
+    ],
+    "difficulty": "Intermediate",
     "isBodyweight": false
   },
   {
     "name": "Roman Chair Weighted Knee Raise",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/roman-chair-weighted-knee-raise.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/weighted-chair-knee-raise.html",
     "id": "romanchairweightedkneeraise",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Abs"
+    ],
+    "secondaryMuscles": [
+      "Hip Flexors",
+      "Lower Back"
+    ],
+    "equipment": "dumbbell",
+    "instructions": [
+      "Position yourself on the Roman chair with your back against the pad and your legs hanging straight down.",
+      "Hold a dumbbell or medicine ball between your feet, or use ankle weights, depending on what you have available.",
+      "Tighten your core and maintain a neutral spine. Grip the handles for support. This is the starting position.",
+      "Slowly raise your knees towards your chest by engaging your lower abs, lifting them as high as possible.",
+      "Briefly pause, squeezing your abs at the top, then slowly lower your knees back to the starting position. This is one rep.",
+      "Do the desired number of reps, maintaining good form throughout."
+    ],
+    "difficulty": "Advanced",
     "isBodyweight": false
   },
   {
@@ -8333,14 +8701,23 @@
   },
   {
     "name": "Rotating Crunch (Legs On Bench)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/rotating-crunch-legs-on-bench.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/twisting-bench-crunch.html",
     "id": "rotatingcrunchlegsonbench",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Abs"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "bodyweight",
+    "instructions": [
+      "The twisting bench crunch works both the abs and obliques. Set up for the crunch by laying a mat down on the floor and positioning a flat bench at the end of the mat to form a T shape.",
+      "Lay down on the mat and put your legs up on the bench. Your calves should be resting on the top of the bench and your legs should be bent at a right angle.",
+      "Touch the side of your head with your fingertips (do not put your arms behind your neck!).",
+      "Lift your shoulder blades slightly off the mat to start the exercise, then crunch your abs bringing your right elbow up towards the left side of your waist.",
+      "Pause for 1 second at the top, and slowly lower back down to the start position.",
+      "Repeat for the left elbow."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -8428,14 +8805,21 @@
   },
   {
     "name": "Seated Barbell Wrist Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-barbell-wrist-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/barbell-wrist-curl.html",
     "id": "seatedbarbellwristcurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "barbell",
+    "instructions": [
+      "Select the desired weight, load it onto the bar, and assume a seated position with the forearms resting comfortably on your thighs.",
+      "Utilize a supinated (palms up) grip and curl the bar towards your body using just the wrists.",
+      "Once the forearm flexors are fully shortened, slowly lower the weight back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -8593,14 +8977,22 @@
   },
   {
     "name": "Seated Dumbbell Wrist Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-wrist-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-wrist-curl.html",
     "id": "seateddumbbellwristcurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells using a supinated grip (palms facing up) and sit down on the end of a flat bench.",
+      "Bending only at the wrists, let the dumbbells drop as far as possible. This is the starting position for the exercise.",
+      "Slowly curl the dumbbells towards your body using your wrists. Squeeze the forearm muscles at the top of the movement.",
+      "Pause, and then slowly lower the dumbbells back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -8674,14 +9066,22 @@
   },
   {
     "name": "Seated Knee Tucks",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-knee-tucks.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-leg-tucks.html",
     "id": "seatedkneetucks",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Abs"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "bodyweight",
+    "instructions": [
+      "Sit on the edge of a sturdy chair or bench with your hands resting beside you for support.",
+      "Raise your legs so your knees are bent at a 90-degree angle, with your feet off the ground. This is the starting position.",
+      "Bring your knees toward your chest, squeezing your abs to tuck them in.",
+      "Slowly extend your legs back out to the starting position, keeping them off the ground. This is one rep.",
+      "Do the desired number of reps, maintaining control and keeping your core engaged."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -8707,38 +9107,66 @@
   },
   {
     "name": "Seated Neutral Grip Dumbbell Wrist Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-neutral-grip-dumbbell-wrist-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-neutral-dumbbell-wrist-curl.html",
     "id": "seatedneutralgripdumbbellwristcurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "dumbbell",
+    "instructions": [
+      "Grasp a pair of dumbbells using a neutral grip (palms facing in) and sit down on the end of a flat bench.",
+      "Bending only at the wrists, let the dumbbell drop as far as possible. This is the starting position for the exercise.",
+      "Slowly curl the dumbbells towards your body using your wrists. Squeeze the forearm muscles at the top of the movement.",
+      "Pause, and then slowly lower the dumbbells back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Seated Reverse Grip Cable Wrist Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-reverse-grip-cable-wrist-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-seated-cable-wrist-curl.html",
     "id": "seatedreversegripcablewristcurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "cable",
+    "instructions": [
+      "Set up for the exercise by getting a flat or adjustable bench and placing it facing a low pulley cable machine.",
+      "Attach a straight bar to the low pulley and select the weight you want to use on the stack.",
+      "Sit on the end of the bench facing the cable machine with your feet out slightly wider than shoulder-width apart.",
+      "Grasp the bar with a reverse grip (palms facing down) with your hands around shoulder width apart.",
+      "Pull the weight back and bury your elbows into your inner thighs for support.",
+      "Keeping your elbows fixed and bending only at the wrists, let the bar drop as far as possible. This is the starting position for the exercise.",
+      "Slowly raise the bar as far as possible squeezing the forearm muscles at the top of the movement.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Seated Reverse Grip Dumbbell Wrist Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-reverse-grip-dumbbell-wrist-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-dumbbell-wrist-curl.html",
     "id": "seatedreversegripdumbbellwristcurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells using a pronated grip (palms facing down) and sit down on the end of a flat bench.",
+      "Bending only at the wrists, let the dumbbells drop as far as possible. This is the starting position for the exercise.",
+      "Slowly curl the dumbbells towards your body using your wrists. Squeeze the forearm muscles at the top of the movement.",
+      "Pause, and then slowly lower the dumbbells back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -8764,14 +9192,28 @@
   },
   {
     "name": "Shotgun Row",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/shotgun-row.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-one-arm-cable-row.html",
     "id": "shotgunrow",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Shoulders",
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "cable",
+    "instructions": [
+      "Attach a single handle to a cable stack and assume a split stance with the ipsilateral elbow on the forward knee.",
+      "Grasp the handle with a neutral grip and lean forward slightly while allowing the shoulder blade to protract.",
+      "Initiate the movement by retracting the shoulder blade and rowing the handle to your chest while extending through your upper back.",
+      "Pull the handle towards your rib cage and drive your elbow behind your body as you flex the lat and upper back.",
+      "Slowly lower back to the starting position and repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -8834,14 +9276,24 @@
   },
   {
     "name": "Side Plank",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/side-plank.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/side-hover.html",
     "id": "sideplank",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Abs"
+    ],
+    "secondaryMuscles": [
+      "Lower Back"
+    ],
+    "equipment": "bodyweight",
+    "instructions": [
+      "The side plank is a great exercise for building core strength, and more specifically oblique strength. It's also a good balance exercise. It's your choice whether to use a mat in this exercise. Start by laying on your side with one hand on the floor and your feet on top of one another.",
+      "If you prefer, you can rest on your elbow instead of your hand.",
+      "Lift your hips up until your body is exactly straight.",
+      "Now hold this position for as long as possible. You should feel this exercise in your abs and obliques.",
+      "Complete the same for the opposite side of the body."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -9089,14 +9541,29 @@
   },
   {
     "name": "Single Leg Overhead Medicine Ball Tap",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-overhead-medicine-ball-tap.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-overhead-medicine-ball-wall-tap",
     "id": "singlelegoverheadmedicineballtap",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Triceps",
+      "Upper Back"
+    ],
+    "equipment": "medicine ball",
+    "instructions": [
+      "Setup in single leg stance while holding a medicine ball overhead with both hands.",
+      "Exhale, pull the arms forward towards the wall, and tap the medicine ball against the wall.",
+      "Catch the med ball as it returns from the wall and repeat step #2 for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -9344,14 +9811,27 @@
   },
   {
     "name": "Smith Machine Incline Bench Press",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-incline-bench-press.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-smith-machine-bench-press.html",
     "id": "smithmachineinclinebenchpress",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "machine",
+    "instructions": [
+      "Set an adjustable bench to an angle of around 30 to 45 degrees and place it in the smith machine.",
+      "Before you add the weight, lay on the bench and lower the bar to your chest. Adjust the position of the bench so the bar is lowered to the upper part of your chest.",
+      "Add the weight, and then lay back down on the bench.",
+      "Grip the bar with a slightly wider than shoulder-width grip, and take the weight off the hooks. This is the starting position for the exercise.",
+      "Slowly lower the bar down until it's about 1 inch off your chest.",
+      "Pause, then raise the bar back up without locking your elbows at the top of the movement.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -9434,7 +9914,15 @@
     ],
     "secondaryMuscles": [],
     "equipment": "machine",
-    "instructions": [],
+    "instructions": [
+      "Set up by placing the Smith Machine bar at shoulder height and adding the weight you want to use.",
+      "Grab a step, calf block, or weight plate and put it below the bar.",
+      "Stand on the block so that your heels are on the front edge of the block, and the top of your feet are hanging off the end.",
+      "Grab the bar with a wide grip and position it across the back of your shoulders (not on your neck).",
+      "Push up to take the weight off the rack and slowly allow your toes to drop down as far as possible. This is the starting position.",
+      "Slowly raise your toes up as far as possible, pause, and then slowly lower them back down.",
+      "Repeat for desired reps."
+    ],
     "difficulty": "Beginner",
     "isBodyweight": false
   },
@@ -9559,26 +10047,42 @@
   },
   {
     "name": "Standing Barbell Calf Raise",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-barbell-calf-raise.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-calf-raise.html",
     "id": "standingbarbellcalfraise",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Calves"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "barbell",
+    "instructions": [
+      "Set up for the standing barbell calf raise by getting a block or step and placing it in front of you.",
+      "Grasp a barbell and place it across the back of your shoulders. Make sure the bar sits across the muscles in your upper back, not your neck.",
+      "Stand up on the block with the balls of your feet on the edge.",
+      "Keeping your balance, raise your heels off the floor.",
+      "Squeeze the calves, and then slowly lower your heals back down as far as possible without letting them touch the floor.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Standing Barbell Calf Raise (On Floor)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-barbell-calf-raise-on-floor.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/floor-barbell-calf-raise.html",
     "id": "standingbarbellcalfraiseonfloor",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Calves"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "barbell",
+    "instructions": [
+      "Grasp a barbell with a wider than shoulder-width grip and lift it over your head so it's resting across the muscles on the top of your back. Do not rest the bar on the back of the neck!",
+      "Leaning slightly forward, keeping your body straight and looking straight ahead, slowly raise your heels off the floor and push up as far as possible.",
+      "Pause, and then slowly lower your weight down until your heels are almost resting on the floor.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -9644,14 +10148,26 @@
   },
   {
     "name": "Standing Cable Fly",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-cable-fly.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-crossovers-%28mid-chest%29.html",
     "id": "standingcablefly",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "cable",
+    "instructions": [
+      "Set both pulleys directly at (or slightly above) shoulder height and select the desired weight.",
+      "Grasp both handles with a neutral grip and take a step forward to split the stance.",
+      "Press the handles to lockout while flexing the pecs and extending the elbows.",
+      "Keep a slight bend in the elbows, move entirely at the shoulder joint, and slowly allow the arms to open while the pecs stretch.",
+      "Return to the starting position by flexing your pecs and bringing the handles together at chest height.",
+      "Slowly lower back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -9764,14 +10280,27 @@
   },
   {
     "name": "Standing Glute Kickback Machine",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-glute-kickback-machine.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-glute-kickback.html",
     "id": "standingglutekickbackmachine",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Glutes"
+    ],
+    "secondaryMuscles": [
+      "Hamstrings"
+    ],
+    "equipment": "machine",
+    "instructions": [
+      "Adjust the machine height and weight to suit your needs.",
+      "Stand facing the machine and hold the handles or support bar.",
+      "Place one foot on the footpad or secure the padding under your knee (depending on the machine).",
+      "Keep your core tight and back straight.",
+      "Push your working leg straight back in a controlled motion.",
+      "Squeeze your glute at the top of the movement.",
+      "Slowly return your leg to the starting position. This is one rep.",
+      "Repeat for reps, then switch legs."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -9818,38 +10347,68 @@
   },
   {
     "name": "Standing High to Low Cable Fly",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-high-to-low-cable-fly.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-crossovers-bent-over.html",
     "id": "standinghightolowcablefly",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "cable",
+    "instructions": [
+      "Set both pulleys as high as possible and select the desired weight.",
+      "Grasp both handles with a neutral grip and take a step forward to split the stance.",
+      "Press the handles to lockout while flexing the pecs and extending the elbows.",
+      "Keep a slight bend in the elbows, move entirely at the shoulder joint, and slowly allow the arms to open while the pecs stretch.",
+      "Return to the starting position by flexing your pecs and bringing the handles together at bellybutton height.",
+      "Slowly lower back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Standing Hip Flexion w/ Bands",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-hip-flexion-w-bands.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-hip-flexion-with-bands",
     "id": "standinghipflexionw-bands",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Hip Flexors"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "bands",
+    "instructions": [
+      "Setup in a standing position with a band looped around one foot and your arms by your sides.",
+      "Exhale and drive the knee up while keeping the spine neutral.",
+      "Return to the starting position and repeat for the desired number of repetitions, then switch sides and repeat."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Standing Low to High Cable Fly",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-low-to-high-cable-fly.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-lower-chest-raise.html",
     "id": "standinglowtohighcablefly",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "cable",
+    "instructions": [
+      "Set both pulleys as low as possible and select the desired weight.",
+      "Grasp both handles with a slightly supinated grip and take a step forward to split the stance.",
+      "Press the handles to lockout while flexing the pecs and extending the elbows.",
+      "Keep a slight bend in the elbows, move entirely at the shoulder joint, and slowly allow the arms to open while remaining at a 45 degree angle.",
+      "Return to the starting position by flexing your pecs and bringing the handles together at chest height.",
+      "Slowly lower back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Intermediate",
     "isBodyweight": false
   },
   {
@@ -10006,26 +10565,49 @@
   },
   {
     "name": "Standing Reverse Grip Cable Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-reverse-grip-cable-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-cable-reverse-curl.html",
     "id": "standingreversegripcablecurl",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Forearms"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "cable",
+    "instructions": [
+      "The reverse grip cable curl hits the forearms and the biceps.",
+      "Set up for the exercise by attaching a straight or EZ bar to the lower pulley cable and selecting the weight you want to use on the stack.",
+      "Grasp the bar using a reverse (or overhand) grip with your hands no wider than shoulder-width apart.",
+      "Stand up straight with your elbows tucked in at your sides.",
+      "Take up any slack in the cable so the stack is raised. This is the starting position for the exercise.",
+      "To execute, keep your elbows in at your sides and slowly curl the bar up as far as possible.",
+      "Pause, and then slowly lower the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Standing Smith Machine Wrist Curl (behind back)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-smith-machine-wrist-curl-behind-back.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-smith-machine-wrist-curl-%28behind-back%29.html",
     "id": "standingsmithmachinewristcurlbehindback",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Forearms"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "machine",
+    "instructions": [
+      "Set up for the exercise by setting up the smith machine just below your glutes and selecting the weight you want to use.",
+      "Grasp the bar behind your back at arm’s length using a overhand grip (palms facing out) with your hands no wider than shoulder width apart.",
+      "Take a step forward to bring the weight off the safety rack.",
+      "Stand straight up with your feet shoulder width apart and look straight forward. Bending only at the wrists, let the bar drop as far as possible. This is the starting position for the exercise.",
+      "Slowly raise the bar up as far as possible squeezing the forearm muscles at the top of the movement. Only your wrists should be moving.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -10048,14 +10630,35 @@
   },
   {
     "name": "Stiff Leg Deadlift",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/stiff-leg-deadlift.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/stiff-leg-deadlift-aka-romanian-deadlift.html",
     "id": "stifflegdeadlift",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Hamstrings"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Lats",
+      "Lower Back",
+      "Quads",
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "barbell",
+    "instructions": [
+      "Position the bar over the top of your shoelaces and assume a hip width stance.",
+      "Push your hips back and hinge forward until your torso is nearly parallel with the floor.",
+      "Reach down and grasp the bar using a shoulder width, double overhand grip.",
+      "Ensure your spine is neutral, shin is vertical, and your hips are roughly the same height as your shoulders.",
+      "Drive through the whole foot and focus on pushing the floor away.",
+      "Ensure the bar tracks in a straight line as you extend the knees and hips.",
+      "Once you have locked out the hips, reverse the movement by pushing the hips back and hinging forward.",
+      "Return the bar to the floor, reset, and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Intermediate",
     "isBodyweight": false
   },
   {
@@ -10123,26 +10726,47 @@
   },
   {
     "name": "Straight Leg Toe Touch",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/straight-leg-toe-touch.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/floor-reach.html",
     "id": "straightlegtoetouch",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Abs"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "bodyweight",
+    "instructions": [
+      "Lay supine in a relaxed position with your arms and legs straight.",
+      "Raise your legs straight until they are perpendicular with the floor.",
+      "Exhale as you reach straight up towards your toes.",
+      "Once your abs are fully contracted and your upper back is off the floor, slowly lower yourself back to the starting position.",
+      "Complete for the assigned number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Stretch Push Up (On Risers)",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/stretch-push-up.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/deep-push-ups.html",
     "id": "stretchpushuponrisers",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Chest"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "bodyweight",
+    "instructions": [
+      "Assume a quadruped position between risers with your shoulders underneath your hands, toes tucked, and knees under hips.",
+      "Place one hand on each riser and then extend one leg at a time. Assume a pushup position with the legs straight, elbows extended, and head in a neutral position looking at the floor.",
+      "Slowly descend to the floor by retracting the shoulder blades and unlocking the elbows.",
+      "Descend until your chest touches the bench.",
+      "Push back to the starting point by extending the elbows and driving your palms into the floor.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Intermediate",
     "isBodyweight": false
   },
   {
@@ -10470,14 +11094,30 @@
   },
   {
     "name": "Trap Bar Romanian Deadlift",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/trap-bar-romanian-deadlift.html",
+    "videoUrl": "https://www.muscleandstrength.com/content/trap-bar-romanian-deadlift",
     "id": "trapbarromaniandeadlift",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Hamstrings"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Glutes",
+      "Lats",
+      "Lower Back",
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "trap bar",
+    "instructions": [
+      "Stand inside of the trap bar with a hip width stance.",
+      "Assume a neutral grip on the handles and deadlift the weight into position at the top with the hips and knees locked out.",
+      "Begin the RDL by pushing your hips back and hinging forward until the bar is just below knee height.",
+      "Drive through the whole foot and focus on pushing the floor away.",
+      "Return to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -10614,14 +11254,24 @@
   },
   {
     "name": "Twisting Crunch",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/twisting-crunch.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/twisting-floor-crunch.html",
     "id": "twistingcrunch",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Abs"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "bodyweight",
+    "instructions": [
+      "Lie flat on your back on an exercise mat.",
+      "Bend one leg so that the knee forms a 90-degree angle.",
+      "Cross the opposite ankle over the bent knee.",
+      "Place your fingertips lightly on the sides of your head, and lift your shoulder blades slightly off the mat to engage your core.",
+      "Perform a crunch by twisting your torso, bringing the opposite elbow toward the raised knee.",
+      "Lower yourself back down slowly, stopping just before your shoulder blades touch the mat.",
+      "Complete the desired number of reps, then switch sides and repeat the movement."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
@@ -10649,38 +11299,68 @@
   },
   {
     "name": "Two-Arm Low Pulley Cable Curl",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/two-arm-low-pulley-cable-curl.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/two-arm-cable-curl.html",
     "id": "two-armlowpulleycablecurl",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Biceps"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "cable",
+    "instructions": [
+      "For this exercise, you will need a cable machine with two low pulley extensions. Set up by attaching a single handle to each of the two low pulley cables and selecting the weight you want to use.",
+      "Grab each handle with an underhand grip.",
+      "Standing in the center of the two pulleys, take a step forward.",
+      "Your arms should be fully extended and slightly behind your body.",
+      "With your elbows fixed in position, slowly curl your arms up as far as possible.",
+      "Squeeze the biceps at the top of the movement, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
     "name": "Underhand Close Grip Lateral Pulldown",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/underhand-close-grip-lateral-pulldown.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/underhand-close-grip-lat-pull-down.html",
     "id": "underhandclosegriplateralpulldown",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Middle Back"
+    ],
+    "equipment": "cable",
+    "instructions": [
+      "Set up for the underhand close grip lat pull by attaching a small straight bar to the machine (you can use the wide grip bar if you prefer), setting the weight on the stack, and adjusting the knee pad.",
+      "Grab the bar with an underhand grip, with your hands around 10-12 inches apart.",
+      "Sit down on the machine with your arms fully outstretched. This is the starting position.",
+      "Keeping your back and body straight, slowly pull the weight down to your upper chest.",
+      "Pause, and then slowly lower the weight back to the start position. Do not let the stack drop.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "Intermediate",
     "isBodyweight": false
   },
   {
     "name": "Upper Body Band Resistance Dead Bug",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/upper-body-band-resistance-dead-bug.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/upper-body-band-resisted-dead-bug",
     "id": "upperbodybandresistancedeadbug",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Abs"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "bands",
+    "instructions": [
+      "Attach a band to a rack and set up in a supine position with your legs in a 90/90 position (90 degree bend at the hips and knees) and your arms reaching towards the ceiling.",
+      "While keeping the arms straight, pull the band down to activate the lats.",
+      "Extend one leg as you exhale.",
+      "Return back to the starting position and repeat on the opposite side.",
+      "Repeat for the desired number of total repetitions."
+    ],
+    "difficulty": "Intermediate",
     "isBodyweight": false
   },
   {
@@ -11061,14 +11741,22 @@
   },
   {
     "name": "Weighted Russian Twist",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/weighted-russian-twist.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/weighted-side-touches.html",
     "id": "weightedrussiantwist",
     "bodyPart": "",
-    "targetMuscles": [],
+    "targetMuscles": [
+      "Abs"
+    ],
     "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "equipment": "other",
+    "instructions": [
+      "Set up for the weighted side touches by placing a mat on the floor and placing a bench (or something else to rest your feet under) at one end.",
+      "Lay down on the mat and put your feet under the support.",
+      "Grip your weight plate and hold it out in front of your body with your arms slightly bent.",
+      "Pull your upper body up, with your back straight, so that it's at about a 30 degree angle to the floor.",
+      "Keeping your back straight, twist at the torso moving the weight plates slowly from side to side."
+    ],
+    "difficulty": "Intermediate",
     "isBodyweight": false
   },
   {
@@ -11236,14 +11924,27 @@
   },
   {
     "name": "Wide Grip Lat Pull Down",
-    "videoUrl": "https://www.muscleandstrength.com/exercises/wide-grip-lat-pull-down.html",
+    "videoUrl": "https://www.muscleandstrength.com/exercises/wide-grip-pull-down",
     "id": "widegriplatpulldown",
     "bodyPart": "",
-    "targetMuscles": [],
-    "secondaryMuscles": [],
-    "equipment": "",
-    "instructions": [],
-    "difficulty": "",
+    "targetMuscles": [
+      "Lats"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "machine",
+    "instructions": [
+      "Attach a wide grip handle to the lat pull down machine and assume a seated position.",
+      "Grasp the handle with a pronated grip (double overhand) as wide as possible.",
+      "Initiate the movement by depressing the shoulder blade and then flexing the elbow while extending the shoulder.",
+      "Pull the handle towards your body until the elbows are in line with your torso and then slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
     "isBodyweight": false
   },
   {
