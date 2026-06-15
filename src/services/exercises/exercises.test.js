@@ -71,6 +71,37 @@ describe('filterAllExercises', () => {
     expect(results.some((e) => e.source === 'custom')).toBe(false)
     expect(results.length).toBe(filterExercises({}).length)
   })
+
+  it('shadows a custom exercise whose name collides with a built-in', () => {
+    const builtin = filterExercises({})[0]
+    // A custom record sharing a built-in name (different casing/whitespace) must
+    // not double the exercise in the merged list — the built-in wins.
+    const colliding = {
+      id: 'collide-1',
+      name: `  ${builtin.name.toUpperCase()}  `,
+      source: 'custom',
+      targetMuscles: [],
+      secondaryMuscles: [],
+      instructions: []
+    }
+    const all = filterAllExercises({}, [colliding])
+    expect(all.filter((e) => e.id === 'collide-1')).toHaveLength(0)
+    expect(all.filter((e) => e.name === builtin.name)).toHaveLength(1)
+  })
+
+  it('shadows a custom exercise whose id collides with a built-in', () => {
+    const builtin = filterExercises({})[0]
+    const colliding = {
+      id: builtin.id,
+      name: 'Totally Different Name',
+      source: 'custom',
+      targetMuscles: [],
+      secondaryMuscles: [],
+      instructions: []
+    }
+    const all = filterAllExercises({}, [colliding])
+    expect(all.some((e) => e.name === 'Totally Different Name')).toBe(false)
+  })
 })
 
 describe('getCombinedFilterOptions', () => {

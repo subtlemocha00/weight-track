@@ -119,18 +119,38 @@ export function filterExercises(filters = {}) {
 }
 
 /**
+ * Custom exercises that do NOT collide with a built-in exercise, by id or by
+ * normalized name. A collision happens when an exercise first existed only as a
+ * user-created custom record and the same exercise was later shipped in the
+ * built-in dataset: both would otherwise render, showing the exercise twice.
+ * The built-in dataset is the source of truth, so the colliding custom record is
+ * shadowed (dropped from the merged list). The Firestore document is untouched —
+ * it just stops appearing once the built-in equivalent exists.
+ */
+function customsWithoutBuiltinCollision(customExercises) {
+  if (!Array.isArray(customExercises) || customExercises.length === 0) return []
+  const ids = getByIdIndex()
+  const names = getByNameIndex()
+  return customExercises.filter(
+    (ex) => !ids.has(ex?.id) && !names.has(normalizeExerciseName(ex?.name))
+  )
+}
+
+/**
  * Filter across both the built-in library and the supplied custom exercises,
  * returning a single merged list. The combined result is sorted by name so
  * custom exercises appear in their natural alphabetical position rather than
  * tacked on at the end. Custom exercises are passed in (already loaded) so
- * searching/filtering never triggers a Firestore read.
+ * searching/filtering never triggers a Firestore read. Customs that collide with
+ * a built-in are dropped so the same exercise never appears twice.
  */
 export function filterAllExercises(filters = {}, customExercises = []) {
-  if (!Array.isArray(customExercises) || customExercises.length === 0) {
+  const customs = customsWithoutBuiltinCollision(customExercises)
+  if (customs.length === 0) {
     return filterExercises(filters)
   }
 
-  const list = exercises.concat(customExercises)
+  const list = exercises.concat(customs)
   const q = filters.query ? String(filters.query).trim().toLowerCase() : ''
   const filtered = hasNoFilters(filters)
     ? list
@@ -258,7 +278,7 @@ export function resolveExerciseById(id, customExercises = []) {
  */
 export function searchAllExercises(query, customExercises = []) {
   const builtin = searchExercises(query)
-  const custom = Array.isArray(customExercises) ? customExercises : []
+  const custom = customsWithoutBuiltinCollision(customExercises)
 
   if (!query) return [...builtin, ...custom]
   const q = String(query).trim().toLowerCase()
