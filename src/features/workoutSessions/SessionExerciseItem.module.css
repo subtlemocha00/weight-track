@@ -80,6 +80,11 @@
   cursor: not-allowed;
 }
 
+.remove {
+  color: var(--neon-pink);
+  border-color: rgba(255, 45, 120, 0.4);
+}
+
 .superset {
   align-self: flex-start;
   font-size: 10px;

@@ -12,6 +12,7 @@ function SessionExerciseItemImpl({
   readOnly,
   onMoveUp,
   onMoveDown,
+  onRemove,
   onUpdateSet,
   onToggleSetCompleted,
   onSetUnit
@@ -94,6 +95,16 @@ function SessionExerciseItemImpl({
           title="Move down"
         >
           ↓
+        </button>
+        <button
+          type="button"
+          className={`${styles.iconButton} ${styles.remove}`}
+          onClick={onRemove}
+          disabled={readOnly}
+          aria-label="Remove exercise from workout"
+          title="Remove"
+        >
+          ✕
         </button>
       </div>
 

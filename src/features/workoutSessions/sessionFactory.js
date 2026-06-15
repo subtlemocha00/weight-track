@@ -1,4 +1,40 @@
 import { newId } from '../../utils/id'
+import {
+  DEFAULT_SETS_PER_EXERCISE,
+  DEFAULT_REPS,
+  DEFAULT_UNIT
+} from '../routines/routineFactory'
+
+/**
+ * A fresh, uncompleted set for a session exercise. Mirrors the set shape used
+ * by `createSessionFromRoutine` (reps/weight/unit/completed/timestamp).
+ */
+export function createSessionSet() {
+  return {
+    reps: DEFAULT_REPS,
+    weight: null,
+    unit: DEFAULT_UNIT,
+    completed: false,
+    timestamp: null
+  }
+}
+
+/**
+ * Build a session exercise from a library exercise object (built-in or custom)
+ * for an exercise added mid-workout. Starts with the same default set count as
+ * a routine exercise, all uncompleted. This only ever modifies the active
+ * session — the source routine is untouched.
+ */
+export function createSessionExercise(exercise, order) {
+  return {
+    exerciseId: exercise.id,
+    name: exercise.name,
+    order,
+    sets: Array.from({ length: DEFAULT_SETS_PER_EXERCISE }, createSessionSet),
+    notes: '',
+    supersetGroup: null
+  }
+}
 
 /**
  * Snapshot a routine into a fresh in-progress workout session.

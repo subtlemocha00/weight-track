@@ -1,27 +1,56 @@
+import { DEFAULT_REPS, DEFAULT_UNIT } from '../routines/routineFactory'
+
 /**
- * Apply set/reps changes and exercise ordering from a completed session back
- * onto its source routine. Only the fields the Phase 4 spec explicitly lists
- * (set values + ordering) are touched — restSeconds, notes, and supersetGroup
- * stay on the routine.
+ * Materialize a routine exercise from a session exercise that was added during
+ * the workout (no routine counterpart). Session sets carry `weight`; routine
+ * sets carry `targetWeight` and a `restSeconds` field, so the shapes are
+ * translated here. restSeconds defaults to null (per-set rest is not edited
+ * during a workout).
+ */
+function sessionExerciseToRoutineExercise(sessionExercise, order) {
+  return {
+    exerciseId: sessionExercise.exerciseId,
+    name: sessionExercise.name,
+    order,
+    sets: sessionExercise.sets.map((set) => ({
+      reps: set.reps ?? DEFAULT_REPS,
+      targetWeight: set.weight ?? null,
+      unit: set.unit ?? DEFAULT_UNIT,
+      restSeconds: null
+    })),
+    notes: sessionExercise.notes ?? '',
+    supersetGroup: sessionExercise.supersetGroup ?? null
+  }
+}
+
+/**
+ * Apply changes from a completed session back onto its source routine. This is
+ * ONLY called when the user explicitly opts in after finishing a workout — the
+ * routine template is never modified automatically during a session.
  *
- * The routine's exercises are matched to the session by `exerciseId`. If an
- * exercise disappeared from the routine between start and finish, it is
- * skipped. Routine exercises not present in the session are preserved at the
- * tail of the array so users don't lose data.
+ * The session's exercise list is treated as the desired routine shape, so all
+ * edits made during the workout are reflected:
+ *   - set values (reps/weight/unit) and exercise ordering are applied
+ *   - exercises added during the workout are materialized into the routine
+ *   - exercises removed during the workout are dropped from the routine
+ *
+ * Routine-only fields not edited during a workout (restSeconds, notes,
+ * supersetGroup) are preserved for exercises that existed before the session.
  */
 export function applySessionToRoutine(routine, session) {
   const routineExercisesById = new Map(
     routine.exercises.map((exercise) => [exercise.exerciseId, exercise])
   )
 
-  const updatedExercises = []
-  const usedIds = new Set()
-
-  for (const sessionExercise of session.exercises) {
+  const updatedExercises = session.exercises.map((sessionExercise, order) => {
     const original = routineExercisesById.get(sessionExercise.exerciseId)
-    if (!original) continue
-    usedIds.add(sessionExercise.exerciseId)
 
+    // Added during the workout — build a fresh routine exercise from it.
+    if (!original) {
+      return sessionExerciseToRoutineExercise(sessionExercise, order)
+    }
+
+    // Existed before — update set values in place, keep routine-only fields.
     const updatedSets = original.sets.map((routineSet, index) => {
       const sessionSet = sessionExercise.sets[index]
       if (!sessionSet) return routineSet
@@ -33,22 +62,12 @@ export function applySessionToRoutine(routine, session) {
       }
     })
 
-    updatedExercises.push({
+    return {
       ...original,
-      order: updatedExercises.length,
+      order,
       sets: updatedSets
-    })
-  }
-
-  // Preserve any routine exercises the session didn't touch (e.g. routine was
-  // edited mid-session) at the end, in their original relative order.
-  for (const exercise of routine.exercises) {
-    if (usedIds.has(exercise.exerciseId)) continue
-    updatedExercises.push({
-      ...exercise,
-      order: updatedExercises.length
-    })
-  }
+    }
+  })
 
   return {
     ...routine,

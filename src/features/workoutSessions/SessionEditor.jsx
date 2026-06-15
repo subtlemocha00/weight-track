@@ -4,9 +4,11 @@ import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { saveSession } from '../../services/workoutSessions'
 import { getRoutine, saveRoutine } from '../../services/routines'
+import { listCustomExercises } from '../../services/customExercises'
 import { applySessionToRoutine } from './applyToRoutine'
 import { sessionReducer } from './sessionReducer'
 import { SessionExerciseItem } from './SessionExerciseItem'
+import { AddExercisePanel } from '../routines/AddExercisePanel'
 import { ElapsedTime } from './ElapsedTime'
 import { writeActiveWorkout, clearActiveWorkout } from '../../utils/activeWorkout'
 import { useConfirm } from '../../hooks/useConfirm'
@@ -21,14 +23,34 @@ export function SessionEditor({ initialSession }) {
   const [session, dispatch] = useReducer(sessionReducer, initialSession)
   const [finishing, setFinishing] = useState(false)
   const [error, setError] = useState(null)
+  // Loaded so the add-exercise picker can search the user's custom library in
+  // addition to the built-in one. Non-fatal if it fails — the built-in library
+  // still works.
+  const [customExercises, setCustomExercises] = useState([])
 
   const isCompleted = session.status === 'completed'
   const isActive = !isCompleted && !finishing
 
-  // Autosave every state change to localStorage for crash recovery
+  // Autosave every state change to localStorage for crash recovery. This also
+  // persists exercises added/removed mid-workout, so they survive refresh.
   useEffect(() => {
     writeActiveWorkout(session)
   }, [session])
+
+  useEffect(() => {
+    if (!user) return
+    let cancelled = false
+    listCustomExercises(user.uid)
+      .then((list) => {
+        if (!cancelled) setCustomExercises(list)
+      })
+      .catch(() => {
+        // Non-fatal: built-in exercises remain searchable.
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [user])
 
   // Warn on browser close / tab close / hard refresh while workout is active
   useBeforeUnload(isActive)
@@ -86,6 +108,27 @@ export function SessionEditor({ initialSession }) {
     navigate('/home')
   }, [isActive, navigate, confirm])
 
+  const handleAddExercise = useCallback((exercise) => {
+    // Affects the active session only — the source routine is never touched here.
+    dispatch({ type: 'ADD_EXERCISE', exercise })
+  }, [])
+
+  const handleRemoveExercise = useCallback(
+    async (index) => {
+      const target = session.exercises[index]
+      const ok = await confirm({
+        title: 'Remove exercise?',
+        message: `"${target?.name || 'This exercise'}" will be removed from this workout. Your saved routine is not affected.`,
+        confirmLabel: 'Remove',
+        cancelLabel: 'Cancel',
+        destructive: true
+      })
+      if (!ok) return
+      dispatch({ type: 'REMOVE_EXERCISE', index })
+    },
+    [session.exercises, confirm]
+  )
+
   return (
     <div className={styles.editor}>
       <AppHeader onBack={handleBack} />
@@ -121,9 +164,18 @@ export function SessionEditor({ initialSession }) {
 
       {error && <div className={styles.error}>{error}</div>}
 
+      {isActive && (
+        <AddExercisePanel
+          onAdd={handleAddExercise}
+          customExercises={customExercises}
+        />
+      )}
+
       {session.exercises.length === 0 ? (
         <div className={styles.empty}>
-          This routine has no exercises to log.
+          {isActive
+            ? 'No exercises yet. Use the panel above to add some.'
+            : 'This workout has no exercises to log.'}
         </div>
       ) : (
         <div className={styles.exercises}>
@@ -141,6 +193,7 @@ export function SessionEditor({ initialSession }) {
               onMoveDown={() =>
                 dispatch({ type: 'MOVE_EXERCISE', from: index, to: index + 1 })
               }
+              onRemove={() => handleRemoveExercise(index)}
               onUpdateSet={(setIndex, patch) =>
                 dispatch({
                   type: 'UPDATE_SET',

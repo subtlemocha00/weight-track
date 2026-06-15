@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import {
-  filterExercises,
-  getFilterOptions
+  filterAllExercises,
+  getCombinedFilterOptions
 } from '../../services/exercises'
 import { ExerciseFilters } from '../exercises/ExerciseFilters'
 import styles from './AddExercisePanel.module.css'
@@ -14,14 +14,27 @@ const INITIAL_FILTERS = {
   difficulty: ''
 }
 
-export function AddExercisePanel({ onAdd }) {
+/**
+ * Shared exercise picker used by both the routine editor and the active workout
+ * session editor. `customExercises` is optional and defaults to []: when omitted
+ * (routine editor's current usage) behavior is identical to a built-in-only
+ * search; when supplied (workout session), the user's custom library is merged
+ * in so any custom exercise is searchable/filterable too.
+ */
+export function AddExercisePanel({ onAdd, customExercises = [] }) {
   const [filters, setFilters] = useState(INITIAL_FILTERS)
-  const options = useMemo(() => getFilterOptions(), [])
+  const options = useMemo(
+    () => getCombinedFilterOptions(customExercises),
+    [customExercises]
+  )
 
   const update = (key) => (value) =>
     setFilters((prev) => ({ ...prev, [key]: value }))
 
-  const results = useMemo(() => filterExercises(filters), [filters])
+  const results = useMemo(
+    () => filterAllExercises(filters, customExercises),
+    [filters, customExercises]
+  )
 
   return (
     <details className={styles.panel}>

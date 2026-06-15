@@ -1,3 +1,5 @@
+import { createSessionExercise } from './sessionFactory'
+
 function reorderOrders(exercises) {
   return exercises.map((exercise, index) =>
     exercise.order === index ? exercise : { ...exercise, order: index }
@@ -55,6 +57,20 @@ export function sessionReducer(state, action) {
         ...exercise,
         sets: exercise.sets.map((set) => ({ ...set, unit: action.unit }))
       }))
+
+    case 'ADD_EXERCISE': {
+      // Add an exercise to the active session only. Completed sets on existing
+      // exercises are untouched; the new exercise begins fully uncompleted.
+      const order = state.exercises.length
+      const entry = createSessionExercise(action.exercise, order)
+      return { ...state, exercises: [...state.exercises, entry] }
+    }
+
+    case 'REMOVE_EXERCISE': {
+      const next = state.exercises.filter((_, i) => i !== action.index)
+      if (next.length === state.exercises.length) return state
+      return { ...state, exercises: reorderOrders(next) }
+    }
 
     case 'MOVE_EXERCISE': {
       const { from, to } = action
