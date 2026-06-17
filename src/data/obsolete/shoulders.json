@@ -1,0 +1,4111 @@
+[
+  {
+    "id": "dumbbell-lateral-raise",
+    "name": "Dumbbell Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack, then take a few steps back into an open area.",
+      "Take a deep breath and raise the dumbbells\u00a0to shoulder height using a neutral grip (palms facing in) while keeping the elbows slightly bent.",
+      "Slowly lower the dumbbells\u00a0back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-lateral-raise.html"
+  },
+  {
+    "id": "military-press",
+    "name": "Military Press (AKA Overhead Press) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height then load the desired weight onto the bar.",
+      "Assume a shoulder width stance and place your hands at (or just outside of) shoulder width with a pronated grip on the bar.",
+      "Step underneath the bar and unrack it while keeping the spine in a neutral position.",
+      "Take two steps back, inhale, brace, tuck the chin, then press the bar to lockout overhead.",
+      "Exhale once the bar gets to lockout and reverse the movement slowly while controlling the bar back to your chest.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/military-press.html"
+  },
+  {
+    "id": "seated-dumbbell-press",
+    "name": "Seated Dumbbell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up an adjustable angle bench to 90 degrees and select the desired weight from the rack.",
+      "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench.",
+      "Using a safe and controlled motion, kick your knees up one at a time in order to get each dumbbell into place.",
+      "Once the dumbbells are in place, rotate your palms so they are facing forward.",
+      "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-press.html"
+  },
+  {
+    "id": "standing-dumbbell-press",
+    "name": "Standing Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "",
+      "Set up for the exercise by grabbing a pair of dumbbells and standing up with your feet around shoulder width apart.",
+      "Raise the dumbbells to shoulder height on each side, and rotate your palms so they are facing forward. This is the starting position for the exercise.",
+      "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Repeat for the desired number of repetitions.",
+      ""
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-dumbbell-press.html"
+  },
+  {
+    "id": "bent-over-dumbbell-reverse-fly",
+    "name": "Bent Over Dumbbell Reverse Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack then take a few steps back into an open area.",
+      "Hinge from the hips until your body is almost parallel to the floor and allow the arms to hang straight down from the shoulders with a neutral grip.",
+      "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-dumbbell-reverse-fly.html"
+  },
+  {
+    "id": "seated-arnold-press",
+    "name": "Seated Arnold Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up an adjustable angle bench to 90 degrees and select the desired weight from the rack.",
+      "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench.",
+      "Using a safe and controlled motion, kick your knees up one at a time in order to get each dumbbell into place.",
+      "Once the dumbbells are in place, rotate your palms so they are facing you.",
+      "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "As you press, rotate the dumbbells until your palms are facing forward.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-arnold-press.html"
+  },
+  {
+    "id": "cable-face-pull",
+    "name": "Cable Face Pull Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Assume a split stance with the arms straight out in front of you utilizing a pronated grip.",
+      "Inhale and pull the rope towards your face with the elbows high.",
+      "Slowly lower the rope back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-face-pull"
+  },
+  {
+    "id": "smith-machine-shoulder-press",
+    "name": "Smith Machine Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Place an adjustable bench\u00a0in the Smith machine and\u00a0adjust the back to a 90-degree angle.",
+      "Adjust\u00a0the bar to around eye level and load the desired weight on the bar.",
+      "Position your hands\u00a0around shoulder-width apart and unrack the bar using a pronated grip.\u00a0This is the starting position for the movement.",
+      "Press the bar\u00a0overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the bar\u00a0back to the starting position (the arms should be roughly 90 degrees or slightly lower depending on\u00a0limb lengths).",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-shoulder-press.html"
+  },
+  {
+    "id": "seated-shoulder-press",
+    "name": "Seated Barbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height while standing then load the desired weight onto the bar.",
+      "Place an adjustable bench beneath the bar in an upright position.",
+      "Sit down on the bench and unrack the bar using a pronated grip.",
+      "Inhale, brace, tuck the chin, then lower the bar to the top of your chest.",
+      "Exhale and press the bar back to lockout.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-shoulder-press.html"
+  },
+  {
+    "id": "dumbbell-reverse-fly",
+    "name": "Seated Bent Over Dumbbell Reverse Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Secure a flat bench and select the desired weight from the rack.",
+      "Sit in an upright position and then hinge forward from the hips.",
+      "Allow the arms to hang straight down from the shoulders with a neutral grip and dumbbells behind your calves.",
+      "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-reverse-fly.html"
+  },
+  {
+    "id": "dumbbell-front-raise",
+    "name": "Standing Dumbbell Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Choose a pair of dumbbells with a pronated grip and assume a shoulder-width stance",
+      "Inhale, brace your abs and raise your arms vertically while keeping a slight bend in your elbow.",
+      "Once your arms are parallel with the floor, slowly lower the dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-front-raise.html"
+  },
+  {
+    "id": "seated-dumbbell-lateral-raise",
+    "name": "Seated Dumbbell Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells\u00a0with a neutral grip and sit on the edge of a flat bench with your feet around shoulder width apart. This is the starting position for the exercise.",
+      "Slowly raise the dumbbells to around shoulder height.",
+      "Pause and slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-lateral-raise.html"
+  },
+  {
+    "id": "standing-cable-flys",
+    "name": "Standing Cable Reverse Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Position two cables at chest height and attach a handle.",
+      "Reach across your body and grab one handle with a neutral grip. Repeat for the opposite arm.",
+      "Position the arms straight ahead holding onto each handle and keep a soft bend in the knees.",
+      "Keep the elbows slightly bent and pull the handles laterally without squeezing the shoulder blades together excessively.",
+      "Slowly lower the handles back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-cable-flys.html"
+  },
+  {
+    "id": "machine-reverse-fly",
+    "name": "Machine Reverse Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Face the fly machine while seated with your chest against the pad and the handles positioned in front of your torso.",
+      "Reach forward and grasp each handle with a pronated or neutral grip.",
+      "Contract the rear delts while keeping the elbows bent and open the arms in a reverse fly motion.",
+      "Slowly lower the handles back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/machine-reverse-fly"
+  },
+  {
+    "id": "machine-shoulder-press",
+    "name": "Machine Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Assume a seated position in the machine with the handles set at roughly shoulder height.",
+      "Grab the handles with a pronated or neutral grip.",
+      "Inhale and press directly overhead.",
+      "Slowly lower the handles back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/machine-shoulder-press"
+  },
+  {
+    "id": "one-arm-cable-lateral-raise",
+    "name": "Single Arm Cable Lateral Raise (Crossbody) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Position a cable at the lowest position possible and attach a single handle.",
+      "Reach across your body and grab the handle with a neutral grip.",
+      "Keep the elbow slightly bent and pull the handle across your body and raise laterally.",
+      "Slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-cable-lateral-raise.html"
+  },
+  {
+    "id": "dumbbell-reverse-fly-on-incline-bench",
+    "name": "Incline Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the exercise by setting an adjustable back bench to an angle of around 30-40 degrees.",
+      "Grab a set of dumbbells and position yourself with your chest on the back of the bench (prone position).",
+      "Plant your feet on the floor for stability and\u00a0hold the dumbbells with a\u00a0neutral grip.",
+      "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-reverse-fly-on-incline-bench.html"
+  },
+  {
+    "id": "two-arm-cable-lateral-raise",
+    "name": "Cable Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set the pulleys of a dual cable machine to the low setting and select the weight you wish to use.",
+      "Stand facing away from the machine and grasp opposite handles with opposite hands.",
+      "Stand straight up with your arms in front of you (crossed over). The weight should be slightly off the stack. This is the starting position for the movement.",
+      "Keeping your elbows high, extend your arms out in a semi-circle motion.",
+      "Once your hands get to around shoulder height, pause and slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/two-arm-cable-lateral-raise.html"
+  },
+  {
+    "id": "cable-upright-row",
+    "name": "Cable Upright Row Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Position a cable at the lowest position possible and attach a straight bar.",
+      "Reach down and grab the handle with a pronated grip and stand up with the arms straight.",
+      "Take a deep breath then pull the handle high directly up the front of your body by driving your elbows high.",
+      "Slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-upright-row.html"
+  },
+  {
+    "id": "seated-barbell-press-behind-neck",
+    "name": "Seated Behind the Neck Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height while standing then load the desired weight onto the bar.",
+      "Place an adjustable bench beneath the bar in an upright position.",
+      "Sit down on the bench and unrack the bar using a pronated grip.",
+      "Inhale, brace, tuck the chin, then lower the bar to the back of your neck.",
+      "Exhale and press the bar back to lockout.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-barbell-press-behind-neck.html"
+  },
+  {
+    "id": "bent-over-cable-rear-delt-fly",
+    "name": "Bent Over Low Pulley Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Position two cables at the bottom of the cable pulley machine\u00a0and attach a handle.",
+      "Hinge forward, reach across your body, and grab the handle with a neutral grip. Repeat for the opposite arm.",
+      "Allow the arms to hang straight down and keep a soft bend in the knees.",
+      "Keep the elbows slightly bent and pull the handles laterally without squeezing the shoulder blades together excessively.",
+      "Slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-cable-rear-delt-fly"
+  },
+  {
+    "id": "weight-plate-front-raise",
+    "name": "Weight Plate Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Other",
+    "instructions": [
+      "Grab a weight plate\u00a0with your palms facing one another at around the 3 and 9 o'clock positions.",
+      "Stand up with your shoulders back and core engaged, and hold the weight about 5 inches from your body. This is the starting position for the exercise.",
+      "Keeping a slight bend in your elbows, slowly raise the plate until your arms are just above parallel to the floor.",
+      "Pause and slowly lower the plate back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/weight-plate-front-raise.html"
+  },
+  {
+    "id": "barbell-front-raise",
+    "name": "Barbell Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Select the desired weight and load it onto a barbell.",
+      "Assume a shoulder width stance and grasp the bar at shoulder width with a pronated grip.",
+      "Inhale, brace your abs, and raise the arms vertically while keeping the elbows nearly locked out.",
+      "Once the arms are parallel with the floor, slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/barbell-front-raise.html"
+  },
+  {
+    "id": "machine-lateral-raise",
+    "name": "Lateral Raise Machine Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Sit on the machine with your back straight and feet flat on the floor.",
+      "Adjust the seat so your shoulders are aligned with the machine\u2019s pivot point.",
+      "Place your arms against the pads or hold the handles, depending on the machine design.",
+      "Keep your elbows slightly bent and grip relaxed. This is the starting position.",
+      "Lift your arms out to the sides until they are at shoulder height.",
+      "Pause briefly at the top.",
+      "Lower your arms slowly back to the starting position. This is one rep.",
+      "Repeat for the desired number of reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/machine-lateral-raise.html"
+  },
+  {
+    "id": "cable-front-raise",
+    "name": "Cable Front Raise (Bilateral) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Assume a shoulder width stance with the cable running between your legs and grasp the handle with both hands using a pronated grip.",
+      "Inhale, brace your abs, and raise the arms vertically while keeping the elbows slightly bent.",
+      "Once the arms are parallel with the floor, slowly lower the handle back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-front-raise.html"
+  },
+  {
+    "id": "standing-arnold-press",
+    "name": "Standing Arnold Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the exercise by grabbing a pair of dumbbells and standing up with your feet around shoulder width apart.",
+      "Raise the dumbbells to shoulder height on each side, and twist so that your palms are facing your body.",
+      "The dumbbells should now be positioned\u00a0in front of your shoulders. Your back should be straight and there should be a slight bend in your knees. This is the starting position for the exercise.",
+      "Slowly raise the dumbbells\u00a0above your head while rotating your wrists so that your palms face forward.",
+      "Keep raising the weight until your arms are almost fully extended.",
+      "Do not pause at the top of the movement. Instead,\u00a0begin lowering the dumbbells back down to the starting position - rotating\u00a0at the wrist until your palms are facing your body once again.",
+      "Repeat this movement for the desired amount of reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-arnold-press.html"
+  },
+  {
+    "id": "band-pull-apart",
+    "name": "Band Pull Apart Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Set up in an athletic position with a band in both hands and your palms facing down.",
+      "Lift the hands to shoulder height with the elbows extended.",
+      "Exhale and pull the band apart until it nearly touches your chest.",
+      "Slowly lower back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/band-pull-apart"
+  },
+  {
+    "id": "scapular-wall-slide",
+    "name": "Scapular Wall Slide Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Setup in a standing position with feet away from the wall and your lower back, hands, and elbows touching the wall.",
+      "Exhale and slide your hands up the wall while maintaining a neutral spine position until the elbows are completely locked out.",
+      "Slowly return to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/scapular-wall-slide"
+  },
+  {
+    "id": "dumbbell-6-ways",
+    "name": "Dumbbell 6 Ways (Raise) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack then take a few steps back into an open area.",
+      "Take a deep breath and raise the dumbbells to shoulder height using a neutral grip (palms facing in) while keeping the elbows slightly bent.",
+      "Bring the dumbbells together at shoulder height and then lift the arms fully overhead.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-6-ways"
+  },
+  {
+    "id": "cable-face-pull-with-external-rotation",
+    "name": "Cable Face Pull with External Rotation Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Assume a split stance with the arms straight out in front of you utilizing a neutral grip (palms facing).",
+      "Inhale and pull the rope towards your face with the elbows high.",
+      "As the end of the rope approaches your face, pull the ends apart and drive the elbows back.",
+      "Slowly lower the rope back to the starting position and repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-face-pull-with-external-rotation"
+  },
+  {
+    "id": "push-press",
+    "name": "Push Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height then load the desired weight onto the bar.",
+      "Assume a shoulder width stance and place your hands at (or just outside of) shoulder width with a pronated grip on the bar.",
+      "Step underneath the bar and unrack it while keeping the spine in a neutral position.",
+      "Take two steps back, inhale, brace, and tuck the chin to prepare to go overhead.",
+      "Dip slightly at the knees and hips, then press the bar to lockout overhead by extending your legs and arms simultaneously.",
+      "Exhale once the bar gets to lockout and reverse the movement slowly while controlling the bar back to your chest.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/push-press"
+  },
+  {
+    "id": "smith-machine-upright-row",
+    "name": "Smith Machine Upright Row Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Select the desired weight and load it onto a barbell.",
+      "Unrack the bar by rotating the safety latches off the j-hooks.",
+      "Inhale, brace your abs, and then lead the movement by driving the elbows high as you pull the bar to chest height.",
+      "When the bar has reached its peak, reverse the movement slowly while controlling the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-upright-row.html"
+  },
+  {
+    "id": "cable-external-rotation",
+    "name": "Cable External Rotation Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Position a cable just above waist height and attach a handle.",
+      "Hinge from the elbow and bring the forearm up to 90 degrees while keeping the upper arm tight to the torso.",
+      "Externally rotate the shoulder by pulling the handle across your body away from your test while ensuring the hand doesn\u2019t drop.",
+      "Slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-external-rotation"
+  },
+  {
+    "id": "one-arm-dumbbell-lateral-raise",
+    "name": "One-Arm Dumbbell Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell and stand up while\u00a0holding the dumbbell down at your sides with a neutral grip. This is the starting position for the exercise.",
+      "Slowly raise the dumbbell to around shoulder height.",
+      "Pause and slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps and\u00a0then repeat with your other arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-lateral-raise.html"
+  },
+  {
+    "id": "seated-palms-in-dumbbell-press",
+    "name": "Seated Neutral Grip Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up an adjustable angle bench to 90 degrees and select the desired weight from the rack.",
+      "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench.",
+      "Using a safe and controlled motion, kick your knees up one at a time in order to get each dumbbell into place.",
+      "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Maintain a neutral grip throughout the duration of the exercise and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-palms-in-dumbbell-press.html"
+  },
+  {
+    "id": "banded-shoulder-dislocates",
+    "name": "Banded Shoulder Dislocates Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "In a standing position, hold a band in front of you at shoulder height and keep a slight bend in the elbows.",
+      "Rotate your arms overhead while keep tension on the band.",
+      "When the arms reach full flexion, shrug slightly and allow the arms to continue rotating until the band passes over your head and touches your back.",
+      "Rotate the arms back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-shoulder-dislocates"
+  },
+  {
+    "id": "clean-press",
+    "name": "Barbell Clean and Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Glutes",
+      "Hamstrings",
+      "Lower Back",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Begin the clean and press by placing a barbell on the floor in front of you and standing with your shoulders around shoulder width apart.",
+      "After loading the appropriate weight, make sure the bar is positioned over the tops of your feet at the mid-way point (half way between your toes and heel).",
+      "From this position, bend down and grasp the bar with an overhand grip.",
+      "Lower your buttocks to the ground until your thighs are parallel to the ground. Make sure your knees do NOT track out over your toes when doing so.",
+      "Look straight ahead and keep your back straight - make sure there is no arch in your lower back. You are now ready to begin the exercise.",
+      "Explode upward through your legs and quickly snap the weight up to your chest level in one fluid movement.",
+      "Continue the movement by pushing the weight straight above your head, using your shoulders and triceps to move the weight.",
+      "Under strict control, lower the weight back to your chest and then back\u00a0to the floor in the same fashion.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/clean-press.html"
+  },
+  {
+    "id": "alternate-seated-dumbbell-press",
+    "name": "Alternate Seated Dumbbell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up an adjustable angle bench to 90 degrees and select the desired weight from the rack.",
+      "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench.",
+      "Using a safe and controlled motion, kick your knees up one at a time in order to get each dumbbell into place.",
+      "Once the dumbbells are in place, rotate your palms so they are facing forward.",
+      "Take a deep breath then press the one dumbbell overhead by extending the elbow and contracting the deltoid.",
+      "Slowly lower the dumbbells back to the starting position and then press the other overhead by repeating step #5.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-seated-dumbbell-press.html"
+  },
+  {
+    "id": "bent-over-rear-delt-fly-head-on-bench",
+    "name": "Bent Over Rear Delt Fly (Head on Bench) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Position an incline bench at roughly 70-80 degrees and select the desired weight from the rack.",
+      "Hinge from the hips until your until your head is resting comfortably on the incline bench and allow the arms to hang straight down from the shoulders with a neutral grip.",
+      "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-rear-delt-fly-head-on-bench"
+  },
+  {
+    "id": "banded-lateral-raise",
+    "name": "Banded Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Stand on a band with a shoulder width stance and your arms hanging at your sides.",
+      "Inhale and raise the arms laterally to shoulder height using a pronated grip (palms facing down) while keeping the elbows slightly bent.",
+      "Slowly lower the band back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-lateral-raise"
+  },
+  {
+    "id": "dumbbell-upright-row",
+    "name": "Dumbbell Upright Row Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and assume a shoulder width stance with a slightly narrower grip.",
+      "Take a deep breath then pull the dumbbells directly up the front of your body to chest height, keeping them as close as possible.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-upright-row.html"
+  },
+  {
+    "id": "seated-high-barbell-front-raise",
+    "name": "Seated Barbell Overhead Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Grasp a\u00a0barbell or an EZ bar\u00a0with a pronated grip (palms facing down) and position your hands around shoulder width apart.",
+      "Sit down on the end of a\u00a0bench and let the barbell rest on your thighs. This is the starting position for the exercise.",
+      "Slowly raise the bar until it is almost straight above your head. You can keep a slight bend in your elbows.",
+      "Pause, and then slowly lower the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-high-barbell-front-raise.html"
+  },
+  {
+    "id": "rotational-med-ball-throw",
+    "name": "Rotational Medicine Ball Throw Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Triceps",
+      "Upper Back"
+    ],
+    "equipment": "Medicine Ball",
+    "instructions": [
+      "Setup in an athletic base position while holding a medicine ball at your waist with a soft bend in your arms and knees.",
+      "Load into the trail hip and rotate your shoulders back.",
+      "Rotate through explosively with the hips and throw the medicine ball into the wall directly in front of you.",
+      "Catch the med ball as it returns from the wall and repeat steps #2-3 for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rotational-med-ball-throw"
+  },
+  {
+    "id": "standing-palms-in-dumbbell-press",
+    "name": "Standing Neutral Grip Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells with a neutral grip and assume a shoulder-width stance.",
+      "Raise the dumbbells to around shoulder height while maintaining a neutral grip. This is the starting position.",
+      "Slowly press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Once your arms are fully extended, begin lowering the dumbbells back down to the starting position.",
+      "Repeat this movement for the desired amount of reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-palms-in-dumbbell-press.html"
+  },
+  {
+    "id": "lying-dumbbell-reverse-fly",
+    "name": "Lying Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a pair of\u00a0dumbbells and position yourself with your chest flat on a bench. Your feet can be straight out behind you or\u00a0used for stability on the floor.",
+      "Allow your arms to hang below the bench, holding the dumbbells with a neutral grip (palms facing one another). \u00a0This is the starting position.",
+      "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-dumbbell-reverse-fly.html"
+  },
+  {
+    "id": "alternate-standing-arnold-press",
+    "name": "Alternating Standing Arnold Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells and assume a shoulder-width stance.",
+      "Raise the dumbbells to around shoulder height, and rotate your wrists so that your\u00a0palms are\u00a0facing your body. This is the starting position.",
+      "Slowly press one dumbbell\u00a0overhead by extending the elbow\u00a0and contracting the deltoids.\u00a0As you press, rotate the dumbbell\u00a0until your palm\u00a0is\u00a0facing forward.",
+      "Once your arm\u00a0is\u00a0fully extended, begin lowering the dumbbell\u00a0back down to the starting position - rotating your wrist until your palm\u00a0is facing your body once again.",
+      "Immediately repeat this movement with your other arm. This is one rep.",
+      "Repeat for the desired amount of reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-standing-arnold-press.html"
+  },
+  {
+    "id": "standing-kettlebell-press",
+    "name": "Standing Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a standing position while grasping kettlebells in both hands with a neutral grip.",
+      "Clean the kettlebells to a front racked position.",
+      "Press the bells overhead until the shoulders reach full flexion and the elbows are locked out.",
+      "Slowly lower the kettlebells back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-kettlebell-press"
+  },
+  {
+    "id": "lateral-raise-partials",
+    "name": "Lateral Raise Partials Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack then take a few steps back into an open area.",
+      "Take a deep breath and raise the dumbbells to roughly 45 degrees using a neutral grip (palms facing in).",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lateral-raise-partials"
+  },
+  {
+    "id": "half-kneeling-landmine-press",
+    "name": "Half Kneeling Landmine Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Landmine",
+    "instructions": [
+      "Assume a half kneeling position with the knee under your hip, toes tucked, and ribcage down.",
+      "Shoulder the barbell in one hand and place your other hand on your ribcage to monitor spinal positioning.",
+      "Once the barbell is in place, take a deep breath and press to lockout by extending the elbow and contracting the deltoid.",
+      "Slowly lower the barbell back to the starting position on your shoulder and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/half-kneeling-landmine-press"
+  },
+  {
+    "id": "one-arm-seated-dumbbell-press",
+    "name": "One-Arm Seated Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the exercise by grabbing a dumbbell\u00a0and sitting on a bench with your\u00a0feet around shoulder width apart.",
+      "Raise the dumbbell to shoulder height and rotate your palm\u00a0to face\u00a0forward.",
+      "Take a deep breath then press the dumbbell\u00a0overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbell back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Repeat for the desired number of repetitions, then repeat with your opposite arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-dumbbell-press.html"
+  },
+  {
+    "id": "kettlebell-lateral-raise",
+    "name": "Kettlebell Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Select the desired weight from the rack, then take a few steps back into an open area.",
+      "Take a deep breath and raise the kettlebells to shoulder height using a neutral grip (palms facing in) while keeping the elbows slightly bent.",
+      "Slowly lower the kettlebells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/kettlebell-lateral-raise"
+  },
+  {
+    "id": "smith-machine-shoulder-press-behind-neck",
+    "name": "Smith Machine Behind the Neck Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Place an adjustable bench beneath the bar in an upright position.",
+      "Adjust the barbell to just below shoulder height while standing then load the desired weight onto the bar.",
+      "Sit down on the bench and unrack the bar using a pronated grip.",
+      "Inhale, brace, tuck the chin, then lower the bar to the back of your neck.",
+      "Exhale and press the bar back to lockout.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-shoulder-press-behind-neck.html"
+  },
+  {
+    "id": "arm-circles",
+    "name": "Arm Circles Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Stand in an upright position rotate the arms in a simultaneous clockwise or counterclockwise fashion.",
+      "Start with small circles and slowly work your way into larger circles.",
+      "Continue until the shoulders start to loosen up and blood flow increases.",
+      "Repeat the process in the opposite direction."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/arm-circles"
+  },
+  {
+    "id": "dumbbell-front-raise-on-incline-bench",
+    "name": "Lying Dumbbell Front Raise On Incline Bench Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a prone position on an incline bench with your legs and arms straight.",
+      "Reach down and grasp each dumbbell with a neutral or pronated grip.",
+      "Inhale and raise the arms vertically while keeping the elbows slightly bent.",
+      "Once the arms are parallel with the floor, exhale and slowly lower the dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-front-raise-on-incline-bench.html"
+  },
+  {
+    "id": "alternate-standing-dumbbell-front-raise",
+    "name": "Alternating Dumbbell Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab\u00a0a pair of dumbbells with a neutral grip\u00a0and assume a shoulder-width stance. This is the starting position.",
+      "Inhale, brace your core and slowly raise one arm\u00a0vertically while keeping a slight bend in your elbow.",
+      "Moving only at the shoulder, continue\u00a0raising the dumbbell until your arm is just above parallel to the floor.",
+      "Pause for a brief moment at the top of the movement, and slowly lower the dumbbell back to the starting position.",
+      "Immediately repeat\u00a0on the other arm. This is one rep.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-standing-dumbbell-front-raise.html"
+  },
+  {
+    "id": "one-arm-cable-reverse-fly",
+    "name": "One-Arm Bent-Over Cable Reverse Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set the pulley of a dual cable machine to the low setting and select the weight you wish to use.",
+      "Stand facing away from the machine and grasp the opposite handle with one hand.",
+      "With a slight bend in your knees,\u00a0bring your torso forward by bending at the waist. This is the starting position.",
+      "Moving only at the shoulder, uncross your arms by lifting your working arm in a semi-circular motion out to your side\u00a0until your arm\u00a0is parallel to the floor. Keep a slight bend in your elbows throughout the movement.",
+      "Squeeze your shoulder blades at the height of the movement and then begin slowly lowering the handle\u00a0back to the starting position.",
+      "Repeat for desired reps, and repeat with your other hand."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-cable-reverse-fly.html"
+  },
+  {
+    "id": "landmine-thruster",
+    "name": "Landmine Thruster Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Calves",
+      "Hamstrings",
+      "Lower Back",
+      "Quads",
+      "Traps",
+      "Triceps",
+      "Upper Back"
+    ],
+    "equipment": "Landmine",
+    "instructions": [
+      "Assume a standing position with your spine neutral and feet in your normal squat stance.",
+      "Shoulder the barbell in both hands in front of your chest.",
+      "Once the barbell is in place, squat to parallel by simultaneously breaking at the knees and hips.",
+      "Drive your feet into the floor and extend the knees and hips. Transfer your momentum into the bar press to lockout by extending the elbows and flexing the shoulders.",
+      "Slowly lower the barbell back to the starting position in front of your chest and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/landmine-thruster"
+  },
+  {
+    "id": "banded-standing-shoulder-press",
+    "name": "Banded Standing Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Stand on a band with your feet shoulder width apart and hold the band at shoulder height using a pronated grip (thumbs pointing towards one another).",
+      "Inhale and press the band overhead by extending the elbow and flexing the shoulder.",
+      "Slowly lower back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-standing-shoulder-press"
+  },
+  {
+    "id": "kettlebell-angled-press",
+    "name": "Kettlebell Angled Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a standing position while grasping a kettlebell by the handle with both hands.",
+      "Hinge forward until your torso is below a 45 degree angle.",
+      "While maintaining the hinge position, press the kettlebell overhead until the shoulders reach full flexion and the elbows are locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/kettlebell-angled-press"
+  },
+  {
+    "id": "landmine-lateral-raise",
+    "name": "Landmine Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps"
+    ],
+    "equipment": "Landmine",
+    "instructions": [
+      "Assume a standing position with your spine neutral and feet in your normal squat stance.",
+      "Hold the barbell in front of your body with one hand using a pronated grip.",
+      "Keeping the elbow extended, raise your arm across the body and reach tall at the top.",
+      "Slowly lower the barbell back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/landmine-lateral-raise"
+  },
+  {
+    "id": "standing-one-arm-kettlebell-press",
+    "name": "Standing One Arm Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a standing position while grasping a kettlebell with a neutral grip.",
+      "Curl or clean the kettlebell into a front racked position.",
+      "Press the bell overhead until the shoulder reaches full flexion and the elbow is locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-one-arm-kettlebell-press"
+  },
+  {
+    "id": "spider-crawls",
+    "name": "Spider Crawls Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Assume a standing position with your fingertips against a wall and a band wrapped around your wrists.",
+      "Slowly begin to walk your hands vertically up the wall while maintaining tension on the band.",
+      "Walk your fingertips up the wall until your elbows are extended and shoulders are flexed.",
+      "Slowly walk your fingertips back down the wall and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/spider-crawls"
+  },
+  {
+    "id": "dublin-press",
+    "name": "Dublin Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the dublin press by grabbing a pair of dumbbells and sitting at the end of a flat bench.",
+      "Raise the dumbbells to shoulder height on each side, and rotate\u00a0your wrists so that your palms are facing forward. This is the starting position for the exercise.",
+      "Slowly raise the dumbbells above your head and slightly outward until your arms are almost fully extended.",
+      "Do not pause at the top of the movement, and immediately begin lowering the dumbbells back down to the starting position.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dublin-press.html"
+  },
+  {
+    "id": "one-arm-cable-front-raise",
+    "name": "One-Arm Cable Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the exercise by attaching a single grip handle to a low pulley cable machine and selecting the weight you want to use.",
+      "Stand facing away from the machine and grip the handle with one hand using an overhand grip (palm\u00a0facing down).",
+      "Stand up and hold the handle just off your thighs pulling weight off the stack. This is the starting position.",
+      "To execute, slowly raise the handle to around shoulder height while keeping your arm\u00a0straight and your body fixed.",
+      "Pause, and then slowly lower the weight to the starting position.",
+      "Do not allow the stack to drop or the handle to touch your body.",
+      "Repeat for desired reps and then repeat using your right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-cable-front-raise.html"
+  },
+  {
+    "id": "step-behind-rotational-medicine-ball-throw",
+    "name": "Step Behind Rotational Medicine Ball Throw Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Triceps",
+      "Upper Back"
+    ],
+    "equipment": "Medicine Ball",
+    "instructions": [
+      "Setup in an athletic base position while holding a medicine ball at your waist with a soft bend in your arms and knees.",
+      "Step behind the front foot and drive off the back leg.",
+      "As you reacquire your athletic base position, load into the trail hip and rotate your shoulders back.",
+      "Explode through the hips as you throw the medicine ball into a wall.",
+      "Catch the med ball as it returns from the wall, take a few steps back, and repeat steps #2-3 for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/step-behind-rotational-medicine-ball-throw"
+  },
+  {
+    "id": "alternate-seated-arnold-press",
+    "name": "Seated Alternating Arnold Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells and sit on a bench with your feet around shoulder-width apart.",
+      "Raise the dumbbells to around shoulder height, and rotate your wrists so that your\u00a0palms are\u00a0facing your body. This is the starting position.",
+      "Slowly press one dumbbell\u00a0overhead by extending the elbow\u00a0and contracting the deltoids.\u00a0As you press, rotate the dumbbell\u00a0until your palm\u00a0is\u00a0facing forward.",
+      "Once your arm\u00a0is\u00a0fully extended, begin lowering the dumbbell\u00a0back down to the starting position - rotating your wrist until your palm\u00a0is facing your body once again.",
+      "Immediately repeat this movement with your other arm. This is one rep.",
+      "Repeat for the desired amount of reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-seated-arnold-press.html"
+  },
+  {
+    "id": "single-arm-landmine-press",
+    "name": "Single Arm Landmine Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Landmine",
+    "instructions": [
+      "Assume a standing position with your spine neutral and feet shoulder width apart.",
+      "Shoulder the barbell in one hand and place your other hand on your ribcage to monitor spinal positioning.",
+      "Once the barbell is in place, take a deep breath and press to lockout by extending the elbow and flexing the shoulder.",
+      "Slowly lower the barbell back to the starting position on your shoulder and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/single-arm-landmine-press"
+  },
+  {
+    "id": "cable-internal-rotation",
+    "name": "Cable Internal Rotation Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Position a cable just above waist height and attach a handle.",
+      "Hinge from the elbow and bring the forearm up to 90 degrees while keeping the upper arm tight to the torso.",
+      "Internally rotate the shoulder by pulling the handle across your body towards your chest while ensuring the hand doesn\u2019t drop.",
+      "Slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-internal-rotation"
+  },
+  {
+    "id": "one-arm-standing-dumbbell-front-raise",
+    "name": "One-Arm Dumbbell Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab\u00a0a dumbbell\u00a0with a pronated grip and assume a shoulder-width stance. This is the starting position.",
+      "Inhale, brace your core and raise your arm\u00a0vertically while keeping a slight bend in your elbow.",
+      "Moving only at the shoulder, continue\u00a0raising the dumbbell until your arm is just above parallel to the floor.",
+      "Pause for a brief moment at the top of the movement, and slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps, and then repeat the movement with your other\u00a0arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-standing-dumbbell-front-raise.html"
+  },
+  {
+    "id": "half-kneeling-bottoms-up-kettlebell-press",
+    "name": "Half Kneeling Bottoms Up Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a half kneeling position with your knee directly underneath your hip and your toes tucked.",
+      "Position the kettlebell in a bottoms up position and keep the elbow in line with the shoulder.",
+      "Press the bell overhead until the shoulder reaches full flexion and the elbow is locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/half-kneeling-bottoms-up-kettlebell-press"
+  },
+  {
+    "id": "high-weight-plate-front-raise",
+    "name": "Overhead Front Raise (with Weight Plate) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Other",
+    "instructions": [
+      "Choose a weight plate and stand with your feet around shoulder width apart. Hold the weight plate with your palms facing one another at around the 3 and 9 o'clock positions.",
+      "With your back straight,\u00a0contract\u00a0your midsection and pull your shoulders back. This is the starting position for the exercise.",
+      "Keeping a slight bend in your elbows, slowly raise the plate until it is almost straight above your head.",
+      "Pause, and then slowly lower the plate back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/high-weight-plate-front-raise.html"
+  },
+  {
+    "id": "side-lying-rear-delt-fly",
+    "name": "Side Lying Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Secure a flat bench and select the desired weight from the rack.",
+      "Hold one dumbbell directly in front of you while side lying against the bench. Use your free hand to support your head and bend your knees slightly to allow the bench to support your weight.",
+      "Take a deep breath and pull the dumbbell towards the ceiling using the rear deltoid.",
+      "Slowly lower the dumbbell back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/side-lying-rear-delt-fly"
+  },
+  {
+    "id": "kettlebell-halo",
+    "name": "Kettlebell Halo Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a standing position while grasping the horns of an upside down kettlebell.",
+      "Raise the kettlebell to eye level and focus on keeping the spine neutral.",
+      "Slowly rotate the kettlebell around your head in a circular fashion while keeping your torso stable.",
+      "Repeat for the assigned number of repetitions in both directions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/kettlebell-halo"
+  },
+  {
+    "id": "quadruped-push-up-plus",
+    "name": "Quadruped Push Up Plus Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Chest"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Setup in a quadruped position with the hands under shoulders and knees under hips.",
+      "Push into the floor and allow your shoulder blades to protract around your rib cage.",
+      "Reverse the movement and retract your shoulder blades while keeping the elbows locked out.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/quadruped-push-up-plus"
+  },
+  {
+    "id": "lying-single-arm-trap-raise",
+    "name": "Lying Single Arm Trap Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Setup in a prone position on one side of a table with your arm hanging freely and your chin supported on the end of the table.",
+      "Raise your freely hanging arm overhead by allowing the shoulder blade to upwardly rotate on the ribcage.",
+      "Finish at a 135 degree angle of shoulder flexion.",
+      "Slowly lower back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-single-arm-trap-raise"
+  },
+  {
+    "id": "standing-external-rotation-no-money",
+    "name": "Standing External Rotation (\"No Money Drill\") Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Assume a standing position with the elbows bent to 90 degrees and holding a band with a supinated (palms up) grip.",
+      "Inhale and allow the hands to travel laterally by externally rotating at the shoulder while keeping the elbows tight to your torso.",
+      "Slowly lower the band back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-external-rotation-no-money"
+  },
+  {
+    "id": "banded-face-pull",
+    "name": "Standing Banded Face Pull Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Assume a split stance with the arms straight out in front of you utilizing a pronated grip.",
+      "Inhale, brace your abs, and pull the band towards your face with the elbows high and wide.",
+      "Slowly lower the band back to the starting position and repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-face-pull"
+  },
+  {
+    "id": "z-press",
+    "name": "Z Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the safety pins to shoulder height while seated on the floor.",
+      "Set the bar on the pins, load the desired weight, and sit directly beneath the bar with your legs straight and torso upright.",
+      "Place your hands at (or just outside of) shoulder width with a pronated grip on the bar.",
+      "Inhale, brace your abs, tuck your chin, and push the bar to lockout overhead.",
+      "Exhale once the bar gets to lockout and reverse the movement slowly while controlling the bar back to the pins.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/z-press"
+  },
+  {
+    "id": "power-slam-battle-rope",
+    "name": "Power Slam Battling Rope Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a good athletic base position with your knees slightly bent, feet shoulder width apart, and both hands holding the ropes.",
+      "In a wave like motion, lift both arms overhead and generate full extension of the arms and hips before slamming the ropes to the ground.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/power-slam-battle-rope"
+  },
+  {
+    "id": "back-to-wall-shoulder-flexion",
+    "name": "Back to Wall Shoulder Flexion Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Setup in a standing position with your back against a wall and your feet roughly 6-8 inches away from the base of the wall.",
+      "Exhale and slowly raise the arms overhead as you try to touch your thumbs to the wall.",
+      "Return to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/back-to-wall-shoulder-flexion"
+  },
+  {
+    "id": "one-arm-seated-bent-over-dumbbell-reverse-fly",
+    "name": "One-Arm Seated Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell with a neutral grip and sit\u00a0on the edge of a flat bench.",
+      "Allow your arm to hang by your side.\u00a0You can place your non-working forearm across your knee for stability.",
+      "Bring your torso forward by bending at the waist. Keep your head up and your eyes facing forward.\u00a0This is the starting position.",
+      "Take a deep breath and pull the dumbbell\u00a0towards the ceiling using the rear deltoids, until parallel or as much as your range of motion allows.",
+      "Slowly lower the dumbbell\u00a0back to the starting position under control.",
+      "Repeat for the desired number of repetitions, and then repeat on your opposite arm."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-bent-over-dumbbell-reverse-fly.html"
+  },
+  {
+    "id": "one-arm-standing-dumbbell-press",
+    "name": "One-Arm Standing Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "",
+      "Set up for the exercise by grabbing a dumbbell\u00a0and standing up with your feet around shoulder width apart.",
+      "Raise the dumbbell to shoulder height and rotate your palm\u00a0to face\u00a0forward.",
+      "Take a deep breath then press the dumbbell\u00a0overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbell\u00a0back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Repeat for the desired number of repetitions, then repeat with your opposite arm.",
+      ""
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-standing-dumbbell-press.html"
+  },
+  {
+    "id": "single-arm-landmine-push-press",
+    "name": "Single Arm Landmine Push Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Landmine",
+    "instructions": [
+      "Assume a standing position with your spine neutral and feet shoulder width apart.",
+      "Shoulder the barbell in one hand and place your other hand on your ribcage to monitor spinal positioning.",
+      "Once the barbell is in place, take a deep breath and press to lockout by extending the elbow and flexing the shoulder.",
+      "Slowly lower the barbell back to the starting position on your shoulder and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/single-arm-landmine-push-press"
+  },
+  {
+    "id": "quadruped-push-up-plus",
+    "name": "Quadruped Push Up Plus Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Chest"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Setup in a quadruped position with the hands under shoulders and knees under hips.",
+      "Push into the floor and allow your shoulder blades to protract around your rib cage.",
+      "Reverse the movement and retract your shoulder blades while keeping the elbows locked out.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/quadruped-push-up-plus"
+  },
+  {
+    "id": "banded-face-pull",
+    "name": "Standing Banded Face Pull Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Assume a split stance with the arms straight out in front of you utilizing a pronated grip.",
+      "Inhale, brace your abs, and pull the band towards your face with the elbows high and wide.",
+      "Slowly lower the band back to the starting position and repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-face-pull"
+  },
+  {
+    "id": "rotational-med-ball-scoop-toss-facing-wall",
+    "name": "Rotational Medicine Ball Scoop Toss Facing Wall Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads"
+    ],
+    "equipment": "Medicine Ball",
+    "instructions": [
+      "Set up facing a wall in an athletic base position while holding a medicine ball at waist level with a soft bend in your arms and knees.",
+      "Rotate to one side and load back into the hip.",
+      "Rotate through explosively with the hips and throw the medicine ball into the wall directly in front of you.",
+      "Catch the med ball as it returns from the wall and repeat on the opposite side for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rotational-med-ball-scoop-toss-facing-wall"
+  },
+  {
+    "id": "single-arm-banded-external-rotation",
+    "name": "Single Arm Banded External Rotation Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Assume a standing position with your elbow flexed to 90 degrees while holding a band anchored to a sturdy object.",
+      "Rotate your hand away from your body while keeping your elbow tight to your torso.",
+      "Slowly lower the band back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/single-arm-banded-external-rotation"
+  },
+  {
+    "id": "alternating-waves-with-kneeling-get-ups-battle-ropes",
+    "name": "Alternating Waves with Kneeling Get Ups Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Forearms",
+      "Glutes",
+      "Hamstrings",
+      "Lats",
+      "Quads",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a half kneeling position with your knees underneath your hips and both hands holding a rope.",
+      "Alternates small waves with each rope by slamming them to the floor in a quick rhythmic fashion.",
+      "As you complete waves, slowly stand up out of the tall kneeling position by going to a half kneeling position and then finally driving up tall to finish.",
+      "Reverse lunge back to a half kneeling position and then to a tall kneeling position to return to the starting position.",
+      "Utilize the arms to generate the force and absorb the impact with your legs.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternating-waves-with-kneeling-get-ups-battle-ropes"
+  },
+  {
+    "id": "back-to-wall-alternating-shoulder-flexion",
+    "name": "Back to Wall Alternating Shoulder Flexion Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Setup in a standing position with your back against a wall and your feet roughly 6-8 inches away from the base of the wall.",
+      "Exhale and slowly raise the one arm overhead as you try to touch your thumbs to the wall.",
+      "Return to the starting position and repeat for the desired number of repetitions, then switch sides and repeat."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/back-to-wall-alternating-shoulder-flexion"
+  },
+  {
+    "id": "rotational-med-ball-step-behind-shot-put",
+    "name": "Rotational Medicine Ball Step Behind Shot Put Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Lower Back",
+      "Quads",
+      "Upper Back"
+    ],
+    "equipment": "Medicine Ball",
+    "instructions": [
+      "Setup in an athletic base position while holding a medicine ball at your back shoulder with the back elbow high.",
+      "Step behind the front foot and drive off the back leg.",
+      "As you reacquire your athletic base position, load into the trail hip and rotate your shoulders back.",
+      "Explode through the hips as you throw the medicine ball into a wall.",
+      "Catch the med ball as it returns from the wall, take a few steps back, and repeat steps #2-3 for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rotational-med-ball-step-behind-shot-put"
+  },
+  {
+    "id": "alternate-one-arm-standing-palms-in-dumbbell-press",
+    "name": "Standing Neutral Grip Alternating Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a standing position with your spine neutral, ribcage down, and head looking straight ahead.",
+      "Curl the dumbbells into position on your shoulders and ensure your spine remains in a neutral position by bracing your core. (Note: as the weight gets heavier you may have to utilize more of a clean motion to get them into place or allow a spotter to help)",
+      "Maintain a neutral grip, take a deep breath, and press one dumbbell overhead by extending the elbow and contracting the deltoid.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths) and repeat with the opposite side.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-one-arm-standing-palms-in-dumbbell-press.html"
+  },
+  {
+    "id": "alternate-dumbbell-reverse-fly-on-incline-bench",
+    "name": "Alternating Incline Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "",
+      "Set up for the exercise by setting an adjustable back bench to an angle of around 30-40 degrees.",
+      "Grab a pair of dumbbells and position yourself with your chest on the back of the bench (prone position).",
+      "Plant your feet on the floor for stability and\u00a0hold the dumbbells with a\u00a0neutral grip.",
+      "Take a deep breath and pull one dumbbell\u00a0towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbell\u00a0back to the starting position and immediately repeat the movement on the other arm. This is one rep.",
+      "Repeat for the desired number of repetitions.",
+      ""
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-dumbbell-reverse-fly-on-incline-bench.html"
+  },
+  {
+    "id": "jumping-jacks-battle-ropes",
+    "name": "Jumping Jacks Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Forearms",
+      "Glutes",
+      "Hamstrings",
+      "Lats",
+      "Quads",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a good athletic base position with your knees slightly bent, feet shoulder width apart, and both hands holding a rope.",
+      "Complete jumping jacks by swinging the shoulders into flexion and splitting the hips.",
+      "Utilize the arms to generate the force and absorb the impact with your legs.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/jumping-jacks-battle-ropes"
+  },
+  {
+    "id": "kettlebell-arm-bar",
+    "name": "Kettlebell Arm Bar Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Glutes",
+      "Hip Flexors",
+      "Triceps",
+      "Upper Back"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "In a side lying position, grasp a kettlebell with both hands and roll onto your back.",
+      "Press the kettlebell to full lockout using just one arm and then place your free hand out to the side of the body.",
+      "Bring the ipsilateral knee into flexion and maintain that position throughout the duration of the movement.",
+      "Rotate the knee in front of the body until it touches the floor. Keep your eyes on the kettlebell but allow the shoulder blade to move independently on the ribcage as the hips rotate.",
+      "Rotate the hips back to the starting position and repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/kettlebell-arm-bar"
+  },
+  {
+    "id": "pronated-90-degree-band-pull-apart",
+    "name": "Pronated 90 Degree Band Pull Apart Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Set up in an athletic position with a band in both hands and your palms facing down.",
+      "Pin the elbows to your sides at 90 degrees",
+      "Exhale and externally rotate the shoulders by pull the band apart slightly",
+      "Slowly rotate back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/pronated-90-degree-band-pull-apart"
+  },
+  {
+    "id": "bent-over-banded-reverse-fly",
+    "name": "Banded Bent Over Reverse Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Stand with your feet shoulder width apart, arms hanging at your side, and hold a band using a pronated grip (thumbs pointing towards one another).",
+      "Hinge to 90 degrees and raise the arms so they are perpendicular to your torso.",
+      "Inhale and pull the band apart by contracting your rear delts.",
+      "Slowly lower back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-banded-reverse-fly"
+  },
+  {
+    "id": "seated-cuban-press",
+    "name": "Seated Cuban Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up an adjustable angle bench to 90 degrees and select the desired weight from the rack.",
+      "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench.",
+      "Take a deep breath and pull the dumbbells up the front of the body with an upright row.",
+      "Once the dumbbells reach chest height, externally rotate the hands until your palms are facing forward.",
+      "Press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbells back to the starting position and reverse the movement by internally rotating the arms until the dumbbells are back to chest height, then allow the dumbbells to descend in front of the body back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-cuban-press"
+  },
+  {
+    "id": "half-kneeling-kettlebell-press",
+    "name": "Half Kneeling Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a half kneeling position with your knee directly underneath your hip and your toes tucked.",
+      "Clean the kettlebell to a front racked position.",
+      "Press the bell overhead until the shoulder reaches full flexion and the elbow is locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/half-kneeling-kettlebell-press"
+  },
+  {
+    "id": "supinated-90-degree-band-pull-apart",
+    "name": "Supinated 90 Degree Band Pull Apart Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Set up in an athletic position with a band in both hands and your palms facing up.",
+      "Pin the elbows to your sides at 90 degrees.",
+      "Exhale and externally rotate the shoulders by pull the band apart slightly",
+      "Slowly rotate back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/supinated-90-degree-band-pull-apart"
+  },
+  {
+    "id": "shoulder-to-shoulder-press",
+    "name": "Shoulder To Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Landmine",
+    "instructions": [
+      "Assume a standing position with your spine neutral and feet shoulder width apart.",
+      "Shoulder the barbell in both hands on one side of your body.",
+      "Once the barbell is in place, take a deep breath and press to lockout by extending the elbow and flexing the shoulder.",
+      "Slowly lower the barbell back to the other shoulder and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/shoulder-to-shoulder-press"
+  },
+  {
+    "id": "forearm-wall-slide",
+    "name": "Forearm Wall Slide Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Setup in a standing position with a staggered stance with your forearms on a wall at roughly shoulder height.",
+      "Exhale and slide your palms up the wall until the elbows are completely locked out.",
+      "Lift your hands off the wall and maintain a neutral spinal position.",
+      "Slowly return to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/forearm-wall-slide"
+  },
+  {
+    "id": "2-kb-kettlebell-push-press",
+    "name": "2 KB Kettlebell Push Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Traps",
+      "Triceps",
+      "Upper Back"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Setup kettlebells at chest height in the front rack position.",
+      "Dip slightly at the knees and then explode straight up as you press the kettlebells overhead.",
+      "Lower the bells back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/2-kb-kettlebell-push-press"
+  },
+  {
+    "id": "one-arm-standing-palms-in-dumbbell-press",
+    "name": "One-Arm Neutral Grip Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell with a neutral grip and assume a shoulder-width stance.",
+      "Raise the dumbbell to around shoulder height while maintaining a neutral grip. You can place your other hand on your waist for support.\u00a0This is the starting position.",
+      "Slowly press the dumbbell overhead by extending the elbows and contracting the deltoids.",
+      "Once your arm\u00a0is fully extended, begin lowering the dumbbell\u00a0back down to the starting position.",
+      "Repeat this movement for the desired amount of reps, and then repeat with your other arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-standing-palms-in-dumbbell-press.html"
+  },
+  {
+    "id": "one-arm-bent-over-dumbbell-reverse-fly",
+    "name": "One-Arm Dumbbell Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell with a neutral grip and bring your torso forward by bending at the waist. Keep your head up and your eyes facing forward.",
+      "Allow your arm to hang by your side.\u00a0This is the starting position.",
+      "Take a deep breath and pull the dumbbell\u00a0towards the ceiling using the rear deltoids, until parallel or as much as your range of motion allows.",
+      "Slowly lower the dumbbell\u00a0back to the starting position under control.",
+      "Repeat for the desired number of repetitions, and then repeat on your opposite arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-bent-over-dumbbell-reverse-fly.html"
+  },
+  {
+    "id": "shoulder-pin-press",
+    "name": "Shoulder Pin Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Bench",
+    "instructions": [
+      "Adjust the safety pins to shoulder height while standing.",
+      "Set the bar on the pins, load the desired weight, and stand directly beneath the bar with a shoulder width stance.",
+      "Place your hands at (or just outside of) shoulder width with a pronated grip.",
+      "Inhale, brace your abs, tuck your chin, and push the bar into the rack as press overhead to lockout.",
+      "Exhale once the bar gets to lockout and reverse the movement slowly while controlling the bar back to the pins.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/shoulder-pin-press"
+  },
+  {
+    "id": "lying-shoulder-press",
+    "name": "Lying Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a prone position on a flat bench with your chin tucked and arms straight.",
+      "Reach down, grab the dumbbells, and rotate at the shoulders with the hands facing forward.",
+      "Take a deep breath and press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-shoulder-press"
+  },
+  {
+    "id": "alternate-bent-over-dumbbell-reverse-fly",
+    "name": "Alternating Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the exercise by grasping a pair of dumbbells with a neutral grip (palms facing each other) and standing with your feet around shoulder width apart.",
+      "Bend slightly at the knees and bring your torso forward by bending at the waist.",
+      "Each elbow should be slightly bent and the dumbbells should be directly under your chest. This is the starting position.",
+      "Take a deep breath and raise one\u00a0dumbbell\u00a0towards the ceiling in a semi-circular motion using the rear deltoids, until your arm is parallel to the floor.",
+      "Slowly lower the dumbbell\u00a0back to the starting position under control.",
+      "Immediately repeat the movement with your opposite arm. This is one rep.",
+      "Repeat for the desired number of repetitions"
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-bent-over-dumbbell-reverse-fly.html"
+  },
+  {
+    "id": "seated-kettlebell-press",
+    "name": "Seated Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a seated position on a bench while grasping a kettlebell with a neutral grip in both hands.",
+      "Curl or clean both kettlebells into a front racked position.",
+      "Press the bells overhead until the shoulders reach full flexion and the elbows are locked out.",
+      "Slowly lower the kettlebells back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-kettlebell-press"
+  },
+  {
+    "id": "seated-dumbbell-front-raise",
+    "name": "Seated Dumbbell Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "",
+      "Choose a pair of dumbbells and sit on the end of a\u00a0bench while maintaining a straight back.",
+      "Inhale, brace your abs, and raise your arms vertically while holding the dumbbells with a pronated grip. Keep a slight bend in your elbow.",
+      "Once your arms are parallel with the floor, slowly lower the dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions.",
+      ""
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-front-raise.html"
+  },
+  {
+    "id": "band-resistance-single-arm-landmine-press",
+    "name": "Band Resistance Single Arm Standing Landmine Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Landmine",
+    "instructions": [
+      "Wrap one end of a band around the end of the barbell and secure the other end underneath your foot.",
+      "Assume a standing position with your spine neutral and feet shoulder width apart.",
+      "Shoulder the barbell in one hand and place your other hand on your ribcage to monitor spinal positioning.",
+      "Once the barbell is in place, take a deep breath and press to lockout by extending the elbow and flexing the shoulder.",
+      "Slowly lower the barbell back to the starting position on your shoulder and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/band-resistance-single-arm-landmine-press"
+  },
+  {
+    "id": "one-arm-dumbbell-reverse-fly-on-incline-bench",
+    "name": "One Arm Dumbbell Rear Delt Fly On Incline Bench Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Position an incline bench at roughly 40-50 degrees and select the desired weight from the rack.",
+      "Lay flat against the bench and allow the arms to hang straight down from the shoulders with a neutral grip.",
+      "Take a deep breath and pull the dumbbell towards the ceiling using the rear deltoid.",
+      "Slowly lower the dumbbell back to the starting position under control.",
+      "Repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-reverse-fly-on-incline-bench.html"
+  },
+  {
+    "id": "seated-barbell-front-raise",
+    "name": "Seated Barbell Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Select the desired weight and load it onto a barbell. Grasp the bar with a pronated grip\u00a0with your hands around shoulder width apart.",
+      "Sit down on the end of a flat bench\u00a0and let the barbell rest on your thighs.",
+      "Take the weight off your thighs and hold the barbell slightly above your thighs. This is the starting position for the exercise.",
+      "Inhale,\u00a0brace your core, and\u00a0raise your arms vertically while keeping the elbows nearly locked out.",
+      "Once the arms are parallel with the floor, slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-barbell-front-raise.html"
+  },
+  {
+    "id": "banded-internal-rotation",
+    "name": "Banded Internal Rotation Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Assume a standing position with your elbow flexed to 90 degrees while holding a band anchored to a sturdy object.",
+      "Rotate your hand in towards your body while keeping your elbow tight to your torso.",
+      "Slowly lower the band back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-internal-rotation"
+  },
+  {
+    "id": "alternate-standing-dumbbell-press",
+    "name": "Alternating Standing Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "",
+      "Set up for the exercise by grabbing a pair of dumbbells and standing\u00a0up with your feet around shoulder width apart.",
+      "Raise the dumbbells to shoulder height on each side and rotate your palms so they are facing forward. This is the starting position for the exercise.",
+      "Take a deep breath then press one dumbbell\u00a0overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbell back to the starting position (your arm\u00a0should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Immediately repeat this movement with your opposite arm and then repeat for desired reps.",
+      ""
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-standing-dumbbell-press.html"
+  },
+  {
+    "id": "lateral-slam-battle-rope",
+    "name": "Lateral Slam Battling Rope Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a good athletic base position with your knees slightly bent, feet shoulder width apart, and both hands holding the ropes.",
+      "In a wave like motion, lift both arms overhead and generate full extension of the arms and hips before slamming the ropes side to side.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lateral-slam-battle-rope"
+  },
+  {
+    "id": "exercise-ball-lateral-raise",
+    "name": "Exercise Ball Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Exercise Ball",
+    "instructions": [
+      "Grab a pair of dumbbells\u00a0with a neutral grip and sit on the center of an exercise ball with your feet around shoulder width apart.",
+      "Inhale, engage your core, and slowly raise the dumbbells to around shoulder height.",
+      "Pause, then slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/exercise-ball-lateral-raise.html"
+  },
+  {
+    "id": "face-pull-on-rings",
+    "name": "Face Pulls on Rings Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Rings",
+    "instructions": [
+      "Adjust a set of rings to roughly chest height.",
+      "Sit down beneath the rings and grasp them with a neutral grip.",
+      "Drive your heels into the ground, extend your hips, and keep your arms locked out. Your body should be in a straight line with your arms perpendicular to your torso.",
+      "Pull the rings towards your face while keeping your elbows high.",
+      "Slowly lower yourself back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/face-pull-on-rings"
+  },
+  {
+    "id": "seated-one-arm-dumbbell-lateral-raise",
+    "name": "One-Arm Seated Dumbbell Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell with a neutral grip and sit on the edge of a flat bench with your feet around shoulder width apart. This is the starting position for the exercise.",
+      "Slowly raise the dumbbell to around shoulder height.",
+      "Pause and slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps and\u00a0then repeat with your other arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-one-arm-dumbbell-lateral-raise.html"
+  },
+  {
+    "id": "swiss-ball-dumbbell-press",
+    "name": "Exercise Ball Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Triceps"
+    ],
+    "equipment": "Exercise Ball",
+    "instructions": [
+      "Grab a pair of dumbbells and sit on the center of an exercise ball\u00a0with your feet around shoulder width apart.",
+      "Raise the dumbbells to shoulder height on each side, and rotate your palms so they are facing forward. This is the starting position for the exercise.",
+      "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending on\u00a0limb lengths).",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/swiss-ball-dumbbell-press.html"
+  },
+  {
+    "id": "reverse-fly-on-rings",
+    "name": "Reverse Flys on Rings Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Rings",
+    "instructions": [
+      "Adjust a set of rings to roughly chest height.",
+      "Sit down beneath the rings and grasp them with a neutral grip.",
+      "Drive your heels into the ground, extend your hips, and keep your arms locked out. Your body should be in a straight line with your arms perpendicular to your torso.",
+      "Pull the rings apart as your keep your elbows slightly bent.",
+      "Slowly lower yourself back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-fly-on-rings"
+  },
+  {
+    "id": "bus-drivers",
+    "name": "Bus Drivers Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Other",
+    "instructions": [
+      "Assume a standing position with a plate in both hands using a neutral grip.",
+      "Inhale, brace your abs, and raise the arms vertically while keeping the elbows slightly bent.",
+      "Once the arms are parallel with the floor, rotate the plate clockwise and counterclockwise.",
+      "Slowly lower the plate back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bus-drivers"
+  },
+  {
+    "id": "alternate-seated-palms-in-dumbbell-press",
+    "name": "Seated Alternating Neutral Grip Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set the back of an adjustable bench to\u00a090 degrees. You can also use a flat bench without back support.",
+      "Grab a pair of dumbbells and sit down on the bench with the ends of the dumbbells on your thighs. Use\u00a0your thighs to help you raise the dumbbells to shoulder height on each side while maintaining a neutral grip.",
+      "Plant your feet firmly\u00a0on the floor for stability. This is the starting position for the exercise.",
+      "Slowly press one\u00a0dumbbell overhead by extending the elbow\u00a0and contracting the deltoids.",
+      "Once your arm\u00a0is fully extended, begin lowering the dumbbell\u00a0back down to the starting position.",
+      "Immediately repeat this movement with your other\u00a0arm. This is one rep.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-seated-palms-in-dumbbell-press.html"
+  },
+  {
+    "id": "high-barbell-front-raise",
+    "name": "Barbell Overhead Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Select the desired weight and load it onto a barbell.",
+      "Assume a shoulder width stance and grasp the bar at shoulder width with a pronated grip.",
+      "Inhale, brace your abs, and raise the arms vertically while keeping the elbows nearly locked out.",
+      "Once the arms are raised completely overhead, slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/high-barbell-front-raise.html"
+  },
+  {
+    "id": "3d-band-pull-apart",
+    "name": "3-D Band Pull Apart Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Stand on a band with your feet shoulder width apart, arms relaxed at your side, and hold the band using a pronated grip (thumbs pointing towards one another).",
+      "Inhale and raise the band to shoulder height with the elbows nearly locked out.",
+      "Once your arms are parallel to the floor, pull the band apart by contracting your rear delts.",
+      "Slowly lower back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/3d-band-pull-apart"
+  },
+  {
+    "id": "half-kneeling-battle-ropes",
+    "name": "Half Kneeling Battling Rope Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a half kneeling position while holding a rope in either hand with a neutral grip.",
+      "Alternate\u00a0small waves with each rope by slamming them to the floor in a quick rhythmic fashion.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/half-kneeling-battle-ropes"
+  },
+  {
+    "id": "lunge-jump-with-alternating-waves-battle-ropes",
+    "name": "Lunge Jump with Alternating Waves Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Forearms",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a split stance athletic base position with back knee touching the floor and both hands holding a rope.",
+      "Alternates small waves with each rope by slamming them to the floor in a quick rhythmic fashion.",
+      "Complete lunge jumps by alternating the legs while continuing to slam the ropes.",
+      "Utilize the arms to generate the force and absorb the impact with your legs.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "advanced",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lunge-jump-with-alternating-waves-battle-ropes"
+  },
+  {
+    "id": "one-arm-standing-arnold-press",
+    "name": "One-Arm Standing Arnold Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell and assume a shoulder-width stance.",
+      "Raise the dumbbell to around shoulder height, and rotate your wrist\u00a0so that your\u00a0palm\u00a0is\u00a0facing your body. You can place your other hand on your waist for support.\u00a0This is the starting position.",
+      "Slowly press the dumbbell overhead by extending the elbows and contracting the deltoids.\u00a0As you press, rotate the dumbbell\u00a0until your palm is\u00a0facing forward.",
+      "Once your arm\u00a0is almost fully extended, begin lowering the dumbbell\u00a0back down to the starting position - rotating your wrist until your palm\u00a0is facing your body once again.",
+      "Repeat this movement for the desired amount of reps, and then repeat with your other arm."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-standing-arnold-press.html"
+  },
+  {
+    "id": "no-counter-movement-rotational-med-ball-throw",
+    "name": "No Counter Movement Rotational Medicine Ball Throw Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Triceps",
+      "Upper Back"
+    ],
+    "equipment": "Medicine Ball",
+    "instructions": [
+      "Setup in an athletic base position while holding a medicine ball at your waist with a soft bend in your arms and knees.",
+      "Load into the trail hip and rotate your shoulders back.",
+      "Pause in the loaded position.",
+      "Rotate through explosively with the hips and throw the medicine ball into the wall directly in front of you.",
+      "Catch the med ball as it returns from the wall and repeat steps #2-3 for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/no-counter-movement-rotational-med-ball-throw"
+  },
+  {
+    "id": "reverse-lunge-with-alternating-waves-battle-ropes",
+    "name": "Reverse Lunge with Alternating Waves Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Forearms",
+      "Glutes",
+      "Hamstrings",
+      "Lats",
+      "Quads",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a good athletic base position with your knees slightly bent, feet shoulder width apart, and both hands holding a rope.",
+      "Alternate\u00a0small waves with each rope by slamming them to the floor in a quick rhythmic fashion.",
+      "As you complete waves, step back into a reverse lunge and alternate on each side.",
+      "Utilize the arms to generate the force and absorb the impact with your legs.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-lunge-with-alternating-waves-battle-ropes"
+  },
+  {
+    "id": "modified-handstand-push-up-off-box",
+    "name": "Modified Handstand Push Up (Off Box) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Box",
+    "instructions": [
+      "Assume a quadruped position on your hands and knees with a box behind your feet.",
+      "Extend your legs on top of the box and keep your torso in line with your arms overhead.",
+      "Initiate the movement by unlocking your elbows and flexing your shoulders.",
+      "Keep your chin tucked and descend until the top of your head lightly touches the floor.",
+      "Push your hands into the floor and extend your elbows as you press back to lockout.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/modified-handstand-push-up-off-box"
+  },
+  {
+    "id": "shuffle-into-rotational-medicine-ball-throw",
+    "name": "Shuffle Into Rotational Medicine Ball Throw Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Triceps",
+      "Upper Back"
+    ],
+    "equipment": "Medicine Ball",
+    "instructions": [
+      "Setup in an athletic base position while holding a medicine ball at your waist with a soft bend in your arms and knees.",
+      "Load into the trail hip and rotate your shoulders back.",
+      "Shuffle forward once and rotate explosively through the hips as you throw the medicine ball into a wall.",
+      "Catch the med ball as it returns from the wall, take a few steps back, and repeat steps #2-3 for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/shuffle-into-rotational-medicine-ball-throw"
+  },
+  {
+    "id": "military-press-behind-neck",
+    "name": "Military Press Behind Neck Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height then load the desired weight onto the bar.",
+      "Assume a shoulder width stance and place your hands outside of shoulder width with a pronated grip on the bar.",
+      "Step underneath the bar and rack it on your traps.",
+      "Take two steps back, inhale, brace, tuck the chin, and press the bar to lockout.",
+      "Exhale once the bar gets to lockout and reverse the movement slowly while controlling the bar behind your neck.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "advanced",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/military-press-behind-neck.html"
+  },
+  {
+    "id": "bench-supported-dumbbell-external-rotation",
+    "name": "Bench Supported Dumbbell External Rotation Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a standing position behind an adjustable bench with the bench completely upright.",
+      "Position the elbow on the bench with the forearm parallel to the body.",
+      "Externally rotate at the shoulder until the forearm is almost completely upright.",
+      "Slowly lower the dumbbell back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bench-supported-dumbbell-external-rotation"
+  },
+  {
+    "id": "one-arm-lying-dumbbell-reverse-fly",
+    "name": "One-Arm Lying Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell\u00a0and position yourself with your chest flat on a bench. Your feet can be straight out behind you or\u00a0used for stability on the floor.",
+      "Allow your arm\u00a0to hang below the bench, and grab\u00a0the dumbbell with a neutral grip. \u00a0This is the starting position.",
+      "Take a deep breath and pull the dumbbell\u00a0towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbell\u00a0back to the starting position under control.",
+      "Repeat for the desired number of repetitions, and then repeat on your opposite arm."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-lying-dumbbell-reverse-fly.html"
+  },
+  {
+    "id": "double-arm-circles-battle-ropes",
+    "name": "Double Arm Circles Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a good athletic base position with your knees slightly bent, feet shoulder width apart, and both hands holding a rope.",
+      "Complete arm circles at the shoulder while keeping a soft bend in the knees.",
+      "Utilize the arms to generate the force and absorb the impact with your legs.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/double-arm-circles-battle-ropes"
+  },
+  {
+    "id": "one-arm-seated-arnold-press",
+    "name": "One-Arm Seated Arnold Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set the back of an adjustable bench to\u00a090 degrees. You can also use a flat bench without back support.",
+      "Grab a\u00a0dumbbell and sit\u00a0with your\u00a0feet firmly planted on the floor for stability.",
+      "Raise the dumbbell to around shoulder height, and rotate your wrist\u00a0so that your\u00a0palm\u00a0is\u00a0facing your body. This is the starting position.",
+      "Slowly press the dumbbell overhead by extending the elbows and contracting the deltoids.\u00a0As you press, rotate the dumbbell\u00a0until your palm is\u00a0facing forward.",
+      "Once your arm\u00a0is almost fully extended, begin lowering the dumbbell\u00a0back down to the starting position - rotating your wrist until your palm\u00a0is facing your body once again.",
+      "Repeat this movement for the desired amount of reps, and then repeat with your other arm."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-arnold-press.html"
+  },
+  {
+    "id": "swiss-ball-barbell-press",
+    "name": "Exercise Ball Barbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Exercise Ball",
+    "instructions": [
+      "Grab a barbell or EZ bar using a pronated grip and sit on the center of an exercise ball\u00a0with your feet around shoulder width apart.",
+      "Raise the barbell to shoulder height on each side. Your palms should be\u00a0facing forward. This is the starting position for the exercise.",
+      "Take a deep breath then press the barbell overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the barbell back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/swiss-ball-barbell-press.html"
+  },
+  {
+    "id": "seated-alternating-front-back-barbell-press",
+    "name": "Seated Bradford Press (AKA Seated Rocky Press) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height then load the desired weight onto the bar.",
+      "Place an adjustable bench beneath the bar in an upright position.",
+      "Sit down on the bench and unrack the bar using a pronated grip..",
+      "Inhale, brace, and press the bar three quarters of the way to lockout.",
+      "Allow the bar to come back down behind the neck, then press three quarters of the way to lockout.",
+      "Repeat this cyclical process for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-alternating-front-back-barbell-press.html"
+  },
+  {
+    "id": "banded-y",
+    "name": "Banded Y's Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Assume a standing position with your arms directly in front of you holding a band with a neutral grip.",
+      "Inhale and reach directly overhead so that the arms form a Y with the rest of your body.",
+      "Slowly lower the band back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-y"
+  },
+  {
+    "id": "seated-alternate-dumbbell-lateral-raise",
+    "name": "Seated Alternating Dumbbell Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells with a neutral grip and sit on the edge of a flat bench with your feet around shoulder width apart. This is the starting position for the exercise.",
+      "Slowly raise\u00a0one dumbbell to around shoulder height. Pause, and then slowly lower the dumbbell back to the starting position.",
+      "Immediately repeat the movement on the other arm. This is one rep.",
+      "Repeat for the desired rep range."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-alternate-dumbbell-lateral-raise.html"
+  },
+  {
+    "id": "behind-the-neck-push-press",
+    "name": "Behind The Neck Push Press  Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height then load the desired weight onto the bar.",
+      "Assume a shoulder width stance and place your hands outside of shoulder width with a pronated grip on the bar.",
+      "Step underneath the bar and rack it on your traps.",
+      "Take two steps back, inhale, brace, and tuck the chin to prepare to go overhead.",
+      "Dip slightly at the knees and hips, then press the bar to lockout overhead by extending your legs and arms simultaneously.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "advanced",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/behind-the-neck-push-press"
+  },
+  {
+    "id": "half-kneeling-cable-external-rotation",
+    "name": "Half Kneeling Cable External Rotation Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Position a cable just above waist height and attach a handle.",
+      "Assume a half kneeling position and raise the upper arm laterally to 90 degrees at the shoulder.",
+      "Keep the elbow at 90 degrees and externally rotate directly at the shoulder until the forearm is perpendicular with the floor.",
+      "Slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/half-kneeling-cable-external-rotation"
+  },
+  {
+    "id": "one-arm-seated-kettlebell-press",
+    "name": "One Arm Seated Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a seated position on a bench while grasping a kettlebell with a neutral grip.",
+      "Curl or clean the kettlebell into a front racked position.",
+      "Press the bell overhead until the shoulder reaches full flexion and the elbow is locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-kettlebell-press"
+  },
+  {
+    "id": "alternate-lying-dumbbell-reverse-fly",
+    "name": "Alternating Lying Rear Delt Fly Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells and position yourself with your chest flat on a bench. Your feet can be straight out behind you or\u00a0used for stability on the floor.",
+      "Allow your arms to hang below the bench, and hold the dumbbells with a neutral grip. \u00a0This is the starting position.",
+      "Take a deep breath and pull one dumbbell\u00a0towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbell\u00a0back to the starting position under control.",
+      "Immediately repeat the movement on your opposite arm. This is one rep.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-lying-dumbbell-reverse-fly.html"
+  },
+  {
+    "id": "one-arm-seated-dumbbell-front-raise",
+    "name": "One-Arm Seated Dumbbell Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell and sit on the end of a\u00a0bench while maintaining a straight back.",
+      "Inhale, brace your abs and raise your arm\u00a0vertically while holding the dumbbell with a pronated grip. Keep a slight bend in your elbow.",
+      "Once your arm\u00a0is parallel with the floor, slowly lower the dumbbell\u00a0back to the starting position.",
+      "Repeat for the desired number of repetitions, and then repeat on the other arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-dumbbell-front-raise.html"
+  },
+  {
+    "id": "split-stance-anti-rotational-medicine-ball-scoop-toss",
+    "name": "Split Stance Anti-Rotational Medicine Ball Scoop Toss Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Lats",
+      "Upper Back"
+    ],
+    "equipment": "Medicine Ball",
+    "instructions": [
+      "Setup in a split stance position while holding a medicine ball at your waist.",
+      "Rotate away from the wall with your shoulders while keeping your hips stable.",
+      "Rotate explosively through the hips and throw the medicine ball into the wall directly in front of you.",
+      "Catch the med ball as it returns from the wall and repeat steps #2-3 for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/split-stance-anti-rotational-medicine-ball-scoop-toss"
+  },
+  {
+    "id": "half-kneeling-banded-face-pull",
+    "name": "Half Kneeling Banded Face Pull Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Assume a half kneeling position with the arms straight out in front of you utilizing a pronated grip.",
+      "Inhale, and pull the band towards your face with the elbows high and wide.",
+      "Slowly lower the band back to the starting position and repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/half-kneeling-banded-face-pull"
+  },
+  {
+    "id": "seated-battle-ropes",
+    "name": "Seated Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a seated position while holding a rope in either hand with a neutral grip.",
+      "Alternate\u00a0small waves with each rope by slamming them to the floor in a quick rhythmic fashion.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-battle-ropes"
+  },
+  {
+    "id": "one-arm-seated-palms-in-dumbbell-press",
+    "name": "One-Arm Seated Neutral Grip Dumbbell Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "",
+      "Set the back of an adjustable bench to\u00a090 degrees. You can also use a flat bench without back support.",
+      "Grab a\u00a0dumbbell with a neutral grip and sit down on the bench with your\u00a0feet firmly planted on the floor for stability. This is the starting position for the exercise.",
+      "Slowly press the dumbbell overhead by extending the elbow and contracting the deltoids.",
+      "Once your arm\u00a0is fully extended, begin lowering the dumbbell\u00a0back down to the starting position. This is one rep.",
+      "Repeat for desired reps, and then repeat the movement on your other arm.",
+      ""
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-palms-in-dumbbell-press.html"
+  },
+  {
+    "id": "one-arm-kettlebell-z-press",
+    "name": "One Arm Kettlebell Z Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a seated position on the floor with your legs straight ahead and slightly open.",
+      "Grasp a kettlebell with a neutral grip and curl it into a front racked position.",
+      "Press the bell overhead until the shoulder reaches full flexion and the elbow is locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-kettlebell-z-press"
+  },
+  {
+    "id": "trap-bar-overhead-press",
+    "name": "Trap Bar Shoulder Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Trap Bar",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height then load the desired weight onto the bar.",
+      "Step inside the trap bar, assume a shoulder width stance, and place your hands outside of shoulder width on the handles with a neutral grip.",
+      "Unrack the bar, take two steps back, inhale, brace, and press the bar to lockout overhead.",
+      "Exhale once the bar gets to lockout and reverse the movement slowly while controlling the bar back to your chest.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/trap-bar-overhead-press"
+  },
+  {
+    "id": "alternate-seated-dumbbell-front-raise",
+    "name": "Seated Alternating Dumbbell Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab\u00a0a pair of dumbbells with a neutral grip\u00a0and sit on the edge of a\u00a0bench with your feet around shoulder width apart. This is the starting position for the exercise.",
+      "Inhale, brace your core and slowly raise one arm\u00a0vertically while keeping a slight bend in your elbow.",
+      "Moving only at the shoulder, continue\u00a0raising the dumbbell until your arm is just above parallel to the floor.",
+      "Pause for a brief moment at the top of the movement, and slowly lower the dumbbell back to the starting position.",
+      "Immediately repeat\u00a0on the other arm. This is one rep.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-seated-dumbbell-front-raise.html"
+  },
+  {
+    "id": "half-kneeling-banded-external-rotation",
+    "name": "Half Kneeling Banded External Rotation Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Assume a half kneeling position with your elbow and shoulder flexed to 90 degrees laterally while holding a band with a pronated grip.",
+      "Rotate directly at the shoulder while keeping the elbow bent until the forearm is perpendicular to the floor.",
+      "Slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/half-kneeling-banded-external-rotation"
+  },
+  {
+    "id": "standing-one-arm-bottoms-up-kettlebell-press",
+    "name": "Standing One Arm Bottoms Up Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a standing position while grasping a kettlebell with a neutral grip in one hand.",
+      "Position the kettlebell in a bottoms up position and keep the elbow in line with the shoulder.",
+      "Press the bell overhead until the shoulder reaches full flexion and the elbow is locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-one-arm-bottoms-up-kettlebell-press"
+  },
+  {
+    "id": "reverse-fly-sled-drag",
+    "name": "Reverse Fly Sled Drag Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Lats",
+      "Lower Back",
+      "Quads",
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Sled",
+    "instructions": [
+      "Load the desired weight onto the sled and attach a set of handles with a nylon strap.",
+      "Grasp the handles with the arms extended and a soft bend in the elbows.",
+      "Lean away from the sled to establish some resting tension on the strap, then rear delts and complete a reverse fly to propel the sled forward.",
+      "Walk forward a few steps to reestablish tension and repeat step #3.",
+      "Repeat until you reach the desired number of repetitions, distance, or time."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-fly-sled-drag"
+  },
+  {
+    "id": "standing-alternating-front-back-barbell-press",
+    "name": "Standing Bradford Press (Rocky Press) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height then load the desired weight onto the bar.",
+      "Assume a shoulder width stance and place your hands at (or just outside of) shoulder width with a pronated grip on the bar.",
+      "Step underneath the bar and unrack it while keeping the spine in a neutral position.",
+      "Take two steps back, inhale, brace, tuck the chin, and press the bar three quarters of the way to lockout.",
+      "Allow the bar to come back down behind the neck, then press three quarters of the way to lockout.",
+      "Repeat this cyclical process for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-alternating-front-back-barbell-press.html"
+  },
+  {
+    "id": "one-arm-dumbbell-front-raise-on-incline-bench",
+    "name": "One-Arm Incline Dumbbell Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell and sit on the end of a\u00a0bench while maintaining a straight back.",
+      "Inhale, brace your abs and raise your arm\u00a0vertically while holding the dumbbell with a pronated grip. Keep a slight bend in your elbow.",
+      "Once your arm\u00a0is parallel with the floor, slowly lower the dumbbell\u00a0back to the starting position.",
+      "Repeat for the desired number of repetitions, and then repeat on the other arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-front-raise-on-incline-bench.html"
+  },
+  {
+    "id": "alternating-large-waves-battling-ropes",
+    "name": "Alternating Big Waves Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a good athletic base position with your knees slightly bent, feet shoulder width apart, and both hands holding a rope.",
+      "Alternates large waves with each rope by slamming them to the floor in a rhythmic fashion.",
+      "Utilize the arms to generate the force and absorb the impact with your legs.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternating-large-waves-battling-ropes"
+  },
+  {
+    "id": "serrano-press",
+    "name": "Serrano Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a prone position on an incline bench with your chin tucked and arms straight.",
+      "Reach down, inhale, and grab the dumbbells. Externally rotate at the shoulders and ensure the hands are facing forward.",
+      "Take a deep breath and press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "advanced",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/serrano-press"
+  },
+  {
+    "id": "alternating-small-waves-battling-ropes",
+    "name": "Alternating Small Waves Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a good athletic base position with your knees slightly bent, feet shoulder width apart, and both hands holding a rope.",
+      "Alternate\u00a0small waves with each rope by slamming them to the floor in a quick rhythmic fashion.",
+      "Utilize the arms to generate the force and absorb the impact with your legs.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternating-small-waves-battling-ropes"
+  },
+  {
+    "id": "standing-alternating-front-back-barbell-press",
+    "name": "Standing Bradford Press (Rocky Press) Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Adjust the barbell to just below shoulder height then load the desired weight onto the bar.",
+      "Assume a shoulder width stance and place your hands at (or just outside of) shoulder width with a pronated grip on the bar.",
+      "Step underneath the bar and unrack it while keeping the spine in a neutral position.",
+      "Take two steps back, inhale, brace, tuck the chin, and press the bar three quarters of the way to lockout.",
+      "Allow the bar to come back down behind the neck, then press three quarters of the way to lockout.",
+      "Repeat this cyclical process for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-alternating-front-back-barbell-press.html"
+  },
+  {
+    "id": "alternating-small-waves-battling-ropes",
+    "name": "Alternating Small Waves Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a good athletic base position with your knees slightly bent, feet shoulder width apart, and both hands holding a rope.",
+      "Alternate\u00a0small waves with each rope by slamming them to the floor in a quick rhythmic fashion.",
+      "Utilize the arms to generate the force and absorb the impact with your legs.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternating-small-waves-battling-ropes"
+  },
+  {
+    "id": "knee-to-elbow-dumbbell-external-rotation",
+    "name": "Knee to Elbow Dumbbell External Rotation Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a seated position on a flat bench with one leg bent and your elbow on your knee while holding a dumbbell.",
+      "Keep the elbow directly on your knee and externally rotate at the shoulder.",
+      "Slowly lower the dumbbell back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/knee-to-elbow-dumbbell-external-rotation"
+  },
+  {
+    "id": "alternating-standing-kettlebell-press",
+    "name": "Alternating Standing Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a standing position with your feet shoulder width apart and arms by your sides holding a kettlebell in each hand.",
+      "Clean the kettlebell to a front racked position.",
+      "Press one kettlebell overhead until the shoulder reaches full flexion and the elbow is locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat on the opposite arm.",
+      "Repeat the alternating sequence for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternating-standing-kettlebell-press"
+  },
+  {
+    "id": "banded-upright-row",
+    "name": "Banded Upright Row Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Traps",
+      "Upper Back"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Stand on a band with both feet and grab one end with each hand.",
+      "Take a deep breath then pull the band high by driving your elbows high.",
+      "Slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-upright-row"
+  },
+  {
+    "id": "rear-delt-barbell-row-to-neck",
+    "name": "Barbell Rear Delt Row To Neck Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Load a barbell with the desired weight. Grab the bar with an overhand grip, stand up, and position your fit around shoulder-width apart.",
+      "To get into the starting position bend your knees slightly and let the barbell slide down your thighs until it drops just below knee level.",
+      "Continue to hinge at your hips until your back is almost parallel to the floor and keep your feet around shoulder-width apart.",
+      "Now pull the barbell up towards your neck.",
+      "Squeeze your rear delts at the top of the movement.\u00a0Then slowly lower the bar back to the start position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rear-delt-barbell-row-to-neck.html"
+  },
+  {
+    "id": "tall-kneeling-one-arm-kettlebell-press",
+    "name": "Tall Kneeling One Arm Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a tall kneeling (both knees down) position with your knee directly underneath your hips and your toes tucked.",
+      "Clean the kettlebell to a front racked position.",
+      "Press the bell overhead until the shoulder reaches full flexion and the elbow is locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tall-kneeling-one-arm-kettlebell-press"
+  },
+  {
+    "id": "rotational-med-ball-shot-put",
+    "name": "Rotational Med Ball Shot Put Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Lower Back",
+      "Quads",
+      "Upper Back"
+    ],
+    "equipment": "Medicine Ball",
+    "instructions": [
+      "Setup in an athletic base position while holding a medicine ball at your back shoulder with the back elbow high.",
+      "Step behind the front foot and drive off the back leg.",
+      "As you reacquire your athletic base position, load into the trail hip and rotate your shoulders back.",
+      "Explode through the hips as you throw the medicine ball into a wall.",
+      "Catch the med ball as it returns from the wall, take a few steps back, and repeat steps #2-3 for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rotational-med-ball-shot-put"
+  },
+  {
+    "id": "double-waves-battle-ropes",
+    "name": "Double Wave Battling Rope Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a good athletic base position with your knees slightly bent, feet shoulder width apart, and hold a rope in each hand.",
+      "Slam both ropes to the floor utilizing your arms and absorb the impact with your legs.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/double-waves-battle-ropes"
+  },
+  {
+    "id": "lying-rear-delt-barbell-raise",
+    "name": "Lying Rear Delt Barbell Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Load a barbell with the desired weight and place\u00a0it in front of a flat bench. Depending on the length of your arms, you may need to elevate the bench using blocks or steps.",
+      "Lay down with your chest flat on the bench. Your feet can be straight out behind you or planted on the floor for stability.",
+      "With your arms extended below you, hold\u00a0the bar with an overhand grip\u00a0around shoulder width apart.\u00a0This is the starting position.",
+      "Slowly raise the barbell to around shoulder height.",
+      "Pause, and then slowly lower the barbell back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-rear-delt-barbell-raise.html"
+  },
+  {
+    "id": "standing-dublin-press",
+    "name": "Standing Dublin Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the dublin press by grabbing a pair of dumbbells and standing with your feet around shoulder width apart.",
+      "Raise the dumbbells to shoulder height on each side, and rotate\u00a0your wrists so that your palms are facing forward.",
+      "Your back should be straight and there should be a slight bend in your knees. This is the starting position for the exercise.",
+      "Slowly raise the dumbbells above your head and slightly outward until your arms are almost fully extended.",
+      "Do not pause at the top of the movement, and immediately begin lowering the dumbbells back down to the starting position.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-dublin-press.html"
+  },
+  {
+    "id": "tall-kneeling-battle-ropes",
+    "name": "Tall Kneeling Battling Ropes Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Forearms",
+      "Lats",
+      "Shoulders",
+      "Triceps"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Setup in a tall kneeling position while holding a rope in either hand with a neutral grip.",
+      "Alternate\u00a0small waves with each rope by slamming them to the floor in a quick rhythmic fashion.",
+      "Repeat for the desired time, duration, or reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tall-kneeling-battle-ropes"
+  },
+  {
+    "id": "alternate-dumbbell-lateral-raise",
+    "name": "Alternating Dumbbell Lateral Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab two dumbbells with a neutral grip and assume a shoulder-width stance. This is the starting position for the exercise.",
+      "Slowly raise the one dumbbell to around shoulder height. Pause, and then slowly lower the dumbbell back to the starting position.",
+      "Immediately repeat\u00a0on the other arm. This is one rep.",
+      "Repeat for the desired rep range."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-dumbbell-lateral-raise.html"
+  },
+  {
+    "id": "tall-kneeling-one-arm-bottoms-up-kettlebell-press",
+    "name": "Tall Kneeling One Arm Bottoms Up Kettlebell Press Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a tall kneeling position (both knees down) with your knees directly underneath your hip and your toes tucked.",
+      "Position the kettlebell in a bottoms up position and keep the elbow in line with the shoulder.",
+      "Press the bell overhead until the shoulder reaches full flexion and the elbow is locked out.",
+      "Slowly lower the kettlebell back to the starting position and repeat for the assigned number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tall-kneeling-one-arm-bottoms-up-kettlebell-press"
+  },
+  {
+    "id": "lying-cable-front-raise",
+    "name": "Lying Cable Front Raise Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach a straight bar to a low pulley cable and set the appropriate\u00a0weight on the stack.",
+      "Grab the bar with an overhand grip\u00a0around shoulder width apart. Facing the cable, bring the weight off the stack as you lay flat on your back.",
+      "You can press your feet against the cable machine to help stabilize you. You can also place a block in front of the machine.",
+      "Hold the bar down near your waist with your arms extended and a slight bend in the elbows. This is the starting position.",
+      "Keeping your arms extended and your elbows slightly bent, \u00a0slowly raise the bar until it is almost straight above your head.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-cable-front-raise.html"
+  },
+  {
+    "id": "rotational-med-ball-shuffle-into-shot-put",
+    "name": "Rotational Medicine Ball Shuffle Into Shot Put Video Exercise Guide",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Lower Back",
+      "Quads",
+      "Upper Back"
+    ],
+    "equipment": "Medicine Ball",
+    "instructions": [
+      "Setup in an athletic base position while holding a medicine ball at your back shoulder with the back elbow high.",
+      "Load into the trail hip and rotate your shoulders back.",
+      "Shuffle forward once and rotate explosively through the hips as you throw the medicine ball into a wall.",
+      "Catch the med ball as it returns from the wall, take a few steps back, and repeat steps #2-3 for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rotational-med-ball-shuffle-into-shot-put"
+  }
+]

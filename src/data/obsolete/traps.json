@@ -1,0 +1,762 @@
+[
+  {
+    "id": "dumbbell-shrugs",
+    "name": "Dumbbell Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a standing position with the dumbbells on both sides of your body.",
+      "Hinge forward, inhale, and grab the dumbbells with a neutral grip.",
+      "Stand up tall and ensure your spine remains neutral.",
+      "Contract the traps to elevate the shoulders. Squeeze hard at the top and slowly lower the dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-shrugs.html"
+  },
+  {
+    "id": "upright-row",
+    "name": "Barbell Upright Row Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Stand with feet shoulder-width apart. Grip the barbell with hands about shoulder-width apart, palms facing your thighs.",
+      "Hold the barbell firmly in front of your thighs. Stand tall, chest up, and shoulders back. This is the starting position.",
+      "Lift the bar straight up along your body, leading with your elbows. Keep the bar close to your torso.",
+      "Raise the bar around chest level, with your elbows higher than your wrists.",
+      "Slowly lower the bar back to the starting position, maintaining control. This is one rep.",
+      "Perform the desired number of repetitions, focusing on form and controlled movements."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/upright-row.html"
+  },
+  {
+    "id": "barbell-shrug",
+    "name": "Barbell Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Position the safeties just below waist height in a rack.",
+      "Assume a standing position with the bar in front of your body.",
+      "Hinge forward, inhale, and grab the bar with a double overhand grip.",
+      "Stand up tall and ensure your spine remains neutral.",
+      "Contract the traps to elevate the shoulders. Squeeze hard at the top and slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/barbell-shrug.html"
+  },
+  {
+    "id": "seated-dumbbell-shrug",
+    "name": "Seated Dumbbell Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the seated dumbbell shrug by choosing a pair of dumbbells and sitting with your back straight on a flat bench.",
+      "Grasp the dumbbells with a neutral grip (palms facing in), with your hands down at your sides.",
+      "Let your shoulders sag\u00a0as far as possible. This is the starting position for the exercise.",
+      "Slowly shrug your shoulders up as far as possible.",
+      "Pause, and then slowly lower the dumbbells back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-shrug.html"
+  },
+  {
+    "id": "wide-grip-upright-rows",
+    "name": "Wide Grip Upright Row Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Load up a barbell with the weight you want to use and stand facing it with your feet around shoulder width apart.",
+      "Grasp the barbell with an overhand grip, and hands slightly wider than shoulder width apart.",
+      "Pick the bar up, bending at the knees and keeping your back straight.",
+      "Keeping your back straight and eyes facing forwards, lift the bar straight up while keeping it as close to your body as possible (you should pull the bar up to around chest height - nearly touching your chin).",
+      "Pause, and then slowly lower the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/wide-grip-upright-rows.html"
+  },
+  {
+    "id": "one-arm-dumbbell-upright-row",
+    "name": "One-Arm Dumbbell Upright Row Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Choose a dumbbell and stand with your feet around shoulder width apart.",
+      "Grasp\u00a0the dumbbell with an overhand grip (palms facing down) with your left hand and place it on your thigh.",
+      "Your left hand should be just inside shoulder width and there should be a slight bend in your elbow.",
+      "Lift the dumbbell straight up while keeping it as close to your body as possible. You should pull the dumbbell up to around chest height - nearly touching your chin.",
+      "Pause, and then slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps and then repeat with your right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-upright-row.html"
+  },
+  {
+    "id": "tate-press",
+    "name": "Tate Press Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Lie down on a flat bench holding two dumbbells above your chest, arms fully extended. This is the starting position.",
+      "Slowly lower the dumbbells by bending at your elbows. The weights should come down beside your chest and your elbows should be pointed outward.",
+      "Stop when the dumbbells are just above your chest and your elbows are fully bent.",
+      "Extend your elbows to press the dumbbells back up to the starting position. This is one rep.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tate-press.html"
+  },
+  {
+    "id": "seated-cable-shrug",
+    "name": "Seated Cable Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the seated cable shrug by attaching a V-bar to a low pulley cable machine.",
+      "Select the amount of weight on the stack and sit down facing the machine with your feet about shoulder width apart. You can press your feet against the machine for stability.",
+      "Grasp the bar with a neutral grip and keep your back straight.",
+      "Keeping your arms out in front of your body, let your shoulders sag as far as possible. This is the starting position for the exercise.",
+      "Slowly shrug your shoulders up as far as possible.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-cable-shrug.html"
+  },
+  {
+    "id": "cable-row-to-neck",
+    "name": "Cable Row to Neck Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set the appropriate weight on the weight stack and attach a rope attachment to the pulley of a seated row machine.",
+      "Grasp each end of the rope with a neutral grip.",
+      "With your legs slightly bent and your back straight, pull the weight up slightly off the stack.",
+      "You should be sitting upright with your shoulders back. This is the starting position.",
+      "Keeping your body in position, pull the rope in and up towards your neck.",
+      "As the rope nears your neck, spread it apart so that each hand ends up on either side of your neck near your shoulders.",
+      "Pull your shoulder blades back, squeeze, pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-row-to-neck.html"
+  },
+  {
+    "id": "t-bar-machine-shrug",
+    "name": "T-Bar Machine Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Assume a prone position on a t-bar machine with your chest on the pad.",
+      "Reach forward and grab the handle with a semi pronated grip.",
+      "Contract the traps and retract your shoulder blades together to activate all of the traps. Squeeze hard at the top and slowly lower the dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/t-bar-machine-shrug"
+  },
+  {
+    "id": "high-pull",
+    "name": "High Pull Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Forearms",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Setup with your feet in a shoulder width stance, toes pointed out slightly, and your hands in a slightly wider than shoulder width grip.",
+      "Dip slightly to the power position and allow the bar to slide down your thighs.",
+      "Explosively jump straight up, shrug the bar aggressively, and then drive the elbows high.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/high-pull"
+  },
+  {
+    "id": "machine-shrug",
+    "name": "Machine Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Assume a standing position in front of the shrug machine.",
+      "Hinge forward and grasp both handles with a double overhand grip.",
+      "Assume a standing position, inhale, and contract the traps to elevate the shoulders. Squeeze hard at the top and slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/machine-shrug"
+  },
+  {
+    "id": "trap-bar-shrug",
+    "name": "Trap Bar Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Trap Bar",
+    "instructions": [
+      "Position the safeties just below waist height in a rack.",
+      "Assume a standing position with your body positioned inside of the trap bar.",
+      "Hinge forward, inhale, and grab the bar with a double overhand grip.",
+      "Stand up tall and ensure your spine remains neutral.",
+      "Contract the traps to elevate the shoulders. Squeeze hard at the top and slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/trap-bar-shrug"
+  },
+  {
+    "id": "clean-shrug",
+    "name": "Clean Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Forearms",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Position the bar over the knot on your shoelaces but not touching your shins.",
+      "Setup with your feet in a shoulder width stance, toes pointed out slightly, and your hands slightly wider than shoulder width.",
+      "Drop your hips and drive the chest up while looking forward.",
+      "Stand up tall by extending the knees and hips.",
+      "Dip slightly by bending the knees and hinging at the hips.",
+      "Explosively jump straight up and shrug the bar aggressively.",
+      "Return to the hang position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/clean-shrug"
+  },
+  {
+    "id": "1-kb-kettlebell-sumo-deadlift-high-pull",
+    "name": "1 KB Kettlebell Sumo Deadlift High Pull Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Position the kettlebell between your legs and assume a wider than shoulder width stance (determined by your hip structure and limb length).",
+      "Push your hips back and hinge forward until your torso is nearly parallel with the floor.",
+      "Reach down and grasp the handle of the bell with both hands.",
+      "Inhale, drop your hips, and keep the chest up tall.",
+      "Drive through the whole foot and focus on pushing the floor away.",
+      "As the kettlebell nears your hips and your legs lock out, shrug the shoulders and then pull aggressively with the arms.",
+      "The kettlebell should rise to sternum level at the completion of the movement.",
+      "As the kettlebell returns to the hip position, reverse the movement by pushing the hips back and hinging forward.",
+      "Return the kettlebell to the floor, reset, and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/1-kb-kettlebell-sumo-deadlift-high-pull"
+  },
+  {
+    "id": "snatch-grip-high-pull",
+    "name": "Snatch Grip High Pull Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Setup with your feet in a shoulder width stance, toes pointed out slightly, and your hands in a snatch width grip.",
+      "Dip slightly to the power position and allow the bar to slide down your thighs.",
+      "Explosively jump straight up, shrug the bar aggressively, and then drive the elbows high.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/snatch-grip-high-pull"
+  },
+  {
+    "id": "smith-machine-shrug",
+    "name": "Smith Machine Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Set up for the smith machine shrug by loading up the weight you want to use on a smith machine.",
+      "Stand facing the bar with your feet about shoulder width apart.",
+      "Grab\u00a0the bar with an overhand grip (palms facing down), with your hands about shoulder width apart. Bending at the knees only, pick the barbell up and release the safety.",
+      "Keeping the barbell close to your body, let your shoulders sag\u00a0as far as possible. This is the starting position for the exercise.",
+      "Slowly shrug your shoulders up as far as possible.",
+      "Pause, and then slowly lower the barbell back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-shrug.html"
+  },
+  {
+    "id": "cable-shrug",
+    "name": "Cable Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set 2 cable handles as low as possible and assume a standing position with one handle in each hand.",
+      "Inhale and contract the traps to elevate the shoulders. Squeeze hard at the top and slowly lower the handles back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-shrug.html"
+  },
+  {
+    "id": "standing-calf-machine-shrug",
+    "name": "Standing Calf Machine Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Assume a standing position in a calf raise machine with your shoulders against the pad and knees bent.",
+      "Inhale and stand up straight by extending the knees.",
+      "Contract your traps into the shoulder pads to elevate the shoulders. Squeeze hard at the top and slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-calf-machine-shrug"
+  },
+  {
+    "id": "behind-the-back-barbell-shrug",
+    "name": "Behind-The-Back Barbell Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the behind-the-back barbell shrug by loading up the weight you want to use on a straight bar or an Olympic bar.",
+      "Stand facing away from the bar with your feet about shoulder width apart.",
+      "Bending only at the knees, pick the barbell up off the floor behind your back. You may have a training partner assist you.",
+      "Grasp the bar with an overhand grip, with your hands about shoulder width apart.",
+      "Keeping the barbell close to your body, let your shoulders sag\u00a0as far as possible. This is the starting position for the exercise.",
+      "Slowly shrug your shoulders up as far as possible.",
+      "Pause, and then slowly lower the barbell back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/behind-the-back-barbell-shrug.html"
+  },
+  {
+    "id": "inverted-shrug",
+    "name": "Inverted Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Position the safeties just below waist height in a rack.",
+      "Assume supine position on the ground just beneath the bar.",
+      "Inhale and reach up to grab the bar with a double overhand grip.",
+      "Pinch your shoulder blades together and exhale as you contract all of the musculature in your upper back.",
+      "Slowly lower back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/inverted-shrug"
+  },
+  {
+    "id": "trap-lacrosse-ball",
+    "name": "Trap Lacrosse Ball Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Lacrosse Ball",
+    "instructions": [
+      "In a supine position, place the lacrosse ball directly underneath the base of the trap.",
+      "Bridge your hips up to apply pressure into the lacrosse ball and roll back and forth. You can also move the arm overhead and across the body to \u201ctack and floss\u201d the trap and improve results.",
+      "Roll slowly for 20-30 seconds, \u201ctack and floss\u201d for 5-10 repetitions, and repeat on the other side."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/trap-lacrosse-ball"
+  },
+  {
+    "id": "overhead-barbell-shrug",
+    "name": "Overhead Barbell Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Unrack the bar in a front rack position and press overhead to lockout with a double overhand grip.",
+      "Inhale and contract the traps to elevate the shoulders.",
+      "Slowly lower the bar back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/overhead-barbell-shrug"
+  },
+  {
+    "id": "snatch-grip-barbell-shrug",
+    "name": "Snatch Grip Barbell Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Position the safeties just below waist height in a rack.",
+      "Assume a standing position with the bar in front of your body.",
+      "Hinge forward, inhale, and grab the bar well outside of shoulder width with a double overhand grip.",
+      "Stand up tall and ensure your spine remains neutral.",
+      "Contract the traps to elevate the shoulders. Squeeze hard at the top and slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/snatch-grip-barbell-shrug"
+  },
+  {
+    "id": "2-kb-kettlebell-sumo-deadlift-high-pull",
+    "name": "2 KB Kettlebell Sumo Deadlift High Pull Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Position the kettlebells between your legs and assume a wider than shoulder width stance (determined by your hip structure and limb length).",
+      "Push your hips back and hinge forward until your torso is nearly parallel with the floor.",
+      "Reach down and grasp the handles of the bells with both hands.",
+      "Inhale, drop your hips, and keep the chest up tall.",
+      "Drive through the whole foot and focus on pushing the floor away.",
+      "As the kettlebells nears your hips and your legs lock out, shrug the shoulders and then pull aggressively with the arms.",
+      "The kettlebells should rise to sternum level at the completion of the movement.",
+      "As the kettlebells return to the hip position, reverse the movement by pushing the hips back and hinging forward.",
+      "Return the kettlebells to the floor, reset, and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/2-kb-kettlebell-sumo-deadlift-high-pull"
+  },
+  {
+    "id": "gittleson-shrug",
+    "name": "Gittleson Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a seated position\u00a0on a flat bench with the a dumbbell at your sides.",
+      "Hinge forward, inhale, and grab the dumbbell with a neutral grip.",
+      "Sit up tall and ensure your spine remains neutral.",
+      "Place your free hand behind on base of the bench and tilt your head towards the supporting arm.",
+      "Contract the trap to elevate the shoulder of the arm holding the dumbbell. As you squeeze the trap, tilt the head to the same side to enhance the contraction.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "advanced",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/gittleson-shrug"
+  },
+  {
+    "id": "snatch-shrug",
+    "name": "Snatch Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Forearms",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Position the bar over the knot on your shoelaces but not touching your shins.",
+      "Setup with your feet in a shoulder width stance, toes pointed out slightly, and your hands in a snatch grip position.",
+      "Drop your hips and drive the chest up while looking forward.",
+      "Stand up tall by extending the knees and hips.",
+      "Dip slightly by bending the knees and hinging at the hips.",
+      "Explosively jump straight up and shrug the bar aggressively.",
+      "Return to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/snatch-shrug"
+  },
+  {
+    "id": "sumo-high-pull",
+    "name": "Sumo High Pull Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Shoulders",
+      "Upper Back"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Position the bar over the top of your shoelaces and assume a wide stance (determined by your hip structure and limb length).",
+      "Push your hips back and hinge forward until your torso is nearly parallel with the floor.",
+      "Reach down and grasp the bar using a shoulder width, double overhand grip.",
+      "Inhale and pull up slightly on the bar while allowing your hips to drop in a seesaw fashion. This phenomenon is commonly referred to as \u201cpulling the slack out of the bar\u201d.",
+      "As you drop the hips and pull up on the bar, set the lats (imagine you\u2019re trying to squeeze oranges in your armpits) and ensure your armpits are positioned directly over the bar.",
+      "Drive through the whole foot and focus on pushing the floor away.",
+      "As the bar nears your hips and your legs lock out, shrug the shoulders and then pull aggressively with the arms.",
+      "The bar should rise to sternum level at the completion of the movement.",
+      "As the bar returns back to the hip position, reverse the movement by pushing the hips back and hinging forward.",
+      "Return the bar to the floor, reset, and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/sumo-high-pull"
+  },
+  {
+    "id": "lying-cable-upright-row",
+    "name": "Lying Cable Upright Row Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "Biceps"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the lying cable upright row by attaching a straight bar to a low pulley cable machine.",
+      "Select the amount of weight on the stack and lie down facing the machine with your feet about shoulder width apart. You can press your feet against the machine for stability.",
+      "Grasp the bar with an overhand grip (palms facing down), with your hands just inside shoulder width apart. Rest the bar on your thighs with a slight bend in your elbows. This is the starting position for the exercise.",
+      "Keeping your back straight, lift the bar straight up while keeping it as close to your body as possible (you should pull the bar up to around chest height - almost touching your chin).",
+      "Pause, and then slowly lower the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-cable-upright-row.html"
+  },
+  {
+    "id": "lying-cable-shrug",
+    "name": "Lying Cable Shrug Video Exercise Guide",
+    "bodyPart": "Traps",
+    "targetMuscles": [
+      "Traps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the lying cable shrug by attaching a straight bar to a low pulley cable machine.",
+      "Select the amount of weight on the stack and lie down facing the machine with your feet about shoulder width apart. You can press your feet against the machine for stability.",
+      "Grab\u00a0the bar with an overhand grip (palms facing down), with your hands about shoulder width apart.",
+      "Keeping the bar close to your body, let your shoulders sag\u00a0as far as possible. This is the starting position for the exercise.",
+      "Slowly shrug your shoulders up as far as possible.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-cable-shrug.html"
+  }
+]

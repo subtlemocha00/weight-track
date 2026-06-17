@@ -1,6 +1,8 @@
 import { memo } from 'react'
 import { SetRow, SetRowHeader } from './SetRow'
 import { SupersetControl } from '../../components/SupersetControl'
+import { WatchVideoButton } from '../exercises/WatchVideoButton'
+import { isSafeVideoUrl } from '../../services/exercises'
 import { supersetColor } from '../../utils/supersets'
 import styles from './RoutineExerciseItem.module.css'
 
@@ -10,6 +12,7 @@ function RoutineExerciseItemImpl({
   isFirst,
   isLast,
   instructions = [],
+  videoUrl = null,
   supersetCount,
   onRemove,
   onMoveUp,
@@ -65,14 +68,19 @@ function RoutineExerciseItemImpl({
       </div>
 
       <div className={styles.body}>
-        {instructions.length > 0 && (
+        {(instructions.length > 0 || isSafeVideoUrl(videoUrl)) && (
           <details className={styles.instructionsPanel}>
             <summary className={styles.instructionsToggle}>Instructions</summary>
-            <ol className={styles.instructions}>
-              {instructions.map((step, stepIndex) => (
-                <li key={stepIndex}>{step}</li>
-              ))}
-            </ol>
+            {instructions.length > 0 && (
+              <ol className={styles.instructions}>
+                {instructions.map((step, stepIndex) => (
+                  <li key={stepIndex}>{step}</li>
+                ))}
+              </ol>
+            )}
+            <div className={styles.instructionsVideo}>
+              <WatchVideoButton videoUrl={videoUrl} />
+            </div>
           </details>
         )}
 

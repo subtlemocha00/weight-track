@@ -1,0 +1,1511 @@
+[
+  {
+    "id": "bent-over-dumbbell-row",
+    "name": "Bent Over Dumbbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a standing position while holding a dumbbell in each hand with a neutral grip.",
+      "Hinge forward until your torso is roughly parallel with the floor (or slightly above) and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the dumbbells towards your body until the elbows are at (or just past) the midline and then slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-dumbbell-row.html"
+  },
+  {
+    "id": "one-arm-dumbbell-row",
+    "name": "One Arm Dumbbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a standing position while holding a dumbbell in one hand with a neutral grip.",
+      "Hinge forward until your torso is roughly parallel with the floor (or slightly above) and then begin the movement by driving the elbow behind the body while retracting the shoulder blade.",
+      "Pull the dumbbell towards your body until the elbow is at (or just past) the midline and then slowly lower the dumbbell back to the starting position under control.",
+      "Repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-row.html"
+  },
+  {
+    "id": "bent-over-barbell-row",
+    "name": "Bent Over Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Assume a standing position while holding the bar using a double overhand grip.",
+      "Hinge forward until your torso is roughly parallel with the floor (or slightly above) and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the bar towards your belly button until it touches your body and then slowly lower the bar back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-barbell-row.html"
+  },
+  {
+    "id": "seated-row",
+    "name": "Seated Cable Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set the appropriate weight on the weight stack and attach a close-grip bar or V-bar to the seated row machine.",
+      "Grasp the bar with a neutral grip (palms facing in).",
+      "Keeping your legs slightly bent and your back straight, pull the weight up slightly off the stack. You should be sitting straight upright with your shoulders back. This is the starting position.",
+      "Keeping your body in position, pull the handle into your stomach.",
+      "Pull your shoulder blades back, squeeze, pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-row.html"
+  },
+  {
+    "id": "tripod-dumbbell-row",
+    "name": "Tripod Dumbbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a kneeling position on the bench with your ipsilateral (i.e. same side) hand braced against the bench.",
+      "Hold a dumbbell in the opposite hand with a neutral grip.",
+      "Begin the movement by driving the elbow behind the body while retracting the shoulder blade.",
+      "Pull the dumbbell towards your body until the elbow is at (or just past) the midline and then slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tripod-dumbbell-row"
+  },
+  {
+    "id": "reverse-grip-bent-over-dumbbell-row",
+    "name": "Reverse Grip Bent-Over Dumbbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the appropriate dumbbells and place them on the floor in front of you.",
+      "Bending at the knees and keeping your back straight, squat down and pick up the dumbbells with an underhand grip (palms facing up).",
+      "Get into the starting position by keeping your back straight and bending at the knees. Let the dumbbells slide down your thighs until they're just below knee height.",
+      "Execute by pulling the dumbbells up under your chest as far as possible.",
+      "Pause, and then slowly lower the dumbbells back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-bent-over-dumbbell-row.html"
+  },
+  {
+    "id": "chest-supported-dumbbell-row",
+    "name": "Neutral Grip Chest Supported Dumbbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Position an adjustable incline bench at 45 degrees and lie prone on the bench.",
+      "Grab a dumbbell in each hand utilizing a neutral grip and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the dumbbells towards your body until the elbows are at (or just past) the midline and then slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/chest-supported-dumbbell-row"
+  },
+  {
+    "id": "machine-row",
+    "name": "Machine Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Adjust the seat so that your knees are slightly bent and the handles are around chest height. Set the weight to your desired level.",
+      "Grab the handles with a neutral\u00a0grip, keeping your arms extended and elbows slightly bent. This is the starting position.",
+      "Engage your back muscles and pull the handles towards your torso, squeezing your shoulder blades together.",
+      "Slowly return the handles to the starting position, extending your arms fully while maintaining control. This is one repetition.",
+      "Perform the desired number of repetitions, keeping your movements smooth and controlled."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/machine-row.html"
+  },
+  {
+    "id": "smith-machine-bodyweight-row",
+    "name": "Feet Elevated Inverted Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Grab a flat bench and place it lengthways in front of the smith machine.",
+      "Adjust the height of the smith machine bar so that it's around 4ft off the floor.",
+      "Position yourself with your heels on the bench and hands grasping the smith machine bar with a slightly wider than shoulder-width grip.",
+      "Straighten your body out. This is the starting position.",
+      "Keeping your body straight, pull your upper body up to the bar.",
+      "Pause, and then lower yourself back to the start position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-bodyweight-row.html"
+  },
+  {
+    "id": "bent-over-row",
+    "name": "T-Bar Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Assume a standing position with the bar positioned directly between your legs.",
+      "Utilize a v-grip handle and place the bar directly in the notch of the v.",
+      "Hinge forward until your torso is roughly parallel with the floor (or slightly above) and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the bar towards your body until the plates touch\u00a0your chest and then slowly lower the handle back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-row.html"
+  },
+  {
+    "id": "incline-bench-two-arm-dumbbell-row",
+    "name": "Incline Bench Two Arm Dumbbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Position an adjustable incline bench at 45 degrees and lie prone on the bench.",
+      "Grab a dumbbell in each hand utilizing a pronated (thumbs facing) grip and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the dumbbells towards your body until the elbows are at (or just past) the midline and then slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-bench-two-arm-dumbbell-row.html"
+  },
+  {
+    "id": "machine-t-bar-row",
+    "name": "Machine T-Bar Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Lie prone on the pad of a T-Bar machine and grasp the handle with a neutral or pronated grip depending upon preference or programming.",
+      "Begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the weight towards your body until the elbows are at (or just past) the midline and then slowly lower the weight back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/machine-t-bar-row.html"
+  },
+  {
+    "id": "smith-machine-bent-over-row",
+    "name": "Smith Machine Bent-Over Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Set up for the smith machine bent-over row by lowering the bar on the smith machine all the way and adding the weight you want to use.",
+      "Stand facing the bar and grip the bar with an overhand grip, with your hands wider than shoulder-width apart.",
+      "Stand straight up to take the weight off the machine.",
+      "Straighten your back, bend at the knees slightly, and slowly let the weight down until it's just below your knees. This is the start position.",
+      "Keeping your body fixed, pull the weight up until it almost hits your body.",
+      "Pause, and then slowly lower the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-bent-over-row.html"
+  },
+  {
+    "id": "reverse-grip-bent-over-row",
+    "name": "Reverse Grip Bent Over Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "",
+      "Load the barbell with your desired weight and place it on the floor in front of you.",
+      "Stand with your feet shoulder-width apart. Bend your knees slightly and hinge at the hips to lower your torso. Grab the bar with a reverse grip (palms facing up), hands slightly wider than shoulder-width.",
+      "With the bar in your hands, keep your knees bent, push your hips back, and hinge forward until your torso is at about a 45-degree angle. Keep your back flat and core braced. The bar should hang just below your knees.",
+      "Pull the barbell up toward your lower chest or upper stomach. Keep your elbows close to your body and squeeze your shoulder blades together at the top.",
+      "Slowly lower the bar back down to the starting position, maintaining control and keeping your back flat. This is one rep.",
+      "Perform for the desired number of reps, maintaining the same hip-hinged position throughout the set.",
+      ""
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-bent-over-row.html"
+  },
+  {
+    "id": "high-inverted-row",
+    "name": "Inverted Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Set up for the high inverted row by lowering the bar on the smith machine and positioning yourself under the bar.",
+      "Grasp the bar with arms slightly wider than shoulder width.",
+      "Put your feet out in front of you so that your upper chest is directly under the bar.",
+      "Keep your body straight and pull yourself up as far as possible. The bar should come to around upper chest/neck height.",
+      "Pause, and then slowly lower yourself back to the starting position."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/high-inverted-row.html"
+  },
+  {
+    "id": "pendlay-row",
+    "name": "Pendlay Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Position the bar directly in front of your shins and hinge forward until your torso is roughly parallel with the floor (or slightly above).",
+      "Grasp the bar with a double overhand grip and begin the movement by driving the elbows explosively behind the body while retracting the shoulder blades.",
+      "Pull the bar towards your belly button until it touches your body and then slowly lower the bar back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/pendlay-row"
+  },
+  {
+    "id": "one-arm-cable-row",
+    "name": "One-Arm Seated Cable Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Triceps"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach a single handle to the low pulley cable machine and set the amount of weight you want to use.",
+      "Sit down facing the cable with your knees slightly bent.",
+      "With your right hand, grab\u00a0the handle using an overhand grip and take the weight off the stack.",
+      "Keep your back straight and shoulders back. Slowly pull the weight towards your side twisting at the wrist.",
+      "Pull the weight as far as possible, and squeeze your shoulder blade at the top of the movement.",
+      "Pause, and then slowly lower the weight back to the starting position (do not let the weight touch the stack).",
+      "Repeat for desired reps, and then repeat for the other arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-cable-row.html"
+  },
+  {
+    "id": "bent-over-kettlebell-row",
+    "name": "Bent Over Kettlebell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Assume a standing position while holding a kettlebell in each hand with a neutral grip.",
+      "Hinge forward until your torso is roughly parallel with the floor (or slightly above) and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the kettlebells towards your body until the elbows are at (or just past) the midline and then slowly lower the kettlebells back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-kettlebell-row"
+  },
+  {
+    "id": "thoracic-extension-on-foam-roller",
+    "name": "Thoracic Extension on Foam Roller Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Foam Roll",
+    "instructions": [
+      "Setup in a supine position with a foam roller underneath your upper back.",
+      "Place your hands behind your head and exhale as you extend your upper back over the roller.",
+      "Once you run out of range of motion in the thoracic spine, return to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/thoracic-extension-on-foam-roller"
+  },
+  {
+    "id": "worlds-greatest-stretch",
+    "name": "World's Greatest Stretch Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Glutes",
+      "Hamstrings",
+      "Quads",
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Stand in an upright position with your feet together and arms at your sides.",
+      "Step forward into a deep lunge pattern with the back leg extended and place both palms flat on the floor near the inside of your instep. Your elbow will be inside of your knee.",
+      "Once your hands are in place on the floor, pyramid your hips up towards the ceiling while keeping your finger tips in contact with the floor. You should feel a large stretch in the hamstring of the front leg.",
+      "Drop the hips back to the deep lunge position and ensure the back leg is straight by flexing the quad.",
+      "With your hands flat on the floor, exhale, rotate your torso, and reach toward the ceiling with the arm closest to your instep.",
+      "Follow your hand with your eyes as you rotate.",
+      "Rotate back to the starting position and stand upright again.",
+      "Repeat for the desired number of repetitions on each side."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/worlds-greatest-stretch"
+  },
+  {
+    "id": "seated-row-using-rope",
+    "name": "Seated Row (Rope Extension) Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach the rope extension to the low pulley cable. Adjust the weight.",
+      "Sit down in front of the cable machine facing the cable with your legs shoulder-width apart and knees slightly bent.",
+      "Grasp the rope from the bottom with your thumbs in.",
+      "Lean back, keeping your back straight to take the weight off the stack. Your shoulders should be back and your arms fully extended.",
+      "To execute the movement, slowly pull the rope in towards your stomach.",
+      "Pull the rope back as far as possible and squeeze your shoulder blades together at the top of the movement.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-row-using-rope.html"
+  },
+  {
+    "id": "reverse-grip-incline-bench-two-arm-dumbbell-row",
+    "name": "Reverse Grip Incline Bench Two-Arm Dumbbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells and set them at the high end of the bench.",
+      "Lay face down on the bench so that your chest is at the end of the bench.",
+      "Your feet can either hang off the end of the bench or be placed on the floor on either side of the bench for stability.",
+      "Grasp the dumbbells with an overhand grip (palms facing away from you) and raise the dumbbells off the floor slightly.",
+      "Keep your head up and your eyes looking forward, and then slowly raise the dumbbells as far as possible.",
+      "Squeeze your shoulder blades together at the top of the movement, and then lower the dumbbells back to the start position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-incline-bench-two-arm-dumbbell-row.html"
+  },
+  {
+    "id": "renegade-row",
+    "name": "Renegade Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Chest",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a quadruped position on your hands and knees.",
+      "Position two dumbbells directly underneath your hands and grasp them with a neutral grip.",
+      "Pull the dumbbell towards your body until the elbow is at (or just past) the midline and then slowly lower the dumbbell back to the starting position under control.",
+      "Repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/renegade-row"
+  },
+  {
+    "id": "one-arm-bent-over-row",
+    "name": "One-Arm Landmine Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Traps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the exercise by getting an Olympic bar and setting one end in a secure location where it cannot move, like the corner of the room or up against a wall.",
+      "On the opposite end of the Olympic bar, add your desired weight plate(s).",
+      "Facing the weighted end of the bar, position yourself with one leg on each side of the bar with your feet shoulder width apart.",
+      "Bend your knees slightly and place your left hand on your left knee.",
+      "With your right hand, grab\u00a0the bar close to the weight plates.",
+      "Keeping your back straight, raise the bar slightly off the floor. This is the starting position for the exercise.",
+      "Pull the bar straight up with your right arm as far as possible, squeezing your shoulder blade in at the top of the movement.",
+      "Pause and slowly lower the weight back to the starting position.",
+      "Repeat for desired reps, and then repeat for the opposite side of the body."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-bent-over-row.html"
+  },
+  {
+    "id": "concept-2-rowing-machine",
+    "name": "Concept 2 Rowing Machine Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Biceps",
+      "Glutes",
+      "Hamstrings",
+      "Lats",
+      "Lower Back",
+      "Quads",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Assume a seated position with your feet strapped into the footplates.",
+      "Take a pronated (double overhand) grip on the bar and sit up upright with the legs and arms extended.",
+      "Initiate the movement by flexing at the knees and hips while keeping the arms straight.",
+      "Push your feet into the platform to straighten your legs, lean back slightly, and then proceed to row the handle towards your chest as you exhale\u00a0to complete the movement.",
+      "Return to the starting position by lengthening the arms and flexing at the knees and hips.",
+      "Repeat for the desired time, duration, or distance."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/concept-2-rowing-machine"
+  },
+  {
+    "id": "incline-bench-barbell-row",
+    "name": "Incline Bench Barbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up an incline bench at around a 30-degree angle. You can also use a propped up flat bench. Grab a barbell and place it at the end of the incline bench.",
+      "Lay down on the bench in a prone (facing down) position with your legs at the lower end of the bench. If it's more comfortable, you can put your feet on the floor. This also adds stability.",
+      "Grip the barbell with a wide overhand grip.",
+      "Keeping your head up, eyes looking forward, slowly raise the bar up towards your chest.",
+      "Raise the bar as far as possible, pause, and\u00a0then slowly lower the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-bench-barbell-row.html"
+  },
+  {
+    "id": "incline-bench-cable-row-rope-extension",
+    "name": "Incline Bench Cable Row (Rope Extension) Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set an incline bench to around a 45-degree angle and position the bench with the highest end facing the cable pulley machine.",
+      "Attach a rope extension to the lower pulley and set the weight you want to use on the stack.",
+      "Grab\u00a0the rope and position yourself with your chest on the bench, feet on the floor, and hands gripping the rope with a neutral grip (palms facing inwards). This is the starting position.",
+      "Slowly pull the rope in towards your lower chest as far as possible.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-bench-cable-row-rope-extension.html"
+  },
+  {
+    "id": "meadows-row",
+    "name": "Meadows Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Landmine",
+    "instructions": [
+      "Position a barbell in a landmine attachment or wedged into the corner of a wall.",
+      "Hinge forward with a staggered stance and grasp the barbell with a pronated (overhand) grip.",
+      "Begin the movement by driving the elbow behind the body while retracting the shoulder blade.",
+      "Pull the barbell towards your hip until the elbow is at (or just past) the midline and then slowly lower the barbell back to the starting position under control.",
+      "Repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/meadows-row"
+  },
+  {
+    "id": "seated-high-cable-row",
+    "name": "Seated High Cable Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Grab a flat bench and position it in front of a cable machine. Attach a rope extension to the low pulley cable and select the weight you want to use on the stack.",
+      "Sit down on the bench facing the cable machine with your feet and knees together. Grasp the rope extension from below with a neutral grip (thumbs facing inwards).",
+      "Sit straight up with your shoulders back and arms fully extended. This is the starting position.",
+      "Slowly pull the rope up towards your upper chest.",
+      "At the top of the movement, pause, then slowly lower the weight back to the starting position. This is one rep.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-high-cable-row.html"
+  },
+  {
+    "id": "ez-bar-reverse-grip-bent-over-row",
+    "name": "Reverse Grip Bent-Over Row (EZ Bar) Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "EZ Bar",
+    "instructions": [
+      "Grab an EZ bar, load on your required weight, and set the bar down in front of you.",
+      "Stand with your feet around shoulder width, bend at the knees, and squat down to grip the bar with a reverse grip (thumbs at the top of the bar) and your hands wider than shoulder width apart.",
+      "Keeping your back straight, stand straight up so you're holding the bar in front of you against your waist.",
+      "To get into the starting position bend your knees slightly, and while keeping your back straight let the barbell slide down your thighs until it drops just below knee level. This is the stance that should not change throughout the set.",
+      "Now pull the bar up to just below your chest.",
+      "Squeeze your shoulder blades together at the top of the movement.",
+      "Then slowly lower the bar back to the start position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/ez-bar-reverse-grip-bent-over-row.html"
+  },
+  {
+    "id": "rock-back-extension-rotation",
+    "name": "Rock Back Extension Rotation Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Setup in a quadruped position with your hands directly underneath your shoulders and your knees underneath your hips.",
+      "Ensure that your toes are tucked underneath and your ankles are flexed.",
+      "Push your hips back and exhale while keeping your pelvis neutral.",
+      "Once your hips are slightly below parallel, put one hand on the back of your head, exhale, and rotate your upper back towards the ceiling by leading with the elbow and following with your eyes.",
+      "Once you run out of range of motion within the upper back, rotate back to the starting position.",
+      "Repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rock-back-extension-rotation"
+  },
+  {
+    "id": "chest-supported-dumbbell-row-with-isohold",
+    "name": "Chest Supported Dumbbell Row with Isohold Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Position an adjustable incline bench at 45 degrees and lie prone on the bench.",
+      "Grab a dumbbell in each hand utilizing a neutral grip and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the dumbbells towards your body until the elbows are at (or just past) the midline and then slowly lower the dumbbells back to the starting position under control.",
+      "Hold one dumbbell at peak contraction while completing the assigned repetitions on the other arm.",
+      "Switch the isometric hold to the other arm and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/chest-supported-dumbbell-row-with-isohold"
+  },
+  {
+    "id": "incline-bench-cable-row",
+    "name": "Incline Bench Cable Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set an incline bench to around a 45-degree angle and position the bench with the highest end facing the cable pulley machine.",
+      "Attach a straight bar to the lower pulley and set the weight you want to use on the stack.",
+      "Grab\u00a0the bar and position yourself with your chest on the bench, feet on the floor, and hands gripping the bar with an overhand grip around shoulder width apart. This is the starting position.",
+      "Slowly pull the bar in towards your lower chest as far as possible without hitting the incline bench.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-bench-cable-row.html"
+  },
+  {
+    "id": "reverse-grip-incline-bench-cable-row",
+    "name": "Reverse Grip Incline Bench Cable Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set an incline bench to around a 45-degree angle and position the bench with the highest end facing the cable pulley machine.",
+      "Attach a straight bar to the lower pulley and set the weight you want to use on the stack.",
+      "Grasp the bar and position yourself with your chest on the bench, feet on the floor, and hands gripping the bar with an underhand grip around shoulder width apart. This is the starting position.",
+      "Slowly pull the bar in towards your lower chest as far as possible without hitting the incline bench.",
+      "Pause, and then slowly lower weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-incline-bench-cable-row.html"
+  },
+  {
+    "id": "palms-in-bent-over-dumbbell-row",
+    "name": "Palms In Bent-Over Dumbbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the appropriate dumbbells and place them on the floor in front of you.",
+      "Stand facing the dumbbells with your feet together.",
+      "Bending at the knees and keeping your back straight, squat down and pick up the dumbbells with a neutral grip (palms in).",
+      "Get into the starting position by keeping your back straight and bending at the knees. Let the dumbbells slide down your thighs until they're just below knee height.",
+      "Execute by pulling the dumbbells up under your chest as far as possible.",
+      "Pause, and then slowly lower the weights back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/palms-in-bent-over-dumbbell-row.html"
+  },
+  {
+    "id": "ring-inverted-row-with-chains",
+    "name": "Ring Inverted Row with Chains Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Chains",
+    "instructions": [
+      "Adjust a set of rings to roughly chest height.",
+      "Drape a loop of chains over each shoulder and sit down beneath the rings while grasping them with a neutral grip.",
+      "Drive your heels into the ground, extend your hips, and keep your arms locked out. Your body should be in a straight line with your arms perpendicular to your torso.",
+      "Pull yourself towards the rings by driving the elbows back and retracting the shoulder blades.",
+      "Slowly lower yourself back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/ring-inverted-row-with-chains"
+  },
+  {
+    "id": "smith-machine-one-arm-row",
+    "name": "Smith Machine One-Arm Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Set up for the smith machine one-arm row by dropping the bar to the lowest setting and adding the weight you want to use.",
+      "Stand on the left-hand side of the bar at a 90-degree angle.",
+      "Bend at the knees slightly, keep your back straight and bend down and grasp the bar with your right hand. Rest your left and on your left thigh for support.",
+      "Stand up slightly to take the weight off the machine. Keeping your eyes facing forwards and head up, slowly pull the bar up as far as possible.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps and then repeat for your other arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-one-arm-row.html"
+  },
+  {
+    "id": "one-arm-machine-row",
+    "name": "One-Arm Machine Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Adjust the seat so that your knees are slightly bent and the handles are around chest height. Set the weight to your desired level.",
+      "Grab a handle with a neutral\u00a0grip, keeping your arm\u00a0extended and your elbow\u00a0slightly bent. This is the starting position.",
+      "Engage your back muscles and pull the handle\u00a0towards your torso.",
+      "Slowly return the handle to the starting position, extending your arm\u00a0fully while maintaining control. This is one repetition.",
+      "Perform the desired number of repetitions, keeping your movements smooth and controlled. Then repeat on the opposite arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-machine-row.html"
+  },
+  {
+    "id": "quadruped-extension-rotation",
+    "name": "Quadruped Extension Rotation Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Setup in a quadruped position with your hands directly underneath your shoulders and your knees underneath your hips.",
+      "Ensure that your toes are tucked underneath and your ankles are flexed.",
+      "Put one hand on the back of your head, exhale, and rotate your upper back towards the ceiling by leading with the elbow and following with your eyes.",
+      "Once you run out of range of motion within the upper back, rotate back to the starting position.",
+      "Repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/quadruped-extension-rotation"
+  },
+  {
+    "id": "deadstop-rack-row",
+    "name": "Deadstop Rack Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set the safeties in a rack at roughly mid shin height.",
+      "Hinge forward until your torso is roughly parallel with the floor (or slightly above) and grasp the bar using a double overhand grip.",
+      "Begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the bar towards your belly button until it touches your body and then slowly lower the bar back to the safety pins under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/deadstop-rack-row"
+  },
+  {
+    "id": "rope-crossover-seated-row",
+    "name": "Rope Crossover Seated Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach the rope extension to the low pulley cable. Adjust the weight.",
+      "Sit down in front of the cable machine facing the cable with your legs shoulder width apart and knees slightly bent.",
+      "Grasp the left side of the rope with your right hand and the right side with your left hand. Use an underhand grip (with your palms facing down).",
+      "Lean back slightly to take the weight off the stack. Your back should be straight and your shoulders back (not hunched forward). This is the starting position.",
+      "Pull the weight towards you. As you pull, uncross your hands to form a neutral grip and pull the rope to your sides while keeping your elbows tucked in.",
+      "Squeeze your shoulder blades together, pause, and then lower the weight back to the starting position.",
+      "Repeat."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rope-crossover-seated-row.html"
+  },
+  {
+    "id": "trap-bar-row",
+    "name": "Trap Bar Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back"
+    ],
+    "equipment": "Trap Bar",
+    "instructions": [
+      "Step inside of a trap bar and hinge forward until your torso is roughly parallel with the floor (or slightly above).",
+      "Grasp the bar with a neutral grip and then begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the bar towards your belly button until the upper back musculature has completely contracted.",
+      "Slowly lower the bar back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/trap-bar-row"
+  },
+  {
+    "id": "weighted-inverted-row",
+    "name": "Weighted Inverted Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Rings",
+    "instructions": [
+      "Adjust a set of rings to roughly chest height.",
+      "Sit down beneath the rings with your legs straight and place a plate on your chest before reaching up to grasp the rings.",
+      "Drive your heels into the ground, extend your hips, and keep your arms locked out. Your body should be in a straight line with your arms perpendicular to your torso.",
+      "Pull the rings towards your face while keeping your elbows high.",
+      "Slowly lower yourself back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/weighted-inverted-row"
+  },
+  {
+    "id": "field-goal-angel-foam-rolling",
+    "name": "Field Goal Angel Foam Rolling Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Foam Roll",
+    "instructions": [
+      "In a supine position, place a foam roller directly underneath the length of your spine.",
+      "Position your arms parallel to your torso at right angles and focus on stretching the pecs.",
+      "While keeping your hands in line with your torso, exhale while extending your arms and reach overhead.",
+      "Return to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/field-goal-angel-foam-rolling"
+  },
+  {
+    "id": "bench-t-spine-mobilization",
+    "name": "Bench T-Spine Mobilization Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Lats"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "From a kneeling position with your toes dug into the ground, hold onto a long cylindrical pole and place your elbows on a flat bench.",
+      "Exhale, push your hips back, and sink your head between your arms.",
+      "Lower your hands towards your upper back to increase the stretch on your triceps.",
+      "Raise back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bench-t-spine-mobilization"
+  },
+  {
+    "id": "foam-rolling-thoracic-spine",
+    "name": "Thoracic Spine Foam Rolling Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Foam Roll",
+    "instructions": [
+      "In a supine position, position the foam roller directly underneath your upper back.",
+      "Pick your hips up off the floor and give yourself a large hug. Try to touch the opposite shoulder blade with your hand to free up space around the musculature surrounding your thoracic spine.",
+      "Adjust pressure into the roller by raising your hips higher or lower.",
+      "Slowly roll up and down the length of the thoracic spine for 20-30 seconds.",
+      "Repeat on the other side."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/foam-rolling-thoracic-spine"
+  },
+  {
+    "id": "dante-row",
+    "name": "Dante Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Utilize a split stance and hinge forward until the torso is almost parallel to the floor.",
+      "Grasp the handles of the machine and initiate the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the handles towards your body until the elbows are at (or just past) the midline and then slowly lower the handles back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dante-row"
+  },
+  {
+    "id": "reverse-grip-incline-bench-barbell-row",
+    "name": "Reverse Grip Incline Bench Barbell Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up an incline bench at around a 30-degree angle. You can also use a propped-up flat bench.",
+      "Grab a barbell and place it at the end of the incline bench.",
+      "Lay down on the bench in a prone (facing down) position with your legs at the lower end of the bench. If it's more comfortable, you can put your feet on the floor. This also adds stability.",
+      "Grip the barbell with a shoulder-width underhand grip (with your palms facing up).",
+      "Keeping your head up, eyes looking forward, slowly raise the bar towards your chest.",
+      "Raise the bar as far as possible, pause, and then slowly lower the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-incline-bench-barbell-row.html"
+  },
+  {
+    "id": "batwing-reverse-sled-drag",
+    "name": "Batwing Reverse Sled Drag Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Forearms",
+      "Glutes",
+      "Hamstrings",
+      "Lats",
+      "Quads",
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Sled",
+    "instructions": [
+      "Load the desired weight onto the sled and attach a set of handles with a nylon strap.",
+      "Setup in an athletic position with your body inclined away from the sled at roughly 45 degrees and your arms extended.",
+      "Row the handles and allow them to rotate as you assume an underhand grip.",
+      "Hold the contracted row position as you drive the sled backwards by extending the leg and hip of each leg.",
+      "Repeat until you reach the desired number of steps, distance, or time."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/batwing-reverse-sled-drag"
+  },
+  {
+    "id": "double-arm-sled-row",
+    "name": "Double Arm Sled Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Sled",
+    "instructions": [
+      "Load the desired weight onto the sled and attach two handles with a nylon strap.",
+      "Setup in a solid athletic position with your knees and hips slightly flexed and both arms extended holding the handles.",
+      "Row the handles towards your torso.",
+      "Take a few steps back until you again have sufficient tension on the handles.",
+      "Repeat until you reach the desired number of repetitions, distance, or time."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/double-arm-sled-row"
+  },
+  {
+    "id": "reverse-grip-smith-machine-bent-over-row",
+    "name": "Reverse Grip Smith Machine Bent-Over Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Set up for the reverse grip smith machine bent-over row by lowering the bar on the smith machine all the way and adding the weight you want to use.",
+      "Stand facing the bar and grip the bar with an underhand grip (palms facing up), with your hands slightly wider than shoulder width apart.",
+      "Stand straight up to take the weight off the machine.",
+      "Straighten your back, bend at the knees slightly, and slowly let the weight down until it's just below your knees. This is the start position.",
+      "Keeping your body fixed, pull the weight up until it almost hits your body.",
+      "Pause, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-smith-machine-bent-over-row.html"
+  },
+  {
+    "id": "yoga-plex",
+    "name": "Yoga Plex Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Glutes",
+      "Shoulders"
+    ],
+    "equipment": "Box",
+    "instructions": [
+      "Stand in an upright position with your feet together and arms at your sides.",
+      "Step forward into a deep lunge pattern with the back leg extended and place both palms flat on a box in front of you.",
+      "With your hands flat on the box, exhale, rotate your torso, and reach toward the ceiling with the arm closest to your instep.",
+      "Follow your hand with your eyes as you rotate.",
+      "Rotate back to the starting position and repeat for the desired number of repetitions on each side."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/yoga-plex"
+  },
+  {
+    "id": "banded-machine-t-bar-row",
+    "name": "Banded Machine T-Bar Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Attach a band to the circular weight peg and then add additional plates if desired.",
+      "Lie prone on the pad of a T-Bar machine and grasp the handle with a neutral or pronated grip depending upon preference or programming.",
+      "Begin the movement by driving the elbows behind the body while retracting the shoulder blades.",
+      "Pull the weight towards your body until the elbows are at (or just past) the midline and then slowly lower the weight back to the starting position under control.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-machine-t-bar-row"
+  },
+  {
+    "id": "high-pull-sled-drag",
+    "name": "High Pull Sled Drag Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Sled",
+    "instructions": [
+      "Load the desired weight onto the sled and attach a set of handles with a nylon strap.",
+      "Grasp the handles with the arms extended and elbows locked out.",
+      "Lean away from the sled to establish some resting tension on the strap, then pull the elbows high and shrug to drag the sled backwards.",
+      "Walk forward a few steps to reestablish tension and repeat step #3.",
+      "Repeat until you reach the desired number of repetitions, distance, or time."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/high-pull-sled-drag"
+  },
+  {
+    "id": "inverted-rope-row",
+    "name": "Inverted Rope Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Forearms",
+      "Lats",
+      "Lower Back",
+      "Shoulders"
+    ],
+    "equipment": "Rope",
+    "instructions": [
+      "Assume a seated position and grasp the rope with one hand using a neutral grip.",
+      "Anchor your heels and extend your hips.",
+      "Pull your chest towards the rope with your arms by flexing at the elbow and extending the shoulder.",
+      "Slowly lower yourself back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/inverted-rope-row"
+  },
+  {
+    "id": "palm-rotational-row",
+    "name": "Palm Rotational Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the appropriate dumbbells and place them on the floor in front of you.",
+      "Bending at the knees and keeping your back straight, squat down and pick up the dumbbells with an overhand grip (palms facing the floor).",
+      "Get into the starting position by keeping your back straight and bending at the knees. Let the dumbbells slide down your thighs until they're just below knee height.",
+      "Pull the dumbbells up towards your stomach. While pulling the dumbbells up, twist at the wrist from an over hand to an under hand position.",
+      "As you lower the dumbbells, reverse this twist so you end the rep within the overhand position."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/palm-rotational-row.html"
+  },
+  {
+    "id": "reverse-lunge-sled-row",
+    "name": "Reverse Lunge Sled Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Adductors",
+      "Calves",
+      "Glutes",
+      "Hamstrings",
+      "Lats",
+      "Quads",
+      "Shoulders"
+    ],
+    "equipment": "Sled",
+    "instructions": [
+      "Load the desired weight onto the sled and attach a set of handles with a nylon strap.",
+      "Setup in an athletic position with your torso vertical and arms extended while holding the handles.",
+      "Lunge backward until the back knee almost touches the ground.",
+      "While maintaining the lunge position, row the handles toward from your torso by flexing the arms.",
+      "Repeat steps #3-4 until you reach the desired number of repetitions, distance, or time."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-lunge-sled-row"
+  },
+  {
+    "id": "weight-vest-weighted-inverted-row",
+    "name": "Weight Vest Weighted Inverted Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Biceps",
+      "Lats",
+      "Lower Back",
+      "Shoulders",
+      "Traps"
+    ],
+    "equipment": "Other",
+    "instructions": [
+      "Adjust a set of rings to roughly chest height.",
+      "Strap on a weight vest and sit down beneath the rings while grasping them with a neutral grip.",
+      "Drive your heels into the ground, extend your hips, and keep your arms locked out. Your body should be in a straight line with your arms perpendicular to your torso.",
+      "Pull yourself towards the rings by driving the elbows back and retracting the shoulder blades.",
+      "Slowly lower yourself back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/weight-vest-weighted-inverted-row"
+  },
+  {
+    "id": "reverse-grip-machine-t-bar-row",
+    "name": "Reverse Grip Machine T-Bar Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Set up for the reverse grip machine t-bar row by adding some weight to the machine and setting the height of the chest pad.",
+      "Position yourself on the machine with your body on the chest pad.",
+      "Grasp the handle with an underhand grip, hands at a wider than shoulder-width grip. Take the weight off the supports.",
+      "Keeping your eyes facing forwards and shoulders fixed, pull the weight back as far as possible.",
+      "Squeeze your shoulder blades together and pause.",
+      "Now slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-machine-t-bar-row.html"
+  },
+  {
+    "id": "cable-palm-rotational-row",
+    "name": "Cable Palm Rotational Row Video Exercise Guide",
+    "bodyPart": "Back",
+    "targetMuscles": [
+      "Upper Back"
+    ],
+    "secondaryMuscles": [
+      "Biceps",
+      "Lats"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the cable palm rotational row by attaching a single handle to the low pulley cable.",
+      "Adjust the stack to the desired weight.",
+      "Position yourself around 3 feet from the cable machine and grasp the handle with your right hand.",
+      "Take the weight off the stack and bend at the knees slightly.",
+      "Put your left hand on your left thigh for stability.",
+      "Starting with an overhand position, start pulling your arm towards your side.",
+      "As you're pulling the weight, twist at the wrist to form an underhand grip (palms facing up).",
+      "Pull your arm in as far as possible and squeeze through the shoulder blade.",
+      "Slowly lower the weight back down, twisting at the wrist back to the overhand position.",
+      "Repeat for reps and then repeat on the opposite arm."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-palm-rotational-row.html"
+  }
+]

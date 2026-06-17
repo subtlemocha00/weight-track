@@ -3,6 +3,7 @@ import { useSettings } from '../../hooks/useSettings'
 import { SessionSetRow, SessionSetRowHeader } from './SessionSetRow'
 import { RestTimer } from './RestTimer'
 import { SupersetControl } from '../../components/SupersetControl'
+import { WatchVideoButton } from '../exercises/WatchVideoButton'
 import { supersetColor, supersetLabel } from '../../utils/supersets'
 import styles from './SessionExerciseItem.module.css'
 
@@ -12,6 +13,7 @@ function SessionExerciseItemImpl({
   isFirst,
   isLast,
   readOnly,
+  videoUrl = null,
   supersetCount,
   onMoveUp,
   onMoveDown,
@@ -129,6 +131,8 @@ function SessionExerciseItemImpl({
             )}
           </div>
         </details>
+
+        <WatchVideoButton videoUrl={videoUrl} />
 
         {!readOnly && (
           <SupersetControl

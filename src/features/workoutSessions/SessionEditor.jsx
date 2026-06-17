@@ -5,6 +5,7 @@ import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { saveSession } from '../../services/workoutSessions'
 import { getRoutine, saveRoutine } from '../../services/routines'
 import { listCustomExercises } from '../../services/customExercises'
+import { resolveExerciseById } from '../../services/exercises'
 import { applySessionToRoutine } from './applyToRoutine'
 import { sessionReducer } from './sessionReducer'
 import { SessionExerciseItem } from './SessionExerciseItem'
@@ -193,6 +194,7 @@ export function SessionEditor({ initialSession }) {
             const ssId = exercise.supersetId ?? null
             const showGroupHeader = ssId !== null && ssId !== (prev?.supersetId ?? null)
             const groupColor = supersetColor(ssId)
+            const resolved = resolveExerciseById(exercise.exerciseId, customExercises)
 
             return (
             <Fragment key={exercise.exerciseId + '-' + index}>
@@ -210,6 +212,7 @@ export function SessionEditor({ initialSession }) {
               isFirst={index === 0}
               isLast={index === session.exercises.length - 1}
               readOnly={isCompleted}
+              videoUrl={resolved?.videoUrl ?? null}
               supersetCount={supersetCount}
               onMoveUp={() =>
                 dispatch({ type: 'MOVE_EXERCISE', from: index, to: index - 1 })

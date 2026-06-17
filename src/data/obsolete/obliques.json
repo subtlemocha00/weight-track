@@ -1,0 +1,346 @@
+[
+  {
+    "id": "dumbbell-side-bends",
+    "name": "Dumbbell Side Bends Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Lower Back"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Stand tall with feet shoulder-width apart, holding a pair of dumbbells\u00a0at your side.",
+      "Engage your core and keep your chest up.",
+      "Slowly bend sideways at the waist toward the dumbbell, lowering it toward your knee.",
+      "Pause briefly at the bottom of the movement.",
+      "Contract your obliques to return to the starting position. This is one rep.",
+      "Complete all reps on one side before switching to the other."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-side-bends.html"
+  },
+  {
+    "id": "side-crunch",
+    "name": "Side Crunch (AKA Oblique Crunch) Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Lay supine in a relaxed position with your knees stacked to one side.",
+      "Place your contralateral hand behind your head for support and use your free hand to palpate your abdominals.",
+      "Initiate the movement by squeezing your abs to raise your torso off the floor, slowly lower yourself back to the starting position and complete the assigned number of repetitions.",
+      "Repeat on the opposite side."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/side-crunch.html"
+  },
+  {
+    "id": "wood-chop",
+    "name": "Wood Chop Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Assume an athletic position with your feet just outside of shoulder width and attach a rope to a cable stack overhead.",
+      "Position the inside leg in hip flexion and set up with both hands grasping the rope at roughly shoulder width apart.",
+      "Exhale, rotate the rope across your body, and chop to the down knee.",
+      "Return to the starting position, repeat for the desired number of repetitions, and then switch sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/wood-chop.html"
+  },
+  {
+    "id": "landmine-rotation",
+    "name": "Landmine Rotation Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Landmine",
+    "instructions": [
+      "Assume an athletic position with your feet slightly wider than shoulder width and position a barbell in a landmine attachment.",
+      "Grasp the end of the barbell by your side with both hands overlapping.",
+      "Rotate your shoulders and keep the arms locked out while allowing the end of the barbell to rotate around your body.",
+      "Repeat in the opposite direction for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/landmine-rotation"
+  },
+  {
+    "id": "seated-barbell-twist",
+    "name": "Seated Barbell Twist Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Sit down on a flat bench with your feet around shoulder-width apart, planted firmly on the floor.",
+      "Hold a barbell across the back of your shoulders (not your neck), gripping it just outside shoulder-width.",
+      "Keep your chest tall and back straight, and engage your core for stability.",
+      "Slowly rotate your torso to one side,\u00a0keeping your hips and legs still.",
+      "Pause briefly at the end of the twist, feeling the contraction in your obliques.",
+      "Return to center, then rotate to the alternate side.",
+      "Continue alternating sides for the desired number of reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-barbell-twist.html"
+  },
+  {
+    "id": "half-kneeling-cable-chop",
+    "name": "Half Kneeling Cable Chop Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Assume a half kneeling position and attach a rope to a cable stack overhead.",
+      "Position the inside knee up and set up with both hands grasping the rope at roughly shoulder width apart.",
+      "Exhale, rotate the rope across your body, and chop to the down knee.",
+      "Return to the starting position, repeat for the desired number of repetitions, and then switch sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/half-kneeling-cable-chop"
+  },
+  {
+    "id": "tall-kneeling-cable-lift",
+    "name": "Tall Kneeling Cable Lift Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Assume a tall kneeling position and attach a rope to a cable stack at the lowest possible position.",
+      "Position the inside knee down and set up with both hands grasping the ends of the rope.",
+      "Pull the rope to chest height and then press diagonally overhead.",
+      "Return to the starting position, repeat for the desired number of repetitions, and then switch sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tall-kneeling-cable-lift"
+  },
+  {
+    "id": "tall-kneeling-cable-chop",
+    "name": "Tall Kneeling Cable Chop Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Assume a tall kneeling position and attach a rope to a cable stack overhead.",
+      "Position the inside knee up and set up with both hands grasping the rope at roughly shoulder width apart.",
+      "Exhale, rotate the rope across your body, and chop to the down knee.",
+      "Return to the starting position, repeat for the desired number of repetitions, and then switch sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tall-kneeling-cable-chop"
+  },
+  {
+    "id": "side-plank-with-hip-dip",
+    "name": "Side Plank with Hip Dip Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Assume a side lying position with your forearm resting on the floor.",
+      "Lift your hips and form a straight line from your shoulders through your ankles.",
+      "Slowly allow the hips to dip and get close to touching the floor.",
+      "Return back to the starting position and repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/side-plank-with-hip-dip"
+  },
+  {
+    "id": "seated-dumbbell-side-bends",
+    "name": "Alternating Seated Dumbbell Side Bends Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a set of dumbbells and sit down on the end of a flat bench with one dumbbell in each hand, palms facing in and\u00a0hanging by your side.",
+      "Keep your feet firmly on the floor with a shoulder-width stance.",
+      "Keeping your back straight and your eyes facing forward, use your core to bend down as far as you can on one side, then back up again.",
+      "Without pausing at the top, bend down to alternate side.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-side-bends.html"
+  },
+  {
+    "id": "low-wood-chop",
+    "name": "Low Cable Wood Chop Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Assume an athletic position with your feet just wider than shoulder width and attach a rope to a cable stack at the lowest position possible.",
+      "Position the inside leg in hip extension and set up with both hands grasping the ends of the rope.",
+      "Pull the rope to chest height and then press diagonally overhead.",
+      "Return to the starting position, repeat for the desired number of repetitions, and then switch sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/low-wood-chop.html"
+  },
+  {
+    "id": "split-stance-cable-chop",
+    "name": "Split Stance Cable Chop Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Assume a split stance position and attach a rope to a cable stack overhead.",
+      "Position the inside leg in hip flexion and set up with both hands grasping the rope at roughly shoulder width apart.",
+      "Exhale, rotate the rope across your body, and chop to the down knee.",
+      "Return to the starting position, repeat for the desired number of repetitions, and then switch sides."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/split-stance-cable-chop"
+  },
+  {
+    "id": "split-stance-cable-lift",
+    "name": "Split Stance Cable Lift Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Assume a split stance position and attach a rope to a cable stack at the lowest position possible.",
+      "Position the inside leg in hip extension and set up with both hands grasping the ends of the rope.",
+      "Pull the rope to chest height and then press diagonally overhead.",
+      "Return to the starting position, repeat for the desired number of repetitions, and then switch sides."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/split-stance-cable-lift"
+  },
+  {
+    "id": "floor-barbell-twist",
+    "name": "Seated Barbell Twist (On Floor) Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Sit on the floor with your legs extended straight out in front of you.",
+      "Hold a barbell across the back of your shoulders (not your neck), gripping it just outside shoulder-width.",
+      "Keep your chest tall and back straight, and engage your core for stability.",
+      "Slowly rotate your torso to one side,\u00a0keeping your hips and legs still.",
+      "Pause briefly at the end of the twist, feeling the contraction in your obliques.",
+      "Return to center, then rotate to the alternate side.",
+      "Continue alternating sides for the desired number of reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/floor-barbell-twist.html"
+  },
+  {
+    "id": "off-bench-oblique-hold",
+    "name": "Off Bench Oblique Hold Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Other",
+    "instructions": [
+      "Setup in a staggered stance with your bottom leg forward and hook your feet underneath a secure bench.",
+      "Hold a plate at chest level and press horizontally to extension as you exhale.",
+      "Return to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/off-bench-oblique-hold"
+  },
+  {
+    "id": "half-kneeling-cable-lift",
+    "name": "Half Kneeling Cable Lift Video Exercise Guide",
+    "bodyPart": "Abs",
+    "targetMuscles": [
+      "Obliques"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Assume a half\u00a0kneeling position and attach a rope to a cable stack at the lowest position possible.",
+      "Position the inside knee down and set up with both hands grasping the ends of the rope.",
+      "Pull the rope to chest height and then press diagonally overhead.",
+      "Return to the starting position, repeat for the desired number of repetitions, and then switch sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/half-kneeling-cable-lift"
+  }
+]

@@ -1,0 +1,2461 @@
+[
+  {
+    "id": "two-arm-dumbbell-extension",
+    "name": "Seated Dumbbell Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and position an adjustable bench at 90 degrees.",
+      "To get into position, sit in an upright position and lift the dumbbell to the top of your shoulder. Take a deep breath, overlap your hands around the dumbbell, then press it into position overhead.",
+      "Maintain an overlapping grip and slowly lower the dumbbell behind your head by unlocking your elbows.",
+      "Once your forearms reach parallel or just below, drive the dumbbell back to the starting point by extending the elbows and flexing the triceps.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/two-arm-dumbbell-extension.html"
+  },
+  {
+    "id": "tricep-extension",
+    "name": "Straight Bar Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach a straight bar to a cable stack as high as possible and assume a standing position.",
+      "Grasp the straight bar with a pronated grip (palms facing down) and lean forward slightly by hinging at the hips.",
+      "Initiate the movement by extending the elbows and flexing the triceps.",
+      "Pull the handle downward until the elbows are almost locked out and then slowly lower under control back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tricep-extension.html"
+  },
+  {
+    "id": "lying-dumbbell-extension",
+    "name": "Lying Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a pair of dumbbells and sit on the end of a flat bench with the dumbbells resting on your thighs.",
+      "Lie back on the bench and extend the dumbbells above your head. The dumbbells should not be touching and you should be using a neutral grip (palms facing each other).",
+      "Bending at the elbows only, keeping your elbows fixed and pointing at your hips, slowly lower the dumbbells down beside your head until they are about level with your ears.",
+      "Pause and squeeze the triceps. Then raise the dumbbells back to the starting position.",
+      "Do not lock the elbows out, and then repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-dumbbell-extension.html"
+  },
+  {
+    "id": "rope-tricep-extension",
+    "name": "Rope Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach a rope to a cable stack as high as possible and assume a standing position.",
+      "Grasp the rope with a neutral grip (palms facing in) and lean forward slightly by hinging at the hips.",
+      "Initiate the movement by extending the elbows and flexing the triceps.",
+      "Pull the rope downward until the elbows are almost locked out and then slowly lower under control back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rope-tricep-extension.html"
+  },
+  {
+    "id": "dumbbell-floor-press",
+    "name": "Dumbbell Floor Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Begin sitting on the floor in an upright position with your legs straight and the dumbbells vertically balanced on the floor.",
+      "Pick up each dumbbell and set it high in your hip crease while maintaining a tight grip.",
+      "Slowly lay back while keeping the dumbbells close to your chest and bend your knees to roughly 45 degrees and move your feet up slightly.",
+      "Press the weights to full extension by contracting your triceps and chest.",
+      "Slowly lower the weight until both elbows touch the floor then press both dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions.",
+      "To complete the exercise, simply lower the weights to the ground in \u201ccontrolled drop\u201d fashion. It should be a smooth motion but not one requiring excessive effort or one that puts the shoulder under unnecessary risk."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-floor-press.html"
+  },
+  {
+    "id": "ez-bar-skullcrusher",
+    "name": "EZ Bar Skullcrusher Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "EZ Bar",
+    "instructions": [
+      "Select your desired weight and sit on the edge of a flat bench.",
+      "To get into position, lay back and keep the bar close to your chest. Once you are supine, press the weight to lockout.",
+      "Lower the weights towards your head by unlocking the elbows and allowing the ez bar to drop toward your forehead or just above.",
+      "Once your forearms reach parallel or just below, reverse the movement by extending the elbows while flexing the triceps to lockout the weight.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/ez-bar-skullcrusher.html"
+  },
+  {
+    "id": "tricep-dip",
+    "name": "Tricep Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Grab\u00a0the parallel dip bars with an inward grip.",
+      "If the bars are adjustable, adjust them to around shoulder-width apart.",
+      "Jump up off the floor and take your weight on the bars.",
+      "The key to hitting your triceps on this version of the dip is to keep your body as straight as possible and don't lean forward. This may mean not crossing your legs and keeping them hanging down.",
+      "Slowly lower yourself down, keeping your eyes facing forward.",
+      "Lower until your elbow is at around the same height as your shoulder, and then raise your body back up without locking your arms at the top of the movement.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tricep-dip.html"
+  },
+  {
+    "id": "bent-over-dumbbell-kickback",
+    "name": "Bent Over Dumbbell Tricep Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and stand in an open area.",
+      "Hinge forward, row the dumbbells into position, then extend the elbows while flexing the triceps.",
+      "Slowly lower the dumbbells back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-dumbbell-kickback.html"
+  },
+  {
+    "id": "lying-tricep-extension",
+    "name": "Lying Barbell Tricep Extension (Skull Crusher) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Sit on the end of a flat bench with a barbell on your thighs.",
+      "Grip the barbell with an overhand grip (palms facing down) with your hands about shoulder-width apart.",
+      "Bring the bar up to your chest and lay down on your back. Extend your arms straight up above your chest.",
+      "Keeping your elbows fixed in place and not pointing out, slowly lower the bar until it is about an inch from your forehead (hence the name skullcrusher!).",
+      "Pause, and then slowly extend your arms back to the starting position.",
+      "Do not lock your elbows out, and then repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-tricep-extension.html"
+  },
+  {
+    "id": "close-grip-bench-press",
+    "name": "Close Grip Bench Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Lie flat on a bench and set your hands at shoulder width.",
+      "Set your shoulder blades by pinching them together and driving them into the bench.",
+      "Take a deep breath and allow your spotter to help you with the lift off in order to maintain tightness through your upper back.",
+      "Let the weight settle and ensure your upper back remains tight after lift off.",
+      "Inhale and allow the bar to descend slowly by unlocking the elbows.",
+      "Lower the bar in a straight line to the base of the sternum (breastbone) and touch the chest.",
+      "Push the bar back up in a straight line by pressing yourself into the bench, driving your feet into the floor for leg drive, and extending the elbows.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/close-grip-bench-press.html"
+  },
+  {
+    "id": "french-press",
+    "name": "French Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the french press by loading a barbell or EZ-bar with the appropriate amount of weight and placing it on the floor in front of you.",
+      "Bend only at the knees and grasp the barbell with an overhand grip (palms facing down) with your hands about 8-12 inches apart.",
+      "Stand up straight with the bar with your feet around shoulder-width apart and a slight bend in your knees.",
+      "Lift the bar above your head and bend at your elbows slightly to take the tension onto your triceps. Your palms are now facing upward. This is the starting position for the exercise.",
+      "Keeping your elbows fixed and pointing straight up toward the ceiling, slowly lower the bar down behind your head as far as comfortably possible.",
+      "Pause, and then slowly raise the bar back to the starting position.",
+      "Don't lock your elbows out, and then repeat the movement."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/french-press.html"
+  },
+  {
+    "id": "two-arm-standing-dumbbell-extension",
+    "name": "Two Arm Standing Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and stand in an open area.",
+      "To get into position, lift the dumbbell to the top of your shoulder, take a deep breath, overlap your hands around the dumbbell, then press it into position overhead.",
+      "Maintain an overlapped grip and slowly lower the dumbbell behind your head by unlocking your elbows.",
+      "Once your forearms reach parallel or just below, drive the dumbbell back to the starting point by extending the elbows and flexing the triceps.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/two-arm-standing-dumbbell-extension.html"
+  },
+  {
+    "id": "tricep-kickback",
+    "name": "Dumbbell Tricep Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the dumbbell tricep kickback by grabbing a flat bench and sitting a dumbbell on the left-hand side at one end.",
+      "Position yourself on the left side of the bench with your right knee and right hand resting on the bench.",
+      "Using a neutral grip, pick up the dumbbell with your left hand. Keep your back straight and look forward.",
+      "Tuck your left upper arm close to your torso and bend at the elbow, forming a 90-degree angle with your upper arm and forearm. This is the starting position.",
+      "Moving only at the elbow, raise the dumbbell behind you until your arm is fully extended.",
+      "Pause, and then lower the dumbbell back to the starting position.",
+      "Repeat this movement for desired reps and then repeat using your right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tricep-kickback.html"
+  },
+  {
+    "id": "one-arm-dumbbell-extension",
+    "name": "One-Arm Standing Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Get into the starting position for the standing one-arm dumbbell extension by grasping a dumbbell in your left hand and holding it above your head with your palm facing forward.",
+      "Your elbow should be slightly bent. You can use your right arm to stabilize your body.",
+      "Begin the movement by bending at the elbow only and slowly lowering the dumbbell behind your neck.",
+      "Once the dumbbell is down as far as possible, slowly raise it back to the starting position.",
+      "Do not lock your elbow out at the top of the movement, and then repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-extension.html"
+  },
+  {
+    "id": "reverse-grip-tricep-extension",
+    "name": "Reverse Grip Cable Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach a straight bar to a cable stack as high as possible and assume a standing position.",
+      "Grasp the straight bar with a supinated grip (palms facing up) and lean forward slightly by hinging at the hips.",
+      "Initiate the movement by extending the elbows and flexing the triceps.",
+      "Pull the handle downward until the elbows are almost locked out and then slowly lower under control back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-tricep-extension.html"
+  },
+  {
+    "id": "tricep-bench-dip",
+    "name": "Bench Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Set up for the bench dip by placing 2 flat benches parallel to one another to around 4-5 feet apart (you may need to adjust the width to suit your height).",
+      "Put your heels on the edge of one bench around shoulder-width apart.",
+      "Place your hands on the edge of the other bench. This is the starting position for the exercise.",
+      "Keeping your body close to the bench, slowly dip down until your elbows are at the same height as your shoulders.",
+      "Slowly push back up, squeezing through the triceps.",
+      "Do not lock the elbows out at the top of the exercise, and repeat."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tricep-bench-dip.html"
+  },
+  {
+    "id": "weighted-tricep-dips",
+    "name": "Weighted Tricep Dips Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Other",
+    "instructions": [
+      "Step up onto the dip station (if possible) and position your hands with a neutral grip.",
+      "Initiate the dip by unlocking the elbows and slowly lowering the body until the forearms are almost parallel with the floor.",
+      "Control the descent to parallel and then drive back to the starting position by pushing through the palms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "advanced",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/weighted-tricep-dips.html"
+  },
+  {
+    "id": "overhead-tricep-extension",
+    "name": "High Pulley Overhead Tricep Extension (Rope Extension) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach a rope to a cable stack as high as possible and assume a standing position.",
+      "Utilize a split stance, grasp the rope overhead with a neutral grip (palms facing), and lean forward by hinging at the hips.",
+      "Initiate the movement by extending the elbows and flexing the triceps.",
+      "Pull the rope downward until the elbows are almost locked out and then slowly lower under control back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/overhead-tricep-extension.html"
+  },
+  {
+    "id": "one-arm-seated-dumbbell-extension",
+    "name": "One-Arm Seated Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Choose a dumbbell and sit on the end of a flat bench or a 90-degree back bench with the dumbbell resting on your thighs.",
+      "Hold the dumbbell with a pronated grip (palm facing your feet) with your left hand and lift the dumbbell above your head until your arm is fully extended.",
+      "You can brace your right arm by placing your right hand on your knee or across your stomach.",
+      "Bending at the elbow only, slowly lower the dumbbell down behind the right side of your head until it is about level with your right ear.",
+      "Pause and squeeze the tricep. Then raise the dumbbell back to the starting position.",
+      "Do not lock your elbow out and then repeat for desired reps.",
+      "Repeat the motion with your right arm."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-dumbbell-extension.html"
+  },
+  {
+    "id": "close-grip-push-up",
+    "name": "Close Grip Push Up Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Set up by placing your palms on the floor with your thumbs touching one another.",
+      "Extend your legs back so that only your toes are touching the floor and your body is straight.",
+      "Bend slightly at the elbows to keep tension in your triceps.",
+      "Keeping your body straight, slowly lower yourself as far as possible without hitting the floor.",
+      "Pause, and then push back up to the starting position without locking your elbows out.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/close-grip-push-up.html"
+  },
+  {
+    "id": "standing-low-pulley-overhead-tricep-extension-(rope-extension)",
+    "name": "Standing Low Pulley Overhead Tricep Extension (Rope Extension) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the exercise by attaching a rope to the low pulley of a pulley cable machine and selecting the weight you want to use on the stack.",
+      "Facing away from the pulley, grab the rope behind your neck with a neutral grip.",
+      "Keep your feet around shoulder width apart. Your forearms should be parallel to the floor at this point and your elbows should be pointed at the ceiling.",
+      "You should be grasping the rope behind your head. You are now in the starting position.",
+      "Moving only at your elbow joints slowly push the rope straight up until your arms are fully extended. As you push, spread the rope out until your hands are around shoulder width apart at the peak of the movement.",
+      "Pause, and then slowly bring the rope back to the starting position allowing your hands to reunite.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-low-pulley-overhead-tricep-extension-(rope-extension).html"
+  },
+  {
+    "id": "back-of-the-head-lying-tricep-extension",
+    "name": "45 Degree Lying Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Sit on the end of a flat bench with a barbell on your thighs.",
+      "Grip the barbell with an overhand (palms facing down) with your hands about shoulder width apart.",
+      "Bring the bar up to your chest and lay down on your back.",
+      "Extend your arms straight up above your chest.",
+      "Keeping your arms straight, move the bar back to the position shown in the video above.",
+      "Keeping your elbows fixed in place and not pointing out, slowly lower the bar until it is almost touching the top of your head or bench behind your head.",
+      "Pause, and then slowly extend your arms back to the starting position.",
+      "Do not lock your elbows out, and then repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/back-of-the-head-lying-tricep-extension.html"
+  },
+  {
+    "id": "overhead-barbell-extension",
+    "name": "Seated French Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the seated french press by loading a barbell or EZ bar with the appropriate amount of weight and placing it in front of a 90 degree angle bench.",
+      "Sit with your back flat against the bench with your feet flat on the floor and the barbell resting on your thighs.",
+      "Grasp the barbell with an overhand grip (palms facing down) with your hands about 8-12 inches apart.",
+      "Lift the bar above your head and bend at your elbows slightly to take the tension onto your triceps. Your palms are now facing upward. This is the starting position for the exercise.",
+      "Keeping your elbows fixed and pointing straight up toward the ceiling, slowly lower the bar down behind your head as far as comfortably possible.",
+      "Pause, and then slowly raise the bar back to the starting position.",
+      "Don't lock your elbows out, and then repeat the movement."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/overhead-barbell-extension.html"
+  },
+  {
+    "id": "standing-overhead-ez-bar-tricep-extension",
+    "name": "Standing Overhead EZ Bar Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "EZ Bar",
+    "instructions": [
+      "Select the desired weight from the rack and stand in an open area.",
+      "To get into position, reverse curl the bar to your chest and then press it straight overhead by locking out the triceps.",
+      "Lower the weights towards your shoulders by unlocking the elbows and allowing the ez bar to drop behind your head.",
+      "Once your forearms reach parallel or just below, reverse the movement by extending the elbows while flexing the triceps to lockout the weight.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-overhead-ez-bar-tricep-extension"
+  },
+  {
+    "id": "incline-skullcrusher",
+    "name": "Incline Skull Crusher Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the incline\u00a0skull crusher by setting an incline bench to around 30-45 degrees and selecting a barbell you want to use.",
+      "Sit down on the bench with the barbell across your thighs.",
+      "Grasp the barbell with an overhand grip (palms facing down) with your hands slightly closer than shoulder-width apart.",
+      "Lay back on the bench and hold the barbell straight up in the air with your arms fully extended.",
+      "Bend the arms slightly to take up the tension in your triceps. This is the starting position for the exercise.",
+      "Keeping your elbows completely fixed in place, slowly lower the bar down until it's almost touching your forehead.",
+      "Pause, and then slowly extend the arms back up to the starting position.",
+      "Don't lock your arms, and then repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-skullcrusher.html"
+  },
+  {
+    "id": "cable-tricep-extension-with-v-bar",
+    "name": "Cable Tricep Extension With V-Bar Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach a v-bar to a cable stack as high as possible and assume a standing position.",
+      "Grasp the v-bar with a semi pronated grip (palms slightly facing) and lean forward slightly by hinging at the hips.",
+      "Initiate the movement by extending the elbows and flexing the triceps.",
+      "Pull the handle downward until the elbows are almost locked out and then slowly lower under control back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-tricep-extension-with-v-bar.html"
+  },
+  {
+    "id": "seated-bent-over-dumbbell-kickback",
+    "name": "Seated Bent Over Tricep Dumbbell Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and sit on the end of a flat bench.",
+      "Hinge forward and row the dumbbells into place.",
+      "Let the other arm hang down from the shoulder while gripping the dumbbell.",
+      "Row the dumbbells into position and then extend the elbow while flexing the tricep.",
+      "Slowly lower the dumbbells back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-bent-over-dumbbell-kickback.html"
+  },
+  {
+    "id": "decline-lying-tricep-extension-skullcrusher",
+    "name": "Decline Lying Tricep Extension (Skullcrusher) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "EZ Bar",
+    "instructions": [
+      "Select your desired weight and sit on the edge of an decline bench at roughly 20-30 degrees.",
+      "To get into position, lay back and keep the bar close to your chest. Once you are supine, press the weight to lockout.",
+      "Unlock the elbows and allow the ez bar to drop toward your forehead or just above.",
+      "Once your forearms reach parallel or just below, reverse the movement by extending the elbows while flexing the triceps to lockout the weight.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/decline-lying-tricep-extension-skullcrusher.html"
+  },
+  {
+    "id": "incline-two-arm-dumbbell-extension",
+    "name": "Incline Dumbbell Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and position an adjustable bench on a slight incline of 25-35 degrees.",
+      "Lay back keeping the weights close to your chest. Once your back is flat against the pad, press the weights to lockout using a neutral grip.",
+      "Lower the weights towards your shoulders by unlocking the elbows while maintaining a neutral grip.",
+      "Once your forearms reach parallel or just below, drive the dumbbell back to the starting point by extending the elbows and flexing the triceps.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-two-arm-dumbbell-extension.html"
+  },
+  {
+    "id": "one-arm-kettlebell-floor-press",
+    "name": "One Arm Kettlebell Floor Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Begin in a side lying position with the kettlebell next your body.",
+      "Grasp the handle with both hands and slowly roll onto your back.",
+      "Once you are laying flat on the floor, bend your knees to roughly 45 degrees and slide your heels towards your butt.",
+      "Slowly lower the weight until your elbow touches the floor then press to full extension by contracting your triceps and chest.",
+      "Lower back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-kettlebell-floor-press"
+  },
+  {
+    "id": "one-arm-cable-extension",
+    "name": "One-Arm Cable Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the one-arm cable tricep extension by attaching a single grip handle to a high pulley cable and selecting the weight you want to use on the stack.",
+      "Stand facing the machine and grab\u00a0the handle with an overhand grip.",
+      "Pull your elbow down and keep it tucked in at your wide. You can use your free arm for support.",
+      "Keeping your body fixed, slowly extend the arm as far as possible.",
+      "Pause and squeeze the tricep muscle, and then slowly lower the weight.",
+      "Repeat this motion for desired reps, and then repeat for the right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-cable-extension.html"
+  },
+  {
+    "id": "seated-ez-bar-french-press",
+    "name": "Seated EZ Bar French Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "EZ Bar",
+    "instructions": [
+      "Select your desired weight and sit on an upright bench.",
+      "To get into position, reverse curl the bar to your chest and then press it straight overhead by locking out the triceps.",
+      "Lower the weights towards your shoulders by unlocking the elbows and allowing the ez bar to drop behind your head.",
+      "Once your forearms reach parallel or just below, reverse the movement by extending the elbows while flexing the triceps to lockout the weight.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-ez-bar-french-press"
+  },
+  {
+    "id": "band-assisted-dip",
+    "name": "Band Assisted Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Attach a band to each of the handles on the dip station.",
+      "Step up onto the dip station (if possible) and place both knees in the center of the band while positioning your hands on the handles with a neutral grip.",
+      "Initiate the dip by unlocking the elbows and slowly lowering the body until the forearms are almost parallel with the floor.",
+      "Control the descent to parallel and then drive back to the starting position by pushing through the palms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/band-assisted-dip"
+  },
+  {
+    "id": "dumbbell-tate-press",
+    "name": "Dumbbell Tate Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and sit down on a flat bench.",
+      "To get into position, lay back and keep the weights close to your chest. Once you are in position, take a deep breath, then press the dumbbells to lockout at the top.",
+      "Maintain a pronated grip (thumbs pointing towards each other) and allow the elbows to bend while lowering the inner portion of the dumbbells to the chest.",
+      "Once the ends of the dumbbells touch your chest, reverse the movement and flex the triceps to lockout the elbows.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-tate-press"
+  },
+  {
+    "id": "one-arm-bent-over-dumbbell-kickback",
+    "name": "One Arm Bent Over Dumbbell Tricep Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and stand in an open area.",
+      "Hinge forward, row the dumbbell into position, then extend the elbow while flexing the tricep.",
+      "Slowly lower the dumbbell back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-bent-over-dumbbell-kickback.html"
+  },
+  {
+    "id": "high-pulley-overhead-tricep-extension",
+    "name": "High Pulley Overhead Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the high pulley tricep extension by attaching a straight bar to a high pulley and selecting the weight you want to use on the stack.",
+      "Facing away from the pulley, grab the bar behind your neck with an overhand grip at shoulder width apart.",
+      "Bend over at the waist until your torso is almost parallel to the floor. This will lift the weight slightly from the stack.",
+      "You can stagger your feet and bend slightly at the knees to help with balance.",
+      "Your upper arms should be parallel to the floor at this point and you should be grabbing\u00a0the bar behind your head. You are now in the starting position.",
+      "Moving only at your elbow joints, slowly push the bar out in from of your body until your arms are fully extended.",
+      "Pause, and then slowly bring the bar back to the starting position.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/high-pulley-overhead-tricep-extension.html"
+  },
+  {
+    "id": "eccentric-only-dip",
+    "name": "Eccentric Only Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Step up onto the dip station (if possible) and position your hands on the handles with a neutral grip.",
+      "Initiate the dip by unlocking the elbows and lower your body as slowly as possible until the forearms are almost parallel with the floor.",
+      "Control the descent to parallel, then step onto the dip platform and repeat the process from your initial starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/eccentric-only-dip"
+  },
+  {
+    "id": "rolling-dumbbell-extension",
+    "name": "Rolling Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Pick up the dumbbells off the floor using a neutral grip (palms facing in). Position the ends of the dumbbells in your hip crease, and sit down on the bench.",
+      "To get into position, lay back and keep the weights close to your chest. Once you are in position, take a deep breath, then press the dumbbells to lockout at the top.",
+      "Lower the weights towards your shoulders by unlocking the elbows while maintaining a neutral grip.",
+      "Once your forearms reach parallel or just below, allow the upper arms to extend overhead (similar to a pullover).",
+      "As the arms reach full extension, pull the elbows back to the starting position and then extend the elbows while flexing the triceps to lockout the weight.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/rolling-dumbbell-extension"
+  },
+  {
+    "id": "reverse-grip-one-arm-tricep-pushdown",
+    "name": "Reverse One-Arm Cable Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the reverse one-arm tricep extension by attaching a single grip handle to a high pulley cable and selecting the weight you want to use on the stack.",
+      "Stand facing the machine and grasp the handle with an underhand grip (palms facing up).",
+      "Pull your elbow down and keep it tucked in at your side. You can use your free arm for support.",
+      "Keeping your body fixed, slowly extend the arm as far as possible.",
+      "Pause and squeeze the tricep. Then slowly lower the weight.",
+      "Repeat this motion for desired reps, and then repeat for the right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-one-arm-tricep-pushdown.html"
+  },
+  {
+    "id": "machine-tricep-extension",
+    "name": "Machine Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Setup in a seated position with your hands in a neutral grip on the handles.",
+      "Exhale and press the handles outward by extending the elbows.",
+      "Slowly lower the handles back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/machine-tricep-extension"
+  },
+  {
+    "id": "machine-tricep-extension",
+    "name": "Machine Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Setup in a seated position with your hands in a neutral grip on the handles.",
+      "Exhale and press the handles outward by extending the elbows.",
+      "Slowly lower the handles back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/machine-tricep-extension"
+  },
+  {
+    "id": "standing-low-pulley-overhead-tricep-extension",
+    "name": "Standing Low Pulley Overhead Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the exercise by attaching a straight bar to the low pulley on a cable pulley machine and selecting the weight you want to use on the stack.",
+      "Facing away from the pulley, grab the bar behind your neck with an overhand grip at shoulder width and stand up straight with a slight bend in your knees. This will lift the weight slightly from the stack.",
+      "Keep your feet shoulder width apart. Your forearms should be parallel to the floor at this point and your elbows should be pointed at the ceiling.",
+      "You should be grabbing\u00a0the bar behind your head with your palms facing upward. You are now in the starting position.",
+      "Moving only at your elbow joints, slowly push the bar straight up until your arms are fully extended.",
+      "Keep your upper arms stationary, pause, and then slowly bring the bar back to the starting position.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-low-pulley-overhead-tricep-extension.html"
+  },
+  {
+    "id": "single-bench-dip",
+    "name": "Single Bench Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "To perform this exercise all you need is a flat bench and some space. Position your hands shoulder width apart on the flat bench.",
+      "Move your feet out until your legs are straight.",
+      "Straighten out your arms and keep a little bend in your elbows in order to always keep tension on your triceps and off of your elbow joints.",
+      "Slowly lower your upper body down towards the floor with your elbows tucked in at your sides until your elbows are level with your shoulders.",
+      "Pause, and then slowly press off with your hands and push yourself back up to the starting position with your triceps.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/single-bench-dip.html"
+  },
+  {
+    "id": "sphinx-push-up",
+    "name": "Sphinx Push Up Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Assume a quadruped position on the floor with your hands under your shoulders, toes tucked, and knees under hips.",
+      "Extend one leg at a time and assume a plank position with the legs straight, weight on your forearms, and head in a neutral position looking at the floor.",
+      "Press into the ground with your hands and extend the elbows to raise to the top position.",
+      "Descend until the forearms are back on the floor and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "advanced",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/sphinx-push-up"
+  },
+  {
+    "id": "one-arm-seated-overhead-tricep-extension",
+    "name": "One-Arm Seated Overhead Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the exercise by placing a bench in front of the cable machine, attaching a single handle to the low pulley of a pulley cable machine, and selecting the weight you want to use on the stack.",
+      "Sit facing away from the pulley, and grab the handle behind you with an overhand grip. This will lift the weight slightly from the stack.",
+      "Your forearm should be parallel to the floor at this point and your elbow should be pointed at the ceiling.",
+      "You should be grasping the attachment behind your head. You are now in the starting position.",
+      "Moving only at your elbow joint slowly push the attachment straight up until your arm is fully extended.",
+      "Pause, and then slowly bring the attachment back to the starting position. Repeat this movement for desired reps, before switching arms and repeating the steps above."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-overhead-tricep-extension.html"
+  },
+  {
+    "id": "california-skullcrusher",
+    "name": "California Skullcrusher Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "EZ Bar",
+    "instructions": [
+      "Select your desired weight and sit on the edge of a flat bench.",
+      "To get into position, lay back and keep the bar close to your chest using a neutral grip. Once you are supine, press the weight to lockout.",
+      "Unlock the elbows and allow the ez bar to drop toward your forehead or just above.",
+      "Once your forearms reach parallel or just below, allow the upper arms to extend overhead (similar to a pullover).",
+      "As the arms reach full extension, pull the elbows back to the starting position and then extend the elbows while flexing the triceps to lockout the weight.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/california-skullcrusher"
+  },
+  {
+    "id": "lying-cable-tricep-extension",
+    "name": "Lying Cable Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the lying cable tricep extension by placing a flat bench directly in front of a pulley cable machine, attaching a straight bar to the low pulley, and selecting the weight you want to use on the stack.",
+      "Grab the bar with an overhand grip (palms facing down) at shoulder width apart and lie down flat on the bench with your feet firmly on the floor. You should be lying with your head near the pulley.",
+      "Raise your upper arms straight up and keep them tucked in close to your body.",
+      "Your forearms should be around parallel to the floor holding the bar above your head, lifting the weight slightly off the stack. This is the starting position.",
+      "Push the bar upward, moving only at your elbows. Continue pushing until your arms are fully extended.",
+      "Pause for a moment and then slowly return the bar to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-cable-tricep-extension.html"
+  },
+  {
+    "id": "seated-low-pulley-overhead-tricep-extension-(rope-extension)",
+    "name": "Seated Low Pulley Overhead Tricep Extension (Rope Extension) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the exercise by placing a 90 degree bench in front of a cable pulley machine facing away from it, attaching a rope to the low pulley, and selecting the weight you want to use on the stack.",
+      "Facing away from the pulley, grab the rope behind your neck with a neutral grip (palms facing in) keeping your hands close together and sit down with your back flat against the bench. This will lift the weight slightly from the stack.",
+      "Keep your feet flat on the ground. Your forearms should be parallel to the floor at this point and your elbows should be pointed at the ceiling.",
+      "You should be grasping the rope behind your head. You are now in the starting position.",
+      "Moving only at your elbow joints slowly push the rope straight up until your arms are fully extended. As you push, spread the rope out until your hands are around shoulder-width apart at the peak of the movement.",
+      "Pause, and then slowly bring the rope back to the starting position allowing your hands to reunite.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-low-pulley-overhead-tricep-extension-(rope-extension).html"
+  },
+  {
+    "id": "two-arm-cable-tricep-kickback",
+    "name": "Two-Arm Cable Tricep Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Attach\u00a0either a long rope, or two single grip handles to a low pulley cable and select\u00a0the weight you want to use on the stack.",
+      "Grasp the rope with a neutral grip (thumbs facing the pulled machine) and step away\u00a0from the machine.",
+      "With your knees bent slightly and elbows tucked in at your sides, bend down until your torso is around parallel to the floor. This is the starting position for the exercise.",
+      "Slowly extend your arms as far as possible.",
+      "Squeeze the triceps, and then slowly lower back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/two-arm-cable-tricep-kickback.html"
+  },
+  {
+    "id": "close-grip-ez-bar-press",
+    "name": "Close Grip EZ Bar Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "EZ Bar",
+    "instructions": [
+      "Select your desired weight and sit on the edge of a flat bench.",
+      "To get into position, lay back and keep the bar close to your chest using a neutral grip. Once you are supine, press the weight to lockout.",
+      "Unlock the elbows and extend the shoulders to lower the weight to your chest.",
+      "Once the bar touches your chest, reverse the movement by extending the elbows while flexing the triceps to lockout the weight.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/close-grip-ez-bar-press"
+  },
+  {
+    "id": "smith-machine-close-grip-bench-press",
+    "name": "Smith Machine Close Grip Bench Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Set up for the smith machine close grip bench press by placing a flat bench in the smith machine, lowering the bar, and adding the weight you want to use to the bar.",
+      "Lay back on the bench and grasp the bar with an overhand grip (palms facing your feet) at around 6-12 inches apart.",
+      "Take the weight off the rack by twisting the bar.",
+      "Keeping your elbows tucked in at your sides, slowly lower the weight focusing on your triceps as the prime movers.",
+      "Lower the weight until it almost touches your chest, and then slowly raise it up, pushing the weight with your triceps.",
+      "Do not lock your elbows out at the top of the exercise, and then repeat."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-close-grip-bench-press.html"
+  },
+  {
+    "id": "kneeling-overhead-tricep-extension-over-flat-bench",
+    "name": "Kneeling Overhead Tricep Extension (Over Flat Bench) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the exercise by placing a flat bench long ways in front of a cable pulley machine and attaching a straight bar to the high pulley. Select the desired weight on the stack.",
+      "Grab the bar using an overhand grip at shoulder width and turn away from the pulley to face the bench.",
+      "Pull the weight off the stack and kneel in front of the bench holding the bar behind your head and placing your upper arms securely on the bench.",
+      "Your elbows should be extended out over the edge of the bench and your head should be down. This is the starting position.",
+      "Start the movement by pushing the bar out in front of you, bending only at the elbow joints until your arms are fully extended.",
+      "Pause and then slowly bring the bar back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/kneeling-overhead-tricep-extension-over-flat-bench.html"
+  },
+  {
+    "id": "cable-concentration-tricep-extension",
+    "name": "Cable Concentration Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the exercise by attaching a single grip handle to a high pulley cable machine and selecting the weight you want to use on the stack.",
+      "Grab\u00a0the handle with an underhand grip (palm facing up) with your right hand.",
+      "Turn so your left side is facing the cable machine and drop your left knee to the floor.",
+      "Your right thigh should be parallel to the floor, as it will be used as a support during the exercise.",
+      "Position the back of your elbow (bottom of the tricep) against your inner right thigh. This is the starting position for the exercise.",
+      "Keeping your body fixed, slowly extend the arm as far as possible.",
+      "Squeeze the tricep, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-concentration-tricep-extension.html"
+  },
+  {
+    "id": "seated-low-pulley-overhead-tricep-extension",
+    "name": "Seated Low Pulley Overhead Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the exercise by placing a 90 degree bench in front of a cable pulley machine facing away from it, attaching a straight bar to the low pulley, and selecting the weight you want to use on the stack.",
+      "Facing away from the pulley, grab the bar behind your neck with an overhand grip at shoulder width and sit down with your back flat against the bench. This will lift the weight slightly from the stack.",
+      "Keep your feet flat on the ground. Your forearms should be parallel to the floor at this point and your elbows should be pointed at the ceiling. You should be grasping the bar behind your head with your palms facing upward. You are now in the starting position.",
+      "Moving only at your elbow joints slowly push the bar straight up until your arms are fully extended.",
+      "Keep your upper arms stationary, pause, and then slowly bring the bar back to the starting position.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-low-pulley-overhead-tricep-extension.html"
+  },
+  {
+    "id": "one-arm-pronated-dumbbell-extension",
+    "name": "One-Arm Lying Pronated Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and sit in an upright position on a flat bench.",
+      "Lay back keeping the weight close to your chest. Once your back is flat against the pad, press the weights to lockout using a neutral grip.",
+      "Rotate the dumbbell to a pronated position (thumbs pointing inward) and lower the weight towards your shoulder by unlocking the elbow.",
+      "Once your forearm reaches parallel or just below, drive the dumbbell back to the starting point by extending the elbow and flexing the tricep.",
+      "Repeat for the desired number of repetitions on both sides."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-pronated-dumbbell-extension.html"
+  },
+  {
+    "id": "twisting-dumbbell-bench-press",
+    "name": "Twisting Dumbbell Bench Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "To set up for the twisting dumbbell bench press choose a pair of dumbbells, rest them on your thighs, and lie down flat on a flat bench.",
+      "You can use your thighs to help you push the dumbbells above your body fully extending your arms at shoulder-width apart.",
+      "At this point, your palms should be facing inward towards one another and the dumbbells should be nearly touching. This is the starting position.",
+      "Begin slowly lowering the dumbbells while twisting at the wrists. Continue turning your wrists so that when you reach the bottom of the movement (when your upper arms are around parallel to the ground) your palms are facing forward.",
+      "Pause for a moment and push the dumbbells back to the starting position, twisting at the wrists in the opposite direction than when lowering the weight.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/twisting-dumbbell-bench-press.html"
+  },
+  {
+    "id": "one-arm-standing-overhead-cable-tricep-extension",
+    "name": "One-Arm Cable Overhead Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the one-arm overhead tricep extension by attaching a single grip handle to the low pulley cable and selecting the weight you want to use on the stack.",
+      "Grasp the handle with your left hand, raise your left arm above your head, and turn away from the machine.",
+      "Your palm should be facing forwards, away from the cable machine. This is the starting position for the exercise.",
+      "Keeping your body fixed and bending at the elbow only, slowly lower weight back behind your body.",
+      "Pause, and then raise the weight while squeezing the tricep at the top of the movement.",
+      "Do not lock your elbow out, and then lower weight and repeat.",
+      "Repeat with your right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-standing-overhead-cable-tricep-extension.html"
+  },
+  {
+    "id": "ez-bar-back-of-the-head-lying-tricep-extension",
+    "name": "45 Degree Lying Tricep Extension (EZ Bar) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "EZ Bar",
+    "instructions": [
+      "Sit on the end of a flat bench width a barbell on your thighs.",
+      "Grip the EZ-bar on the inner grips. Bring the bar up to your chest and lay down on your back.",
+      "Extend your arms straight up above your chest.",
+      "Keeping your arms straight move the bar back so it is angled out past your head.",
+      "Keeping your elbows fixed in place and not pointing out, slowly lower the bar until it is almost touching the top of your head or bench behind your head.",
+      "Pause, and then slowly extend your arms back to the starting position.",
+      "Do not lock your elbows out, and then repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/ez-bar-back-of-the-head-lying-tricep-extension.html"
+  },
+  {
+    "id": "inline-bench-french-press",
+    "name": "Inline Bench French Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the incline bench french press by loading the appropriate weight onto an EZ-Bar or barbell and sitting with your back flat against an incline bench.",
+      "Grasp the bar with a close grip (just inside shoulder width) using an overhand grip (palms facing forward).",
+      "Raise the bar straight above your head until your arms are nearly fully extended (keep a slight bend in your elbows). This is the starting position.",
+      "Slowly lower the bar down behind you by bending at the elbows. The bar should come down as far as comfortably possible or when it is about even with your head.",
+      "Slowly raise the bar back to the starting position. This is one rep.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/inline-bench-french-press.html"
+  },
+  {
+    "id": "alternate-lying-dumbbell-extension",
+    "name": "Alternating Lying Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the exercise by setting a pair of dumbbells at the end of a flat bench.",
+      "Pick up the dumbbells off the floor using a neutral grip (palms facing in), position the ends of the dumbbells on your thighs, and sit down on the bench.",
+      "To get in position you need to rock back pushing the dumbbells back with your thighs and only slightly bending at the elbows.",
+      "Now you should be in a position to start the set, laying back on the bench and holding the dumbbells straight up above your chest with a neutral grip.",
+      "Slowly lower the left dumbbell down by bending only at the elbow. You will be moving in a semi-circular motion until the dumbbell is about even with your left ear. Continue to hold the right dumbbell in place.",
+      "Pause, and then raise the dumbbell back to the starting position.",
+      "Repeat the movement with your right arm and then repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-lying-dumbbell-extension.html"
+  },
+  {
+    "id": "banded-tricep-extension",
+    "name": "Banded Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Attach a band to a stable implement above head height and assume a standing position.",
+      "Grasp the band with a neutral grip (palms facing in) and lean forward slightly by hinging at the hips.",
+      "Initiate the movement by extending the elbows and flexing the triceps.",
+      "Pull the band downward until the elbows are almost locked out and then slowly lower under control back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-tricep-extension"
+  },
+  {
+    "id": "one-arm-lying-dumbbell-extension",
+    "name": "One-Arm Lying Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Choose a dumbbell and sit on the end of a flat bench with the dumbbell resting on your thighs. Hold the dumbbell with a neutral grip using your left hand.",
+      "Lie back on the bench and extend the dumbbell above your head fully extending your left arm.",
+      "Bending at the elbow only, keeping your elbow fixed and pointing at your hips, slowly lower the dumbbell down beside the left side of your head until it is about level with your ear.",
+      "Pause and squeeze the triceps. Then raise the dumbbell back to the starting position.",
+      "Do not lock your elbow out, and then repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-lying-dumbbell-extension.html"
+  },
+  {
+    "id": "overhead-banded-tricep-extension",
+    "name": "Overhead Banded Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Attach a band to a stable implement above head height and assume a standing position.",
+      "Utilize a split stance, grasp the band overhead with a neutral grip (palms facing), and lean forward by hinging at the hips.",
+      "Initiate the movement by extending the elbows and flexing the triceps.",
+      "Pull the band downward until the elbows are almost locked out and then slowly lower under control back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/overhead-banded-tricep-extension"
+  },
+  {
+    "id": "decline-close-grip-bench-press",
+    "name": "Decline Close Grip Bench Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Lie flat on an decline bench, set your hands at shoulder width, and hook your feet underneath the pad.",
+      "Set your shoulder blades by pinching them together and driving them into the bench.",
+      "Take a deep breath and allow your spotter to help you with the lift off in order to maintain tightness through your upper back.",
+      "Let the weight settle and ensure your upper back remains tight after lift off.",
+      "Inhale and allow the bar to descend slowly by unlocking the elbows.",
+      "Lower the bar in a straight line to just below your sternum (breastbone) and touch the chest.",
+      "Push the bar back up in a straight line by pressing yourself into the bench and extending the elbows.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/decline-close-grip-bench-press.html"
+  },
+  {
+    "id": "cable-tricep-kickback",
+    "name": "Cable Tricep Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the cable tricep kickback by attaching a single grip handle to a low pulley cable machine and selecting the weight you want to use.",
+      "Grab\u00a0the handle using your left hand with an overhand grip and take a step back from the cable machine.",
+      "Keeping your feet together and knees slightly bent, bend down until your body is around parallel to the floor.",
+      "Use your free right hand to stabilize yourself.",
+      "Bring the elbow up as far as possible and keep it tight by your side. This is the starting position for the exercise.",
+      "Keeping your elbow in place and your body fixed,\u00a0extend your arm out as far as possible.",
+      "Squeeze the tricep, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/cable-tricep-kickback.html"
+  },
+  {
+    "id": "lying-single-dumbbell-extension",
+    "name": "Lying Dumbbell Extension (Single Dumbbell) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the exercise by choosing a dumbbell and setting it at the end of a flat bench. Sit down on the edge of the bench.",
+      "Pick the dumbbell off the floor with both hands securing it on one end with your hands flat and palms facing upward.",
+      "Slowly lie back on the bench and raise the dumbbell above your head by fully extending both arms. Now you should be in a position to start the set.",
+      "Slowly lower the dumbbell to your head by bending only at the elbows. You will be moving in a semi-circular motion until the dumbbell almost touches your forehead.",
+      "Pause, and then raise the dumbbell back to the starting position.",
+      "Repeat the movement for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-single-dumbbell-extension.html"
+  },
+  {
+    "id": "alternate-bent-over-dumbbell-kickback",
+    "name": "Alternating Bent-Over Dumbbell Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the appropriate dumbbells and place them on the floor in front of you.",
+      "Bending at the knees and keeping your back straight, squat down and pick up the dumbbells with a neutral grip (palms facing inward). Your feet should be around shoulder-width apart.",
+      "Get into the starting position by keeping your back straight, bending slightly at the knees, and bending over at the waist. Your torso should almost be parallel to the floor.",
+      "Tuck your upper arms close to your torso and bend at the elbows, forming a 90-degree angle with your upper arms and forearms. This is the starting position.",
+      "Beginning with your left arm and moving only at the elbow, raise the dumbbell behind you until your arm is fully extended.",
+      "Pause, and then lower the dumbbell back to the starting position.",
+      "Repeat this movement with your right arm and then repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-bent-over-dumbbell-kickback.html"
+  },
+  {
+    "id": "reverse-grip-french-press",
+    "name": "Reverse Grip French Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the reverse grip french press by loading a barbell or EZ bar with the appropriate amount of weight and standing with your feet around shoulder width apart.",
+      "Grasp the barbell with an underhand grip (palms facing up) with your hands about 8-12 inches apart.",
+      "Lift the bar above your head and bend at your elbows slightly to take the tension onto your triceps. This is the starting position for the exercise.",
+      "Keeping your elbows fixed and pointing straight up toward the ceiling, slowly lower the bar down behind your head as far as comfortably possible.",
+      "Pause, and then slowly raise the bar back to the starting position.",
+      "Don't lock your elbows out, and then repeat the movement."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-french-press.html"
+  },
+  {
+    "id": "incline-cable-tricep-extension",
+    "name": "Incline Cable Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for this exercise by placing an incline bench in front of a cable machine. Attach a straight bar to the low pulley.",
+      "Make sure the incline bench is set to an angle of 30 degrees and is facing away from the pulley.",
+      "Grab\u00a0the bar with an overhand grip at around shoulder width, sit on the bench with your back flat against the padding and raise the bar straight above your head taking the weight off the stack. This is the starting position.",
+      "Moving only at the elbows, slowly lower the bar back behind your head until your forearms are just past parallel to the floor.",
+      "Raise the bar to the starting position, pause briefly, and then repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-cable-tricep-extension.html"
+  },
+  {
+    "id": "three-bench-dip",
+    "name": "Three Bench Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Bodyweight",
+    "instructions": [
+      "Set up for the three bench dip by getting two flat benches and placing them parallel to one another. The distance between the benches should be slightly wider than your shoulder width.",
+      "Grab the third bench and place it at a right angle to the other benches. The gap between these benches should be about the length of your legs.",
+      "Put one hand on each of the parallel benches with your palms facing away from you, and then put your heels on the other bench.",
+      "Push up until your arms are straight. This is the starting position for the exercise.",
+      "Slowly lower your body down until your elbow is at the same height as your shoulder.",
+      "Push back up to the starting position without locking your elbows out.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": true,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/three-bench-dip.html"
+  },
+  {
+    "id": "one-arm-seated-dumbbell-kickback",
+    "name": "One-Arm Seated Dumbbell Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Choose a dumbbell and place it on the floor in front of a flat bench.",
+      "Sit on the edge of the bench and pick the dumbbell up from the floor with your left hand using a neutral grip (palms facing inward).",
+      "Get into the starting position by keeping your back straight and bending over at the waist.",
+      "Your torso should almost be parallel to the floor.",
+      "Tuck your upper arms close to your torso and bend at the elbows, forming a 90-degree angle with your upper arms and forearms. This is the starting position.",
+      "Moving only at the elbow joint, raise the dumbbell behind you until your arm is fully extended.",
+      "Pause, and then lower the dumbbell back to the starting position.",
+      "Repeat this movement for desired reps and then repeat using your right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-dumbbell-kickback.html"
+  },
+  {
+    "id": "one-arm-seated-bent-over-dumbbell-kickback",
+    "name": "One-Arm Seated Bent Over Dumbbell Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the appropriate dumbbell and place it on the floor in front of a flat bench.",
+      "Sit on the edge of the bench and pick the dumbbell up with your left hand using a neutral grip (palm facing inward).",
+      "Get into the starting position by keeping your back straight and bending over at the waist. Your torso should almost be parallel to the floor.",
+      "Tuck your upper arms close to your torso and bend at the elbows, forming a 90-degree angle with your upper arms and forearms. This is the starting position.",
+      "Moving only at the elbow, raise the dumbbell behind you until your left arm is fully extended.",
+      "Pause, and then lower the dumbbell back to the starting position.",
+      "Repeat this movement for desired reps and then repeat using your right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-bent-over-dumbbell-kickback.html"
+  },
+  {
+    "id": "standing-two-arm-tricep-cable-extension",
+    "name": "Two-Arm Tricep Cable Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up by attaching a single grip handle to each of the high pulley cables and selecting the weight you want to use on the stack.",
+      "Grip each cable with an underhand grip (palms facing up). You will grab the right handle with your left hand and the left handle with your right hand.",
+      "Stand in the center of the machine and lift the handles so that your upper arms are parallel to the floor and the handles are the front of your face around level with your ears. This is the starting position.",
+      "Keeping your upper arms and body fixed, push the handles out away from your body as far as possible.",
+      "Once you have fully extended both arms, pause and then slowly bring the handles back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-two-arm-tricep-cable-extension.html"
+  },
+  {
+    "id": "triceps-lacrosse-ball",
+    "name": "Triceps Lacrosse Ball Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Lacrosse Ball",
+    "instructions": [
+      "In a half kneeling position, place the lacrosse ball directly underneath the base of the elbow on the backside of the upper arm.",
+      "Apply pressure via the upper body while flexing and extending the arm against the lacrosse ball.",
+      "Complete 10-15 repetitions and repeat on the other side."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/triceps-lacrosse-ball"
+  },
+  {
+    "id": "reverse-grip-close-grip-bench-press",
+    "name": "Reverse Grip Close Grip Bench Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the exercise by loading the weight on the bar and adjusting the height of the rack (if adjustable).",
+      "Lay back on the bench and position your feet firmly on the floor.",
+      "Grab\u00a0the barbell with an underhand grip (palms facing your head) with your hands about 8-12 inches apart. Take the weight off the rack.",
+      "Keeping your elbows tucked in at your sides, slowly lower the barbell down to your middle chest until it's about 1 inch from touching.",
+      "Contract the triceps and push the barbell back up until your arms are almost fully outstretched.",
+      "Don't lock the elbows, and then repeat the movement for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-close-grip-bench-press.html"
+  },
+  {
+    "id": "reverse-grip-cable-tricep-kickback",
+    "name": "Reverse Grip Cable Tricep Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the reverse grip cable tricep kickback by attaching a single grip handle to a low pulley cable machine and selecting the weight you want to use.",
+      "Grasp the handle using your left hand with an underhand grip and take a step back from the cable machine.",
+      "Keeping your feet together and knees slightly bent, bend down until your body is around parallel to the floor.",
+      "Use your free right hand to stabilize yourself. Bring the elbow up as far as possible and keep it tight by your side. This is the starting position for the exercise.",
+      "Keeping your elbow in place and your body fixed, extend your arm out as far as possible.",
+      "Squeeze the tricep, and then slowly lower the weight back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-cable-tricep-kickback.html"
+  },
+  {
+    "id": "alternate-dumbbell-floor-press",
+    "name": "Alternating Dumbbell Floor Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Begin sitting on the floor in an upright position with your legs straight and the dumbbells vertically balanced on the floor.",
+      "Pick up each dumbbell and set it high in your hip crease while maintaining a tight grip.",
+      "Slowly lay back while keeping the dumbbells close to your chest and bend your knees to roughly 45 degrees and move your feet up slightly.",
+      "Press the weights to full extension by contracting your triceps and chest.",
+      "Slowly lower one dumbbell under control as far as comfortably possible (the handle should be about level with your chest) while keeping the other locked out at the top.",
+      "Contract the chest and triceps to push the dumbbell back to the starting position.",
+      "Slowly lower the other dumbbell under control until your elbow touches the floor while keeping the other locked out at the top.",
+      "To complete the exercise, simply lower the weights to the ground in \u201ccontrolled drop\u201d fashion. It should be a smooth motion but not one requiring excessive effort or one that puts the shoulder under unnecessary risk."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-dumbbell-floor-press"
+  },
+  {
+    "id": "ez-bar-incline-skullcrusher",
+    "name": "EZ Bar Incline Skullcrusher Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "EZ Bar",
+    "instructions": [
+      "Select your desired weight and sit on the edge of an adjustable bench set at 20-30 degrees.",
+      "To get into position, lay back and keep the bar close to your chest. Once you are supine, press the weight to lockout.",
+      "Unlock the elbows and allow the ez bar to drop toward your forehead or just above.",
+      "Once your forearms reach parallel or just below, reverse the movement by extending the elbows while flexing the triceps to lockout the weight.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/ez-bar-incline-skullcrusher.html"
+  },
+  {
+    "id": "exercise-ball-one-arm-dumbbell-extension",
+    "name": "Exercise Ball One-Arm Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Exercise Ball",
+    "instructions": [
+      "Set up by sitting on an exercise ball with your feet firmly placed on the floor holding a dumbbell above your head with your left hand, thumb facing your head (palm forward).",
+      "Use your other arm to help stabilize the body on the ball.",
+      "Tense the midsection and straighten the lower back. This is the starting position for the exercise.",
+      "Keeping your eyes facing forwards and elbow locked in position, slowly lower the dumbbell behind your head as far as possible.",
+      "Pause, and then raise the dumbbell back to the starting position without locking your elbow out.",
+      "Lower and repeat for desired reps, and then repeat the same process for your right arm."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/exercise-ball-one-arm-dumbbell-extension.html"
+  },
+  {
+    "id": "smith-machine-reverse-close-grip-bench-press",
+    "name": "Smith Machine Reverse Close Grip Bench Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Set up for the\u00a0smith machine reverse close grip bench press by placing a flat bench in the smith machine, lowering the bar, and adding the weight you want to use to the bar.",
+      "Lay back on the bench and grasp the bar with an underhand grip (palms facing your head) at around 6-12 inches apart.",
+      "Take the weight off the rack by twisting the bar.",
+      "Keeping your elbows tucked in at your sides, slowly lower the weight focusing on your triceps as the prime movers.",
+      "Lower the weight until it almost touches your chest, and then slowly raise up, pushing the weight with your triceps.",
+      "Do not lock your elbows out at the top of the exercise, and then repeat."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-reverse-close-grip-bench-press.html"
+  },
+  {
+    "id": "incline-close-grip-bench-press",
+    "name": "Incline Close Grip Bench Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Lie flat on an incline bench and set your hands at shoulder width.",
+      "Set your shoulder blades by pinching them together and driving them into the bench.",
+      "Take a deep breath and allow your spotter to help you with the lift off in order to maintain tightness through your upper back.",
+      "Let the weight settle and ensure your upper back remains tight after lift off.",
+      "Inhale and allow the bar to descend slowly by unlocking the elbows.",
+      "Lower the bar in a straight line to the base of the sternum (breastbone) and touch the chest.",
+      "Push the bar back up in a straight line by pressing yourself into the bench, driving your feet into the floor for leg drive, and extending the elbows.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-close-grip-bench-press.html"
+  },
+  {
+    "id": "lying-on-floor-tricep-extension-(rope-extension)",
+    "name": "Lying Cable Tricep Extension (Rope Extension) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the lying cable tricep extension with rope by attaching a rope to a low pulley and selecting the weight you want to use on the stack.",
+      "Lie with your back flat on the floor facing away from the pulley and grab the rope with a neutral grip at shoulder width apart.",
+      "Keep your upper arms tucked in close to your body and raised so that your forearms are about parallel to the floor.",
+      "Hold the rope directly in front of your face, lifting the weight slightly off the stack. This is the starting position.",
+      "Slowly push your arms out in front of your body, fully extending your arms.",
+      "Pause briefly and lower the rope back to the starting position.",
+      "Repeat this movement for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-on-floor-tricep-extension-(rope-extension).html"
+  },
+  {
+    "id": "ring-dip",
+    "name": "Ring Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Rings",
+    "instructions": [
+      "Set a pair of rings at roughly chest height and grasp the handles using a neutral grip (palms facing).",
+      "Initiate the dip by unlocking the elbows and slowly lowering the body until the forearms are almost parallel with the floor.",
+      "Control the descent to parallel and then drive back to the starting position by pushing through the palms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "advanced",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/ring-dip"
+  },
+  {
+    "id": "smith-machine-incline-tricep-extension",
+    "name": "Smith Machine Incline Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Set an incline bench to an angle of between 30 and 45 degrees and place it with the highest end underneath the smith machine bar.",
+      "Load the weight you want to use on the smith machine.",
+      "Lay back on the incline bench with your feet firmly positioned on the floor.",
+      "Grasp the bar with an underhand grip (palms facing up) slightly closer than shoulder-width apart.",
+      "Take the weight off the stack and extend your arms. This is the starting position.",
+      "Keeping your elbows fixed, slowly lower the bar down as far as possible.",
+      "Pause, and then raise the bar back to the starting position without locking the elbows out.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-incline-tricep-extension.html"
+  },
+  {
+    "id": "close-grip-chest-press",
+    "name": "Close Grip Chest Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the close grip chest press by adjusting the rack height (if adjustable) and loading the weight you want to use on the barbell.",
+      "Lay back on the bench with your feet firmly on the floor.",
+      "Grab\u00a0the bar with an overhand grip (palms facing your feet) with your hands around 12 inches apart.",
+      "Take the barbell off the rack and hold it straight above your chest. Bend the elbows slightly to take the weight onto your chest/triceps.",
+      "Slowly lower the bar to your middle chest.",
+      "Pause, then slowly push the bar back to the starting position. Don't lock your elbows out!",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/close-grip-chest-press.html"
+  },
+  {
+    "id": "lying-barbell-reverse-extension",
+    "name": "Lying Barbell Reverse Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      ""
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/lying-barbell-reverse-extension.html"
+  },
+  {
+    "id": "tricep-tiger-tail",
+    "name": "Tricep Tiger Tail Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Tiger Tail",
+    "instructions": [
+      "While in a seated position, position one end of the tiger tail on a solid surface and hold the other end in one hand.",
+      "Adjust pressure into tricep by using your bodyweight to bear down on the roller.",
+      "Slowly roll up and down the length of the tricep for 20-30 seconds.",
+      "Repeat on the other side."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/tricep-tiger-tail"
+  },
+  {
+    "id": "close-grip-press-behind-neck",
+    "name": "Close Grip Press Behind-The-Neck Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the close grip behind the neck press by loading the appropriate\u00a0weight onto an EZ bar\u00a0or barbell and sitting on the end of a flat bench or a bench with a back rest.",
+      "Grasp the bar with a close grip (just inside shoulder width) using an overhand grip (palms facing forward).",
+      "Raise the bar straight above your head until your arms are nearly fully extended (keep a slight bend in your elbows). This is the starting position.",
+      "Slowly lower the bar down behind your neck by bending at the elbows. The bar should come down as far as comfortably possible or when your forearms are around parallel to the floor.",
+      "Slowly raise the bar back to the starting position. This is one rep.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/close-grip-press-behind-neck.html"
+  },
+  {
+    "id": "one-arm-bottoms-up-kettlebell-floor-press",
+    "name": "One Arm Bottoms Up Kettlebell Floor Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Begin in a seated, upright position with the kettlebell handle in one hand and the bottom of the bell in the other.",
+      "Lay back and position the bottom of the kettlebell towards the ceiling.",
+      "Once you are laying flat on the floor, bend your knees to roughly 45 degrees and slide your heels towards your butt.",
+      "Slowly lower the weight until your elbow touches the floor then press to full extension by contracting your triceps and chest.",
+      "Lower back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-bottoms-up-kettlebell-floor-press"
+  },
+  {
+    "id": "weighted-bench-dips",
+    "name": "Weighted Bench Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Other",
+    "instructions": [
+      "Set up for the weighted bench dip by placing 2 flat benches parallel to one another around 4-5 feet apart (you may need to adjust the width to suit your height).",
+      "Place your hands on the edge of one bench as shown in the video. Put your heels on the edge of the opposite bench around shoulder-width apart.",
+      "Have a training partner place a weight plate on your thighs. This is the starting position for the exercise.",
+      "Keeping your body close to the bench, slowly dip down until your elbows are at the same height as your shoulders.",
+      "Slowly push back up squeezing through the triceps.",
+      "Do not lock the elbows out at the top of the exercise, and repeat."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/weighted-bench-dips.html"
+  },
+  {
+    "id": "incline-bench-rope-extension",
+    "name": "Incline Cable Tricep Extension (Rope Extension) Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for this exercise by placing an incline bench in front of a cable machine. Attach a rope attachment to the low pulley.",
+      "Make sure the incline bench is set to an angle of 30 degrees and is facing away from the pulley.",
+      "Grasp the rope with a neutral grip, sit on the bench with your back flat against the padding, and raise the rope straight above your head taking the weight off the stack. This is the starting position.",
+      "Moving only at the elbows, slowly lower the rope back behind your head until your forearms are just past parallel to the floor.",
+      "Raise the rope to the starting position fully extending your arms, pause briefly, and then repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/incline-bench-rope-extension.html"
+  },
+  {
+    "id": "reverse-grip-one-arm-seated-overhead-tricep-extension",
+    "name": "Seated Reverse Grip One-Arm Overhead Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the exercise by placing a bench in front of a pulley cable machine, attaching a single grip handle to the low pulley cable, and selecting the weight you want to use on the stack.",
+      "Grasp the handle with your left hand, raise your left arm above your head, and turn away from the machine. Sit down on the bench facing away from the pulley.",
+      "Your palm should be facing backward, towards the cable machine. This is the starting position for the exercise.",
+      "Keeping your body fixed, your back straight and bending at the elbow only, slowly lower the weight back behind your body.",
+      "Pause, and then raise the weight, squeezing the tricep at the top of the movement.",
+      "Do not lock your elbow out, and then lower weight and repeat.",
+      "Repeat reps for your right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-one-arm-seated-overhead-tricep-extension.html"
+  },
+  {
+    "id": "overhead-tricep-extension-sled-drag",
+    "name": "Overhead Tricep Extension Sled Drag Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Sled",
+    "instructions": [
+      "Load the desired weight onto the sled and attach a set of handles with a nylon strap.",
+      "Grasp the handles with the arms overhead and elbows bent.",
+      "Lean away from the sled to establish some resting tension on the strap, then contract the triceps and extend the elbow to drag the sled forward.",
+      "Walk forward a few steps to reestablish tension and repeat step #3.",
+      "Repeat until you reach the desired number of repetitions, distance, or time."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/overhead-tricep-extension-sled-drag"
+  },
+  {
+    "id": "weighted-three-bench-dips",
+    "name": "Weighted Three Bench Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Other",
+    "instructions": [
+      "Set up for the three-bench dip by getting two flat benches and placing them parallel to one another. The distance between the benches should be slightly wider than your shoulder width.",
+      "Grab the third bench and place it at a right angle to the other benches. The gap between these benches should be about the length of your legs.",
+      "Sit on the floor with your heels up on the right-angle bench, and put a weight plate on the top of your thighs. Alternatively, you can have your training partner place it on for you.",
+      "With your palms facing away from your body, grip the end of the parallel benches and push up until your arms are straight. This is the starting position for the exercise.",
+      "Slowly lower your body down until your elbow is at the same height as your shoulder.",
+      "Push back up to the starting position without locking your elbows out.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/weighted-three-bench-dips.html"
+  },
+  {
+    "id": "reverse-grip-skullcrusher",
+    "name": "Reverse Grip Skull Crusher Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Sit on the end of a flat bench with a barbell on your thighs.",
+      "Grip the barbell with an underhand grip (palms facing up) with your hands about shoulder width apart.",
+      "Bring the bar up to your chest and lay down on your back.",
+      "Extend your arms straight up above your chest.",
+      "Keeping your elbows fixed in place and not pointing out, slowly lower the bar until it is about an inch from your forehead (hence the name skullcrusher!).",
+      "Pause, and then slowly extend your arms back to the starting position.",
+      "Do not lock your elbows out, and then repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-skullcrusher.html"
+  },
+  {
+    "id": "reverse-grip-seated-french-press",
+    "name": "Reverse Grip Seated French Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set up for the reverse grip seated french press by loading a barbell or EZ-bar with the appropriate amount of weight and placing it in front of a 90-degree angle bench.",
+      "Sit with your back flat against the bench with your feet flat on the floor and the barbell resting on your thighs.",
+      "Grasp the barbell with an underhand grip (palms facing up) with your hands about 8-12 inches apart.",
+      "Lift the bar above your head and bend at your elbows slightly to take the tension onto your triceps. This is the starting position for the exercise.",
+      "Keeping your elbows fixed and pointing straight up toward the ceiling, slowly lower the bar down behind your head as far as comfortably possible.",
+      "Pause, and then slowly raise the bar back to the starting position.",
+      "Don't lock your elbows out, and then repeat the movement."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-seated-french-press.html"
+  },
+  {
+    "id": "close-grip-pin-press",
+    "name": "Close Grip Pin Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Set the safeties in a rack to just above chest height while supine.",
+      "Lie flat on a bench and set your hands at shoulder width.",
+      "Set your shoulder blades by pinching them together and driving them into the bench.",
+      "Take a deep breath and allow your spotter to help you with the lift off to maintain tightness through your upper back.",
+      "Let the weight settle and ensure your upper back remains tight after lift off.",
+      "Inhale and allow the bar to descend slowly by unlocking the elbows.",
+      "Lower the bar in a straight line to the pins and pause for 2-3 seconds.",
+      "Push the bar back up in a straight line by pressing yourself into the bench, driving your feet into the floor for leg drive, and extending the elbows.",
+      "Repeat from the pins for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/close-grip-pin-press"
+  },
+  {
+    "id": "banded-skullcrusher",
+    "name": "Banded Skullcrusher Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Bands",
+    "instructions": [
+      "Wrap a band around a flat bench and assume a seated position.",
+      "Grasp the handle with a pronated grip (palm facing down) and lay back to a supine position with the bar positioned at chest height.",
+      "Press the band\u00a0to extension and begin the movement by flexing the elbows and allowing the band\u00a0to drop over your head while the triceps stretch.",
+      "Extend the elbows and flex the triceps to bring the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/banded-skullcrusher"
+  },
+  {
+    "id": "alternate-seated-bent-over-dumbbell-kickback",
+    "name": "Seated Alternating Bent Over Dumbbell Kickback Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the appropriate dumbbells and place them on the floor in front of a flat bench.",
+      "Sit on the end of the bench and pick up the dumbbells with a neutral grip (palms facing inward). Your feet should be around shoulder-width apart.",
+      "Get into the starting position by keeping your back straight and bending over at the waist. Your torso should almost be parallel to the floor.",
+      "Tuck your upper arms close to your torso and bend at the elbows, forming a 90-degree angle with your upper arms and forearms. This is the starting position.",
+      "Beginning with your left arm and moving only at the elbow, raise the dumbbell behind you until your arm is fully extended.",
+      "Pause, and then lower the dumbbell back to the starting position.",
+      "Repeat this movement with your right arm and then repeat for desired reps."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/alternate-seated-bent-over-dumbbell-kickback.html"
+  },
+  {
+    "id": "exercise-ball-dumbbell-kickbacks",
+    "name": "Exercise Ball Dumbbell Kickbacks Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Exercise Ball",
+    "instructions": [
+      "Set up for the exercise ball dumbbell kickbacks by grabbing a pair of dumbbells and positioning yourself kneeling in front of an exercise ball.",
+      "Holding the dumbbells in each hand (neutral grip) lean onto the exercise ball so that it's supporting your upper body weight.",
+      "Raise your elbows up as far as possible. Your forearms should be at right angles to the floor. This is the starting position.",
+      "Keeping your eyes facing forwards and elbows fixed, slowly extend the arm as far as possible.",
+      "Pause and squeeze the triceps.",
+      "Then slowly lower back to the starting position without letting the dumbbells touch the exercise ball.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/exercise-ball-dumbbell-kickbacks.html"
+  },
+  {
+    "id": "reverse-grip-one-arm-standing-overhead-cable-tricep-extension",
+    "name": "Reverse Grip One-Arm Overhead Cable Tricep Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Cable",
+    "instructions": [
+      "Set up for the reverse grip one-arm overhead tricep extension by attaching a single grip handle to the low pulley cable and selecting the weight you want to use on the stack.",
+      "Grasp the handle with your left hand, raise your left arm above your head, and turn away from the machine.",
+      "Your palm should be facing backward, towards the cable machine. This is the starting position for the exercise.",
+      "Keeping your body fixed and bending at the elbow only, slowly lower the weight back behind your body.",
+      "Pause, and then raise the weight, squeezing the tricep at the top of the movement.",
+      "Do not lock your elbow out, and then lower weight and repeat.",
+      "Repeat reps for your right arm."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-one-arm-standing-overhead-cable-tricep-extension.html"
+  },
+  {
+    "id": "exercise-ball-dip",
+    "name": "Exercise Ball Dip Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Chest",
+      "Shoulders"
+    ],
+    "equipment": "Exercise Ball",
+    "instructions": [
+      "Sit on the exercise ball.",
+      "Place your hands on the ball on either side of your body.",
+      "Slowly step out with your feet until your buttocks are off the ball. This is the starting position for the exercise.",
+      "Keeping your body tight to avoid wobbling the ball, slowly dip down as far as possible.",
+      "Pause, and then raise your body back to the starting position.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/exercise-ball-dip.html"
+  },
+  {
+    "id": "swiss-ball-french-press",
+    "name": "Exercise Ball French Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Exercise Ball",
+    "instructions": [
+      "Set up for the exercise ball french press by sitting on an exercise ball with a barbell on your thighs.",
+      "Grip the barbell with an overhand grip (palms facing down) at around 8-12 inches apart.",
+      "Raise the barbell above your head. Tighten up your core muscles and straighten your back.",
+      "Keep your eyes facing forwards. With your elbows facing forwards and remaining fixed, slowly lower the barbell back behind your head as far as possible.",
+      "Pause, and then extend your arms to raise the barbell up.",
+      "Do not lock your elbows out, and then lower the bar and repeat the movement."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/swiss-ball-french-press.html"
+  },
+  {
+    "id": "decline-lying-dumbbell-extension",
+    "name": "Decline Lying Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "None"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack and position an adjustable bench on a slight decline of 15-30 degrees.",
+      "Lay back keeping the weights close to your chest. Once your back is flat against the pad, press the weights to lockout using a neutral grip.",
+      "Lower the weights towards your shoulders by unlocking the elbows while maintaining a neutral grip.",
+      "Once your forearms reach parallel or just below, drive the dumbbell back to the starting point by extending the elbows and flexing the triceps.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/decline-lying-dumbbell-extension.html"
+  },
+  {
+    "id": "exercise-ball-two-arm-dumbbell-extension",
+    "name": "Exercise Ball Two-Arm Dumbbell Extension Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Abs"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up by sitting on an exercise ball and holding a dumbbell above your head using two hands.",
+      "Keep your feet at a wide stance on the floor for stability.",
+      "Tense your core muscles and straighten your back. Keeping your eyes facing and core tight, slowly lower the dumbbell behind your head as far as possible.",
+      "Pause, and then slowly extend your arms squeezing the triceps.",
+      "Repeat for desired reps."
+    ],
+    "difficulty": "intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/exercise-ball-two-arm-dumbbell-extension.html"
+  },
+  {
+    "id": "kettlebell-floor-press",
+    "name": "Kettlebell Floor Press Video Exercise Guide",
+    "bodyPart": "Arms",
+    "targetMuscles": [
+      "Triceps"
+    ],
+    "secondaryMuscles": [
+      "Chest",
+      "Triceps"
+    ],
+    "equipment": "Kettle Bells",
+    "instructions": [
+      "Begin in a side lying position with a kettlebell on either side of your body.",
+      "Grasp the handle of one kettlebell with both hands and slowly roll onto your back.",
+      "With your free hand, grasp the other kettlebell and press both to full extension by contracting your triceps and chest.",
+      "Lower back to the starting position and repeat for the desired number of repetitions."
+    ],
+    "difficulty": "beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/kettlebell-floor-press"
+  }
+]

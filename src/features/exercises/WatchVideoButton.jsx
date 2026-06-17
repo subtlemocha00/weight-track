@@ -10,18 +10,24 @@ import styles from './WatchVideoButton.module.css'
  * Opens the link in a new tab with noopener/noreferrer. Only absolute http(s)
  * URLs are accepted (see isSafeVideoUrl) — other schemes render nothing.
  *
+ * Accepts either a full `exercise` (Exercise Library usage) or a bare `videoUrl`
+ * string (routine/workout cards, which store only an exerciseId and resolve the
+ * library exercise's URL upstream). This keeps a single button implementation
+ * shared across every screen.
+ *
  * @param {object} props
- * @param {object} props.exercise Normalized exercise (carries `videoUrl`).
+ * @param {object} [props.exercise] Normalized exercise (carries `videoUrl`).
+ * @param {string} [props.videoUrl] Explicit URL, takes precedence over exercise.
  */
-export function WatchVideoButton({ exercise }) {
-  const videoUrl = exercise?.videoUrl
-  if (!isSafeVideoUrl(videoUrl)) return null
+export function WatchVideoButton({ exercise, videoUrl }) {
+  const url = videoUrl ?? exercise?.videoUrl
+  if (!isSafeVideoUrl(url)) return null
 
   return (
     <button
       type="button"
       className={styles.watch}
-      onClick={() => window.open(videoUrl.trim(), '_blank', 'noopener,noreferrer')}
+      onClick={() => window.open(url.trim(), '_blank', 'noopener,noreferrer')}
     >
       Watch Video
     </button>

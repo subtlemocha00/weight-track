@@ -194,7 +194,9 @@ export function RoutineEditor({ initialRoutine, mode }) {
         </div>
       ) : (
         <div className={styles.exercises}>
-          {routine.exercises.map((exercise, index) => (
+          {routine.exercises.map((exercise, index) => {
+            const resolved = resolveExerciseById(exercise.exerciseId, customExercises)
+            return (
             <RoutineExerciseItem
               key={`${exercise.exerciseId}-${index}`}
               exercise={exercise}
@@ -202,10 +204,8 @@ export function RoutineEditor({ initialRoutine, mode }) {
               isFirst={index === 0}
               isLast={index === routine.exercises.length - 1}
               supersetCount={supersetCount}
-              instructions={
-                resolveExerciseById(exercise.exerciseId, customExercises)
-                  ?.instructions ?? []
-              }
+              instructions={resolved?.instructions ?? []}
+              videoUrl={resolved?.videoUrl ?? null}
               onRemove={() => dirtyDispatch({ type: 'REMOVE_EXERCISE', index })}
               onMoveUp={() =>
                 dirtyDispatch({ type: 'MOVE_EXERCISE', from: index, to: index - 1 })
@@ -246,7 +246,8 @@ export function RoutineEditor({ initialRoutine, mode }) {
                 )
               }
             />
-          ))}
+            )
+          })}
         </div>
       )}
 
