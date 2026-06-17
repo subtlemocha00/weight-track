@@ -27,8 +27,9 @@ export function SetRow({ set, index, onUpdate, onRemove }) {
           step="1"
           className={styles.input}
           value={set.reps ?? ''}
+          placeholder="—"
           aria-label={`Set ${index + 1} reps`}
-          onChange={(e) => onUpdate({ reps: parseInt10(e.target.value) ?? 0 })}
+          onChange={(e) => onUpdate({ reps: parseInt10(e.target.value) })}
         />
       </div>
 

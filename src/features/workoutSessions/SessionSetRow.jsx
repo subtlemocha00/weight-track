@@ -42,9 +42,10 @@ export function SessionSetRow({
         step="1"
         className={inputClass}
         value={set.reps ?? ''}
+        placeholder="—"
         aria-label={`Set ${index + 1} reps`}
         disabled={disabled}
-        onChange={(e) => onUpdate({ reps: parseInt10(e.target.value) ?? 0 })}
+        onChange={(e) => onUpdate({ reps: parseInt10(e.target.value) })}
       />
 
       <input

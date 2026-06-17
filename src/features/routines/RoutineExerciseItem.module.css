@@ -177,18 +177,53 @@
   transition: all 0.1s;
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+/* Collapsible notes — mirrors the Instructions disclosure pattern above. */
+.notesPanel {
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  background: var(--surface);
 }
 
-.fieldLabel {
+.notesToggle {
+  list-style: none;
+  cursor: pointer;
+  padding: 8px 12px;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  color: var(--t2);
+  user-select: none;
+}
+
+.notesToggle::-webkit-details-marker {
+  display: none;
+}
+
+.notesToggle::after {
+  content: '+';
+  float: right;
   color: var(--t3);
+}
+
+.notesPanel[open] .notesToggle::after {
+  content: '–';
+}
+
+/* Subtle dot when notes exist but are collapsed, so they aren't hidden silently. */
+.hasNotes::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--neon-green);
+  vertical-align: middle;
+}
+
+.notesBody {
+  padding: 0 12px 12px;
 }
 
 .notes {

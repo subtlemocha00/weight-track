@@ -115,7 +115,20 @@ function SessionExerciseItemImpl({
       </div>
 
       <div className={styles.body}>
-        {exercise.notes && <p className={styles.notes}>{exercise.notes}</p>}
+        <details className={styles.notesPanel}>
+          <summary
+            className={`${styles.notesToggle} ${exercise.notes ? styles.hasNotes : ''}`}
+          >
+            Notes
+          </summary>
+          <div className={styles.notesBody}>
+            {exercise.notes ? (
+              <p className={styles.notes}>{exercise.notes}</p>
+            ) : (
+              <p className={styles.notesEmpty}>No notes</p>
+            )}
+          </div>
+        </details>
 
         {!readOnly && (
           <SupersetControl

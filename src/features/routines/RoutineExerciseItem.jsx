@@ -117,16 +117,23 @@ function RoutineExerciseItemImpl({
           + Add set
         </button>
 
-        <label className={styles.field}>
-          <span className={styles.fieldLabel}>Notes</span>
-          <textarea
-            className={styles.notes}
-            value={exercise.notes}
-            onChange={(e) => onUpdateNotes(e.target.value)}
-            placeholder="Cues, tempo, alternates…"
-            rows={2}
-          />
-        </label>
+        <details className={styles.notesPanel}>
+          <summary
+            className={`${styles.notesToggle} ${exercise.notes ? styles.hasNotes : ''}`}
+          >
+            Notes
+          </summary>
+          <div className={styles.notesBody}>
+            <textarea
+              className={styles.notes}
+              value={exercise.notes}
+              onChange={(e) => onUpdateNotes(e.target.value)}
+              placeholder="Cues, tempo, alternates…"
+              rows={2}
+              aria-label="Exercise notes"
+            />
+          </div>
+        </details>
 
         <SupersetControl
           supersetId={exercise.supersetId ?? null}
