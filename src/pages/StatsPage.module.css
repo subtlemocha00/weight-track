@@ -1,0 +1,213 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background-image: radial-gradient(circle, var(--dot) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.sectionTitle {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--t2);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ── Time filter ───────────────────────────────────────────────────────── */
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filterBtn,
+.filterActive {
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--t2);
+  border: 1.5px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  transition: all 0.1s;
+}
+
+.filterBtn:hover {
+  color: var(--t1);
+  border-color: var(--bright);
+}
+
+.filterActive {
+  background: var(--neon-green);
+  color: #07070f;
+  border-color: var(--neon-green);
+}
+
+/* ── Stat cards ────────────────────────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--bright);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  padding: 13px 14px;
+}
+
+.cardLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--t2);
+  overflow-wrap: break-word;
+}
+
+.cardValue {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  color: var(--t1);
+  overflow-wrap: break-word;
+}
+
+.streakValues {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.streakBest {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--t3);
+  font-family: 'Space Mono', monospace;
+}
+
+/* Accent colours for the card's left border + value glow. */
+.accentGreen {
+  border-left-color: var(--neon-green);
+}
+.accentBlue {
+  border-left-color: var(--neon-blue);
+}
+.accentPurple {
+  border-left-color: var(--neon-purple);
+}
+.accentOrange {
+  border-left-color: var(--neon-orange);
+}
+
+/* ── Favorites ─────────────────────────────────────────────────────────── */
+.favBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.favTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--t1);
+}
+
+.rankList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rankRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+  padding: 9px 14px;
+}
+
+.rankNum {
+  flex-shrink: 0;
+  width: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  color: var(--t3);
+}
+
+.rankName {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--t1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rankCount {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+  color: var(--neon-green);
+}
+
+/* ── States ────────────────────────────────────────────────────────────── */
+.empty {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  color: var(--t2);
+  font-size: 13px;
+  border: 1px dashed var(--border);
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+.error {
+  padding: 10px 12px;
+  border: 1.5px solid var(--neon-pink);
+  background: rgba(255, 45, 120, 0.08);
+  color: var(--neon-pink);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  font-size: 13px;
+}
+
+.loading {
+  padding: 1rem;
+  text-align: center;
+  color: var(--t2);
+  font-size: 13px;
+}
+
+/* Down to 350px the two-column grid still fits; nothing extra needed, but keep
+   single column on the very narrowest screens for breathing room. */
+@media (max-width: 360px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

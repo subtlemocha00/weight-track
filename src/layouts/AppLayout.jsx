@@ -28,6 +28,9 @@ export function AppLayout() {
             WeightTrack
           </Link>
           <div className={styles.headerActions}>
+            <Link to="/stats" className={styles.statsLink} aria-label="Stats">
+              Stats
+            </Link>
             <Link to="/settings" className={styles.settingsLink} aria-label="Settings">
               ⚙
             </Link>

@@ -24,6 +24,9 @@ const HistoryDetailPage = lazy(() =>
 const SettingsPage = lazy(() =>
   import('./pages/SettingsPage').then((m) => ({ default: m.SettingsPage }))
 )
+const StatsPage = lazy(() =>
+  import('./pages/StatsPage').then((m) => ({ default: m.StatsPage }))
+)
 const ImportPage = lazy(() =>
   import('./pages/ImportPage').then((m) => ({ default: m.ImportPage }))
 )
@@ -127,6 +130,18 @@ export function App() {
                     element={
                       <Suspense fallback={null}>
                         <SettingsPage />
+                      </Suspense>
+                    }
+                  />
+                }
+              />
+              <Route
+                path="stats"
+                element={
+                  <Protected
+                    element={
+                      <Suspense fallback={null}>
+                        <StatsPage />
                       </Suspense>
                     }
                   />
