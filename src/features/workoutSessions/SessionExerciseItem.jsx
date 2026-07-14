@@ -4,6 +4,7 @@ import { SessionSetRow, SessionSetRowHeader } from './SessionSetRow'
 import { RestTimer } from './RestTimer'
 import { SupersetControl } from '../../components/SupersetControl'
 import { WatchVideoButton } from '../exercises/WatchVideoButton'
+import { isSafeVideoUrl } from '../../services/exercises'
 import { supersetColor, supersetLabel } from '../../utils/supersets'
 import styles from './SessionExerciseItem.module.css'
 
@@ -13,6 +14,7 @@ function SessionExerciseItemImpl({
   isFirst,
   isLast,
   readOnly,
+  instructions = [],
   videoUrl = null,
   supersetCount,
   onMoveUp,
@@ -117,22 +119,21 @@ function SessionExerciseItemImpl({
       </div>
 
       <div className={styles.body}>
-        <details className={styles.notesPanel}>
-          <summary
-            className={`${styles.notesToggle} ${exercise.notes ? styles.hasNotes : ''}`}
-          >
-            Notes
-          </summary>
-          <div className={styles.notesBody}>
-            {exercise.notes ? (
-              <p className={styles.notes}>{exercise.notes}</p>
-            ) : (
-              <p className={styles.notesEmpty}>No notes</p>
+        {(instructions.length > 0 || isSafeVideoUrl(videoUrl)) && (
+          <details className={styles.instructionsPanel}>
+            <summary className={styles.instructionsToggle}>Instructions</summary>
+            {instructions.length > 0 && (
+              <ol className={styles.instructions}>
+                {instructions.map((step, stepIndex) => (
+                  <li key={stepIndex}>{step}</li>
+                ))}
+              </ol>
             )}
-          </div>
-        </details>
-
-        <WatchVideoButton videoUrl={videoUrl} />
+            <div className={styles.instructionsVideo}>
+              <WatchVideoButton videoUrl={videoUrl} />
+            </div>
+          </details>
+        )}
 
         {!readOnly && (
           <SupersetControl
@@ -185,6 +186,22 @@ function SessionExerciseItemImpl({
             </div>
           ))}
         </div>
+
+        {/* Notes are the final block on every exercise card. */}
+        <details className={styles.notesPanel}>
+          <summary
+            className={`${styles.notesToggle} ${exercise.notes ? styles.hasNotes : ''}`}
+          >
+            Notes
+          </summary>
+          <div className={styles.notesBody}>
+            {exercise.notes ? (
+              <p className={styles.notes}>{exercise.notes}</p>
+            ) : (
+              <p className={styles.notesEmpty}>No notes</p>
+            )}
+          </div>
+        </details>
       </div>
     </div>
   )

@@ -112,6 +112,57 @@
   gap: 8px;
 }
 
+/* Collapsible instructions — mirrors the routine editor's instructions panel so
+   the Watch Video button sits at the bottom, matching the Exercise Library. */
+.instructionsPanel {
+  border: 1px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  background: var(--surface);
+}
+
+.instructionsToggle {
+  list-style: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--t2);
+  user-select: none;
+}
+
+.instructionsToggle::-webkit-details-marker {
+  display: none;
+}
+
+.instructionsToggle::after {
+  content: '+';
+  float: right;
+  color: var(--t3);
+}
+
+.instructionsPanel[open] .instructionsToggle::after {
+  content: '–';
+}
+
+.instructions {
+  margin: 0;
+  padding: 0 14px 12px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--t2);
+}
+
+/* Watch Video button sits at the bottom of the Instructions panel, aligned with
+   the instruction text and clear of the panel's clipped corner. */
+.instructionsVideo {
+  padding: 0 14px 12px;
+}
+
 /* Collapsible notes — mirrors the routine editor's notes disclosure. */
 .notesPanel {
   border: 1px solid var(--border);

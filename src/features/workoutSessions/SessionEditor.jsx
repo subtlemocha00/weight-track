@@ -212,6 +212,7 @@ export function SessionEditor({ initialSession }) {
               isFirst={index === 0}
               isLast={index === session.exercises.length - 1}
               readOnly={isCompleted}
+              instructions={resolved?.instructions ?? []}
               videoUrl={resolved?.videoUrl ?? null}
               supersetCount={supersetCount}
               onMoveUp={() =>

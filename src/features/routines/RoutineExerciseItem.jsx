@@ -125,6 +125,13 @@ function RoutineExerciseItemImpl({
           + Add set
         </button>
 
+        <SupersetControl
+          supersetId={exercise.supersetId ?? null}
+          supersetCount={supersetCount}
+          onAssign={onAssignSuperset}
+        />
+
+        {/* Notes are the final block on every exercise card. */}
         <details className={styles.notesPanel}>
           <summary
             className={`${styles.notesToggle} ${exercise.notes ? styles.hasNotes : ''}`}
@@ -142,12 +149,6 @@ function RoutineExerciseItemImpl({
             />
           </div>
         </details>
-
-        <SupersetControl
-          supersetId={exercise.supersetId ?? null}
-          supersetCount={supersetCount}
-          onAssign={onAssignSuperset}
-        />
       </div>
     </div>
   )
