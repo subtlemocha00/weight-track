@@ -86,7 +86,7 @@
     ],
     "difficulty": "Beginner",
     "isBodyweight": true,
-    "videoUrl": null
+    "videoUrl": "https://www.youtube.com/watch?v=wm47Swzn_98"
   },
   {
     "id": "45-degree-leg-press",
@@ -205,8 +205,8 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/45-degree-toe-raise.html"
   },
   {
-    "id": "90-90-hamstring",
-    "name": "90/90 Hamstring",
+    "id": "90-90-hamstring-stretch",
+    "name": "90/90 Hamstring Stretch",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Hamstrings"
@@ -514,7 +514,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -1751,7 +1751,7 @@
       "Hip Flexors",
       "Back (Lower)"
     ],
-    "equipment": "Chains",
+    "equipment": "chains",
     "instructions": [
       "Position the bar just below shoulder level and adjust the safety stops right above knee height. Find a box set right at parallel and position 2-3 feet behind you. Once the bar has been loaded, attach chains to the bar to add additional resistance. Ensure that the chains are long enough to actually touch the ground when the bar is racked on your back.",
       "Place your pinkies on the smooth ring of the barbell.",
@@ -1825,7 +1825,7 @@
       "Back (Lower)",
       "Back (Upper)"
     ],
-    "equipment": "Sled",
+    "equipment": "sled",
     "instructions": [
       "Load the desired weight onto the sled.",
       "Setup in an athletic position facing away from the sled with your torso vertical and your back pushing into the sled.",
@@ -1939,7 +1939,7 @@
       "Chest",
       "Shoulders"
     ],
-    "equipment": "Bands",
+    "equipment": "bands",
     "instructions": [
       "Attach a band to each of the handles on the dip station.",
       "Step up onto the dip station (if possible) and place both knees in the center of the band while positioning your hands on the handles with a neutral grip.",
@@ -1987,7 +1987,7 @@
       "Forearms",
       "Back (Upper)"
     ],
-    "equipment": "other",
+    "equipment": "bands",
     "instructions": [
       "Choke the band around the center of the pullup bar. You can use different bands to provide varying levels of assistance.",
       "Pull the end of the band down, and place one bent knee into the loop, ensuring it won't slip out. Take a medium to wide grip on the bar. This will be your starting position.",
@@ -2098,7 +2098,7 @@
       "Hamstrings",
       "Back (Lower)"
     ],
-    "equipment": "Bands",
+    "equipment": "bands",
     "instructions": [
       "Position the bar just below shoulder level and adjust the safety stops right above knee height. Once the bar has been loaded, attach bands to the bottom of the rack via pegs or the actual rack itself and then anchor the end of the bands around the bar to provide resistance.",
       "Place your pinkies on the smooth ring of the barbell.",
@@ -2130,7 +2130,7 @@
       "Hip Flexors",
       "Back (Lower)"
     ],
-    "equipment": "Bands",
+    "equipment": "bands",
     "instructions": [
       "Position the bar just below shoulder level and adjust the safety stops right above knee height. Find a box set right at parallel and position 2-3 feet behind you. Once the bar has been loaded, attach bands to the bottom of the rack via pegs or the actual rack itself and then anchor the end of the bands around the bar to provide resistance.",
       "Place your pinkies on the smooth ring of the barbell.",
@@ -2331,7 +2331,7 @@
       "Triceps"
     ],
     "secondaryMuscles": [],
-    "equipment": "Bands",
+    "equipment": "bands",
     "instructions": [
       "Wrap a band around a flat bench and assume a seated position.",
       "Grasp the handle with a pronated grip (palm facing down) and lay back to a supine position with the bar positioned at chest height.",
@@ -2370,7 +2370,7 @@
       "Triceps"
     ],
     "secondaryMuscles": [],
-    "equipment": "Bands",
+    "equipment": "bands",
     "instructions": [
       "Attach a band to a stable implement above head height and assume a standing position.",
       "Grasp the band with a neutral grip (palms facing in) and lean forward slightly by hinging at the hips.",
@@ -5335,7 +5335,7 @@
       "Hamstrings"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -5359,7 +5359,7 @@
       "Hamstrings"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -5417,7 +5417,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -5443,7 +5443,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -5833,7 +5833,7 @@
     "name": "Cable Hip Abduction",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [
       "Glutes"
@@ -6622,7 +6622,7 @@
     ],
     "secondaryMuscles": [
       "Abs",
-      "abductors",
+      "Abductors",
       "Calves",
       "Glutes",
       "Hamstrings",
@@ -8167,7 +8167,7 @@
     ],
     "secondaryMuscles": [
       "Abs",
-      "abductors",
+      "Abductors",
       "Glutes",
       "Hamstrings",
       "Quads"
@@ -8294,7 +8294,7 @@
       "Glutes"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Hamstrings",
       "hip flexors",
       "Quads"
@@ -8346,7 +8346,7 @@
       "Back (Lower)"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Glutes"
     ],
     "equipment": "other",
@@ -9400,7 +9400,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -9866,7 +9866,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -12395,7 +12395,7 @@
       "Quads",
       "Traps"
     ],
-    "equipment": "other",
+    "equipment": "dumbbells",
     "instructions": [
       "There are various implements that can be used for the farmers walk. These can also be performed with heavy dumbbells or short bars if these implements aren't available. Begin by standing between the implements.",
       "After gripping the handles, lift them up by driving through your heels, keeping your back straight and your head up.",
@@ -12413,7 +12413,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -13162,7 +13162,7 @@
       "Hamstrings"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -13207,7 +13207,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -14786,7 +14786,7 @@
     "name": "Hip Abduction Machine",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [
       "Abs",
@@ -14831,7 +14831,7 @@
     "name": "Hip Circles (prone)",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [
       "Adductors"
@@ -14956,7 +14956,7 @@
     ],
     "secondaryMuscles": [
       "Abs",
-      "abductors",
+      "Abductors",
       "Hamstrings"
     ],
     "equipment": "hip thruster",
@@ -15038,7 +15038,7 @@
       "Hamstrings"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -15129,7 +15129,7 @@
     "name": "Iliotibial Tract-SMR",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [],
     "equipment": "foam roll",
@@ -16348,7 +16348,7 @@
     "name": "IT Band and Glute Stretch",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [],
     "equipment": "other",
@@ -17777,7 +17777,7 @@
       "Glutes"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Back (Lower)"
     ],
     "equipment": "other",
@@ -17837,7 +17837,7 @@
       "Hamstrings"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -18384,7 +18384,7 @@
       "Adductors"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Calves",
       "Glutes",
       "Hamstrings",
@@ -18410,7 +18410,7 @@
       "Adductors"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Calves",
       "Glutes",
       "Hamstrings",
@@ -18436,7 +18436,7 @@
       "Adductors"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Calves",
       "Glutes",
       "Hamstrings",
@@ -19748,7 +19748,7 @@
     "name": "Lying Crossover",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [],
     "equipment": "bodyweight",
@@ -19958,7 +19958,7 @@
       "Glutes"
     ],
     "secondaryMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "equipment": "bodyweight",
     "instructions": [
@@ -20852,7 +20852,7 @@
     "name": "Monster Walk",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [],
     "equipment": "bands",
@@ -23532,7 +23532,7 @@
       "Traps",
       "Back (Upper)"
     ],
-    "equipment": "Bands",
+    "equipment": "bands",
     "instructions": [
       "Wrap a mini band around your legs just above your knee caps.",
       "With a snatch grip, push press it overhead to get into position.",
@@ -23555,7 +23555,7 @@
     "secondaryMuscles": [
       "Abs"
     ],
-    "equipment": "Bands",
+    "equipment": "bands",
     "instructions": [
       "Attach a band to a stable implement above head height and assume a standing position.",
       "Utilize a split stance, grasp the band overhead with a neutral grip (palms facing), and lean forward by hinging at the hips.",
@@ -25973,7 +25973,7 @@
       "Back (Lower)"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -26025,7 +26025,7 @@
       "Hamstrings"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Forearms",
@@ -29942,7 +29942,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Hamstrings"
@@ -30117,7 +30117,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Hamstrings"
@@ -30814,7 +30814,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Hamstrings"
@@ -30838,7 +30838,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Hamstrings"
@@ -30881,7 +30881,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Hamstrings"
@@ -30930,7 +30930,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Glutes",
       "Hamstrings"
     ],
@@ -30972,7 +30972,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -32739,7 +32739,7 @@
       "Glutes",
       "Hamstrings"
     ],
-    "equipment": "Bands",
+    "equipment": "bands",
     "instructions": [
       "Attach a band to a rack, loop one end around your knee, and allow it to pull you into a valgus position (not excessively, just slightly).",
       "Push out against the band to engage the glute and keep yourself in a more neutral position.",
@@ -33015,7 +33015,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -33875,7 +33875,7 @@
     "name": "Standing Hip Circles",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [
       "Adductors"
@@ -35087,7 +35087,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Hamstrings"
@@ -35174,7 +35174,7 @@
       "Hamstrings"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Forearms",
       "Glutes",
@@ -35465,7 +35465,7 @@
       "Quads"
     ],
     "secondaryMuscles": [
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
@@ -35715,7 +35715,7 @@
     "name": "Thigh Abductor",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [
       "Glutes"
@@ -38381,7 +38381,7 @@
     "name": "Windmills",
     "bodyPart": "Legs",
     "targetMuscles": [
-      "abductors"
+      "Abductors"
     ],
     "secondaryMuscles": [
       "Glutes",
@@ -38560,7 +38560,7 @@
     ],
     "secondaryMuscles": [
       "Abs",
-      "abductors",
+      "Abductors",
       "Adductors",
       "Calves",
       "Glutes",
