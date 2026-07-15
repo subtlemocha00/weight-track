@@ -3,10 +3,18 @@ import { WatchVideoButton } from './WatchVideoButton'
 import { AddToRoutineSelect } from './AddToRoutineSelect'
 import styles from './ExerciseCard.module.css'
 
-function ExerciseCardImpl({ exercise, onEdit, routines, onAddToRoutine }) {
+function ExerciseCardImpl({
+  exercise,
+  onEdit,
+  routines,
+  onAddToRoutine,
+  onSelect,
+  selectLabel = 'Select'
+}) {
   const isCustom = exercise.source === 'custom'
   const primaryMuscle = exercise.targetMuscles[0] ?? null
   const canEdit = isCustom && typeof onEdit === 'function'
+  const canSelect = typeof onSelect === 'function'
 
   return (
     <details className={styles.card}>
@@ -30,6 +38,20 @@ function ExerciseCardImpl({ exercise, onEdit, routines, onAddToRoutine }) {
             )}
           </div>
         </div>
+        {canSelect && (
+          <button
+            type="button"
+            className={styles.select}
+            onClick={(e) => {
+              // Inside a <summary>: stop the click from toggling the card open.
+              e.preventDefault()
+              e.stopPropagation()
+              onSelect(exercise)
+            }}
+          >
+            {selectLabel}
+          </button>
+        )}
         <span className={styles.expandIcon} aria-hidden="true">+</span>
       </summary>
 

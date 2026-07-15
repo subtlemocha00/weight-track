@@ -4,13 +4,25 @@
  *
  * Run manually after dropping the raw dataset into .tmp/ — see README for setup.
  *
- *   node src/data/normalizeExercises.js [pathToRawExercisesDir]
+ *   node src/data/normalizeExercises.js [pathToRawExercisesDir] [--force]
  *
  * Default raw path: .tmp/exercises.json-master/exercises (matches the
  * extracted tarball layout documented in the README).
+ *
+ * ⚠️  The committed src/data/exercises.json is HAND-CURATED (standardized names,
+ * removed duplicates). This generator rebuilds it from scratch off the raw
+ * upstream dataset and therefore DISCARDS those edits. To guard against that, it
+ * refuses to overwrite an existing exercises.json unless you pass --force. Only
+ * regenerate when you deliberately want to re-import the raw upstream dataset.
  */
 
-import { readFileSync, readdirSync, writeFileSync, statSync } from 'node:fs'
+import {
+  readFileSync,
+  readdirSync,
+  writeFileSync,
+  statSync,
+  existsSync
+} from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -91,7 +103,27 @@ function normalizeOne(raw, folderName) {
 }
 
 function main() {
-  const rawDir = process.argv[2] || process.env.WRKOUT_RAW_DIR || DEFAULT_RAW_DIR
+  const args = process.argv.slice(2)
+  const force = args.includes('--force') || args.includes('-f')
+  // The raw-dir path is the first non-flag argument, so `--force` can appear in
+  // any position without being mistaken for the path.
+  const positional = args.filter((arg) => !arg.startsWith('-'))
+  const rawDir = positional[0] || process.env.WRKOUT_RAW_DIR || DEFAULT_RAW_DIR
+
+  // Guard: never silently clobber the hand-curated dataset. Regenerating rebuilds
+  // exercises.json from the raw upstream source and discards manual edits, so an
+  // explicit --force is required once the file already exists.
+  if (existsSync(OUTPUT_PATH) && !force) {
+    console.error(`Refusing to overwrite ${OUTPUT_PATH}.`)
+    console.error('')
+    console.error('This file is hand-curated (standardized names, removed duplicates).')
+    console.error('Regenerating from the raw upstream dataset discards those edits.')
+    console.error('')
+    console.error('If you really intend to rebuild from the raw wrkout dataset in .tmp/,')
+    console.error('re-run with --force:')
+    console.error('  node src/data/normalizeExercises.js --force')
+    process.exit(1)
+  }
 
   let stat
   try {

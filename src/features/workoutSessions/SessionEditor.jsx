@@ -120,6 +120,26 @@ export function SessionEditor({ initialSession }) {
     dispatch({ type: 'ASSIGN_SUPERSET', index, supersetId })
   }, [])
 
+  const handleSwapExercise = useCallback(
+    (index) => {
+      // Send the user to the existing Exercise Library in "swap mode". The live
+      // session is already autosaved to localStorage on every change, so the
+      // library reads it, swaps the exercise's identity, writes it back, and
+      // navigates here again — no session state needs to travel through the URL.
+      const target = session.exercises[index]
+      navigate('/exercises', {
+        state: {
+          swap: {
+            sessionId: session.id,
+            exerciseIndex: index,
+            fromName: target?.name || 'this exercise'
+          }
+        }
+      })
+    },
+    [session.exercises, session.id, navigate]
+  )
+
   const handleRemoveExercise = useCallback(
     async (index) => {
       const target = session.exercises[index]
@@ -222,6 +242,7 @@ export function SessionEditor({ initialSession }) {
                 dispatch({ type: 'MOVE_EXERCISE', from: index, to: index + 1 })
               }
               onRemove={() => handleRemoveExercise(index)}
+              onSwap={() => handleSwapExercise(index)}
               onAssignSuperset={(supersetId) => handleAssignSuperset(index, supersetId)}
               onUpdateSet={(setIndex, patch) =>
                 dispatch({

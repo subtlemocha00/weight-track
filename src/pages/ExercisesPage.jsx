@@ -1,6 +1,10 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
+import { useConfirm } from '../hooks/useConfirm'
 import { AppHeader } from '../components/AppHeader'
+import { readActiveWorkout, writeActiveWorkout } from '../utils/activeWorkout'
+import { swapSessionExercise } from '../features/workoutSessions/swapExercise'
 import {
   filterAllExercises,
   getCombinedFilterOptions,
@@ -42,6 +46,14 @@ const BLANK_EXERCISE = {
 
 export function ExercisesPage() {
   const { user } = useAuth()
+  const location = useLocation()
+  const navigate = useNavigate()
+  const { confirm } = useConfirm()
+  // Present when the library was opened from an active workout's "Swap Exercise"
+  // button. Carries which session/exercise is being replaced. Absent otherwise,
+  // so the page behaves as the normal Exercise Library.
+  const swap = location.state?.swap ?? null
+
   const [filters, setFilters] = useState(INITIAL_FILTERS)
   // Custom exercises are loaded once per session and kept in state, so every
   // keystroke filters in-memory with no further Firestore reads.
@@ -211,6 +223,40 @@ export function ExercisesPage() {
     [user]
   )
 
+  const returnToWorkout = useCallback(() => {
+    if (swap) navigate(`/workout/${swap.sessionId}`)
+  }, [swap, navigate])
+
+  // Swap flow: confirm with an app-styled modal, then replace only the exercise
+  // identity on the in-progress session (kept in localStorage while the workout
+  // page is unmounted) and return to the workout. All logged sets/reps/weights/
+  // notes/superset/completion are preserved by swapSessionExercise.
+  const handleSelectForSwap = useCallback(
+    async (exercise) => {
+      if (!swap) return
+      const ok = await confirm({
+        title: 'Swap exercise?',
+        message: `Replace "${swap.fromName}" with "${exercise.name}"?`,
+        confirmLabel: 'Swap',
+        cancelLabel: 'Cancel'
+      })
+      if (!ok) return
+
+      const active = readActiveWorkout()
+      if (!active || active.id !== swap.sessionId) {
+        // The workout is no longer the active in-progress session (finished or
+        // cleared elsewhere). Don't touch anything — just head back to it.
+        navigate(`/workout/${swap.sessionId}`, { replace: true })
+        return
+      }
+
+      const updated = swapSessionExercise(active, swap.exerciseIndex, exercise)
+      writeActiveWorkout(updated)
+      navigate(`/workout/${swap.sessionId}`, { replace: true })
+    },
+    [swap, confirm, navigate]
+  )
+
   const handleDeleteEdit = useCallback(
     async (target) => {
       if (!user || !target) return
@@ -233,7 +279,17 @@ export function ExercisesPage() {
 
   return (
     <section className={styles.page}>
-      <AppHeader title="Exercises" />
+      <AppHeader
+        title={swap ? 'Swap Exercise' : 'Exercises'}
+        onBack={swap ? returnToWorkout : undefined}
+      />
+
+      {swap && (
+        <div className={styles.swapBanner}>
+          Choosing a replacement for <strong>{swap.fromName}</strong>. Search or
+          browse, then pick an exercise — your sets, reps and progress are kept.
+        </div>
+      )}
 
       <input
         className={styles.search}
@@ -289,8 +345,10 @@ export function ExercisesPage() {
               <ExerciseCard
                 exercise={exercise}
                 onEdit={handleEdit}
-                routines={routines}
-                onAddToRoutine={handleAddToRoutine}
+                routines={swap ? undefined : routines}
+                onAddToRoutine={swap ? undefined : handleAddToRoutine}
+                onSelect={swap ? handleSelectForSwap : undefined}
+                selectLabel="Select"
               />
             </li>
           ))}

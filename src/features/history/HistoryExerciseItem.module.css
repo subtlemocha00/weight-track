@@ -16,12 +16,14 @@
 
 .name {
   flex: 1;
+  /* Allow the flex item to shrink below its content width so long names wrap
+     instead of being clipped; break-word guards against unbreakable tokens. */
+  min-width: 0;
   font-weight: 600;
   font-size: 14px;
   color: var(--t1);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.3;
+  overflow-wrap: break-word;
 }
 
 .order {

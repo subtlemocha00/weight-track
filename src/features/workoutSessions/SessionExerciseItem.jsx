@@ -20,6 +20,7 @@ function SessionExerciseItemImpl({
   onMoveUp,
   onMoveDown,
   onRemove,
+  onSwap,
   onAssignSuperset,
   onUpdateSet,
   onToggleSetCompleted,
@@ -141,6 +142,14 @@ function SessionExerciseItemImpl({
             supersetCount={supersetCount}
             onAssign={onAssignSuperset}
           />
+        )}
+
+        {/* Swap sends the user to the Exercise Library to pick a replacement;
+            all logged sets/reps/weights/notes/superset are kept on return. */}
+        {!readOnly && typeof onSwap === 'function' && (
+          <button type="button" className={styles.swap} onClick={onSwap}>
+            Swap Exercise
+          </button>
         )}
 
         <div className={styles.unitRow}>

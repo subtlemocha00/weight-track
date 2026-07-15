@@ -9,6 +9,23 @@
   background-size: 20px 20px;
 }
 
+/* Swap-mode indicator: shown only when the library is opened from an active
+   workout to pick a replacement exercise. */
+.swapBanner {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--t2);
+  background: color-mix(in srgb, var(--neon-green) 9%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--neon-green) 40%, var(--border));
+  padding: 10px 12px;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+.swapBanner strong {
+  color: var(--t1);
+  font-weight: 700;
+}
+
 .search {
   width: 100%;
   padding: 10px 14px;

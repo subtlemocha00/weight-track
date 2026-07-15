@@ -1,7 +1,7 @@
 [
   {
     "id": "1boardbenchpress",
-    "name": "1 Board Bench Press",
+    "name": "Bench Press (1 Board)",
     "bodyPart": "Chest",
     "targetMuscles": [
       "Chest"
@@ -26,8 +26,8 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/1-board-bench-press"
   },
   {
-    "id": "1-dumbbell-step-up",
-    "name": "1 Dumbbell Step Up",
+    "id": "one-dumbbell-step-up",
+    "name": "One Dumbbell Step Up",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -55,8 +55,8 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/1-dumbbell-step-up"
   },
   {
-    "id": "1-kb-kettlebell-clean-and-press",
-    "name": "1 KB Kettlebell Clean & Press",
+    "id": "kettlebell-clean-and-press-1-kb",
+    "name": "Kettlebell Clean & Press (1KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -89,7 +89,7 @@
   },
   {
     "id": "1-kb-kettlebell-clean",
-    "name": "1 KB Kettlebell Clean",
+    "name": "Kettlebell Clean (1 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -119,7 +119,7 @@
   },
   {
     "id": "1-kb-kettlebell-jerk",
-    "name": "1 KB Kettlebell Jerk",
+    "name": "Kettlebell Jerk (1 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -150,7 +150,7 @@
   },
   {
     "id": "1-kb-kettlebell-push-press",
-    "name": "1 KB Kettlebell Push Press",
+    "name": "Kettlebell Push Press (1 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -178,7 +178,7 @@
   },
   {
     "id": "1-kb-kettlebell-split-snatch",
-    "name": "1 KB Kettlebell Split Snatch",
+    "name": "Kettlebell Split Snatch (1 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -207,7 +207,7 @@
   },
   {
     "id": "1-kb-kettlebell-sumo-deadlift-high-pull",
-    "name": "1 KB Kettlebell Sumo Deadlift High Pull",
+    "name": "Kettlebell Sumo Deadlift High Pull (1 KB)",
     "bodyPart": "Traps",
     "targetMuscles": [
       "Traps"
@@ -241,7 +241,7 @@
   },
   {
     "id": "1kettlebellsinglelegdeadlift",
-    "name": "1 Kettlebell Single Leg Deadlift",
+    "name": "Kettlebell Single Leg Deadlift (1 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Hamstrings"
@@ -272,7 +272,7 @@
   },
   {
     "id": "1-kettlebell-step-up",
-    "name": "1 Kettlebell Step Up",
+    "name": "Kettlebell Step Up (1 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -300,8 +300,8 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/1-kettlebell-step-up"
   },
   {
-    "id": "1legpushup",
-    "name": "1 Leg Push Up",
+    "id": "one-legpushup",
+    "name": "One Leg Push Up",
     "bodyPart": "Chest",
     "targetMuscles": [
       "Chest"
@@ -352,7 +352,7 @@
   },
   {
     "id": "2boardbenchpress",
-    "name": "2 Board Bench Press",
+    "name": "Bench Press (2 Boards)",
     "bodyPart": "Chest",
     "targetMuscles": [
       "Chest"
@@ -378,7 +378,7 @@
   },
   {
     "id": "2-kb-kettlebell-clean-and-press",
-    "name": "2 KB Kettlebell Clean & Press",
+    "name": "Kettlebell Clean & Press (2 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -411,7 +411,7 @@
   },
   {
     "id": "2-kb-kettlebell-clean",
-    "name": "2 KB Kettlebell Clean",
+    "name": "Kettlebell Clean (2 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -441,7 +441,7 @@
   },
   {
     "id": "2-kb-kettlebell-jerk",
-    "name": "2 KB Kettlebell Jerk",
+    "name": "Kettlebell Jerk (2 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -472,7 +472,7 @@
   },
   {
     "id": "2-kb-kettlebell-snatch",
-    "name": "2 KB Kettlebell Snatch",
+    "name": "Kettlebell Snatch (2 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -501,7 +501,7 @@
   },
   {
     "id": "2-kb-kettlebell-split-snatch",
-    "name": "2 KB Kettlebell Split Snatch",
+    "name": "Kettlebell Split Snatch (2 KB)",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -532,7 +532,7 @@
   },
   {
     "id": "2-kb-kettlebell-sumo-deadlift-high-pull",
-    "name": "2 KB Kettlebell Sumo Deadlift High Pull",
+    "name": "Kettlebell Sumo Deadlift High Pull (2 KB)",
     "bodyPart": "Traps",
     "targetMuscles": [
       "Traps"
@@ -591,7 +591,7 @@
   },
   {
     "id": "3boardbenchpress",
-    "name": "3 Board Bench Press",
+    "name": "Bench Press (3 Boards)",
     "bodyPart": "Chest",
     "targetMuscles": [
       "Chest"
@@ -641,7 +641,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie down on the floor and secure your feet. Your legs should be bent at the knees.",
       "Place your hands behind or to the side of your head. You will begin with your back on the ground. This will be your starting position.",
@@ -751,7 +751,7 @@
     "secondaryMuscles": [
       "Calves"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on your back, with one leg extended straight out.",
       "With the other leg, bend the hip and knee to 90 degrees. You may brace your leg with your hands if necessary. This will be your starting position.",
@@ -1010,7 +1010,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie flat on the floor with your lower back pressed to the ground. For this exercise, you will need to put your hands beside your head. Be careful however to not strain with the neck as you perform it. Now lift your shoulders into the crunch position.",
       "Bring knees up to where they are perpendicular to the floor, with your lower legs parallel to the floor. This will be your starting position.",
@@ -1033,7 +1033,7 @@
     "secondaryMuscles": [
       "Quads"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Start off on your hands and knees, then lift your leg off the floor and hold the foot with your hand.",
       "Use your hand to hold the foot or ankle, keeping the knee fully flexed, stretching the quadriceps and hip flexors.",
@@ -4480,7 +4480,7 @@
       "Chest",
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "For this exercise you will need to place a bench behind your back. With the bench perpendicular to your body, and while looking away from it, hold on to the bench on its edge with the hands fully extended, separated at shoulder width. The legs will be extended forward, bent at the waist and perpendicular to your torso. This will be your starting position.",
       "Slowly lower your body as you inhale by bending at the elbows until you lower yourself far enough to where there is an angle slightly smaller than 90 degrees between the upper arm and the forearm. Tip: Keep the elbows as close as possible throughout the movement. Forearms should always be pointing down.",
@@ -4503,7 +4503,7 @@
       "Glutes",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin with a box or bench 1-2 feet in front of you. Stand with your feet shoulder width apart. This will be your starting position.",
       "Perform a short squat in preparation for the jump; swing your arms behind you.",
@@ -4974,7 +4974,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lay flat on the floor with your arms next to your sides.",
       "Now bend your knees at around a 75 degree angle and lift your feet off the floor by around 2 inches.",
@@ -5127,7 +5127,7 @@
       "Triceps"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Position a bar in a rack at chest height.",
       "Standing, take a shoulder width grip on the bar and step a yard or two back, feet together and arms extended so that you are leaning on the bar. This will be your starting position.",
@@ -5150,7 +5150,7 @@
       "Abs",
       "Forearms"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Assume a plank position on the ground. You should be supporting your bodyweight on your toes and forearms, keeping your torso straight. Your forearms should be shoulder-width apart. This will be your starting position.",
       "Pressing your palms firmly into the ground, extend through the elbows to raise your body from the ground. Keep your torso rigid as you perform the movement.",
@@ -5612,7 +5612,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin by lying on your back on the ground. Your legs should be straight and your arms at your side. This will be your starting position.",
       "To perform the movement, tuck the knees toward your chest by flexing the hips and knees. Following this, extend your legs directly above you so that they are perpendicular to the ground. Rotate and elevate your pelvis to raise your glutes from the floor.",
@@ -5971,7 +5971,7 @@
     "secondaryMuscles": [
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie flat on the floor on your back with the hands by your side and your knees bent. Your feet should be placed around shoulder width. This will be your starting position.",
       "Pushing mainly with your heels, lift your hips off the floor while keeping your back straight. Breathe out as you perform this part of the motion and hold at the top for a second.",
@@ -5989,7 +5989,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin a pushup position but with your elbows on the ground and resting on your forearms. Your arms should be bent at a 90 degree angle.",
       "Arch your back slightly out rather than keeping your back completely straight.",
@@ -7539,7 +7539,7 @@
       "Forearms",
       "Back (Upper)"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Grab the pull-up bar with the palms facing your torso and a grip closer than the shoulder width.",
       "As you have both arms extended in front of you holding the bar at the chosen grip width, keep your torso as straight as possible while creating a curvature on your lower back and sticking your chest out. This is your starting position. Tip: Keeping the torso as straight as possible maximizes biceps stimulation while minimizing back involvement.",
@@ -7797,7 +7797,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Move into a prone position on the floor, supporting your weight on your hands and toes.",
       "Your arms should be fully extended with the hands around shoulder width. Keep your body straight throughout the movement. This will be your starting position.",
@@ -8170,7 +8170,7 @@
       "Chest",
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on the floor and place your hands on an upright dumbbell. Supporting your weight on your toes and hands, keep your torso rigid and your elbows in with your arms straight. This will be your starting position.",
       "Lower your body, allowing the elbows to flex while you inhale. Keep your body straight, not allowing your hips to rise or sag.",
@@ -8211,7 +8211,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin by lying on your back on the ground. Your legs should be straight and your arms extended behind your head. This will be your starting position.",
       "To perform the movement, tuck the knees toward your chest, rotating your pelvis to lift your glutes from the floor. As you do so, flex the spine, bringing your arms back over your head to perform a simultaneous crunch motion.",
@@ -8605,7 +8605,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie flat on your back and bend your knees about 60 degrees.",
       "Keep your feet flat on the floor and place your hands loosely behind your head. This will be your starting position.",
@@ -8668,7 +8668,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on the floor with your back flat and knees bent with around a 60-degree angle between the hamstrings and the calves.",
       "Keep your feet flat on the floor and stretch your arms overhead with your palms crossed. This will be your starting position.",
@@ -8688,7 +8688,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie flat on your back with your feet resting on an exercise ball and your knees bent at a 90 degree angle.",
       "Place your feet three to four inches apart and point your toes inward so they touch.",
@@ -8710,7 +8710,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie flat on your back with your feet flat on the ground, or resting on a bench with your knees bent at a 90 degree angle. If you are resting your feet on a bench, place them three to four inches apart and point your toes inward so they touch.",
       "Now place your hands lightly on either side of your head keeping your elbows in. Tip: Don't lock your fingers behind your head.",
@@ -9175,8 +9175,8 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/decline-cable-knee-raise.html"
   },
   {
-    "id": "incline-bench-dumbbell-lunge",
-    "name": "Incline Bench Dumbbell Lunge",
+    "id": "decline-bench-dumbbell-lunge",
+    "name": "Decline Bench Dumbbell Lunge",
     "bodyPart": "Legs",
     "targetMuscles": [
       "Quads"
@@ -9188,7 +9188,7 @@
     ],
     "equipment": "Dumbbell",
     "instructions": [
-      "Grab a pair of dumbbels and stand in front of a decline bench with your feet shoulder-width apart.",
+      "Grab a pair of dumbbells and stand in front of a decline bench with your feet shoulder-width apart.",
       "Step forward with one leg onto the center of the bench. Your other leg should be planted on the ground. This is the starting position.",
       "Descend until your knee reaches a 90-degree angle, or until your range of motion allows.",
       "Then drive through the front foot and extend the knee as you return to the starting position. This is one rep.",
@@ -9392,7 +9392,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Secure your legs at the end of the decline bench and lie down.",
       "Now place your hands lightly on either side of your head keeping your elbows in. Tip: Don't lock your fingers behind your head.",
@@ -9427,26 +9427,6 @@
     "difficulty": "Beginner",
     "isBodyweight": false,
     "videoUrl": "https://www.muscleandstrength.com/exercises/decline-dumbbell-bench-press.html"
-  },
-  {
-    "id": "decline-dumbbell-flyes",
-    "name": "Decline Dumbbell Flyes",
-    "bodyPart": "Chest",
-    "targetMuscles": [
-      "Chest"
-    ],
-    "secondaryMuscles": [],
-    "equipment": "dumbbell",
-    "instructions": [
-      "Secure your legs at the end of the decline bench and lie down with a dumbbell on each hand on top of your thighs. The palms of your hand will be facing each other.",
-      "Once you are laying down, move the dumbbells in front of you at shoulder width. The palms of the hands should be facing each other and the arms should be perpendicular to the floor and fully extended. This will be your starting position.",
-      "With a slight bend on your elbows in order to prevent stress at the biceps tendon, lower your arms out at both sides in a wide arc until you feel a stretch on your chest. Breathe in as you perform this portion of the movement. Tip: Keep in mind that throughout the movement, the arms should remain stationary; the movement should only occur at the shoulder joint.",
-      "Return your arms back to the starting position as you squeeze your chest muscles and breathe out. Tip: Make sure to use the same arc of motion used to lower the weights.",
-      "Hold for a second at the contracted position and repeat the movement for the prescribed amount of repetitions."
-    ],
-    "difficulty": "Beginner",
-    "isBodyweight": false,
-    "videoUrl": null
   },
   {
     "id": "declinedumbbellflys",
@@ -9606,7 +9586,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Secure your legs at the end of the decline bench and slowly lay down on the bench.",
       "Raise your upper body off the bench until your torso is about 35-45 degrees if measured from the floor.",
@@ -9674,7 +9654,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on your back on a decline bench and hold on to the top of the bench with both hands. Don't let your body slip down from this position.",
       "Hold your legs parallel to the floor using your abs to hold them there while keeping your knees and feet together. Tip: Your legs should be fully extended with a slight bend on the knee. This will be your starting position.",
@@ -10050,7 +10030,7 @@
       "Chest",
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "To get into the starting position, hold your body at arm's length with your arms nearly locked above the bars.",
       "Now, inhale and slowly lower yourself downward. Your torso should remain upright and your elbows should stay close to your body. This helps to better focus on tricep involvement. Lower yourself until there is a 90 degree angle formed between the upper arm and forearm.",
@@ -10351,7 +10331,7 @@
       "Glutes",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin standing with your knees slightly bent.",
       "Quickly squat a short distance, flexing the hips and knees, and immediately extend to jump for maximum vertical height.",
@@ -10734,28 +10714,8 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-floor-press.html"
   },
   {
-    "id": "dumbbell-flyes",
-    "name": "Dumbbell Flyes",
-    "bodyPart": "Chest",
-    "targetMuscles": [
-      "Chest"
-    ],
-    "secondaryMuscles": [],
-    "equipment": "dumbbell",
-    "instructions": [
-      "Lie down on a flat bench with a dumbbell on each hand resting on top of your thighs. The palms of your hand will be facing each other.",
-      "Then using your thighs to help raise the dumbbells, lift the dumbbells one at a time so you can hold them in front of you at shoulder width with the palms of your hands facing each other. Raise the dumbbells up like you're pressing them, but stop and hold just before you lock out. This will be your starting position.",
-      "With a slight bend on your elbows in order to prevent stress at the biceps tendon, lower your arms out at both sides in a wide arc until you feel a stretch on your chest. Breathe in as you perform this portion of the movement. Tip: Keep in mind that throughout the movement, the arms should remain stationary; the movement should only occur at the shoulder joint.",
-      "Return your arms back to the starting position as you squeeze your chest muscles and breathe out. Tip: Make sure to use the same arc of motion used to lower the weights.",
-      "Hold for a second at the contracted position and repeat the movement for the prescribed amount of repetitions."
-    ],
-    "difficulty": "Beginner",
-    "isBodyweight": false,
-    "videoUrl": null
-  },
-  {
-    "id": "dumbbellflys",
-    "name": "Dumbbell Flys",
+    "id": "dumbbellfly",
+    "name": "Dumbbell Fly",
     "bodyPart": "Chest",
     "targetMuscles": [
       "Chest"
@@ -11445,7 +11405,7 @@
     "videoUrl": null
   },
   {
-    "id": "dumbbell-shrugs",
+    "id": "dumbbell-shrug",
     "name": "Dumbbell Shrug",
     "bodyPart": "Traps",
     "targetMuscles": [
@@ -12102,7 +12062,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on the floor, crossing your right leg across your bent left knee. Clasp your hands behind your head, beginning with your shoulder blades on the ground. This will be your starting position.",
       "Perform the motion by flexing the spine and rotating your torso to bring the left elbow to the right knee.",
@@ -12918,7 +12878,7 @@
       "Glutes",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Start in a relaxed position with one leg slightly forward. This will be your starting position.",
       "Skip by executing a step-hop pattern of right-right-step to left-left-step, and so on, alternating back and forth.",
@@ -13161,7 +13121,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on an exercise mat or a flat bench with your legs off the end.",
       "Place your hands either under your glutes with your palms down or by the sides holding on to the bench (or with palms down by the side on an exercise mat). Also extend your legs straight out. This will be your starting position.",
@@ -13181,7 +13141,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie with your back flat on a bench and your legs extended in front of you off the end.",
       "Place your hands either under your glutes with your palms down or by the sides holding on to the bench. This will be your starting position.",
@@ -13308,7 +13268,7 @@
     "secondaryMuscles": [
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "On a flat bench lie facedown with the hips on the edge of the bench, the legs straight with toes high off the floor and with the arms on top of the bench holding on to the front edge.",
       "Squeeze your glutes and hamstrings and straighten the legs until they are level with the hips. This will be your starting position.",
@@ -13452,7 +13412,7 @@
       "Glutes",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Cross your arms over your chest.",
       "With your head up and your back straight, position your feet at shoulder width.",
@@ -13534,7 +13494,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie with your back flat on the floor (or exercise mat) and your legs extended in front of you.",
       "Now bend at the knees and place your outer thighs by the floor (or mat) as you make the soles of your feet touch each other.",
@@ -13824,7 +13784,7 @@
       "Hamstrings"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Stand next to a chair or other support, holding on with one hand.",
       "Swing your leg forward, keeping the leg straight. Continue with a downward swing, bringing the leg as far back as your flexibility allows. Repeat 5-10 times, and then switch legs."
@@ -14226,7 +14186,7 @@
     "secondaryMuscles": [
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Kneel on the floor or an exercise mat and bend at the waist with your arms extended in front of you (perpendicular to the torso) in order to get into a kneeling push-up position but with the arms spaced at shoulder width. Your head should be looking forward and the bend of the knees should create a 90-degree angle between the hamstrings and the calves. This will be your starting position.",
       "As you exhale, lift up your right leg until the hamstrings are in line with the back while maintaining the 90-degree angle bend. Contract the glutes throughout this movement and hold the contraction at the top for a second. Tip: At the end of the movement the upper leg should be parallel to the floor while the calf should be perpendicular to it.",
@@ -14382,7 +14342,7 @@
       "Biceps",
       "Lats"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Hang from a chin-up bar using an underhand grip (palms facing you) that is slightly wider than shoulder width.",
       "Now bend your knees at a 90 degree angle so that the calves are parallel to the floor while the thighs remain perpendicular to it. This will be your starting position.",
@@ -14443,7 +14403,7 @@
       "Adductors"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin in a pushup position on the floor. This will be your starting position.",
       "Using both legs, jump forward landing with your feet next to your hands. Keep your head up as you do so.",
@@ -14840,7 +14800,7 @@
     "secondaryMuscles": [
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "With your back to the wall bend at the waist and place both hands on the floor at shoulder width.",
       "Kick yourself up against the wall with your arms straight. Your body should be upside down with the arms and legs fully extended. Keep your whole body as straight as possible. Tip: If doing this for the first time, have a spotter help you. Also, make sure that you keep facing the wall with your head, rather than looking down.",
@@ -15071,7 +15031,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Hang from a chin-up bar with your legs and feet together using an overhand grip (palms facing away from you) that is slightly wider than shoulder width. Tip: You may use wrist wraps in order to facilitate holding on to the bar.",
       "Now bend your knees at a 90 degree angle and bring the upper legs forward so that the calves are perpendicular to the floor while the thighs remain parallel to it. This will be your starting position.",
@@ -15335,7 +15295,7 @@
     "secondaryMuscles": [
       "Adductors"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Position yourself on your hands and knees on the ground. Maintaining good posture, raise one bent knee off of the ground. This will be your starting position.",
       "Keeping the knee in a bent position, rotate the femur in an arc, attempting to make a big circle with your knee.",
@@ -15611,7 +15571,7 @@
       "Glutes",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "With someone holding down your legs, slide yourself down to the edge a flat bench until your hips hang off the end of the bench. Tip: Your entire upper body should be hanging down towards the floor. Also, you will be in the same position as if you were on a hyperextension bench but the range of motion will be shorter due to the height of the flat bench vs. that of the hyperextension bench.",
       "With your body straight, cross your arms in front of you (my preference) or behind your head. This will be your starting position. Tip: You can also hold a weight plate for extra resistance in front of you under your crossed arms.",
@@ -16080,8 +16040,8 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/incline-dumbbell-curl.html"
   },
   {
-    "id": "incline-dumbbell-flyes",
-    "name": "Incline Dumbbell Flyes",
+    "id": "incline-dumbbell-fly",
+    "name": "Incline Dumbbell Fly",
     "bodyPart": "Chest",
     "targetMuscles": [
       "Chest"
@@ -16271,7 +16231,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Stand facing bench or sturdy elevated platform. Place hands on edge of bench or platform, slightly wider than shoulder width.",
       "Position forefoot back from bench or platform with arms and body straight. Arms should be perpendicular to body. Keeping body straight, lower chest to edge of box or platform by bending arms.",
@@ -16292,7 +16252,7 @@
       "Chest",
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Stand facing a Smith machine bar or sturdy elevated platform at an appropriate height.",
       "Place your hands next to one another on the bar.",
@@ -16338,7 +16298,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Stand facing a Smith machine bar or sturdy elevated platform at an appropriate height.",
       "Place your hands on the bar, with your hands about shoulder width apart.",
@@ -16362,7 +16322,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Stand facing a Smith machine bar or sturdy elevated platform at an appropriate height.",
       "Place your hands on the bar palms up, with your hands about shoulder width apart.",
@@ -16386,7 +16346,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Stand facing a Smith machine bar or sturdy elevated platform at an appropriate height.",
       "Place your hands on the bar, with your hands wider than shoulder width.",
@@ -16767,7 +16727,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "While either seating or standing, bend your arms at a 90-degree angle and place the palms of your hands together in front of your chest. Tip: Your hands should be open with the palms together and fingers facing forward (perpendicular to your torso).",
       "Push both hands against each other as you contract your chest. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
@@ -16787,7 +16747,7 @@
       "Neck"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "With your head and neck in a neutral position (normal position with head erect facing forward), place both of your hands on the front side of your head.",
       "Now gently push forward as you contract the neck muscles but resisting any movement of your head. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
@@ -16807,7 +16767,7 @@
       "Neck"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "With your head and neck in a neutral position (normal position with head erect facing forward), place your left hand on the left side of your head.",
       "Now gently push towards the left as you contract the left neck muscles but resisting any movement of your head. Start with slow tension and increase slowly. Keep breathing normally as you execute this contraction.",
@@ -16831,7 +16791,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Assume a push-up position, supporting your weight on your hands and toes while keeping your body straight. Your hands should be just outside of shoulder width. This will be your starting position.",
       "Begin by shifting your body weight as far to one side as possible, allowing the elbow on that side to flex as you lower your body.",
@@ -16886,7 +16846,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie flat on the floor (or exercise mat) on your back with your arms extended straight back behind your head and your legs extended also. This will be your starting position.",
       "As you exhale, bend at the waist while simultaneously raising your legs and arms to meet in a jackknife position. Tip: The legs should be extended and lifted at approximately a 35-45 degree angle from the floor and the arms should be extended and parallel to your legs. The upper torso should be off the floor.",
@@ -16905,7 +16865,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Position your body on the floor in the basic sit-up position; knees to a ninety degree angle with feet flat on the floor and arms either crossed over your chest or to the sides. This will be your starting position.",
       "As you strongly tighten your glutes and hamstrings, fill your lungs with air and in a slow (three to six second count) ascent, slowly exhale. Tip: It is important to tighten the glutes and hamstrings as this will cause the hip flexors to be inactivated in a process called reciprocal inhibition, which basically means that opposite muscles to the contracted ones will relax.",
@@ -17885,7 +17845,7 @@
       "Hamstrings",
       "Quads"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Stand with your legs together and hands by your waist.",
       "Now move your knees in a circular motion as you breathe normally.",
@@ -17909,7 +17869,7 @@
       "Glutes",
       "Quads"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin in a comfortable standing position with your knees slightly bent. Hold your hands in front of you, palms down with your fingertips together at chest height. This will be your starting position.",
       "Rapidly dip down into a quarter squat and immediately explode upward. Drive the knees towards the chest, attempting to touch them to the palms of the hands.",
@@ -18456,7 +18416,7 @@
       "Hamstrings",
       "Quads"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Assume a half squat position facing 90 degrees from your direction of travel. This will be your starting position.",
       "Allow your lead leg to do a countermovement inward as you shift your weight to the outside leg.",
@@ -18786,7 +18746,7 @@
     "secondaryMuscles": [
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "While standing up straight with both feet next to each other at around shoulder width, grab a sturdy surface such as the sides of a squat rack or the top of a chair to brace yourself and keep balance.",
       "With or without an ankle weight, lift one leg behind you as if performing a leg curl but standing up while keeping the other leg straight. Breathe out as you perform this movement.",
@@ -18858,7 +18818,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on an exercise mat with your legs extended and your hands either palms facing down next to you or under your glutes. Tip: My preference is with the hands next to me. This will be your starting position.",
       "Bend your knees and pull your upper thighs into your midsection as you breathe out. Continue the motion until your knees are around chest level. Contract your abs as you execute this movement and hold for a second at the top. Tip: As you perform the motion, the lower legs (calves) should always remain parallel to the floor.",
@@ -19359,7 +19319,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on your stomach with your arms out to your sides. This will be your starting position.",
       "Using your lower back muscles, extend your spine lifting your chest off of the ground. Do not use your arms to push yourself up. Keep your head up during the movement. Repeat for 10-20 repetitions."
@@ -19845,7 +19805,7 @@
       "abductors"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on your back with your legs extended.",
       "Cross one leg over your body with the knee bent, attempting to touch the knee to the ground. Your partner should kneel beside you, holding your shoulder down with one hand and controlling the crossed leg with the other. this will be your starting position.",
@@ -20054,7 +20014,7 @@
     "secondaryMuscles": [
       "abductors"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on your back with your partner kneeling beside you.",
       "Flex the hip of one leg, raising it off of the floor. Rotate the leg so the foot is over the opposite hip, the lower leg perpendicular to your body. Your partner should hold the knee and ankle in place. This will be your starting position.",
@@ -20345,7 +20305,7 @@
       "Quads"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lay face down on the floor with your partner kneeling beside you. Flex one knee and raise that leg off the ground, attempting to touch your glutes with your foot. Your partner should hold the knee and ankle. This will be your starting position.",
       "Attempt to extend your knee while your partner prevents any actual movement.",
@@ -21334,7 +21294,7 @@
       "Glutes",
       "Back (Lower)"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Using the leg pad of a lat pulldown machine or a preacher bench, position yourself so that your ankles are under the pads, knees on the seat, and you are facing away from the machine. You should be upright and maintaining good posture.",
       "This will be your starting position. Lower yourself under control until your knees are almost completely straight.",
@@ -21551,7 +21511,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie flat on the floor with your lower back pressed to the ground. For this exercise, you will need to put one hand beside your head and the other to the side against the floor.",
       "Make sure your feet are elevated and resting on a flat surface.",
@@ -21573,7 +21533,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Start out by lying on your right side with your legs lying on top of each other. Make sure your knees are bent a little bit.",
       "Place your left hand behind your head.",
@@ -23853,7 +23813,7 @@
     "secondaryMuscles": [
       "Lats"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Sit upright on the floor with your partner behind you. Raise one arm straight up, and flex the elbow, attempting to touch your hand to your back. Your parner should hold your elbow and wrist. This will be your starting position.",
       "Attempt to extend the arm straight into the air as your partner prevents you from doing actually doing so.",
@@ -24599,7 +24559,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Move into a prone position on the floor, supporting your weight on your hands and toes.",
       "Your arms should be fully extended with the hands around shoulder width. Keep your body straight throughout the movement. This will be your starting position.",
@@ -25189,7 +25149,7 @@
       "Biceps",
       "Back (Upper)"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Grab the pull-up bar with the palms facing forward using the prescribed grip. Note on grips: For a wide grip, your hands need to be spaced out at a distance wider than your shoulder width. For a medium grip, your hands need to be spaced out at a distance equal to your shoulder width and for a close grip at a distance smaller than your shoulder width.",
       "As you have both arms extended in front of you holding the bar at the chosen grip width, bring your torso back around 30 degrees or so while creating a curvature on your lower back and sticking your chest out. This is your starting position.",
@@ -25303,7 +25263,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Get into pushup position on the toes with your hands just outside of shoulder width.",
       "Perform a pushup by allowing the elbows to flex. As you descend, keep your body straight.",
@@ -25353,7 +25313,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "With your hands wide apart, support your body on your toes and hands in a plank position. Your elbows should be extended and your body straight. Do not allow your hips to sag. This will be your starting position.",
       "To begin, allow the elbows to flex, lowering your chest to the floor as you inhale.",
@@ -25375,7 +25335,7 @@
       "Chest",
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on the floor face down and place your hands closer than shoulder width for a close hand position. Make sure that you are holding your torso up at arms' length.",
       "Lower yourself until your chest almost touches the floor as you inhale.",
@@ -25397,7 +25357,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on the floor face down and place your hands about 36 inches apart from each other holding your torso up at arms length.",
       "Place your toes on top of a flat bench. This will allow your body to be elevated. Note: The higher the elevation of the flat bench, the higher the resistance of the exercise is.",
@@ -25443,7 +25403,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on the floor face down and place your hands about 36 inches apart while holding your torso up at arms length.",
       "Next, lower yourself downward until your chest almost touches the floor as you inhale.",
@@ -25465,7 +25425,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie on the floor face down and body straight with your toes on the floor and the hands wider than shoulder width for a wide hand position and closer than shoulder width for a close hand position. Make sure you are holding your torso up at arms length.",
       "Lower yourself until your chest almost touches the floor as you inhale.",
@@ -25760,7 +25720,7 @@
       "Quads"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Place yourself on your hands knees on an exercise mat. Your head should be looking forward and the bend of the knees should create a 90-degree angle between the hamstrings and the calves. This will be your starting position.",
       "Extend one leg up and behind you. The knee and hip should both extend. Repeat for 5-10 repetitions, and then switch sides."
@@ -26158,7 +26118,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie down on the floor with your legs fully extended and arms to the side of your torso with the palms on the floor. Your arms should be stationary for the entire exercise.",
       "Move your legs up so that your thighs are perpendicular to the floor and feet are together and parallel to the floor. This is the starting position.",
@@ -27540,7 +27500,7 @@
       "Calves",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin in a relaxed stance with your feet shoulder width apart and hold your arms close to the body.",
       "To initiate the move, squat down halfway and explode back up as high as possible.",
@@ -28261,7 +28221,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "To begin, lie down with your back pressed against the floor or on an exercise mat (optional). Your arms should be fully extended to the sides with your palms facing down. Note: The arms should be stationary the entire time.",
       "With a slight bend at the knees, lift your legs up so that your heels are about 6 inches off the ground. This is the starting position.",
@@ -28284,7 +28244,7 @@
       "Glutes",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Assume a lunge stance position with one foot forward with the knee bent, and the rear knee nearly touching the ground.",
       "Ensure that the front knee is over the midline of the foot. Extending through both legs, jump as high as possible, swinging your arms to gain lift.",
@@ -28563,7 +28523,7 @@
       "Chest",
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Sit on the floor with your knees bent and your partner standing behind you. Extend your arms straight behind you with your palms facing each other. Your partner will hold your wrists for you. This will be the starting position.",
       "Attempt to flex your elbows, while your partner prevents any actual movement.",
@@ -29102,7 +29062,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Sit on a bench with the legs stretched out in front of you slightly below parallel and your arms holding on to the sides of the bench. Your torso should be leaning backwards around a 45-degree angle from the bench. This will be your starting position.",
       "Bring the knees in toward you as you move your torso closer to them at the same time. Breathe out as you perform this movement.",
@@ -29164,7 +29124,7 @@
     "secondaryMuscles": [
       "Chest"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Sit upright on the floor with your legs bent, your partner standing behind you. Stick your arms straight out to your sides, with your palms facing the ground. Attempt to move them as far behind you as possible, as your assistant holds your wrists. This will be your starting position.",
       "Keeping your elbows straight, attempt to move your arms to the front, with your partner gently restraining you to prevent any actual movement for 10-20 seconds.",
@@ -29184,7 +29144,7 @@
     "secondaryMuscles": [
       "Adductors"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "In a seated position with your knees bent, cross one ankle over the opposite knee. Your partner will stand behind you. Now, lean forward as your partner braces your shoulders with their hands. This will be your starting position.",
       "Attempt to push your torso back for 10-20 seconds, as your partner prevents any actual movement of your torso.",
@@ -29394,7 +29354,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Sit on a bench with the legs stretched out in front of you slightly below parallel and your arms holding on to the sides of the bench. Your torso should be leaning backwards around a 45-degree angle from the bench. This will be your starting position.",
       "Bring the knees in toward you as you move your torso closer to them at the same time. Breathe out as you perform this movement.",
@@ -29926,7 +29886,7 @@
     "secondaryMuscles": [
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [],
     "difficulty": "Beginner",
     "isBodyweight": true,
@@ -30005,7 +29965,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [],
     "difficulty": "Beginner",
     "isBodyweight": true,
@@ -30019,7 +29979,7 @@
       "Adductors"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Stand next to a chair, which you may hold onto as a support. Stand on one leg. This will be your starting position.",
       "Keeping your leg straight, raise it as far out to the side as possible, and swing it back down, allowing it to cross the opposite leg.",
@@ -30320,7 +30280,7 @@
       "Calves",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin by standing on one leg, with the bent knee raised. This will be your start position.",
       "Using a countermovement jump, take off upward by extending the hip, knee, and ankle of the grounded leg.",
@@ -30792,7 +30752,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin laying prone on the ground. Move yourself into a position supporting your weight on your toes and one arm. Your working arm should be placed directly under the shoulder, fully extended. Your legs should be extended, and for this movement you may need a wider base, placing your feet further apart than in a normal push-up.",
       "Maintain good posture, and place your free hand behind your back. This will be your starting position.",
@@ -30992,7 +30952,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Lie down on the floor placing your feet either under something that will not move or by having a partner hold them. Your legs should be bent at the knees.",
       "Place your hands behind your head and lock them together by clasping your fingers. This is the starting position.",
@@ -32539,7 +32499,7 @@
       "Shoulders",
       "Triceps"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin in a prone position on the floor. Support your weight on your hands and toes, with your feet together and your body straight. Your arms should be bent to 90 degrees. This will be your starting position.",
       "Initiate the movement by raising one foot off of the ground. Externally rotate the leg and bring the knee toward your elbow, as far forward as possible.",
@@ -32668,7 +32628,7 @@
       "Glutes",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Assume a lunge stance position with one foot forward with the knee bent, and the rear knee nearly touching the ground.",
       "Ensure that the front knee is over the midline of the foot.",
@@ -33920,7 +33880,7 @@
     "secondaryMuscles": [
       "Adductors"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin standing on one leg, holding to a vertical support.",
       "Raise the unsupported knee to 90 degrees. This will be your starting position.",
@@ -34039,7 +33999,7 @@
       "Glutes",
       "Hamstrings"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "This drill is best done in sand or other soft landing surface. Ensure that you are able to measure distance. Stand in a partial squat stance with feet shoulder width apart.",
       "Utilizing a big arm swing and a countermovement of the legs, jump forward as far as you can.",
@@ -34684,7 +34644,7 @@
       "Triceps"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "To begin, stand up with both arms fully extended above the head holding one end of a towel with both hands. Your elbows should be in and the arms perpendicular to the floor with the palms facing each other while your feet should be shoulder width apart from each other. This is the starting position.",
       "Now communicate with your partner so that he/she can grip the other side of the towel to apply resistance. Keeping your upper arms close to your head (elbows in) and perpendicular to the floor, lower the resistance in a semicircular motion behind your head until your forearms touch your biceps. Tip: The upper arms should remain stationary and only the forearms should move. Breathe in as you perform this step.",
@@ -34729,7 +34689,7 @@
       "Hamstrings",
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Begin in a relaxed stance with your feet shoulder width apart and hold your arms close to the body.",
       "To initiate the move, squat down halfway and explode back up as high as possible. Fully extend your entire body, spreading your legs and arms away from the body.",
@@ -34771,7 +34731,7 @@
       "Hamstrings",
       "Quads"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Stand facing a box or bench of an appropriate height with your feet together. This will be your starting position.",
       "Begin the movement by stepping up, putting your left foot on the top of the bench. Extend through the hip and knee of your front leg to stand up on the box. As you stand on the box with your left leg, flex your right knee and hip, bringing your knee as high as you can.",
@@ -34911,7 +34871,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "To begin, stand straight with your feet shoulder width apart from each other. Place your hands on your hips. This is the starting position.",
       "Now slowly inhale as much air as possible and then start to exhale as much as possible while bringing your stomach in as much as possible and hold this position. Try to visualize your navel touching your backbone.",
@@ -35901,7 +35861,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "To begin, lie down on the floor or an exercise mat with your back pressed against the floor. Your arms should be lying across your sides with the palms facing down.",
       "Your legs should be touching each other. Slowly elevate your legs up in the air until they are almost perpendicular to the floor with a slight bend at the knees. Your feet should be parallel to the floor.",
@@ -36443,7 +36403,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "To begin, lie down on the floor or an exercise mat with your back pressed against the floor. Your arms should be lying across your sides with the palms facing down.",
       "Your legs should be crossed by wrapping one ankle around the other. Slowly elevate your legs up in the air until your thighs are perpendicular to the floor with a slight bend at the knees. Note: Your knees and toes should be parallel to the floor as opposed to the thighs.",
@@ -37049,7 +37009,7 @@
       "Back (Upper)",
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Start by placing the middle of the V-bar in the middle of the pull-up bar (assuming that the pull-up station you are using does not have neutral grip handles). The V-Bar handles will be facing down so that you can hang from the pull-up bar through the use of the handles.",
       "Once you securely place the V-bar, take a hold of the bar from each side and hang from it. Stick your chest out and lean yourself back slightly in order to better engage the lats. This will be your starting position.",
@@ -38365,7 +38325,7 @@
       "Back (Upper)",
       "Shoulders"
     ],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Grab the pull-up bar with the palms facing forward using a wide grip.",
       "As you have both arms extended in front of you holding the bar, bring your torso forward and head so that there is an imaginary line from the pull-up bar to the back of your neck. This is your starting position.",
@@ -38405,7 +38365,7 @@
       "Abs"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Hang from a pull-up bar using a pronated grip. Your arms and legs should be extended. This will be your starting position.",
       "Begin by quickly raising one knee as high as you can. Do not swing your body or your legs. 3",
@@ -38496,7 +38456,7 @@
       "Forearms"
     ],
     "secondaryMuscles": [],
-    "equipment": "body only",
+    "equipment": "bodyweight",
     "instructions": [
       "Start by standing straight with your feet being shoulder width apart from each other. Elevate your arms to the side of you until they are fully extended and parallel to the floor at a height that is evenly aligned with your shoulders. Tip: Your torso and arms should form the letter \"T: Your palms should be facing down. This is the starting position.",
       "Keeping your entire body stationary except for the wrists, begin to rotate both wrists forward in a circular motion. Tip: Pretend that you are trying to draw circles by using your hands as the brush. Breathe normally as you perform this exercise.",

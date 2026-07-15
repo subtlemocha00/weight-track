@@ -32,12 +32,14 @@
 
 .name {
   flex: 1;
+  /* Allow the flex item to shrink below its content width so long names wrap
+     instead of being clipped; break-word guards against unbreakable tokens. */
+  min-width: 0;
   font-weight: 600;
   font-size: 14px;
   color: var(--t1);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.3;
+  overflow-wrap: break-word;
 }
 
 .order {
@@ -110,6 +112,27 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+/* Exercise-level action, styled like the other in-body toggle buttons. */
+.swap {
+  align-self: flex-start;
+  padding: 7px 13px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: var(--surface);
+  color: var(--t2);
+  border: 1.5px solid var(--border);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  transition: all 0.1s;
+}
+
+.swap:hover,
+.swap:focus-visible {
+  border-color: var(--bright);
+  color: var(--t1);
 }
 
 /* Collapsible instructions — mirrors the routine editor's instructions panel so
