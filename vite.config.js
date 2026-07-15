@@ -3,6 +3,23 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      output: {
+        // Split the largest dependencies into their own chunks so no
+        // single file exceeds Workbox's 2 MiB precache limit.
+        manualChunks(id) {
+          if (id.includes('exercises.json')) {
+            return 'exercises-data'
+          }
+          if (id.includes('node_modules/firebase') || id.includes('node_modules/@firebase')) {
+            return 'firebase'
+          }
+        }
+      }
+    }
+  },
+
   plugins: [
     react(),
 
