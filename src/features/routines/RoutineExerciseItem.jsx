@@ -22,7 +22,8 @@ function RoutineExerciseItemImpl({
   onUpdateSet,
   onUpdateNotes,
   onAssignSuperset,
-  onUpdateAllUnits
+  onUpdateAllUnits,
+  onSwap
 }) {
   const allUnit = exercise.sets.every((s) => s.unit === exercise.sets[0]?.unit)
     ? exercise.sets[0]?.unit
@@ -130,6 +131,14 @@ function RoutineExerciseItemImpl({
           supersetCount={supersetCount}
           onAssign={onAssignSuperset}
         />
+
+        {/* Swap sends the user to the Exercise Library to pick a replacement;
+            all sets/reps/notes/superset assignment are kept on return. */}
+        {typeof onSwap === 'function' && (
+          <button type="button" className={styles.swap} onClick={onSwap}>
+            Swap Exercise
+          </button>
+        )}
 
         {/* Notes are the final block on every exercise card. */}
         <details className={styles.notesPanel}>

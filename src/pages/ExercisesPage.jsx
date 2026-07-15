@@ -4,6 +4,7 @@ import { useAuth } from '../hooks/useAuth'
 import { useConfirm } from '../hooks/useConfirm'
 import { AppHeader } from '../components/AppHeader'
 import { readActiveWorkout, writeActiveWorkout } from '../utils/activeWorkout'
+import { readRoutineDraft, writeRoutineDraft } from '../utils/routineDraft'
 import { swapSessionExercise } from '../features/workoutSessions/swapExercise'
 import {
   filterAllExercises,
@@ -223,14 +224,25 @@ export function ExercisesPage() {
     [user]
   )
 
-  const returnToWorkout = useCallback(() => {
-    if (swap) navigate(`/workout/${swap.sessionId}`)
+  // Where "back" and a completed swap return to: the routine editor for a routine
+  // swap (rehydrating its stashed draft), otherwise the active workout. Backing
+  // out of a routine swap still passes fromSwap so any unsaved edits stashed on
+  // the way in are restored losslessly.
+  const returnFromSwap = useCallback(() => {
+    if (!swap) return
+    if (swap.kind === 'routine') {
+      navigate(swap.returnTo, { state: { fromSwap: true } })
+    } else {
+      navigate(`/workout/${swap.sessionId}`)
+    }
   }, [swap, navigate])
 
   // Swap flow: confirm with an app-styled modal, then replace only the exercise
-  // identity on the in-progress session (kept in localStorage while the workout
-  // page is unmounted) and return to the workout. All logged sets/reps/weights/
-  // notes/superset/completion are preserved by swapSessionExercise.
+  // identity (exerciseId + name) on the stashed session/routine — kept in
+  // localStorage while the source page is unmounted — and return to it. Every
+  // logged/configured value (sets, reps, weights, notes, superset, completion)
+  // is preserved by swapSessionExercise, which only rewrites the two identity
+  // fields regardless of whether the target is a workout session or a routine.
   const handleSelectForSwap = useCallback(
     async (exercise) => {
       if (!swap) return
@@ -241,6 +253,17 @@ export function ExercisesPage() {
         cancelLabel: 'Cancel'
       })
       if (!ok) return
+
+      if (swap.kind === 'routine') {
+        const draft = readRoutineDraft()
+        if (draft) {
+          const updated = swapSessionExercise(draft.routine, swap.exerciseIndex, exercise)
+          writeRoutineDraft({ ...draft, routine: updated })
+        }
+        // fromSwap rehydrates the draft in the editor whether or not it existed.
+        navigate(swap.returnTo, { state: { fromSwap: true }, replace: true })
+        return
+      }
 
       const active = readActiveWorkout()
       if (!active || active.id !== swap.sessionId) {
@@ -281,13 +304,14 @@ export function ExercisesPage() {
     <section className={styles.page}>
       <AppHeader
         title={swap ? 'Swap Exercise' : 'Exercises'}
-        onBack={swap ? returnToWorkout : undefined}
+        onBack={swap ? returnFromSwap : undefined}
       />
 
       {swap && (
         <div className={styles.swapBanner}>
           Choosing a replacement for <strong>{swap.fromName}</strong>. Search or
-          browse, then pick an exercise — your sets, reps and progress are kept.
+          browse, then pick an exercise — your sets, reps and{' '}
+          {swap.kind === 'routine' ? 'notes' : 'progress'} are kept.
         </div>
       )}
 
