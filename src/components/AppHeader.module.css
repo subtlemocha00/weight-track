@@ -7,31 +7,49 @@
 
 .topRow {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
   min-width: 0;
 }
 
+/* Shared navigation control — matches the app's outline action-button style
+ * (same padding, typography, clip-path and transition as the routine/session
+ * action buttons) so Back reads as part of the same button system. */
 .back {
-  font-size: 13px;
+  padding: 7px 13px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
   color: var(--neon-green);
-  padding: 0;
+  background: transparent;
+  border: 1.5px solid var(--neon-green);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
   flex-shrink: 0;
-  transition: opacity 0.1s;
+  transition: all 0.08s;
 }
 
 .back:hover {
-  opacity: 0.8;
+  background: color-mix(in srgb, var(--neon-green) 10%, transparent);
 }
 
+.back:focus-visible {
+  outline: 2px solid var(--neon-green);
+  outline-offset: 2px;
+}
+
+/* Right-aligned page actions. margin-left keeps Back pinned left; wrapping lets
+ * the action buttons drop to a second row on narrow (≥350px) viewports rather
+ * than overflow or clip. */
 .actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   gap: 8px;
-  flex-shrink: 0;
+  margin-left: auto;
+  min-width: 0;
 }
 
 .title {

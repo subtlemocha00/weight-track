@@ -55,7 +55,7 @@ def check_video_url(item):
         return item
 
 def main():
-    input_file = "exercises_simplified.json"
+    input_file = "exercises.json"
     output_file = "faulty_video_urls.json"
 
     print(f"Loading data from {input_file}...")

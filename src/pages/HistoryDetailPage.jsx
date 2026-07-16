@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { AppHeader } from '../components/AppHeader'
 import { getSession, listCompletedSessions } from '../services/workoutSessions'
@@ -89,10 +89,8 @@ export function HistoryDetailPage() {
   if (error) {
     return (
       <div className={styles.state}>
+        <AppHeader backTo="/history" />
         <div className={styles.error}>{error}</div>
-        <p>
-          <Link to="/history">← Back to history</Link>
-        </p>
       </div>
     )
   }
@@ -100,10 +98,8 @@ export function HistoryDetailPage() {
   if (notFound) {
     return (
       <div className={styles.state}>
+        <AppHeader backTo="/history" />
         <p>Workout session not found.</p>
-        <p>
-          <Link to="/history">← Back to history</Link>
-        </p>
       </div>
     )
   }

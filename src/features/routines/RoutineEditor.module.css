@@ -34,17 +34,11 @@
   transition: border-color 0.15s;
 }
 
-.actions {
+/* Transient save/delete status, shown just below the header action bar. */
+.saveStatus {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.actions > .saveMsg {
-  margin-right: auto;
-  font-size: 12px;
+  margin-top: -2px;
 }
 
 .save {

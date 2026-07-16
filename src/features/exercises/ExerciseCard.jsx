@@ -1,4 +1,5 @@
 import { memo } from 'react'
+import { isSafeVideoUrl } from '../../services/exercises'
 import { WatchVideoButton } from './WatchVideoButton'
 import { AddToRoutineSelect } from './AddToRoutineSelect'
 import styles from './ExerciseCard.module.css'
@@ -12,6 +13,9 @@ function ExerciseCardImpl({
   selectLabel = 'Select'
 }) {
   const isCustom = exercise.source === 'custom'
+  // Same rule the "Watch Video" button uses, so the collapsed tag appears
+  // exactly when a usable video is available on expansion.
+  const hasVideo = isSafeVideoUrl(exercise.videoUrl)
   const primaryMuscle = exercise.targetMuscles[0] ?? null
   const canEdit = isCustom && typeof onEdit === 'function'
   const canSelect = typeof onSelect === 'function'
@@ -22,6 +26,11 @@ function ExerciseCardImpl({
         <div className={styles.summaryContent}>
           <span className={styles.name}>{exercise.name}</span>
           <div className={styles.meta}>
+            {hasVideo && (
+              <span className={`${styles.metaItem} ${styles.videoBadge}`}>
+                Video
+              </span>
+            )}
             {isCustom && (
               <span className={`${styles.metaItem} ${styles.customBadge}`}>
                 Custom

@@ -221,7 +221,52 @@ export function RoutineEditor({ initialRoutine, mode }) {
 
   return (
     <div className={styles.editor}>
-      <AppHeader onBack={handleBack} />
+      <AppHeader onBack={handleBack}>
+        {!isNew && (
+          <button
+            type="button"
+            className={styles.duplicate}
+            onClick={handleDuplicate}
+            disabled={duplicating || deleting}
+          >
+            {duplicating ? 'Duplicating…' : 'Duplicate'}
+          </button>
+        )}
+        {!isNew && (
+          <button
+            type="button"
+            className={styles.export}
+            onClick={handleExport}
+            disabled={duplicating || deleting}
+          >
+            Export
+          </button>
+        )}
+        {!isNew && (
+          <button
+            type="button"
+            className={styles.delete}
+            onClick={handleDelete}
+            disabled={deleting || duplicating}
+          >
+            {deleting ? 'Deleting…' : 'Delete'}
+          </button>
+        )}
+        <button
+          type="button"
+          className={styles.save}
+          onClick={handleSave}
+          disabled={!canSave}
+        >
+          {saveState.status === 'saving' ? 'Saving…' : 'Save'}
+        </button>
+      </AppHeader>
+
+      {saveState.message && (
+        <div className={styles.saveStatus}>
+          <span className={saveMsgClass}>{saveState.message}</span>
+        </div>
+      )}
 
       <label className={styles.nameField}>
         <span className={styles.nameLabel}>Routine name</span>
@@ -301,50 +346,6 @@ export function RoutineEditor({ initialRoutine, mode }) {
           })}
         </div>
       )}
-
-      <div className={styles.actions}>
-        {saveState.message && (
-          <span className={saveMsgClass}>{saveState.message}</span>
-        )}
-        {!isNew && (
-          <button
-            type="button"
-            className={styles.duplicate}
-            onClick={handleDuplicate}
-            disabled={duplicating || deleting}
-          >
-            {duplicating ? 'Duplicating…' : 'Duplicate'}
-          </button>
-        )}
-        {!isNew && (
-          <button
-            type="button"
-            className={styles.export}
-            onClick={handleExport}
-            disabled={duplicating || deleting}
-          >
-            Export
-          </button>
-        )}
-        {!isNew && (
-          <button
-            type="button"
-            className={styles.delete}
-            onClick={handleDelete}
-            disabled={deleting || duplicating}
-          >
-            {deleting ? 'Deleting…' : 'Delete'}
-          </button>
-        )}
-        <button
-          type="button"
-          className={styles.save}
-          onClick={handleSave}
-          disabled={!canSave}
-        >
-          {saveState.status === 'saving' ? 'Saving…' : 'Save'}
-        </button>
-      </div>
     </div>
   )
 }

@@ -64,6 +64,13 @@
   background: rgba(0, 194, 255, 0.08);
 }
 
+/* Marks that an instructional video is available, without opening the card. */
+.videoBadge {
+  color: var(--neon-green);
+  border-color: rgba(0, 255, 38, 0.45);
+  background: rgba(0, 255, 38, 0.08);
+}
+
 /* Swap-mode selection action. Sits in the summary row for one-tap selection
    while browsing; stops the click from expanding the card (see ExerciseCard). */
 .select {

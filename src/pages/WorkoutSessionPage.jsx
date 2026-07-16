@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
+import { AppHeader } from '../components/AppHeader'
 import { getSession } from '../services/workoutSessions'
 import { SessionEditor } from '../features/workoutSessions/SessionEditor'
 import { readActiveWorkout } from '../utils/activeWorkout'
@@ -50,10 +51,8 @@ export function WorkoutSessionPage() {
   if (error) {
     return (
       <div className={styles.state}>
+        <AppHeader backTo="/home" />
         <div className={styles.error}>{error}</div>
-        <p>
-          <Link to="/home">← Back to home</Link>
-        </p>
       </div>
     )
   }
@@ -61,10 +60,8 @@ export function WorkoutSessionPage() {
   if (notFound) {
     return (
       <div className={styles.state}>
+        <AppHeader backTo="/home" />
         <p>Workout session not found.</p>
-        <p>
-          <Link to="/home">← Back to home</Link>
-        </p>
       </div>
     )
   }

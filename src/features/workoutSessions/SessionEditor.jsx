@@ -158,7 +158,16 @@ export function SessionEditor({ initialSession }) {
 
   return (
     <div className={styles.editor}>
-      <AppHeader onBack={handleBack} />
+      <AppHeader onBack={handleBack}>
+        <button
+          type="button"
+          className={styles.finish}
+          onClick={handleFinish}
+          disabled={finishing || isCompleted}
+        >
+          {finishing ? 'Finishing…' : isCompleted ? 'Done' : 'Finish workout'}
+        </button>
+      </AppHeader>
 
       <div className={styles.header}>
         <div className={styles.titleBlock}>
@@ -173,14 +182,6 @@ export function SessionEditor({ initialSession }) {
             {isCompleted && ' · completed'}
           </span>
         </div>
-        <button
-          type="button"
-          className={styles.finish}
-          onClick={handleFinish}
-          disabled={finishing || isCompleted}
-        >
-          {finishing ? 'Finishing…' : isCompleted ? 'Done' : 'Finish workout'}
-        </button>
       </div>
 
       {isCompleted && (

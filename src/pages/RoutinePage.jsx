@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
+import { AppHeader } from '../components/AppHeader'
 import { getRoutine } from '../services/routines'
 import { RoutineEditor } from '../features/routines/RoutineEditor'
 import styles from './RoutinePage.module.css'
@@ -40,10 +41,8 @@ export function RoutinePage() {
   if (error) {
     return (
       <div className={styles.state}>
+        <AppHeader backTo="/home" />
         <div className={styles.error}>{error}</div>
-        <p>
-          <Link to="/home">← Back to routines</Link>
-        </p>
       </div>
     )
   }
@@ -51,10 +50,8 @@ export function RoutinePage() {
   if (notFound) {
     return (
       <div className={styles.state}>
+        <AppHeader backTo="/home" />
         <p>Routine not found.</p>
-        <p>
-          <Link to="/home">← Back to routines</Link>
-        </p>
       </div>
     )
   }
