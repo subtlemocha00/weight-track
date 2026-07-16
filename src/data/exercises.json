@@ -51,7 +51,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/2-to-1-box-jump"
   },
   {
-    "id": "3monthpositionkettlebellpullover",
+    "id": "3-month-position-kettlebell-pullover",
     "name": "3 Month Position Kettlebell Pullover",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -117,7 +117,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/45-degree-leg-press.html"
   },
   {
-    "id": "45degreelegpresscalfraise",
+    "id": "45-degree-leg-press-calf-raise",
     "name": "45 Degree Leg Press Calf Raise",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -184,7 +184,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/ez-bar-back-of-the-head-lying-tricep-extension.html"
   },
   {
-    "id": "45degreetoeraise",
+    "id": "45-degree-toe-raise",
     "name": "45 Degree Toe Raise",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -226,7 +226,7 @@
     "videoUrl": null
   },
   {
-    "id": "90-90hipcrossover",
+    "id": "90-90-hip-crossover",
     "name": "90/90 Hip Crossover",
     "bodyPart": "Back",
     "targetMuscles": [
@@ -249,7 +249,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/90-90-hip-crossover"
   },
   {
-    "id": "90-90piriformisstretch",
+    "id": "90-90-piriformis-stretch",
     "name": "90/90 Piriformis Stretch",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -268,7 +268,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/90-90-piriformis-stretch"
   },
   {
-    "id": "abcrunch",
+    "id": "ab-crunch",
     "name": "Ab Crunch",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -327,7 +327,7 @@
     "videoUrl": null
   },
   {
-    "id": "abdominalpendulum",
+    "id": "abdominal-pendulum",
     "name": "Abdominal Pendulum",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -348,7 +348,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/abdominal-pendulum.html"
   },
   {
-    "id": "abominalhipthrust",
+    "id": "abominal-hip-thrust",
     "name": "Abominal Hip Thrust",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -368,7 +368,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/hip-thrusts.html"
   },
   {
-    "id": "adductorfoamrolling",
+    "id": "adductor-foam-rolling",
     "name": "Adductor Foam Rolling",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -495,7 +495,7 @@
     "videoUrl": null
   },
   {
-    "id": "alternatestraightleglower",
+    "id": "alternate-straight-leg-lower",
     "name": "Alternate Straight Leg Lower",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -28282,7 +28282,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/seated-high-cable-row.html"
   },
   {
-    "id": "seatedkneetucks",
+    "id": "seated-knee-tucks",
     "name": "Seated Knee Tucks",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -28321,7 +28321,7 @@
     "videoUrl": null
   },
   {
-    "id": "seatedlegcurl",
+    "id": "seated-leg-curl",
     "name": "Seated Leg Curl",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -28404,7 +28404,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/seated-low-pulley-overhead-tricep-extension-(rope-extension).html"
   },
   {
-    "id": "seatedneutralgripdumbbellwristcurl",
+    "id": "seated-neutral-grip-dumbbell-wrist-curl",
     "name": "Seated Neutral Grip Dumbbell Wrist Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -28550,7 +28550,7 @@
     "videoUrl": null
   },
   {
-    "id": "seatedreversegripcablewristcurl",
+    "id": "seated-reverse-grip-cable-wrist-curl",
     "name": "Seated Reverse Grip Cable Wrist Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -28574,7 +28574,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-grip-seated-cable-wrist-curl.html"
   },
   {
-    "id": "seatedreversegripdumbbellwristcurl",
+    "id": "seated-reverse-grip-dumbbell-wrist-curl",
     "name": "Seated Reverse Grip Dumbbell Wrist Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -28710,7 +28710,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/seated-vertical-jump"
   },
   {
-    "id": "seatedzottmancurl",
+    "id": "seated-zottman-curl",
     "name": "Seated Zottman Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -28754,7 +28754,7 @@
     "videoUrl": null
   },
   {
-    "id": "shotgunrow",
+    "id": "shotgun-row",
     "name": "Shotgun Row",
     "bodyPart": "Back",
     "targetMuscles": [
@@ -28853,7 +28853,7 @@
     "videoUrl": null
   },
   {
-    "id": "shouldertaps",
+    "id": "shoulder-taps",
     "name": "Shoulder Taps",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -28909,7 +28909,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/side-crunch.html"
   },
   {
-    "id": "sidecrunchwithleglift",
+    "id": "side-crunch-with-leg-lift",
     "name": "Side Crunch With Leg Lift",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -28985,7 +28985,7 @@
     "videoUrl": null
   },
   {
-    "id": "sidelyingclam",
+    "id": "side-lying-clam",
     "name": "Side Lying Clam",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -29040,7 +29040,7 @@
     "videoUrl": null
   },
   {
-    "id": "sideplank",
+    "id": "side-plank",
     "name": "Side Plank",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -29213,7 +29213,7 @@
     "videoUrl": null
   },
   {
-    "id": "singlelegbarbellromaniandeadlift",
+    "id": "single-leg-barbell-romanian-deadlift",
     "name": "Single Leg Barbell Romanian Deadlift",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -29263,7 +29263,7 @@
     "videoUrl": null
   },
   {
-    "id": "singlelegcurl",
+    "id": "single-leg-curl",
     "name": "Single Leg Curl",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -29329,7 +29329,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-extension.html"
   },
   {
-    "id": "singlelegglutebridge",
+    "id": "single-leg-glute-bridge",
     "name": "Single Leg Glute Bridge",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -29350,7 +29350,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-glute-bridge"
   },
   {
-    "id": "singleleggoodmorning",
+    "id": "single-leg-good-morning",
     "name": "Single Leg Good Morning",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -29376,7 +29376,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-good-morning"
   },
   {
-    "id": "singleleghipthrust",
+    "id": "single-leg-hip-thrust",
     "name": "Single Leg Hip Thrust",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -29397,7 +29397,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-hip-thrust"
   },
   {
-    "id": "singleleghipthrustwithdumbbell",
+    "id": "single-leg-hip-thrust-with-dumbbell",
     "name": "Single Leg Hip Thrust with Dumbbell",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -29444,7 +29444,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-hop"
   },
   {
-    "id": "singleleglandmineromaniandeadlift",
+    "id": "single-leg-landmine-romanian-deadlift",
     "name": "Single Leg Landmine Romanian Deadlift",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -29472,7 +29472,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-landmine-romanian-deadlift"
   },
   {
-    "id": "singlelegmedicineballchestpasswalltap",
+    "id": "single-leg-medicine-ball-chest-pass-wall-tap",
     "name": "Single Leg Medicine Ball Chest Pass Wall Tap",
     "bodyPart": "Chest",
     "targetMuscles": [
@@ -29498,7 +29498,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-medicine-ball-chest-pass-wall-tap"
   },
   {
-    "id": "singlelegonedumbbelldeadlift",
+    "id": "single-leg-one-dumbbell-deadlift",
     "name": "Single Leg One Dumbbell Deadlift",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -29525,7 +29525,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/single-leg-one-dumbbell-deadlift"
   },
   {
-    "id": "singlelegoverheadmedicineballtap",
+    "id": "single-leg-overhead-medicine-ball-tap",
     "name": "Single Leg Overhead Medicine Ball Tap",
     "bodyPart": "Back",
     "targetMuscles": [
@@ -29625,7 +29625,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/one-leg-bodyweight-wall-squat.html"
   },
   {
-    "id": "singlepausechinup",
+    "id": "single-pause-chin-up",
     "name": "Single Pause Chin Up",
     "bodyPart": "Back",
     "targetMuscles": [
@@ -29648,7 +29648,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/single-pause-chin-up"
   },
   {
-    "id": "singlepausepullup",
+    "id": "single-pause-pull-up",
     "name": "Single Pause Pull Up",
     "bodyPart": "Back",
     "targetMuscles": [
@@ -29959,7 +29959,7 @@
     "videoUrl": null
   },
   {
-    "id": "skinthecat",
+    "id": "skin-the-cat",
     "name": "Skin the Cat",
     "bodyPart": "Back",
     "targetMuscles": [
@@ -29985,7 +29985,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/skin-the-cat"
   },
   {
-    "id": "skippingjumprope",
+    "id": "skipping-jump-rope",
     "name": "Skipping Jump Rope",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -30069,7 +30069,7 @@
     "videoUrl": null
   },
   {
-    "id": "sledpullthrough",
+    "id": "sled-pull-through",
     "name": "Sled Pull Through",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -30395,7 +30395,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/smith-machine-one-leg-squat.html"
   },
   {
-    "id": "smithmachinecalfraise",
+    "id": "smith-machine-calf-raise",
     "name": "Smith Machine Calf Raise",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -30954,7 +30954,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/feet-forward-smith-machine-squat.html"
   },
   {
-    "id": "smithmachinestifflegdeadlift",
+    "id": "smith-machine-stiff-leg-deadlift",
     "name": "Smith Machine Stiff Leg Deadlift",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -31250,7 +31250,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/snatch-grip-barbell-shrug"
   },
   {
-    "id": "snatchgripdeadlift",
+    "id": "snatch-grip-deadlift",
     "name": "Snatch Grip Deadlift",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -31481,7 +31481,7 @@
     "videoUrl": null
   },
   {
-    "id": "spidercurl",
+    "id": "spider-curl",
     "name": "Spider Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -31834,7 +31834,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/split-stance-cable-lift"
   },
   {
-    "id": "splitstancepallofpress",
+    "id": "split-stance-pallof-press",
     "name": "Split Stance Pallof Press",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -32033,7 +32033,7 @@
     "videoUrl": null
   },
   {
-    "id": "squattingcablecurl",
+    "id": "squatting-cable-curl",
     "name": "Squatting Cable Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -32097,7 +32097,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingbarbellcalfraise",
+    "id": "standing-barbell-calf-raise",
     "name": "Standing Barbell Calf Raise",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -32118,7 +32118,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-calf-raise.html"
   },
   {
-    "id": "standingbarbellcalfraiseonfloor",
+    "id": "standing-barbell-calf-raise-on-floor",
     "name": "Standing Barbell Calf Raise (On Floor)",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -32137,7 +32137,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/floor-barbell-calf-raise.html"
   },
   {
-    "id": "standingbarbellcurl",
+    "id": "standing-barbell-curl",
     "name": "Standing Barbell Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -32179,7 +32179,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingbarbelltwist",
+    "id": "standing-barbell-twist",
     "name": "Standing Barbell Twist",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -32325,7 +32325,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingcablecrunch",
+    "id": "standing-cable-crunch",
     "name": "Standing Cable Crunch",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -32347,7 +32347,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-cable-crunch.html"
   },
   {
-    "id": "standingcablefly",
+    "id": "standing-cable-fly",
     "name": "Standing Cable Fly",
     "bodyPart": "Chest",
     "targetMuscles": [
@@ -32371,7 +32371,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/cable-crossovers-%28mid-chest%29.html"
   },
   {
-    "id": "standingcablehamstringcurl",
+    "id": "standing-cable-hamstring-curl",
     "name": "Standing Cable Hamstring Curl",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -32506,7 +32506,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingdumbbellcurl",
+    "id": "standing-dumbbell-curl",
     "name": "Standing Dumbbell Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -32527,7 +32527,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-dumbbell-curl.html"
   },
   {
-    "id": "standingdumbbelldragcurl",
+    "id": "standing-dumbbell-drag-curl",
     "name": "Standing Dumbbell Drag Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -32549,7 +32549,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-dumbbell-drag-curl"
   },
   {
-    "id": "standingdumbbellreversecurl",
+    "id": "standing-dumbbell-reverse-curl",
     "name": "Standing Dumbbell Reverse Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -32672,7 +32672,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingexternalrotation",
+    "id": "standing-external-rotation",
     "name": "Standing External Rotation",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -32733,7 +32733,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingglutekickbackmachine",
+    "id": "standing-glute-kickback-machine",
     "name": "Standing Glute Kickback Machine",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -32758,7 +32758,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-glute-kickback.html"
   },
   {
-    "id": "standinghammercurl",
+    "id": "standing-hammer-curl",
     "name": "Standing Hammer Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -32798,7 +32798,7 @@
     "videoUrl": null
   },
   {
-    "id": "standinghighpulleycablecurl",
+    "id": "standing-high-pulley-cable-curl",
     "name": "Standing High Pulley Cable Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -32818,7 +32818,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-high-pulley-cable-curl.html"
   },
   {
-    "id": "standinghightolowcablefly",
+    "id": "standing-high-to-low-cable-fly",
     "name": "Standing High to Low Cable Fly",
     "bodyPart": "Chest",
     "targetMuscles": [
@@ -32863,7 +32863,7 @@
     "videoUrl": null
   },
   {
-    "id": "standinghipflexionw-bands",
+    "id": "standing-hip-flexion-w-bands",
     "name": "Standing Hip Flexion w/ Bands",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -33026,7 +33026,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-low-pulley-overhead-tricep-extension-(rope-extension).html"
   },
   {
-    "id": "standinglowtohighcablefly",
+    "id": "standing-low-to-high-cable-fly",
     "name": "Standing Low to High Cable Fly",
     "bodyPart": "Chest",
     "targetMuscles": [
@@ -33096,7 +33096,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingmachinecalfraise",
+    "id": "standing-machine-calf-raise",
     "name": "Standing Machine Calf Raise",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -33117,7 +33117,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-machine-calf-raise"
   },
   {
-    "id": "standingmedicineballchestthrow",
+    "id": "standing-medicine-ball-chest-throw",
     "name": "Standing Medicine Ball Chest Throw",
     "bodyPart": "Chest",
     "targetMuscles": [
@@ -33249,7 +33249,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingone-legcalfraisewithdumbbell",
+    "id": "standing-one-leg-calf-raise-with-dumbbell",
     "name": "Standing One-Leg Calf Raise With Dumbbell",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -33314,7 +33314,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-overhead-ez-bar-tricep-extension"
   },
   {
-    "id": "standingoverheadmedicineballslam",
+    "id": "standing-overhead-medicine-ball-slam",
     "name": "Standing Overhead Medicine Ball Slam",
     "bodyPart": "Back",
     "targetMuscles": [
@@ -33337,7 +33337,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-overhead-medicine-ball-slam"
   },
   {
-    "id": "standingoverheadmedicineballthrow",
+    "id": "standing-overhead-medicine-ball-throw",
     "name": "Standing Overhead Medicine Ball Throw",
     "bodyPart": "Back",
     "targetMuscles": [
@@ -33446,7 +33446,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingpush-pull",
+    "id": "standing-push-pull",
     "name": "Standing Push-Pull",
     "bodyPart": "Core",
     "targetMuscles": [
@@ -33466,7 +33466,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-push-pull"
   },
   {
-    "id": "standingpvcpecmobilization",
+    "id": "standing-pvc-pec-mobilization",
     "name": "Standing PVC Pec Mobilization",
     "bodyPart": "Chest",
     "targetMuscles": [
@@ -33488,7 +33488,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-pvc-pec-mobilization"
   },
   {
-    "id": "standingreversegripcablecurl",
+    "id": "standing-reverse-grip-cable-curl",
     "name": "Standing Reverse Grip Cable Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -33532,7 +33532,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingsmithmachinewristcurlbehindback",
+    "id": "standing-smith-machine-wrist-curl-(behind-back)",
     "name": "Standing Smith Machine Wrist Curl (behind back)",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -33571,7 +33571,7 @@
     "videoUrl": null
   },
   {
-    "id": "standingstomachvacuum",
+    "id": "standing-stomach-vacuum",
     "name": "Standing Stomach Vacuum",
     "bodyPart": "Core",
     "targetMuscles": [
