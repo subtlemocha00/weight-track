@@ -1024,7 +1024,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/alternating-reach-push-up"
   },
   {
-    "id": "alternatingseateddumbbellcurl",
+    "id": "alternating-seated-dumbbell-curl",
     "name": "Alternating Seated Dumbbell Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -2798,6 +2798,29 @@
     "difficulty": "Intermediate",
     "isBodyweight": false,
     "videoUrl": "https://www.muscleandstrength.com/exercises/narrow-squat.html"
+  },
+  {
+    "id": "barbell-overhead-raise",
+    "name": "Barbell Overhead Raise",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Abs",
+      "Traps"
+    ],
+    "equipment": "Barbell",
+    "instructions": [
+      "Select the desired weight and load it onto a barbell.",
+      "Assume a shoulder width stance and grasp the bar at shoulder width with a pronated grip.",
+      "Inhale, brace your abs, and raise the arms vertically while keeping the elbows nearly locked out.",
+      "Once the arms are raised completely overhead, slowly lower the bar back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/high-barbell-front-raise.html"
   },
   {
     "id": "barbell-preacher-curl",
@@ -9823,6 +9846,30 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-high-low-carry"
   },
   {
+    "id": "dumbbell-reverse-fly-incline-bench",
+    "name": "Dumbbell Incline Rear Delt Fly",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Set up for the exercise by setting an adjustable back bench to an angle of around 30-40 degrees.",
+      "Grab a set of dumbbells and position yourself with your chest on the back of the bench (prone position).",
+      "Plant your feet on the floor for stability and hold the dumbbells with a neutral grip.",
+      "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the recommended number of repetitions."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-reverse-fly-on-incline-bench.html"
+  },
+  {
     "id": "dumbbell-incline-row",
     "name": "Dumbbell Incline Row",
     "bodyPart": "Back",
@@ -9869,6 +9916,25 @@
     "videoUrl": null
   },
   {
+    "id": "dumbbell-lat-raise",
+    "name": "Dumbbell Lat Raise",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Pick a couple of dumbbells and stand with a straight torso and the dumbbells by your side at arms length with the palms of the hand facing you. This will be your starting position.",
+      "While maintaining the torso in a stationary position (no swinging), lift the dumbbells to your side with a slight bend on the elbow and the hands slightly tilted forward as if pouring water in a glass. Continue to go up until you arms are parallel to the floor. Exhale as you execute this movement and pause for a second at the top.",
+      "Lower the dumbbells back down slowly to the starting position as you inhale.",
+      "Repeat for the recommended amount of repetitions."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-lateral-raise.html"
+  },
+  {
     "id": "dumbbell-side-lunge",
     "name": "Dumbbell Lateral Lunge",
     "bodyPart": "Legs",
@@ -9892,25 +9958,6 @@
     "difficulty": "Beginner",
     "isBodyweight": false,
     "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-side-lunge.html"
-  },
-  {
-    "id": "dumbbell-lateral-raise",
-    "name": "Dumbbell Lateral Raise",
-    "bodyPart": "Shoulders",
-    "targetMuscles": [
-      "Shoulders"
-    ],
-    "secondaryMuscles": [],
-    "equipment": "Dumbbell",
-    "instructions": [
-      "Pick a couple of dumbbells and stand with a straight torso and the dumbbells by your side at arms length with the palms of the hand facing you. This will be your starting position.",
-      "While maintaining the torso in a stationary position (no swinging), lift the dumbbells to your side with a slight bend on the elbow and the hands slightly tilted forward as if pouring water in a glass. Continue to go up until you arms are parallel to the floor. Exhale as you execute this movement and pause for a second at the top.",
-      "Lower the dumbbells back down slowly to the starting position as you inhale.",
-      "Repeat for the recommended amount of repetitions."
-    ],
-    "difficulty": "Beginner",
-    "isBodyweight": false,
-    "videoUrl": null
   },
   {
     "id": "dumbbell-lunge",
@@ -10204,27 +10251,6 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-pullover.html"
   },
   {
-    "id": "dumbbell-raise",
-    "name": "Dumbbell Raise",
-    "bodyPart": "Shoulders",
-    "targetMuscles": [
-      "Shoulders"
-    ],
-    "secondaryMuscles": [
-      "Biceps"
-    ],
-    "equipment": "Dumbbell",
-    "instructions": [
-      "Grab a dumbbell in each arm and stand up straight with your arms extended by your sides with a slight bend at the elbows and your back straight. This will be your starting position. Tip: The dumbbell should be next to your thighs with the palm of your hands facing back.",
-      "Use your side shoulders to lift the dumbbells as you exhale. The dumbbells should be to the side of the body as you move them up. Continue to lift it until the dumbbells are nearly in line with your chin. Tip: Your elbows should drive the motion. As you lift the dumbbell, your elbow should always be higher than your forearm. Also, keep your torso stationary and pause for a second at the top of the movement.",
-      "Lower the dumbbells back down slowly to the starting position. Inhale as you perform this portion of the movement.",
-      "Repeat for the recommended amount of repetitions."
-    ],
-    "difficulty": "Beginner",
-    "isBodyweight": false,
-    "videoUrl": null
-  },
-  {
     "id": "dumbbell-rear-lunge",
     "name": "Dumbbell Rear Lunge",
     "bodyPart": "Legs",
@@ -10247,6 +10273,29 @@
     "difficulty": "Intermediate",
     "isBodyweight": false,
     "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-rear-lunge.html"
+  },
+  {
+    "id": "dumbbell-reverse-fly",
+    "name": "Dumbbell Reverse Fly",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Select the desired weight from the rack then take a few steps back into an open area.",
+      "Hinge from the hips until your body is almost parallel to the floor and allow the arms to hang straight down from the shoulders with a neutral grip.",
+      "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the recommended nuber of repetitions."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/bent-over-dumbbell-reverse-fly.html"
   },
   {
     "id": "dumbbell-scaption",
@@ -12434,25 +12483,6 @@
     "videoUrl": null
   },
   {
-    "id": "front-dumbbell-raise",
-    "name": "Front Dumbbell Raise",
-    "bodyPart": "Shoulders",
-    "targetMuscles": [
-      "Shoulders"
-    ],
-    "secondaryMuscles": [],
-    "equipment": "Dumbbell",
-    "instructions": [
-      "Pick a couple of dumbbells and stand with a straight torso and the dumbbells on front of your thighs at arms length with the palms of the hand facing your thighs. This will be your starting position.",
-      "While maintaining the torso stationary (no swinging), lift the left dumbbell to the front with a slight bend on the elbow and the palms of the hands always facing down. Continue to go up until you arm is slightly above parallel to the floor. Exhale as you execute this portion of the movement and pause for a second at the top. Inhale after the second pause.",
-      "Now lower the dumbbell back down slowly to the starting position as you simultaneously lift the right dumbbell.",
-      "Continue alternating in this fashion until all of the recommended amount of repetitions have been performed for each arm."
-    ],
-    "difficulty": "Beginner",
-    "isBodyweight": false,
-    "videoUrl": null
-  },
-  {
     "id": "front-foot-elevated-dumbbell-split-squat",
     "name": "Front Foot Elevated Dumbbell Split Squat",
     "bodyPart": "Legs",
@@ -12682,25 +12712,6 @@
     "difficulty": "Beginner",
     "isBodyweight": false,
     "videoUrl": "https://www.muscleandstrength.com/exercises/front-to-back-jump-rope"
-  },
-  {
-    "id": "front-two-dumbbell-raise",
-    "name": "Front Two-Dumbbell Raise",
-    "bodyPart": "Shoulders",
-    "targetMuscles": [
-      "Shoulders"
-    ],
-    "secondaryMuscles": [],
-    "equipment": "Dumbbell",
-    "instructions": [
-      "Pick a couple of dumbbells and stand with a straight torso and the dumbbells on front of your thighs at arms length with the palms of the hand facing your thighs. This will be your starting position.",
-      "While maintaining the torso stationary (no swinging), lift the dumbbells to the front with a slight bend on the elbow and the palms of the hands always facing down. Continue to go up until you arms are slightly above parallel to the floor. Exhale as you execute this portion of the movement and pause for a second at the top.",
-      "As you inhale, lower the dumbbells back down slowly to the starting position.",
-      "Repeat for the recommended amount of repetitions."
-    ],
-    "difficulty": "Beginner",
-    "isBodyweight": false,
-    "videoUrl": null
   },
   {
     "id": "full-range-of-motion-lat-pulldown",
@@ -18754,6 +18765,28 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/lying-single-dumbbell-extension.html"
   },
   {
+    "id": "lying-dumbbell-raise",
+    "name": "Lying Dumbbell Raise",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Back (Upper)"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Assume a prone position on an incline bench with your legs and arms straight",
+      "Choose a pair of dumbbells with a pronated grip.",
+      "Inhale and raise the arms vertically while keeping the elbows slightly bent.",
+      "Once the arms are parallel with the floor, exhale and slowly lower the dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-front-raise-on-incline-bench.html"
+  },
+  {
     "id": "lying-face-down-plate-neck-resistance",
     "name": "Lying Face Down Plate Neck Resistance",
     "bodyPart": "Neck",
@@ -19383,6 +19416,28 @@
     "difficulty": "Beginner",
     "isBodyweight": false,
     "videoUrl": null
+  },
+  {
+    "id": "machine-reverse-fly",
+    "name": "Machine Reverse Fly",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps"
+    ],
+    "equipment": "Machine",
+    "instructions": [
+      "Face the fly machine while seated with your chest against the pad and the handles positioned in front of your torso.",
+      "Reach forward and grasp each handle with a pronated or neutral grip.",
+      "Contract the rear delts while keeping the elbows bent and open the arms in a reverse fly motion.",
+      "Slowly lower the dumbbells back to the starting position under control.",
+      "Repeat for the recommended number of repetitions."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/machine-reverse-fly"
   },
   {
     "id": "machine-row",
@@ -21603,7 +21658,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-cable-row.html"
   },
   {
-    "id": "one-armseateddumbbellcurl",
+    "id": "one-arm-seated-dumbbell-curl",
     "name": "One Arm Seated Dumbbell Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -21646,6 +21701,25 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-dumbbell-extension.html"
   },
   {
+    "id": "one-arm-seated-dumbbell-raise",
+    "name": "One Arm Seated Dumbbell Raise",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell and sit on the end of a bench while maintaining a straight back. ",
+      "Inhale, brace your abs and raise your arm vertically while holding the dumbbell with a pronated grip. Keep a slight bend in your elbow.",
+      "Once your arm is parallel with the floor, slowly lower the dumbbell back to the starting position.",
+      "Repeat for the desired number of repetitions, and then repeat on the other arm."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-dumbbell-front-raise.html"
+  },
+  {
     "id": "one-arm-seated-dumbbell-kickback",
     "name": "One Arm Seated Dumbbell Kickback",
     "bodyPart": "Arms",
@@ -21669,7 +21743,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-seated-dumbbell-kickback.html"
   },
   {
-    "id": "one-armseateddumbbellwristcurl",
+    "id": "one-arm-seated-dumbbell-wrist-curl",
     "name": "One Arm Seated Dumbbell Wrist Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -21863,6 +21937,26 @@
     "difficulty": "Intermediate",
     "isBodyweight": false,
     "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-dumbbell-extension.html"
+  },
+  {
+    "id": "one-arm-standing-dumbbell-raise",
+    "name": "One Arm Standing Dumbbell Raise",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Grab a dumbbell with a pronated grip and assume a shoulder-width stance. This is the starting position.",
+      "Inhale, brace your core and raise your arm vertically while keeping a slight bend in your elbow.",
+      "Moving only at the shoulder, continue raising the dumbbell until your arm is just above parallel to the floor.",
+      "Pause for a brief moment at the top of the movement, and slowly lower the dumbbell back to the starting position.",
+      "Repeat for desired reps, and then repeat the movement with your other arm."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/one-arm-standing-dumbbell-front-raise.html"
   },
   {
     "id": "one-armstandinghammercurl",
@@ -22197,7 +22291,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/one-leg-seated-calf-raise.html"
   },
   {
-    "id": "one-legseateddumbbellcalfraise",
+    "id": "one-leg-seated-dumbbell-calf-raise",
     "name": "One-Leg Seated Dumbbell Calf Raise",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -25015,27 +25109,6 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/reverse-crunch-to-dead-bug"
   },
   {
-    "id": "reverse-flys",
-    "name": "Reverse Flys",
-    "bodyPart": "Shoulders",
-    "targetMuscles": [
-      "Shoulders"
-    ],
-    "secondaryMuscles": [],
-    "equipment": "Dumbbell",
-    "instructions": [
-      "To begin, lie down on an incline bench with the chest and stomach pressing against the incline. Have the dumbbells in each hand with the palms facing each other (neutral grip).",
-      "Extend the arms in front of you so that they are perpendicular to the angle of the bench. The legs should be stationary while applying pressure with the ball of your toes. This is the starting position.",
-      "Maintaining the slight bend of the elbows, move the weights out and away from each other (to the side) in an arc motion while exhaling. Tip: Try to squeeze your shoulder blades together to get the best results from this exercise.",
-      "The arms should be elevated until they are parallel to the floor.",
-      "Feel the contraction and slowly lower the weights back down to the starting position while inhaling.",
-      "Repeat for the recommended amount of repetitions."
-    ],
-    "difficulty": "Beginner",
-    "isBodyweight": false,
-    "videoUrl": null
-  },
-  {
     "id": "reverse-flys-with-external-rotation",
     "name": "Reverse Flys With External Rotation",
     "bodyPart": "Shoulders",
@@ -27246,6 +27319,30 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/barbell-wrist-curl.html"
   },
   {
+    "id": "seated-bent-over-dumbbell-reverse-fly",
+    "name": "Seated Bent Over Dumbbell Reverse Fly",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [
+      "Traps",
+      "Triceps"
+    ],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Secure a flat bench and select the desired weight from the rack.",
+      "Sit in an upright position and then hinge forward from the hips.",
+      "Allow the arms to hang straight down from the shoulders with a neutral grip and dumbbells behind your calves.",
+      "Take a deep breath and pull the dumbbells towards the ceiling using the rear deltoids.",
+      "After a one second contraction at the top, slowly lower the dumbbells back to the starting position.",
+      "Repeat for the recommended number of repetitions."
+    ],
+    "difficulty": "Intermediate",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-reverse-fly.html"
+  },
+  {
     "id": "seated-bent-over-one-arm-dumbbell-triceps-extension",
     "name": "Seated Bent-Over One Arm Dumbbell Triceps Extension",
     "bodyPart": "Arms",
@@ -27264,27 +27361,6 @@
       "Switch arms and repeat the exercise."
     ],
     "difficulty": "Beginner",
-    "isBodyweight": false,
-    "videoUrl": null
-  },
-  {
-    "id": "seated-bent-over-rear-delt-raise",
-    "name": "Seated Bent-Over Rear Delt Raise",
-    "bodyPart": "Shoulders",
-    "targetMuscles": [
-      "Shoulders"
-    ],
-    "secondaryMuscles": [],
-    "equipment": "Dumbbell",
-    "instructions": [
-      "Place a couple of dumbbells looking forward in front of a flat bench.",
-      "Sit on the end of the bench with your legs together and the dumbbells behind your calves.",
-      "Bend at the waist while keeping the back straight in order to pick up the dumbbells. The palms of your hands should be facing each other as you pick them. This will be your starting position.",
-      "Keeping your torso forward and stationary, and the arms slightly bent at the elbows, lift the dumbbells straight to the side until both arms are parallel to the floor. Exhale as you lift the weights. (Note: avoid swinging the torso or bringing the arms back as opposed to the side.)",
-      "After a one second contraction at the top, slowly lower the dumbbells back to the starting position.",
-      "Repeat for the recommended amount of repetitions."
-    ],
-    "difficulty": "Intermediate",
     "isBodyweight": false,
     "videoUrl": null
   },
@@ -27597,7 +27673,7 @@
     "videoUrl": null
   },
   {
-    "id": "seateddumbbellcalfraise",
+    "id": "seated-dumbbell-calf-raise",
     "name": "Seated Dumbbell Calf Raise",
     "bodyPart": "Legs",
     "targetMuscles": [
@@ -27619,7 +27695,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-calf-raise.html"
   },
   {
-    "id": "seateddumbbellcurl",
+    "id": "seated-dumbbell-curl",
     "name": "Seated Dumbbell Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -27639,6 +27715,25 @@
     "difficulty": "Beginner",
     "isBodyweight": false,
     "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-curl.html"
+  },
+  {
+    "id": "seated-dumbbell-raise",
+    "name": "Seated Dumbbell Raise",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Choose a pair of dumbbells with a pronated grip and assume a shoulder-width stance.",
+      "Inhale, brace your abs, and raise your arms vertically while holding the dumbbells with a pronated grip. Keep a slight bend in your elbow.",
+      "Once your arms are parallel with the floor, slowly lower the dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-front-raise.html"
   },
   {
     "id": "seated-dumbbell-inner-biceps-curl",
@@ -27706,30 +27801,32 @@
     "videoUrl": null
   },
   {
-    "id": "seated-dumbbell-press",
-    "name": "Seated Dumbbell Press",
+    "id": "seated-dumbbell-shoulder-press",
+    "name": "Seated Dumbbell Shoulder Press",
     "bodyPart": "Shoulders",
     "targetMuscles": [
       "Shoulders"
     ],
     "secondaryMuscles": [
-      "Triceps"
+      "Triceps",
+      "Traps"
     ],
     "equipment": "Dumbbell",
     "instructions": [
-      "Grab a couple of dumbbells and sit on a military press bench or a utility bench that has a back support on it as you place the dumbbells upright on top of your thighs.",
-      "Clean the dumbbells up one at a time by using your thighs to bring the dumbbells up to shoulder height at each side.",
-      "Rotate the wrists so that the palms of your hands are facing forward. This is your starting position.",
-      "As you exhale, push the dumbbells up until they touch at the top.",
-      "After a second pause, slowly come down back to the starting position as you inhale.",
-      "Repeat for the recommended amount of repetitions."
+      "Set up an adjustable angle bench to 90 degrees and select the desired weight from the rack.",
+      "Pick up the dumbbells from the floor using a neutral grip (palms facing in). Position the end of the dumbbells on your knees and sit down on the bench.",
+      "Using a safe and controlled motion, kick your knees up one at a time in order to get each dumbbell into place.",
+      "Once the dumbbells are in place, rotate your palms so they are facing forward.",
+      "Take a deep breath then press the dumbbells overhead by extending the elbows and contracting the deltoids.",
+      "Slowly lower the dumbbells back to the starting position (the arms should be roughly 90 degrees or slightly lower depending upon limb lengths).",
+      "Repeat for the recommended number of repetitions."
     ],
     "difficulty": "Beginner",
     "isBodyweight": false,
-    "videoUrl": null
+    "videoUrl": "https://www.muscleandstrength.com/exercises/seated-dumbbell-press.html"
   },
   {
-    "id": "seateddumbbellreversecurl",
+    "id": "seated-dumbbell-reverse-curl",
     "name": "Seated Dumbbell Reverse Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -27791,7 +27888,7 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/two-arm-dumbbell-extension.html"
   },
   {
-    "id": "seateddumbbellwristcurl",
+    "id": "seated-dumbbell-wrist-curl",
     "name": "Seated Dumbbell Wrist Curl",
     "bodyPart": "Arms",
     "targetMuscles": [
@@ -28967,27 +29064,6 @@
     "instructions": [
       "First lie on your left side, bending your left knee in front of you to stabilize your torso (use your abdominal muscles as well to hold you upright).",
       "Straighten your right leg and rest the right foot on the floor behind your left. Straighten your right arm over your head and gently pull on your right wrist to stretch the entire right side of the body. Switch sides."
-    ],
-    "difficulty": "Beginner",
-    "isBodyweight": false,
-    "videoUrl": null
-  },
-  {
-    "id": "single-dumbbell-raise",
-    "name": "Single Dumbbell Raise",
-    "bodyPart": "Shoulders",
-    "targetMuscles": [
-      "Shoulders"
-    ],
-    "secondaryMuscles": [
-      "Forearms",
-      "Traps"
-    ],
-    "equipment": "Dumbbell",
-    "instructions": [
-      "With a wide stance, hold a dumbell with both hands, grasping the head of the dumbbell instead of the handle. Your arms should be extended and hanging at the waist. This will be your starting position.",
-      "Raise the weight until it is above shoulder level, keeping your arms extended. Your torso and hips should remain stationary throughout the movement.",
-      "Return to the starting position and repeat for the recommended amount of repetitions."
     ],
     "difficulty": "Beginner",
     "isBodyweight": false,
@@ -32330,6 +32406,25 @@
     "videoUrl": "https://www.muscleandstrength.com/exercises/standing-dumbbell-drag-curl"
   },
   {
+    "id": "standing-dumbbell-raise",
+    "name": "Standing Dumbbell Raise",
+    "bodyPart": "Shoulders",
+    "targetMuscles": [
+      "Shoulders"
+    ],
+    "secondaryMuscles": [],
+    "equipment": "Dumbbell",
+    "instructions": [
+      "Choose a pair of dumbbells with a pronated grip and assume a shoulder-width stance.",
+      "Inhale, brace your abs and raise your arms vertically while keeping a slight bend in your elbow.",
+      "Once your arms are parallel with the floor, slowly lower the dumbbells back to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    "difficulty": "Beginner",
+    "isBodyweight": false,
+    "videoUrl": "https://www.muscleandstrength.com/exercises/dumbbell-front-raise.html"
+  },
+  {
     "id": "standing-dumbbell-reverse-curl",
     "name": "Standing Dumbbell Reverse Curl",
     "bodyPart": "Arms",
@@ -32370,7 +32465,7 @@
     ],
     "difficulty": "Beginner",
     "isBodyweight": false,
-    "videoUrl": null
+    "videoUrl": "https://www.muscleandstrength.com/exercises/standing-dumbbell-press.html"
   },
   {
     "id": "standing-dumbbell-straight-arm-front-delt-raise-above-head",
@@ -32940,7 +33035,7 @@
     ],
     "difficulty": "Beginner",
     "isBodyweight": false,
-    "videoUrl": null
+    "videoUrl": "https://www.muscleandstrength.com/exercises/military-press.html"
   },
   {
     "id": "standing-olympic-plate-hand-squeeze",
