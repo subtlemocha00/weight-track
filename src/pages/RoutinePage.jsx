@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { AppHeader } from '../components/AppHeader'
 import { getRoutine } from '../services/routines'
-import { RoutineEditor } from '../features/routines/RoutineEditor'
+import { RoutineWorkoutContainer } from '../features/routines/RoutineWorkoutContainer'
 import styles from './RoutinePage.module.css'
 
 export function RoutinePage() {
@@ -60,5 +60,7 @@ export function RoutinePage() {
     return <div className={styles.state}>Loading…</div>
   }
 
-  return <RoutineEditor mode="edit" initialRoutine={routine} />
+  // The container decides which mode the routine is shown in; the page keeps
+  // the route-level concerns (auth, loading, error, not-found) above it.
+  return <RoutineWorkoutContainer routine={routine} />
 }
