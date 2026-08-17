@@ -6,6 +6,10 @@ import { useConfirm } from '../../hooks/useConfirm'
 import { useCustomExercises } from '../../hooks/useCustomExercises'
 import { deleteRoutine, duplicateRoutine, saveRoutine } from '../../services/routines'
 import { resolveExerciseById } from '../../services/exercises'
+import {
+  hasActiveWorkout,
+  startRoutineWorkout
+} from '../workoutSessions/startRoutineWorkout'
 import { readRoutineDraft, writeRoutineDraft, clearRoutineDraft } from '../../utils/routineDraft'
 import { AppHeader } from '../../components/AppHeader'
 import { downloadRoutineExport } from './exportRoutine'
@@ -15,7 +19,12 @@ import { routineReducer } from './routineReducer'
 import { getSupersetCount } from '../../utils/supersets'
 import styles from './RoutineEditor.module.css'
 
-export function RoutineEditor({ initialRoutine, mode }) {
+/**
+ * @param onWorkoutStarted called once a workout has been created and is live in
+ *   the recovery copy, so the owner can switch the route into workout mode.
+ *   Omitted (e.g. by the new-routine page) means no Start action is offered.
+ */
+export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
   const { user } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
@@ -29,7 +38,12 @@ export function RoutineEditor({ initialRoutine, mode }) {
   const [saveState, setSaveState] = useState({ status: 'idle', message: '' })
   const [deleting, setDeleting] = useState(false)
   const [duplicating, setDuplicating] = useState(false)
+  const [starting, setStarting] = useState(false)
   const [isDirty, setIsDirty] = useState(false)
+  // Same rule the home screen applies: while any workout is unfinished, Start is
+  // blocked everywhere until it is resumed or discarded. Read once on mount, as
+  // the home screen does, and re-checked when Start is pressed.
+  const [workoutInProgress, setWorkoutInProgress] = useState(hasActiveWorkout)
   // Track whether this is the initial mount dispatch (LOAD after save)
   const suppressDirty = useRef(false)
 
@@ -37,6 +51,10 @@ export function RoutineEditor({ initialRoutine, mode }) {
   const isNew = mode === 'new'
   const canSave = routine.name.trim().length > 0 && saveState.status !== 'saving'
   const supersetCount = getSupersetCount(routine.exercises)
+  // Start is offered only for a routine that exists in Firestore and only when
+  // the owner can act on it (the new-routine page passes no handler).
+  const canStartWorkout = !isNew && typeof onWorkoutStarted === 'function'
+  const noExercises = routine.exercises.length === 0
 
   // Warn on browser close / refresh when there are unsaved changes
   useBeforeUnload(isDirty)
@@ -77,8 +95,11 @@ export function RoutineEditor({ initialRoutine, mode }) {
     []
   )
 
-  const handleSave = useCallback(async () => {
-    if (!user) return
+  // Persist the routine as currently edited. Returns the saved routine, or null
+  // when the write failed (the error is already surfaced in the status line).
+  // Shared by the Save button and by Start, which must not begin a workout from
+  // a routine state that isn't in Firestore.
+  const saveCurrentRoutine = useCallback(async () => {
     setSaveState({ status: 'saving', message: 'Saving…' })
     try {
       const saved = await saveRoutine(user.uid, {
@@ -90,16 +111,89 @@ export function RoutineEditor({ initialRoutine, mode }) {
       suppressDirty.current = false
       setIsDirty(false)
       setSaveState({ status: 'saved', message: 'Saved' })
-      if (isNew) {
-        navigate(`/routine/${saved.id}`, { replace: true })
-      }
+      return saved
     } catch (err) {
       setSaveState({
         status: 'error',
         message: err?.message || 'Save failed.'
       })
+      return null
     }
-  }, [user, routine, isNew, navigate])
+  }, [user, routine])
+
+  const handleSave = useCallback(async () => {
+    if (!user) return
+    const saved = await saveCurrentRoutine()
+    if (saved && isNew) {
+      navigate(`/routine/${saved.id}`, { replace: true })
+    }
+  }, [user, saveCurrentRoutine, isNew, navigate])
+
+  const handleStartWorkout = useCallback(async () => {
+    if (!user || isNew || starting || !onWorkoutStarted) return
+
+    // Re-check at press time: the mount-time read can be stale if the workout
+    // was finished or discarded in another tab.
+    if (hasActiveWorkout()) {
+      setWorkoutInProgress(true)
+      setSaveState({
+        status: 'error',
+        message: 'You already have an unfinished workout. Resume or discard it from the home screen first.'
+      })
+      return
+    }
+
+    // A workout snapshots the routine as stored, so unsaved edits have to be
+    // written first or the workout silently runs the older version — and the
+    // editor is about to unmount, taking those edits with it.
+    let source = routine
+    if (isDirty) {
+      const ok = await confirm({
+        title: 'Save changes first?',
+        message:
+          'This routine has unsaved changes. They need to be saved before the workout can start from them.',
+        confirmLabel: 'Save & start',
+        cancelLabel: 'Cancel'
+      })
+      if (!ok) return
+      const saved = await saveCurrentRoutine()
+      if (!saved) return
+      source = saved
+    }
+
+    setStarting(true)
+    try {
+      const session = await startRoutineWorkout(user.uid, source)
+      if (!session) {
+        // Something became active between the two checks — never clobber it.
+        setWorkoutInProgress(true)
+        setSaveState({
+          status: 'error',
+          message: 'You already have an unfinished workout. Resume or discard it from the home screen first.'
+        })
+        setStarting(false)
+        return
+      }
+      // The session is live in the recovery copy. Signal only — the owner
+      // resolves it from there, so there is a single path into workout mode.
+      onWorkoutStarted()
+    } catch (err) {
+      setSaveState({
+        status: 'error',
+        message: err?.message || 'Could not start the workout.'
+      })
+      setStarting(false)
+    }
+  }, [
+    user,
+    isNew,
+    starting,
+    onWorkoutStarted,
+    routine,
+    isDirty,
+    confirm,
+    saveCurrentRoutine
+  ])
 
   const handleDelete = useCallback(async () => {
     if (!user || isNew) return
@@ -208,6 +302,23 @@ export function RoutineEditor({ initialRoutine, mode }) {
   return (
     <div className={styles.editor}>
       <AppHeader onBack={handleBack}>
+        {canStartWorkout && (
+          <button
+            type="button"
+            className={styles.startWorkout}
+            onClick={handleStartWorkout}
+            disabled={starting || workoutInProgress || noExercises}
+            title={
+              workoutInProgress
+                ? 'Resume or discard your current workout first'
+                : noExercises
+                  ? 'Add exercises before starting'
+                  : 'Start workout'
+            }
+          >
+            {starting ? '…' : '▶ Start'}
+          </button>
+        )}
         {!isNew && (
           <button
             type="button"

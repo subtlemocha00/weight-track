@@ -61,6 +61,29 @@
   box-shadow: none;
 }
 
+/* Matches the home screen's Start button so the action reads the same in both
+ * places (see HomePage.module.css .start). */
+.startWorkout {
+  padding: 7px 13px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: var(--neon-green);
+  color: #07070f;
+  border: 1.5px solid var(--neon-green);
+  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+  box-shadow: 0 0 18px rgba(0, 255, 157, 0.33);
+  white-space: nowrap;
+  transition: all 0.08s;
+}
+
+.startWorkout:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
 .delete {
   padding: 7px 13px;
   font-size: 11px;

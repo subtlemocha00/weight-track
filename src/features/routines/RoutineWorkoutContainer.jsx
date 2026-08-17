@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { SessionEditor } from '../workoutSessions/SessionEditor'
 import { resolveActiveWorkoutForRoutine } from '../workoutSessions/resolveActiveWorkout'
@@ -56,11 +56,32 @@ export function RoutineWorkoutContainer({ routine }) {
     }
   }, [workoutRequested, routineId, setSearchParams])
 
+  // Called by the editor once a workout exists in the recovery copy. Only the
+  // flag is set here — the effect above still does the resolving, so there is
+  // one path into workout mode whether the workout was just started, resumed
+  // from a link, or recovered after a refresh.
+  const enterWorkoutMode = useCallback(() => {
+    setSearchParams(
+      (prev) => {
+        const next = new URLSearchParams(prev)
+        next.set('workout', '1')
+        return next
+      },
+      { replace: true }
+    )
+  }, [setSearchParams])
+
   const mode = workoutRequested && activeSession ? 'workout' : 'edit'
 
   if (mode === 'workout') {
     return <SessionEditor initialSession={activeSession} />
   }
 
-  return <RoutineEditor mode="edit" initialRoutine={routine} />
+  return (
+    <RoutineEditor
+      mode="edit"
+      initialRoutine={routine}
+      onWorkoutStarted={enterWorkoutMode}
+    />
+  )
 }
