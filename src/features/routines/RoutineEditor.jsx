@@ -3,9 +3,9 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { useConfirm } from '../../hooks/useConfirm'
+import { useCustomExercises } from '../../hooks/useCustomExercises'
 import { deleteRoutine, duplicateRoutine, saveRoutine } from '../../services/routines'
 import { resolveExerciseById } from '../../services/exercises'
-import { listCustomExercises } from '../../services/customExercises'
 import { readRoutineDraft, writeRoutineDraft, clearRoutineDraft } from '../../utils/routineDraft'
 import { AppHeader } from '../../components/AppHeader'
 import { downloadRoutineExport } from './exportRoutine'
@@ -23,8 +23,9 @@ export function RoutineEditor({ initialRoutine, mode }) {
   const [routine, dispatch] = useReducer(routineReducer, initialRoutine)
   // Loaded once so an exercise's instructions (which live on the exercise
   // database, not on the routine template) can be resolved for both built-in
-  // and custom exercises. Non-fatal if it fails — items just omit the panel.
-  const [customExercises, setCustomExercises] = useState([])
+  // and custom exercises, and so the add-exercise picker can search the user's
+  // custom library. Non-fatal if it fails — items just omit the panel.
+  const customExercises = useCustomExercises()
   const [saveState, setSaveState] = useState({ status: 'idle', message: '' })
   const [deleting, setDeleting] = useState(false)
   const [duplicating, setDuplicating] = useState(false)
@@ -64,21 +65,6 @@ export function RoutineEditor({ initialRoutine, mode }) {
     // abandoned swap must never rehydrate into an unrelated edit session later.
     clearRoutineDraft()
   }, [location.state, mode, initialRoutine.id])
-
-  useEffect(() => {
-    if (!user) return
-    let cancelled = false
-    listCustomExercises(user.uid)
-      .then((list) => {
-        if (!cancelled) setCustomExercises(list)
-      })
-      .catch(() => {
-        // Non-fatal: built-in exercises still resolve their instructions.
-      })
-    return () => {
-      cancelled = true
-    }
-  }, [user])
 
   const dirtyDispatch = useCallback(
     (action) => {
@@ -136,7 +122,7 @@ export function RoutineEditor({ initialRoutine, mode }) {
       })
       setDeleting(false)
     }
-  }, [user, isNew, routine.id, routine.name, navigate])
+  }, [user, isNew, routine.id, routine.name, navigate, confirm])
 
   const handleDuplicate = useCallback(async () => {
     if (!user || isNew || duplicating) return
@@ -281,7 +267,10 @@ export function RoutineEditor({ initialRoutine, mode }) {
         />
       </label>
 
-      <AddExercisePanel onAdd={handleAddExercise} />
+      <AddExercisePanel
+        onAdd={handleAddExercise}
+        customExercises={customExercises}
+      />
 
       {routine.exercises.length === 0 ? (
         <div className={styles.empty}>

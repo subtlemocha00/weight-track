@@ -2,9 +2,9 @@ import { useCallback, useEffect, useReducer, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
+import { useCustomExercises } from '../../hooks/useCustomExercises'
 import { saveSession } from '../../services/workoutSessions'
 import { getRoutine, saveRoutine } from '../../services/routines'
-import { listCustomExercises } from '../../services/customExercises'
 import { resolveExerciseById } from '../../services/exercises'
 import { applySessionToRoutine } from './applyToRoutine'
 import { sessionReducer } from './sessionReducer'
@@ -28,7 +28,7 @@ export function SessionEditor({ initialSession }) {
   // Loaded so the add-exercise picker can search the user's custom library in
   // addition to the built-in one. Non-fatal if it fails — the built-in library
   // still works.
-  const [customExercises, setCustomExercises] = useState([])
+  const customExercises = useCustomExercises()
 
   const isCompleted = session.status === 'completed'
   const isActive = !isCompleted && !finishing
@@ -39,21 +39,6 @@ export function SessionEditor({ initialSession }) {
   useEffect(() => {
     writeActiveWorkout(session)
   }, [session])
-
-  useEffect(() => {
-    if (!user) return
-    let cancelled = false
-    listCustomExercises(user.uid)
-      .then((list) => {
-        if (!cancelled) setCustomExercises(list)
-      })
-      .catch(() => {
-        // Non-fatal: built-in exercises remain searchable.
-      })
-    return () => {
-      cancelled = true
-    }
-  }, [user])
 
   // Warn on browser close / tab close / hard refresh while workout is active
   useBeforeUnload(isActive)
@@ -96,7 +81,7 @@ export function SessionEditor({ initialSession }) {
       setError(err?.message || 'Failed to finish workout. Try again — your progress is saved.')
       setFinishing(false)
     }
-  }, [user, isCompleted, session, navigate])
+  }, [user, isCompleted, session, navigate, confirm])
 
   const handleBack = useCallback(async () => {
     if (isActive) {

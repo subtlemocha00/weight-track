@@ -1,18 +1,5 @@
+import { parseFloatNum, parseInt10 } from '../../utils/number'
 import styles from './SetRow.module.css'
-
-function parseInt10(value) {
-  if (value === '' || value === null || value === undefined) return null
-  const n = Number(value)
-  if (!Number.isFinite(n)) return null
-  return Math.trunc(n)
-}
-
-function parseFloatNum(value) {
-  if (value === '' || value === null || value === undefined) return null
-  const n = Number(value)
-  if (!Number.isFinite(n)) return null
-  return n
-}
 
 export function SetRow({ set, index, onUpdate, onRemove }) {
   return (
