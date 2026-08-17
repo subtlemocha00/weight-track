@@ -1,41 +1,65 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import { SessionEditor } from '../workoutSessions/SessionEditor'
+import { resolveActiveWorkoutForRoutine } from '../workoutSessions/resolveActiveWorkout'
 import { RoutineEditor } from './RoutineEditor'
 
 /**
  * Owns which mode a saved routine is being viewed in.
  *
- * The consolidation gives `/routine/:id` two modes: editing the routine
- * template, and running a workout from it. This container is where that choice
- * will live, so the two editors stay separate components with separate state —
- * routine edits can never leak into a session, or the reverse.
+ * `/routine/:id` edits the routine template. `/routine/:id?workout=1` runs the
+ * routine's in-progress workout, but only when one actually exists: the flag
+ * asks for workout mode, and a live session belonging to *this* routine has to
+ * back it. Neither alone is enough, so a stale or copied link can never show
+ * another routine's workout.
  *
- * Phase C wires up the structure only. `activeSession` has no producer yet, so
- * `mode` is always 'edit' and the `?workout=1` flag has no effect: it is read
- * here purely so the URL contract exists in one place. Phase D adds the
- * resolution step (localStorage recovery copy, then Firestore) that can set
- * `activeSession` and make the workout branch reachable.
- *
- * The page above still owns loading/error/not-found — every page in this app
- * fetches its own data — so this stays a thin orchestration layer over an
- * already-loaded routine.
+ * The two editors stay separate components with separate state, so routine
+ * edits cannot leak into a session or the reverse. This container only decides
+ * which one to render — /workout/:sessionId remains a working second entry
+ * point into the same editor.
  */
 export function RoutineWorkoutContainer({ routine }) {
-  // Deliberately without a setter: nothing may populate a session in this phase.
-  const [activeSession] = useState(null)
-  const [searchParams] = useSearchParams()
-
-  // Both are required: the URL asks for workout mode, and a real in-progress
-  // session has to have been resolved to back it. Until Phase D supplies the
-  // second half, this cannot evaluate to 'workout'.
+  const [searchParams, setSearchParams] = useSearchParams()
   const workoutRequested = searchParams.get('workout') === '1'
+  const routineId = routine.id
+
+  // Resolution is a synchronous localStorage read (see resolveActiveWorkout),
+  // so it can seed state directly and workout mode renders on the first pass —
+  // no loading state, and no flash of edit mode over a live workout.
+  const [activeSession, setActiveSession] = useState(() =>
+    workoutRequested ? resolveActiveWorkoutForRoutine(routineId) : null
+  )
+
+  // Re-resolve when the flag or the routine changes. Navigating between two
+  // routines reuses this component, so without this a workout resolved for the
+  // previous routine would linger. No async work is involved, so there is no
+  // pending result to cancel.
+  useEffect(() => {
+    const resolved = workoutRequested
+      ? resolveActiveWorkoutForRoutine(routineId)
+      : null
+    setActiveSession(resolved)
+
+    // The flag asked for a workout that isn't there — a stale link, a finished
+    // session, or another routine's workout. Drop quietly to edit mode and tidy
+    // the URL in place, rather than reporting an error for a bad bookmark.
+    // Only ever reached once resolution has already failed.
+    if (workoutRequested && !resolved) {
+      setSearchParams(
+        (prev) => {
+          const next = new URLSearchParams(prev)
+          next.delete('workout')
+          return next
+        },
+        { replace: true }
+      )
+    }
+  }, [workoutRequested, routineId, setSearchParams])
+
   const mode = workoutRequested && activeSession ? 'workout' : 'edit'
 
   if (mode === 'workout') {
-    // Unreachable in this phase. Phase D renders SessionEditor here; failing
-    // closed to edit mode would silently discard a live workout, so the branch
-    // is left explicit rather than folded into the return below.
-    return null
+    return <SessionEditor initialSession={activeSession} />
   }
 
   return <RoutineEditor mode="edit" initialRoutine={routine} />
