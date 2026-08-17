@@ -3,16 +3,17 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
 import { useCustomExercises } from '../../hooks/useCustomExercises'
-import { saveSession } from '../../services/workoutSessions'
-import { getRoutine, saveRoutine } from '../../services/routines'
 import { resolveExerciseById } from '../../services/exercises'
-import { applySessionToRoutine } from './applyToRoutine'
+import {
+  applyFinishedSessionToRoutine,
+  persistFinishedSession
+} from './finishWorkout'
 import { sessionReducer } from './sessionReducer'
 import { SessionExerciseItem } from './SessionExerciseItem'
 import { AddExercisePanel } from '../routines/AddExercisePanel'
 import { getSupersetCount } from '../../utils/supersets'
 import { ElapsedTime } from './ElapsedTime'
-import { writeActiveWorkout, clearActiveWorkout } from '../../utils/activeWorkout'
+import { writeActiveWorkout } from '../../utils/activeWorkout'
 import { useConfirm } from '../../hooks/useConfirm'
 import { AppHeader } from '../../components/AppHeader'
 import styles from './SessionEditor.module.css'
@@ -44,23 +45,30 @@ export function SessionEditor({ initialSession }) {
   useBeforeUnload(isActive)
 
   const handleFinish = useCallback(async () => {
-    if (!user || isCompleted) return
+    if (!user || isCompleted || finishing) return
     setError(null)
     setFinishing(true)
 
-    const completedAt = Date.now()
-    const finalized = {
-      ...session,
-      status: 'completed',
-      completedAt
+    // Save first. Until Firestore acknowledges the write, nothing here marks the
+    // workout completed and nothing clears the local recovery copy.
+    let finalized
+    try {
+      finalized = await persistFinishedSession(user.uid, session)
+    } catch {
+      // Nothing changed: the session is still in progress, wt-active-workout is
+      // intact, and the Finish button re-enables so the user can retry. Retrying
+      // rewrites the same document id rather than creating a second one.
+      setError(
+        'Could not save your workout. Your progress has been kept — check your connection and try again.'
+      )
+      setFinishing(false)
+      return
     }
-    dispatch({ type: 'FINISH', completedAt })
+
+    // Persisted — only now is it safe to complete the local state.
+    dispatch({ type: 'FINISH', completedAt: finalized.completedAt })
 
     try {
-      await saveSession(user.uid, finalized)
-      // Workout is safely persisted — clear the local recovery state
-      clearActiveWorkout()
-
       const confirmed = await confirm({
         title: 'Update routine?',
         message: 'Apply the changes made during this workout back to the original routine?',
@@ -69,19 +77,18 @@ export function SessionEditor({ initialSession }) {
       })
 
       if (confirmed) {
-        const sourceRoutine = await getRoutine(user.uid, finalized.routineId)
-        if (sourceRoutine) {
-          const updatedRoutine = applySessionToRoutine(sourceRoutine, finalized)
-          await saveRoutine(user.uid, updatedRoutine)
-        }
+        await applyFinishedSessionToRoutine(user.uid, finalized)
       }
-
-      navigate('/home', { replace: true })
-    } catch (err) {
-      setError(err?.message || 'Failed to finish workout. Try again — your progress is saved.')
+    } catch {
+      // The workout itself is saved; only the optional routine update failed, so
+      // say exactly that and stay put rather than reporting a lost workout.
+      setError('Your workout was saved, but the routine could not be updated.')
       setFinishing(false)
+      return
     }
-  }, [user, isCompleted, session, navigate, confirm])
+
+    navigate('/home', { replace: true })
+  }, [user, isCompleted, finishing, session, navigate, confirm])
 
   const handleBack = useCallback(async () => {
     if (isActive) {
