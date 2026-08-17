@@ -56,18 +56,6 @@
   text-shadow: 0 0 10px var(--neon-green);
 }
 
-.setCount {
-  font-size: 10px;
-  font-family: 'Space Mono', monospace;
-  font-weight: 700;
-  color: var(--t2);
-  transition: color 0.2s;
-}
-
-.setCountDone {
-  color: var(--neon-green) !important;
-}
-
 .iconButton {
   width: 34px;
   height: 34px;
@@ -91,20 +79,6 @@
 .remove {
   color: var(--neon-pink);
   border-color: rgba(255, 45, 120, 0.4);
-}
-
-.superset {
-  align-self: flex-start;
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--ss-color, var(--t2));
-  padding: 2px 7px;
-  background: color-mix(in srgb, var(--ss-color) 14%, transparent);
-  border: 1px solid var(--ss-color, var(--border));
-  clip-path: polygon(0 0, calc(100% - 3px) 0, 100% 3px, 100% 100%, 3px 100%, 0 calc(100% - 3px));
-  white-space: nowrap;
 }
 
 .body {

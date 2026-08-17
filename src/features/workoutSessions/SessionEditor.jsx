@@ -1,4 +1,4 @@
-import { Fragment, useCallback, useEffect, useReducer, useState } from 'react'
+import { useCallback, useEffect, useReducer, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
 import { useBeforeUnload } from '../../hooks/useBeforeUnload'
@@ -10,7 +10,7 @@ import { applySessionToRoutine } from './applyToRoutine'
 import { sessionReducer } from './sessionReducer'
 import { SessionExerciseItem } from './SessionExerciseItem'
 import { AddExercisePanel } from '../routines/AddExercisePanel'
-import { getSupersetCount, supersetColor, supersetLabel } from '../../utils/supersets'
+import { getSupersetCount } from '../../utils/supersets'
 import { ElapsedTime } from './ElapsedTime'
 import { writeActiveWorkout, clearActiveWorkout } from '../../utils/activeWorkout'
 import { useConfirm } from '../../hooks/useConfirm'
@@ -208,26 +208,11 @@ export function SessionEditor({ initialSession }) {
       ) : (
         <div className={styles.exercises}>
           {session.exercises.map((exercise, index) => {
-            // Render a superset group banner whenever a run of exercises sharing
-            // a superset begins (id differs from the previous card's). Keeps
-            // grouping obvious without reordering or a layout redesign.
-            const prev = session.exercises[index - 1]
-            const ssId = exercise.supersetId ?? null
-            const showGroupHeader = ssId !== null && ssId !== (prev?.supersetId ?? null)
-            const groupColor = supersetColor(ssId)
             const resolved = resolveExerciseById(exercise.exerciseId, customExercises)
 
             return (
-            <Fragment key={exercise.exerciseId + '-' + index}>
-              {showGroupHeader && (
-                <div
-                  className={styles.supersetBanner}
-                  style={{ '--ss-color': groupColor }}
-                >
-                  {supersetLabel(ssId)}
-                </div>
-              )}
             <SessionExerciseItem
+              key={`${exercise.exerciseId}-${index}`}
               exercise={exercise}
               index={index}
               isFirst={index === 0}
@@ -264,7 +249,6 @@ export function SessionEditor({ initialSession }) {
                 dispatch({ type: 'SET_EXERCISE_UNIT', index, unit })
               }
             />
-            </Fragment>
             )
           })}
         </div>

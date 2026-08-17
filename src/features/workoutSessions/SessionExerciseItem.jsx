@@ -5,7 +5,7 @@ import { RestTimer } from './RestTimer'
 import { SupersetControl } from '../../components/SupersetControl'
 import { WatchVideoButton } from '../exercises/WatchVideoButton'
 import { isSafeVideoUrl } from '../../services/exercises'
-import { supersetColor, supersetLabel } from '../../utils/supersets'
+import { supersetColor } from '../../utils/supersets'
 import styles from './SessionExerciseItem.module.css'
 
 function SessionExerciseItemImpl({
@@ -75,7 +75,6 @@ function SessionExerciseItemImpl({
 
   const itemClass = [styles.item, allDone && styles.allDone, ssColor && styles.assigned].filter(Boolean).join(' ')
   const orderClass = [styles.order, allDone && styles.orderDone].filter(Boolean).join(' ')
-  const setCountClass = [styles.setCount, allDone && styles.setCountDone].filter(Boolean).join(' ')
   const headerClass = [styles.header, allDone && styles.headerDone].filter(Boolean).join(' ')
 
   return (
@@ -83,10 +82,6 @@ function SessionExerciseItemImpl({
       <div className={headerClass}>
         <span className={orderClass}>{String(index + 1).padStart(2, '0')}</span>
         <span className={styles.name}>{exercise.name}</span>
-        {ssColor && (
-          <span className={styles.superset}>{supersetLabel(exercise.supersetId)}</span>
-        )}
-        <span className={setCountClass}>{doneSets}/{totalSets}</span>
         <button
           type="button"
           className={styles.iconButton}
