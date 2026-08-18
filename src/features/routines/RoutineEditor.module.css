@@ -34,9 +34,10 @@
   transition: border-color 0.15s;
 }
 
-/* Second header row: duplicate/export/delete/save. Right-aligned to line up
- * with the Start button on the row above, and wrapping rather than clipping if
- * a label grows ("Duplicating…") on a narrow screen. */
+/* Routine management at the foot of the page: duplicate/export/delete/save.
+ * Ruled off from the exercise list so it reads as a separate zone rather than
+ * as another card, right-aligned like the header actions, and wrapping rather
+ * than clipping if a label grows ("Duplicating…") on a narrow screen. */
 .secondaryActions {
   display: flex;
   flex-wrap: wrap;
@@ -44,6 +45,9 @@
   justify-content: flex-end;
   gap: 8px;
   min-width: 0;
+  margin-top: 6px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
 }
 
 /* Transient save/delete status, shown just below the header action bar. */

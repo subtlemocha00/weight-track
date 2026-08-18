@@ -390,46 +390,6 @@ export function RoutineEditor({
         )}
       </AppHeader>
 
-      {/* Second header row. Back and Start share the row above — the actions
-        * that manage the routine itself sit here so neither row has to wrap.
-        * A new routine has none of these, so it keeps Save beside Back. */}
-      {!isNew && (
-        <div className={styles.secondaryActions}>
-          <button
-            type="button"
-            className={styles.duplicate}
-            onClick={handleDuplicate}
-            disabled={duplicating || deleting}
-          >
-            {duplicating ? 'Duplicating…' : 'Duplicate'}
-          </button>
-          <button
-            type="button"
-            className={styles.export}
-            onClick={handleExport}
-            disabled={duplicating || deleting}
-          >
-            Export
-          </button>
-          <button
-            type="button"
-            className={styles.delete}
-            onClick={handleDelete}
-            disabled={deleting || duplicating}
-          >
-            {deleting ? 'Deleting…' : 'Delete'}
-          </button>
-          <button
-            type="button"
-            className={styles.save}
-            onClick={handleSave}
-            disabled={!canSave}
-          >
-            {saveState.status === 'saving' ? 'Saving…' : 'Save'}
-          </button>
-        </div>
-      )}
-
       {saveState.message && (
         <div className={styles.saveStatus}>
           <span className={saveMsgClass}>{saveState.message}</span>
@@ -515,6 +475,47 @@ export function RoutineEditor({
             />
             )
           })}
+        </div>
+      )}
+
+      {/* Routine management lives at the foot of the page: Back and the workout
+        * action are what the header is for, and these are what you reach for
+        * once you have finished editing. A new routine keeps Save beside Back,
+        * since there is nothing below to scroll past. */}
+      {!isNew && (
+        <div className={styles.secondaryActions}>
+          <button
+            type="button"
+            className={styles.duplicate}
+            onClick={handleDuplicate}
+            disabled={duplicating || deleting}
+          >
+            {duplicating ? 'Duplicating…' : 'Duplicate'}
+          </button>
+          <button
+            type="button"
+            className={styles.export}
+            onClick={handleExport}
+            disabled={duplicating || deleting}
+          >
+            Export
+          </button>
+          <button
+            type="button"
+            className={styles.delete}
+            onClick={handleDelete}
+            disabled={deleting || duplicating}
+          >
+            {deleting ? 'Deleting…' : 'Delete'}
+          </button>
+          <button
+            type="button"
+            className={styles.save}
+            onClick={handleSave}
+            disabled={!canSave}
+          >
+            {saveState.status === 'saving' ? 'Saving…' : 'Save'}
+          </button>
         </div>
       )}
     </div>

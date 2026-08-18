@@ -8,7 +8,6 @@ import {
 } from '../services/workoutSessions'
 import { readActiveWorkout, clearActiveWorkout } from '../utils/activeWorkout'
 import { activeWorkoutPath } from '../features/workoutSessions/workoutNavigation'
-import { startWorkoutAndNavigate } from '../features/workoutSessions/startActiveWorkout'
 import { QuickRunForm } from '../features/runs/QuickRunForm'
 import styles from './HomePage.module.css'
 
@@ -51,7 +50,6 @@ export function HomePage() {
   const [routines, setRoutines] = useState(null)
   const [completionCounts, setCompletionCounts] = useState({})
   const [error, setError] = useState(null)
-  const [startingId, setStartingId] = useState(null)
   const [recoverySession, setRecoverySession] = useState(() => readActiveWorkout())
   const [showRunForm, setShowRunForm] = useState(false)
 
@@ -114,38 +112,6 @@ export function HomePage() {
     }
   }, [recoverySession, user])
 
-  const handleStart = useCallback(
-    async (routine) => {
-      if (!user || startingId) return
-      setError(null)
-
-      // Re-check at press time. recoverySession is read once on mount, so it can
-      // be stale if a workout was started in another tab — and unlike the
-      // routine editor's Start, this path writes the recovery copy
-      // unconditionally, so a stale read here would overwrite a live workout.
-      // Adopting what was found also brings the banner and the disabled buttons
-      // back in step with storage.
-      const active = readActiveWorkout()
-      if (active) {
-        setRecoverySession(active)
-        setError('You already have an unfinished workout. Resume or discard it first.')
-        return
-      }
-
-      setStartingId(routine.id)
-      try {
-        // Creates the session, makes it the active workout, and opens it — in
-        // that order, which the routine route depends on. Shared with the
-        // routine editor's own Start so the two cannot drift.
-        await startWorkoutAndNavigate({ uid: user.uid, routine, navigate })
-      } catch (err) {
-        setError(err?.message || 'Failed to start workout.')
-        setStartingId(null)
-      }
-    },
-    [user, startingId, navigate]
-  )
-
   return (
     <section className={styles.page}>
       {recoverySession && (
@@ -206,7 +172,6 @@ export function HomePage() {
         <ul className={styles.list}>
           {routines.map((routine, i) => {
             const exerciseCount = routine.exercises?.length ?? 0
-            const isStarting = startingId === routine.id
             const accentClass = ACCENT_CLASSES[i % ACCENT_CLASSES.length]
             return (
               <li key={routine.id} className={styles.row}>
@@ -232,21 +197,6 @@ export function HomePage() {
                     times
                   </div>
                 </Link>
-                <button
-                  type="button"
-                  className={styles.start}
-                  onClick={() => handleStart(routine)}
-                  disabled={exerciseCount === 0 || isStarting || !!recoverySession}
-                  title={
-                    recoverySession
-                      ? 'Resume or discard your current workout first'
-                      : exerciseCount === 0
-                        ? 'Add exercises before starting'
-                        : 'Start workout'
-                  }
-                >
-                  {isStarting ? '…' : '▶ Start'}
-                </button>
               </li>
             )
           })}

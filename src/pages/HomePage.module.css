@@ -208,27 +208,6 @@
   font-weight: 700;
 }
 
-.start {
-  flex-shrink: 0;
-  padding: 7px 13px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  background: var(--neon-green);
-  color: #07070f;
-  border: 1.5px solid var(--neon-green);
-  clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
-  box-shadow: 0 0 18px rgba(0, 255, 157, 0.33);
-  transition: all 0.08s;
-}
-
-.start:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
 .navLink {
   display: flex;
   align-items: center;
