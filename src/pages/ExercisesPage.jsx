@@ -232,12 +232,18 @@ export function ExercisesPage() {
 
   // Backing out of a routine swap still passes fromSwap so any unsaved edits
   // stashed on the way in are restored losslessly.
+  //
+  // Replace, as completing a swap does. The picker entry is spent either way:
+  // the stashed draft is consumed and cleared on arrival, so pushing would leave
+  // browser Back pointing at an abandoned swap that can no longer complete —
+  // picking an exercise there would find no draft, silently apply nothing, and
+  // return an editor with the unsaved edits already gone.
   const returnFromSwap = useCallback(() => {
     if (!swap) return
     if (swap.kind === 'routine') {
-      navigate(swapReturnTo, { state: { fromSwap: true } })
+      navigate(swapReturnTo, { state: { fromSwap: true }, replace: true })
     } else {
-      navigate(swapReturnTo)
+      navigate(swapReturnTo, { replace: true })
     }
   }, [swap, swapReturnTo, navigate])
 
