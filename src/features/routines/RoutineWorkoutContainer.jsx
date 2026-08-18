@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { SessionEditor } from '../workoutSessions/SessionEditor'
 import { resolveActiveWorkoutForRoutine } from '../workoutSessions/resolveActiveWorkout'
+import { resolveEditorRoutine } from './resolveEditorRoutine'
 import { RoutineEditor } from './RoutineEditor'
 
 /**
@@ -30,6 +31,11 @@ export function RoutineWorkoutContainer({ routine }) {
     workoutRequested ? resolveActiveWorkoutForRoutine(routineId) : null
   )
 
+  // The routine the running workout was started from, which may have been saved
+  // after this route loaded. Kept so leaving workout mode does not re-seed the
+  // editor from the older copy — see resolveEditorRoutine.
+  const [startedFrom, setStartedFrom] = useState(null)
+
   // Re-resolve when the flag or the routine changes. Navigating between two
   // routines reuses this component, so without this a workout resolved for the
   // previous routine would linger. No async work is involved, so there is no
@@ -56,11 +62,13 @@ export function RoutineWorkoutContainer({ routine }) {
     }
   }, [workoutRequested, routineId, setSearchParams])
 
-  // Called by the editor once a workout exists in the recovery copy. Only the
-  // flag is set here — the effect above still does the resolving, so there is
-  // one path into workout mode whether the workout was just started, resumed
-  // from a link, or recovered after a refresh.
-  const enterWorkoutMode = useCallback(() => {
+  // Called by the editor once a workout exists in the recovery copy, with the
+  // routine state it was started from. Only the flag is set here — the effect
+  // above still does the resolving, so there is one path into workout mode
+  // whether the workout was just started, resumed from a link, or recovered
+  // after a refresh.
+  const enterWorkoutMode = useCallback((sourceRoutine) => {
+    if (sourceRoutine) setStartedFrom(sourceRoutine)
     setSearchParams(
       (prev) => {
         const next = new URLSearchParams(prev)
@@ -80,7 +88,7 @@ export function RoutineWorkoutContainer({ routine }) {
   return (
     <RoutineEditor
       mode="edit"
-      initialRoutine={routine}
+      initialRoutine={resolveEditorRoutine(routine, startedFrom)}
       onWorkoutStarted={enterWorkoutMode}
     />
   )

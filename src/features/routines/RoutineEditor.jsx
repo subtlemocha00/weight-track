@@ -22,7 +22,9 @@ import styles from './RoutineEditor.module.css'
 /**
  * @param onWorkoutStarted called once a workout has been created and is live in
  *   the recovery copy, so the owner can switch the route into workout mode.
- *   Omitted (e.g. by the new-routine page) means no Start action is offered.
+ *   Receives the routine state the workout was started from, which "Save &
+ *   start" may have written after the route loaded. Omitted (e.g. by the
+ *   new-routine page) means no Start action is offered.
  */
 export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
   const { user } = useAuth()
@@ -174,9 +176,12 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
         setStarting(false)
         return
       }
-      // The session is live in the recovery copy. Signal only — the owner
-      // resolves it from there, so there is a single path into workout mode.
-      onWorkoutStarted()
+      // The session is live in the recovery copy — the owner resolves it from
+      // there, so there is a single path into workout mode. `source` goes with
+      // it because this editor is about to unmount: it holds the routine as
+      // saved, which is newer than the copy the route loaded whenever Start had
+      // to save first.
+      onWorkoutStarted(source)
     } catch (err) {
       setSaveState({
         status: 'error',
