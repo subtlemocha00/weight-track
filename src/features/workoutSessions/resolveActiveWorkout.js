@@ -4,8 +4,8 @@ import { readActiveWorkout } from '../../utils/activeWorkout'
  * Finding the in-progress workout that belongs to a given routine.
  *
  * Source of truth is the same `wt-active-workout` recovery copy the home
- * screen's resume banner is built on and the /workout/:sessionId redirect
- * resolves against — there is deliberately no second lookup. Firestore holds
+ * screen's resume banner is built on — there is deliberately no second lookup,
+ * and no other route resolves a workout. Firestore holds
  * only the start-time snapshot of an in-progress session and offers no
  * by-routine query for one, so localStorage is the only place a live workout
  * exists. That also makes resolution synchronous: no fetch, no loading state,
@@ -18,9 +18,9 @@ import { readActiveWorkout } from '../../utils/activeWorkout'
  * Is this recovery copy usable as the live workout for `routineId`?
  *
  * The routine match is what stops routine B's page from adopting routine A's
- * workout. The completion check mirrors the one the /workout/:sessionId
- * redirect applies to the same data, so a session either opens here or is
- * turned away everywhere.
+ * workout. The completion check stops a finished session being reopened as a
+ * live one — this is the only gate into workout mode, so being turned away here
+ * means being turned away everywhere.
  */
 export function isActiveWorkoutForRoutine(session, routineId) {
   if (!session || !routineId) return false

@@ -1,8 +1,7 @@
 /**
  * Where an active workout lives, and where it goes back to.
  *
- * A workout is shown at /routine/:routineId?workout=1, and nowhere else.
- * /workout/:sessionId still exists, but only to redirect into that route, so
+ * A workout is shown at /routine/:routineId?workout=1, and nowhere else, so
  * every destination below is derived from a routine id.
  *
  * Pure string building, no router imports — so the destinations are testable
@@ -27,21 +26,21 @@ export function routineWorkoutPath(routineId) {
   return `${routineEditPath(routineId)}?${WORKOUT_PARAM}=${WORKOUT_PARAM_VALUE}`
 }
 
-/** The legacy session-id route. Still resolves — as a redirect. */
-export function legacyWorkoutPath(sessionId) {
-  return `/workout/${sessionId}`
-}
-
 /**
  * Where to send someone to open `session`.
  *
- * Prefers the canonical route, which needs the routine the session came from.
- * A session without a routineId can only be addressed by its own id, so it
- * falls back to the legacy route rather than building `/routine/undefined`.
+ * The canonical route is the only workout destination, and building it requires
+ * the routine the session came from. A session without one cannot be addressed
+ * at all now that there is no session-id route, so it resolves to the home
+ * screen — the app's existing recovery surface, where an unfinished workout can
+ * be resumed or discarded. Nothing is invented: never `/routine/undefined`.
+ *
+ * Unreachable in practice. Every writer of the recovery copy carries the
+ * routineId through, so this is the floor under a corrupt or hand-edited value.
  */
 export function activeWorkoutPath(session) {
   if (session?.routineId) return routineWorkoutPath(session.routineId)
-  return legacyWorkoutPath(session?.id)
+  return '/home'
 }
 
 /**

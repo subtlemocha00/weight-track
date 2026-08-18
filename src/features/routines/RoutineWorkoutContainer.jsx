@@ -17,7 +17,7 @@ import { RoutineEditor } from './RoutineEditor'
  * The two editors stay separate components with separate state, so routine
  * edits cannot leak into a session or the reverse. This container only decides
  * which one to render, and is the only place that mounts a running workout —
- * /workout/:sessionId now just redirects here.
+ * there is no other route to one.
  *
  * Because it already resolves the routine's live workout, it is also what tells
  * the routine editor whether that workout exists — so Resume is decided from

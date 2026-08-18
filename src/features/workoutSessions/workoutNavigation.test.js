@@ -4,7 +4,6 @@ import {
   WORKOUT_PARAM,
   WORKOUT_PARAM_VALUE,
   activeWorkoutPath,
-  legacyWorkoutPath,
   routineEditPath,
   routineWorkoutNavigation,
   routineWorkoutPath
@@ -14,10 +13,6 @@ describe('path builders', () => {
   it('builds the routine edit and canonical workout routes', () => {
     expect(routineEditPath('routine-1')).toBe('/routine/routine-1')
     expect(routineWorkoutPath('routine-1')).toBe('/routine/routine-1?workout=1')
-  })
-
-  it('builds the legacy session route', () => {
-    expect(legacyWorkoutPath('sess-1')).toBe('/workout/sess-1')
   })
 
   // RoutineWorkoutContainer reads searchParams.get('workout') === '1'. Pin the
@@ -38,15 +33,38 @@ describe('activeWorkoutPath', () => {
     )
   })
 
-  it('falls back to the legacy route when there is no routine', () => {
-    expect(activeWorkoutPath({ id: 'sess-1' })).toBe('/workout/sess-1')
-    expect(activeWorkoutPath({ id: 'sess-1', routineId: null })).toBe('/workout/sess-1')
+  // There is no session-id route to fall back to any more, so a session with no
+  // routine has no workout route at all: it goes to the recovery surface rather
+  // than to an invented path.
+  it('sends a session with no routine to the home screen', () => {
+    expect(activeWorkoutPath({ id: 'sess-1' })).toBe('/home')
+    expect(activeWorkoutPath({ id: 'sess-1', routineId: null })).toBe('/home')
+    expect(activeWorkoutPath({ id: 'sess-1', routineId: undefined })).toBe('/home')
+    expect(activeWorkoutPath({})).toBe('/home')
+    expect(activeWorkoutPath(null)).toBe('/home')
+    expect(activeWorkoutPath(undefined)).toBe('/home')
   })
 
   it('never builds a route from a missing routine id', () => {
-    expect(activeWorkoutPath({ id: 'sess-1', routineId: undefined })).not.toContain(
-      'undefined'
+    for (const session of [
+      { id: 'sess-1' },
+      { id: 'sess-1', routineId: null },
+      { id: 'sess-1', routineId: undefined },
+      null
+    ]) {
+      const path = activeWorkoutPath(session)
+      expect(path).not.toContain('undefined')
+      expect(path).not.toContain('/routine/')
+    }
+  })
+
+  // The old /workout/:sessionId route is gone; nothing may address a workout by
+  // session id any more.
+  it('never builds a session-id route', () => {
+    expect(activeWorkoutPath({ id: 'sess-1', routineId: 'routine-1' })).not.toContain(
+      '/workout/'
     )
+    expect(activeWorkoutPath({ id: 'sess-1' })).not.toContain('/workout/')
   })
 
   // Home resumes by handing the recovery copy straight to this builder. The

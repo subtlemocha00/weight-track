@@ -6,7 +6,6 @@ import { AppHeader } from '../components/AppHeader'
 import { readActiveWorkout, writeActiveWorkout } from '../utils/activeWorkout'
 import { readRoutineDraft, writeRoutineDraft } from '../utils/routineDraft'
 import { swapSessionExercise } from '../features/workoutSessions/swapExercise'
-import { legacyWorkoutPath } from '../features/workoutSessions/workoutNavigation'
 import {
   filterAllExercises,
   getCombinedFilterOptions,
@@ -225,13 +224,11 @@ export function ExercisesPage() {
     [user]
   )
 
-  // Where "back" and a completed swap return to. Both swap kinds now carry an
-  // explicit returnTo, because a workout can be run from either the routine
-  // route or the legacy session route and only the caller knows which. The
-  // fallback covers a swap started before that field existed.
-  const swapReturnTo = swap
-    ? (swap.returnTo ?? legacyWorkoutPath(swap.sessionId))
-    : null
+  // Where "back" and a completed swap return to. Both swap kinds carry an
+  // explicit returnTo: a routine swap returns to the editor, a workout swap to
+  // the routine's workout route, and only the caller knows which it started
+  // from.
+  const swapReturnTo = swap?.returnTo ?? null
 
   // Backing out of a routine swap still passes fromSwap so any unsaved edits
   // stashed on the way in are restored losslessly.
