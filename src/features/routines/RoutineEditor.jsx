@@ -61,6 +61,10 @@ export function RoutineEditor({
   const [workoutInProgress, setWorkoutInProgress] = useState(hasActiveWorkout)
   // Track whether this is the initial mount dispatch (LOAD after save)
   const suppressDirty = useRef(false)
+  // The routine as last committed to state. A save captures the routine it sent
+  // in its closure; when the write resolves it needs to know whether the editor
+  // has been edited since.
+  const latestRoutine = useRef(routine)
 
   const { confirm } = useConfirm()
   const isNew = mode === 'new'
@@ -74,6 +78,10 @@ export function RoutineEditor({
     ownsActiveWorkout
   })
   const noExercises = routine.exercises.length === 0
+
+  useEffect(() => {
+    latestRoutine.current = routine
+  }, [routine])
 
   // Warn on browser close / refresh when there are unsaved changes
   useBeforeUnload(isDirty)
@@ -125,10 +133,18 @@ export function RoutineEditor({
         ...routine,
         name: routine.name.trim()
       })
-      suppressDirty.current = true
-      dispatch({ type: 'LOAD', routine: saved })
-      suppressDirty.current = false
-      setIsDirty(false)
+      // Adopt the persisted copy only if the editor has not moved on. Only the
+      // Save button is disabled while the write is in flight — every input stays
+      // live — so anything typed meanwhile is newer than what was sent, and
+      // loading the server's copy over it would discard those edits and mark the
+      // editor clean. Keeping the newer state dirty is the honest outcome: the
+      // save itself still happened, and `saved` is what Firestore now holds.
+      if (latestRoutine.current === routine) {
+        suppressDirty.current = true
+        dispatch({ type: 'LOAD', routine: saved })
+        suppressDirty.current = false
+        setIsDirty(false)
+      }
       setSaveState({ status: 'saved', message: 'Saved' })
       // Tell the owner what is now persisted. It outlives this editor, which is
       // unmounted whenever the route switches to the workout.
