@@ -150,6 +150,14 @@ export function App() {
                 }
               />
             </Route>
+            {/* Anything that matched nothing above. Ranked last by the router
+              * regardless of where it sits, and deliberately outside the layout
+              * route so an unknown URL renders only the redirect — not the app
+              * chrome wrapped around an empty page. Replace, so the bad URL does
+              * not sit in history waiting for Back to return to it. Left
+              * unprotected: /home carries its own auth guard, which sends a
+              * signed-out visitor on to /login. */}
+            <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
           </BrowserRouter>
         </ConfirmModalProvider>
