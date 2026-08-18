@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { SessionEditor } from '../workoutSessions/SessionEditor'
 import { resolveActiveWorkoutForRoutine } from '../workoutSessions/resolveActiveWorkout'
+import { routineWorkoutNavigation } from '../workoutSessions/workoutNavigation'
 import { RoutineEditor } from './RoutineEditor'
 
 /**
@@ -74,7 +75,14 @@ export function RoutineWorkoutContainer({ routine }) {
   const mode = workoutRequested && activeSession ? 'workout' : 'edit'
 
   if (mode === 'workout') {
-    return <SessionEditor initialSession={activeSession} />
+    // The editor is shared with /workout/:sessionId, so it is told where this
+    // mounting sends Back and a swap return — it does not read the URL itself.
+    return (
+      <SessionEditor
+        initialSession={activeSession}
+        navigation={routineWorkoutNavigation(routineId)}
+      />
+    )
   }
 
   return (

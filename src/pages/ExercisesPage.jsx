@@ -6,6 +6,7 @@ import { AppHeader } from '../components/AppHeader'
 import { readActiveWorkout, writeActiveWorkout } from '../utils/activeWorkout'
 import { readRoutineDraft, writeRoutineDraft } from '../utils/routineDraft'
 import { swapSessionExercise } from '../features/workoutSessions/swapExercise'
+import { legacyWorkoutPath } from '../features/workoutSessions/workoutNavigation'
 import {
   filterAllExercises,
   getCombinedFilterOptions,
@@ -224,18 +225,24 @@ export function ExercisesPage() {
     [user]
   )
 
-  // Where "back" and a completed swap return to: the routine editor for a routine
-  // swap (rehydrating its stashed draft), otherwise the active workout. Backing
-  // out of a routine swap still passes fromSwap so any unsaved edits stashed on
-  // the way in are restored losslessly.
+  // Where "back" and a completed swap return to. Both swap kinds now carry an
+  // explicit returnTo, because a workout can be run from either the routine
+  // route or the legacy session route and only the caller knows which. The
+  // fallback covers a swap started before that field existed.
+  const swapReturnTo = swap
+    ? (swap.returnTo ?? legacyWorkoutPath(swap.sessionId))
+    : null
+
+  // Backing out of a routine swap still passes fromSwap so any unsaved edits
+  // stashed on the way in are restored losslessly.
   const returnFromSwap = useCallback(() => {
     if (!swap) return
     if (swap.kind === 'routine') {
-      navigate(swap.returnTo, { state: { fromSwap: true } })
+      navigate(swapReturnTo, { state: { fromSwap: true } })
     } else {
-      navigate(`/workout/${swap.sessionId}`)
+      navigate(swapReturnTo)
     }
-  }, [swap, navigate])
+  }, [swap, swapReturnTo, navigate])
 
   // Swap flow: confirm with an app-styled modal, then replace only the exercise
   // identity (exerciseId + name) on the stashed session/routine — kept in
@@ -261,7 +268,7 @@ export function ExercisesPage() {
           writeRoutineDraft({ ...draft, routine: updated })
         }
         // fromSwap rehydrates the draft in the editor whether or not it existed.
-        navigate(swap.returnTo, { state: { fromSwap: true }, replace: true })
+        navigate(swapReturnTo, { state: { fromSwap: true }, replace: true })
         return
       }
 
@@ -269,15 +276,15 @@ export function ExercisesPage() {
       if (!active || active.id !== swap.sessionId) {
         // The workout is no longer the active in-progress session (finished or
         // cleared elsewhere). Don't touch anything — just head back to it.
-        navigate(`/workout/${swap.sessionId}`, { replace: true })
+        navigate(swapReturnTo, { replace: true })
         return
       }
 
       const updated = swapSessionExercise(active, swap.exerciseIndex, exercise)
       writeActiveWorkout(updated)
-      navigate(`/workout/${swap.sessionId}`, { replace: true })
+      navigate(swapReturnTo, { replace: true })
     },
-    [swap, confirm, navigate]
+    [swap, swapReturnTo, confirm, navigate]
   )
 
   const handleDeleteEdit = useCallback(

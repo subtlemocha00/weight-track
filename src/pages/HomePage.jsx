@@ -7,7 +7,12 @@ import {
   markSessionAbandoned,
   startWorkout
 } from '../services/workoutSessions'
-import { readActiveWorkout, clearActiveWorkout } from '../utils/activeWorkout'
+import {
+  readActiveWorkout,
+  writeActiveWorkout,
+  clearActiveWorkout
+} from '../utils/activeWorkout'
+import { activeWorkoutPath } from '../features/workoutSessions/workoutNavigation'
 import { QuickRunForm } from '../features/runs/QuickRunForm'
 import styles from './HomePage.module.css'
 
@@ -93,9 +98,12 @@ export function HomePage() {
     }
   }, [user])
 
+  // Resume opens the workout on the routine route, which resolves this exact
+  // recovery copy out of localStorage — the same object the banner is built
+  // from — so no session is created and nothing is re-read from Firestore.
   const handleResume = useCallback(() => {
     if (recoverySession) {
-      navigate(`/workout/${recoverySession.id}`)
+      navigate(activeWorkoutPath(recoverySession))
     }
   }, [recoverySession, navigate])
 
@@ -117,7 +125,12 @@ export function HomePage() {
       setStartingId(routine.id)
       try {
         const session = await startWorkout(user.uid, routine)
-        navigate(`/workout/${session.id}`)
+        // The routine route resolves the workout from the recovery copy, so it
+        // has to exist before we navigate. On the old /workout/:sessionId path
+        // this copy was written a moment later by SessionEditor's autosave;
+        // writing it here is the same helper, key, and object, just earlier.
+        writeActiveWorkout(session)
+        navigate(activeWorkoutPath(session))
       } catch (err) {
         setError(err?.message || 'Failed to start workout.')
         setStartingId(null)

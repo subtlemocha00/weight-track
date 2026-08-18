@@ -8,6 +8,7 @@ import {
   applyFinishedSessionToRoutine,
   persistFinishedSession
 } from './finishWorkout'
+import { legacyWorkoutNavigation } from './workoutNavigation'
 import { sessionReducer } from './sessionReducer'
 import { SessionExerciseItem } from './SessionExerciseItem'
 import { AddExercisePanel } from '../routines/AddExercisePanel'
@@ -18,7 +19,13 @@ import { useConfirm } from '../../hooks/useConfirm'
 import { AppHeader } from '../../components/AppHeader'
 import styles from './SessionEditor.module.css'
 
-export function SessionEditor({ initialSession }) {
+/**
+ * `navigation` describes where this workout came from, so the editor works from
+ * either route without knowing anything about URLs (see workoutNavigation.js).
+ * Omitting it keeps the original /workout/:sessionId destinations, which is
+ * exactly what that route wants.
+ */
+export function SessionEditor({ initialSession, navigation }) {
   const { user } = useAuth()
   const navigate = useNavigate()
   const { confirm } = useConfirm()
@@ -30,6 +37,11 @@ export function SessionEditor({ initialSession }) {
   // addition to the built-in one. Non-fatal if it fails — the built-in library
   // still works.
   const customExercises = useCustomExercises()
+
+  // Destructured to plain strings so they are stable callback dependencies even
+  // when the owner rebuilds the object on every render.
+  const { back: backTo, backReplace, swapReturnTo } =
+    navigation ?? legacyWorkoutNavigation(initialSession.id)
 
   const isCompleted = session.status === 'completed'
   const isActive = !isCompleted && !finishing
@@ -100,8 +112,8 @@ export function SessionEditor({ initialSession }) {
       })
       if (!ok) return
     }
-    navigate('/home')
-  }, [isActive, navigate, confirm])
+    navigate(backTo, { replace: backReplace })
+  }, [isActive, navigate, confirm, backTo, backReplace])
 
   const handleAddExercise = useCallback((exercise) => {
     // Affects the active session only — the source routine is never touched here.
@@ -117,19 +129,22 @@ export function SessionEditor({ initialSession }) {
       // Send the user to the existing Exercise Library in "swap mode". The live
       // session is already autosaved to localStorage on every change, so the
       // library reads it, swaps the exercise's identity, writes it back, and
-      // navigates here again — no session state needs to travel through the URL.
+      // navigates back to returnTo — no session state travels through the URL.
+      // returnTo is carried because only this side knows which route the
+      // workout is being run from.
       const target = session.exercises[index]
       navigate('/exercises', {
         state: {
           swap: {
             sessionId: session.id,
             exerciseIndex: index,
-            fromName: target?.name || 'this exercise'
+            fromName: target?.name || 'this exercise',
+            returnTo: swapReturnTo
           }
         }
       })
     },
-    [session.exercises, session.id, navigate]
+    [session.exercises, session.id, navigate, swapReturnTo]
   )
 
   const handleRemoveExercise = useCallback(
