@@ -120,8 +120,9 @@ Expected routes:
 /login
 /home
 /routine/new
-/routine/:id
-/workout/:sessionId
+/routine/:id                 routine editor
+/routine/:id?workout=1       active workout (canonical)
+/workout/:sessionId          compatibility redirect into the route above
 /history
 /settings
 

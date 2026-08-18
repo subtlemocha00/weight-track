@@ -64,7 +64,9 @@ export async function updateSession(uid, sessionId, fields) {
 
 /**
  * Snapshot a routine into a new in-progress session document, then return the
- * full session so the caller can navigate to /workout/:sessionId.
+ * full session. Writes Firestore only — making it the active workout and
+ * opening it belong to the caller (see features/workoutSessions/
+ * startActiveWorkout.js, which owns that ordering).
  */
 export async function startWorkout(uid, routine) {
   const session = createSessionFromRoutine(routine)
