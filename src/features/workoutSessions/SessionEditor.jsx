@@ -8,7 +8,7 @@ import {
   applyFinishedSessionToRoutine,
   persistFinishedSession
 } from './finishWorkout'
-import { legacyWorkoutNavigation } from './workoutNavigation'
+import { routineWorkoutNavigation } from './workoutNavigation'
 import { sessionReducer } from './sessionReducer'
 import { SessionExerciseItem } from './SessionExerciseItem'
 import { AddExercisePanel } from '../routines/AddExercisePanel'
@@ -19,13 +19,7 @@ import { useConfirm } from '../../hooks/useConfirm'
 import { AppHeader } from '../../components/AppHeader'
 import styles from './SessionEditor.module.css'
 
-/**
- * `navigation` describes where this workout came from, so the editor works from
- * either route without knowing anything about URLs (see workoutNavigation.js).
- * Omitting it keeps the original /workout/:sessionId destinations, which is
- * exactly what that route wants.
- */
-export function SessionEditor({ initialSession, navigation }) {
+export function SessionEditor({ initialSession }) {
   const { user } = useAuth()
   const navigate = useNavigate()
   const { confirm } = useConfirm()
@@ -38,10 +32,11 @@ export function SessionEditor({ initialSession, navigation }) {
   // still works.
   const customExercises = useCustomExercises()
 
-  // Destructured to plain strings so they are stable callback dependencies even
-  // when the owner rebuilds the object on every render.
+  // A workout is only ever shown on its routine's route, so its destinations
+  // follow from the routine it belongs to. RoutineWorkoutContainer will not
+  // mount this editor unless session.routineId matches the routine on screen.
   const { back: backTo, backReplace, swapReturnTo } =
-    navigation ?? legacyWorkoutNavigation(initialSession.id)
+    routineWorkoutNavigation(session.routineId)
 
   const isCompleted = session.status === 'completed'
   const isActive = !isCompleted && !finishing

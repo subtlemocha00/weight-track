@@ -1,14 +1,9 @@
 /**
  * Where an active workout lives, and where it goes back to.
  *
- * A workout can be mounted from two routes:
- *
- *   canonical  /routine/:routineId?workout=1   (RoutineWorkoutContainer)
- *   legacy     /workout/:sessionId             (WorkoutSessionPage)
- *
- * Both render the same SessionEditor, so the editor cannot hard-code its own
- * destinations any more. The mounting owner picks a navigation set here and
- * hands it down; nothing sniffs the URL to work out where it is.
+ * A workout is shown at /routine/:routineId?workout=1, and nowhere else.
+ * /workout/:sessionId still exists, but only to redirect into that route, so
+ * every destination below is derived from a routine id.
  *
  * Pure string building, no router imports — so the destinations are testable
  * on their own.
@@ -32,7 +27,7 @@ export function routineWorkoutPath(routineId) {
   return `${routineEditPath(routineId)}?${WORKOUT_PARAM}=${WORKOUT_PARAM_VALUE}`
 }
 
-/** The legacy session-id route. Still a working entry point. */
+/** The legacy session-id route. Still resolves — as a redirect. */
 export function legacyWorkoutPath(sessionId) {
   return `/workout/${sessionId}`
 }
@@ -50,21 +45,7 @@ export function activeWorkoutPath(session) {
 }
 
 /**
- * Navigation for a workout mounted at /workout/:sessionId.
- *
- * Unchanged from before the routes were unified: back goes to the home screen,
- * and a swap round-trips through this same session-id route.
- */
-export function legacyWorkoutNavigation(sessionId) {
-  return {
-    back: '/home',
-    backReplace: false,
-    swapReturnTo: legacyWorkoutPath(sessionId)
-  }
-}
-
-/**
- * Navigation for a workout mounted at /routine/:routineId?workout=1.
+ * Where a running workout's Back and swap-return go.
  *
  * Back drops the flag, which leaves the routine editor showing — the workout is
  * still in progress and still resumable. It replaces rather than pushes, so the

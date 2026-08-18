@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { SessionEditor } from '../workoutSessions/SessionEditor'
 import { resolveActiveWorkoutForRoutine } from '../workoutSessions/resolveActiveWorkout'
-import { routineWorkoutNavigation } from '../workoutSessions/workoutNavigation'
 import { RoutineEditor } from './RoutineEditor'
 
 /**
@@ -16,8 +15,8 @@ import { RoutineEditor } from './RoutineEditor'
  *
  * The two editors stay separate components with separate state, so routine
  * edits cannot leak into a session or the reverse. This container only decides
- * which one to render — /workout/:sessionId remains a working second entry
- * point into the same editor.
+ * which one to render, and is the only place that mounts a running workout —
+ * /workout/:sessionId now just redirects here.
  */
 export function RoutineWorkoutContainer({ routine }) {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -75,14 +74,7 @@ export function RoutineWorkoutContainer({ routine }) {
   const mode = workoutRequested && activeSession ? 'workout' : 'edit'
 
   if (mode === 'workout') {
-    // The editor is shared with /workout/:sessionId, so it is told where this
-    // mounting sends Back and a swap return — it does not read the URL itself.
-    return (
-      <SessionEditor
-        initialSession={activeSession}
-        navigation={routineWorkoutNavigation(routineId)}
-      />
-    )
+    return <SessionEditor initialSession={activeSession} />
   }
 
   return (

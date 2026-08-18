@@ -4,7 +4,6 @@ import {
   WORKOUT_PARAM,
   WORKOUT_PARAM_VALUE,
   activeWorkoutPath,
-  legacyWorkoutNavigation,
   legacyWorkoutPath,
   routineEditPath,
   routineWorkoutNavigation,
@@ -59,16 +58,6 @@ describe('activeWorkoutPath', () => {
   })
 })
 
-describe('legacyWorkoutNavigation', () => {
-  it('keeps the pre-existing destinations', () => {
-    expect(legacyWorkoutNavigation('sess-1')).toEqual({
-      back: '/home',
-      backReplace: false,
-      swapReturnTo: '/workout/sess-1'
-    })
-  })
-})
-
 describe('routineWorkoutNavigation', () => {
   it('goes back to the routine editor by dropping the flag', () => {
     const nav = routineWorkoutNavigation('routine-1')
@@ -86,11 +75,10 @@ describe('routineWorkoutNavigation', () => {
     )
   })
 
-  it('differs from the legacy set on every destination', () => {
-    const routine = routineWorkoutNavigation('routine-1')
-    const legacy = legacyWorkoutNavigation('sess-1')
-    expect(routine.back).not.toBe(legacy.back)
-    expect(routine.swapReturnTo).not.toBe(legacy.swapReturnTo)
-    expect(routine.backReplace).not.toBe(legacy.backReplace)
+  it('keeps Back and the swap return distinct — only one carries the flag', () => {
+    const nav = routineWorkoutNavigation('routine-1')
+    expect(nav.swapReturnTo).toContain('workout=1')
+    expect(nav.back).not.toContain('workout=1')
+    expect(nav.swapReturnTo).not.toBe(nav.back)
   })
 })

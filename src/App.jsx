@@ -9,7 +9,7 @@ import { LoginPage } from './pages/LoginPage'
 import { HomePage } from './pages/HomePage'
 import { NewRoutinePage } from './pages/NewRoutinePage'
 import { RoutinePage } from './pages/RoutinePage'
-import { WorkoutSessionPage } from './pages/WorkoutSessionPage'
+import { WorkoutSessionRedirect } from './pages/WorkoutSessionRedirect'
 
 // Non-critical routes: lazy-loaded to keep the initial bundle small
 const ExercisesPage = lazy(() =>
@@ -95,9 +95,11 @@ export function App() {
                 path="routine/:id"
                 element={<Protected element={<RoutinePage />} />}
               />
+              {/* Compatibility only — the workout UI lives on the routine
+                * route now. Kept so existing links keep working. */}
               <Route
                 path="workout/:sessionId"
-                element={<Protected element={<WorkoutSessionPage />} />}
+                element={<Protected element={<WorkoutSessionRedirect />} />}
               />
               <Route
                 path="history"

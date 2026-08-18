@@ -118,6 +118,20 @@ export function HomePage() {
     async (routine) => {
       if (!user || startingId) return
       setError(null)
+
+      // Re-check at press time. recoverySession is read once on mount, so it can
+      // be stale if a workout was started in another tab — and unlike the
+      // routine editor's Start, this path writes the recovery copy
+      // unconditionally, so a stale read here would overwrite a live workout.
+      // Adopting what was found also brings the banner and the disabled buttons
+      // back in step with storage.
+      const active = readActiveWorkout()
+      if (active) {
+        setRecoverySession(active)
+        setError('You already have an unfinished workout. Resume or discard it first.')
+        return
+      }
+
       setStartingId(routine.id)
       try {
         // Creates the session, makes it the active workout, and opens it — in
