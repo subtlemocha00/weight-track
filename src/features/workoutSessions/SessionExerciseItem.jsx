@@ -24,7 +24,9 @@ function SessionExerciseItemImpl({
   onAssignSuperset,
   onUpdateSet,
   onToggleSetCompleted,
-  onSetUnit
+  onSetUnit,
+  onAddSet,
+  onRemoveSet
 }) {
   const { settings } = useSettings()
   const timerEnabled = !readOnly && settings.restTimerEnabled
@@ -179,6 +181,7 @@ function SessionExerciseItemImpl({
                 disabled={readOnly}
                 onUpdate={(patch) => onUpdateSet(setIndex, patch)}
                 onToggleCompleted={() => handleToggleSetCompleted(setIndex)}
+                onRemove={() => onRemoveSet(setIndex)}
               />
               {restAfter?.index === setIndex && (
                 <RestTimer
@@ -191,7 +194,16 @@ function SessionExerciseItemImpl({
           ))}
         </div>
 
-        {/* Notes are the final block on every exercise card. */}
+        {/* An extra set worked today. Session-only, like every other edit on
+            this card — the routine changes only via Finish → Update routine. */}
+        {!readOnly && (
+          <button type="button" className={styles.addSet} onClick={onAddSet}>
+            + Add set
+          </button>
+        )}
+
+        {/* Notes are the final block on every exercise card. Read-only here:
+            they are routine guidance carried into the workout, not a log. */}
         <details className={styles.notesPanel}>
           <summary
             className={`${styles.notesToggle} ${exercise.notes ? styles.hasNotes : ''}`}

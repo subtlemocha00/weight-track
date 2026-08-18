@@ -142,6 +142,30 @@ export function SessionEditor({ initialSession }) {
     [session.exercises, session.id, navigate, swapReturnTo]
   )
 
+  const handleAddSet = useCallback((index) => {
+    dispatch({ type: 'ADD_SET', index })
+  }, [])
+
+  const handleRemoveSet = useCallback(
+    async (exerciseIndex, setIndex) => {
+      // An empty set holds nothing worth confirming — removing a logged one
+      // destroys today's record of it, so that case asks first.
+      const target = session.exercises[exerciseIndex]?.sets[setIndex]
+      if (target?.completed) {
+        const ok = await confirm({
+          title: 'Remove logged set?',
+          message: `Set ${setIndex + 1} is marked done. Removing it discards what you logged for it.`,
+          confirmLabel: 'Remove',
+          cancelLabel: 'Cancel',
+          destructive: true
+        })
+        if (!ok) return
+      }
+      dispatch({ type: 'REMOVE_SET', exerciseIndex, setIndex })
+    },
+    [session.exercises, confirm]
+  )
+
   const handleRemoveExercise = useCallback(
     async (index) => {
       const target = session.exercises[index]
@@ -250,6 +274,8 @@ export function SessionEditor({ initialSession }) {
               onSetUnit={(unit) =>
                 dispatch({ type: 'SET_EXERCISE_UNIT', index, unit })
               }
+              onAddSet={() => handleAddSet(index)}
+              onRemoveSet={(setIndex) => handleRemoveSet(index, setIndex)}
             />
             )
           })}

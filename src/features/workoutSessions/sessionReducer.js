@@ -1,4 +1,4 @@
-import { createSessionExercise } from './sessionFactory'
+import { createFollowOnSet, createSessionExercise } from './sessionFactory'
 import { assignSuperset } from '../../utils/supersets'
 
 function reorderOrders(exercises) {
@@ -58,6 +58,28 @@ export function sessionReducer(state, action) {
         ...exercise,
         sets: exercise.sets.map((set) => ({ ...set, unit: action.unit }))
       }))
+
+    case 'ADD_SET':
+      // Session-only, like every other edit here. An extra set worked today
+      // does not change the routine unless the user opts in after finishing.
+      return updateExerciseAt(state, action.index, (exercise) => ({
+        ...exercise,
+        sets: [
+          ...exercise.sets,
+          createFollowOnSet(exercise.sets[exercise.sets.length - 1])
+        ]
+      }))
+
+    case 'REMOVE_SET': {
+      // Guard before delegating: updateExerciseAt always rebuilds the session,
+      // and a new object would autosave for a removal that never happened.
+      const exercise = state.exercises[action.exerciseIndex]
+      if (!exercise?.sets[action.setIndex]) return state
+      return updateExerciseAt(state, action.exerciseIndex, (current) => ({
+        ...current,
+        sets: current.sets.filter((_, i) => i !== action.setIndex)
+      }))
+    }
 
     case 'ADD_EXERCISE': {
       // Add an exercise to the active session only. Completed sets on existing

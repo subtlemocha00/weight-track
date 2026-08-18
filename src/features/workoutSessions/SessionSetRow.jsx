@@ -6,7 +6,8 @@ export function SessionSetRow({
   index,
   disabled,
   onUpdate,
-  onToggleCompleted
+  onToggleCompleted,
+  onRemove
 }) {
   const rowClass = [styles.row, set.completed && styles.rowCompleted]
     .filter(Boolean)
@@ -64,6 +65,17 @@ export function SessionSetRow({
       >
         {set.completed ? '✓' : ''}
       </button>
+
+      <button
+        type="button"
+        className={styles.remove}
+        onClick={onRemove}
+        disabled={disabled}
+        aria-label={`Remove set ${index + 1}`}
+        title="Remove set"
+      >
+        ×
+      </button>
     </div>
   )
 }
@@ -75,6 +87,7 @@ export function SessionSetRowHeader() {
       <span>Reps</span>
       <span>Weight</span>
       <span>Done</span>
+      <span />
     </div>
   )
 }

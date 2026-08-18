@@ -20,6 +20,28 @@ export function createSessionSet() {
 }
 
 /**
+ * A set added part-way through a workout, carried over from the one before it.
+ *
+ * Session sets are normally seeded from the routine, so reps and weight already
+ * arrive pre-filled — an added set follows the same convention by repeating the
+ * previous set rather than blanking out. Copying `unit` is what actually
+ * matters: the unit toggle is per-exercise and reads every set, so a set left
+ * on the default would leave a kg exercise showing neither unit selected.
+ *
+ * Completion never carries over — an added set has not been done yet.
+ */
+export function createFollowOnSet(previousSet) {
+  if (!previousSet) return createSessionSet()
+  return {
+    reps: previousSet.reps ?? DEFAULT_REPS,
+    weight: previousSet.weight ?? null,
+    unit: previousSet.unit ?? DEFAULT_UNIT,
+    completed: false,
+    timestamp: null
+  }
+}
+
+/**
  * Build a session exercise from a library exercise object (built-in or custom)
  * for an exercise added mid-workout. Starts with the same default set count as
  * a routine exercise, all uncompleted. This only ever modifies the active
@@ -39,10 +61,10 @@ export function createSessionExercise(exercise, order) {
 /**
  * Snapshot a routine into a fresh in-progress workout session.
  *
- * The session is structurally locked at start time — its exercises/sets count
- * matches the routine and won't change during the workout (per Phase 4 spec).
- * Only set values (reps/weight/unit), completion, and exercise order can be
- * edited during a session.
+ * The snapshot is what the workout starts from, not a cap on it: exercises and
+ * sets can both be added or removed during the session. Every such edit stays
+ * on the session — the routine only changes if the user opts in after
+ * finishing.
  */
 export function createSessionFromRoutine(routine) {
   return {

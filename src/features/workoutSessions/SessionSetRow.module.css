@@ -1,6 +1,6 @@
 .row {
   display: grid;
-  grid-template-columns: 22px 1fr 1fr 38px;
+  grid-template-columns: 22px 1fr 1fr 38px 28px;
   gap: 6px;
   align-items: center;
   padding-top: 4px;
@@ -64,9 +64,35 @@
   box-shadow: 0 0 16px rgba(0, 255, 157, 0.47);
 }
 
+/* Matches the routine editor's set-remove control (see routines/SetRow.module.css). */
+.remove {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  color: var(--t3);
+  clip-path: polygon(0 0, calc(100% - 4px) 0, 100% 4px, 100% 100%, 4px 100%, 0 calc(100% - 4px));
+  font-size: 15px;
+  line-height: 1;
+  transition: all 0.15s;
+}
+
+.remove:hover:not(:disabled) {
+  color: var(--neon-pink);
+  border-color: var(--neon-pink);
+}
+
+.remove:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
 .header {
   display: grid;
-  grid-template-columns: 22px 1fr 1fr 38px;
+  grid-template-columns: 22px 1fr 1fr 38px 28px;
   gap: 6px;
   font-size: 10px;
   font-weight: 700;

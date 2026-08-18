@@ -34,9 +34,12 @@ function sessionExerciseToRoutineExercise(sessionExercise, order) {
  *   - superset assignments made during the workout are applied
  *   - exercises added during the workout are materialized into the routine
  *   - exercises removed during the workout are dropped from the routine
+ *   - sets added or removed during the workout change the routine's set count
  *
  * Routine-only fields not edited during a workout (restSeconds, notes) are
- * preserved for exercises that existed before the session.
+ * preserved for exercises and sets that existed before the session. A set with
+ * no counterpart in the routine has no such fields to keep, so it starts with
+ * restSeconds unset.
  */
 export function applySessionToRoutine(routine, session) {
   const routineExercisesById = new Map(
@@ -51,10 +54,23 @@ export function applySessionToRoutine(routine, session) {
       return sessionExerciseToRoutineExercise(sessionExercise, order)
     }
 
-    // Existed before — update set values in place, keep routine-only fields.
-    const updatedSets = original.sets.map((routineSet, index) => {
-      const sessionSet = sessionExercise.sets[index]
-      if (!sessionSet) return routineSet
+    // Existed before — the session's sets are the desired shape, so drive the
+    // mapping from them. Iterating the routine's sets instead would silently
+    // drop sets added during the workout and resurrect ones removed from it.
+    const updatedSets = sessionExercise.sets.map((sessionSet, index) => {
+      const routineSet = original.sets[index]
+
+      // Added during the workout: no routine set to preserve fields from, so
+      // build one the same way a newly materialized exercise does.
+      if (!routineSet) {
+        return {
+          reps: sessionSet.reps ?? DEFAULT_REPS,
+          targetWeight: sessionSet.weight ?? null,
+          unit: sessionSet.unit ?? DEFAULT_UNIT,
+          restSeconds: null
+        }
+      }
+
       return {
         ...routineSet,
         reps: sessionSet.reps,
