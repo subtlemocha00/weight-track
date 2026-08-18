@@ -40,6 +40,7 @@
 
 .actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   justify-content: flex-end;
   margin-top: 6px;
@@ -82,6 +83,38 @@
 .confirm:hover,
 .confirm:focus-visible {
   opacity: 0.85;
+}
+
+/* ── Optional third action ───────────────────────────────────────────────────── */
+/* Outlined rather than filled: the confirm button stays the one obvious default,
+   and this reads as the deliberate alternative rather than a second primary. */
+.alt {
+  padding: 8px 15px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--t1);
+  border: 1.5px solid var(--bright);
+  clip-path: polygon(0 0, calc(100% - 5px) 0, 100% 5px, 100% 100%, 5px 100%, 0 calc(100% - 5px));
+  transition: border-color 0.1s, color 0.1s;
+}
+
+.alt:hover,
+.alt:focus-visible {
+  border-color: var(--t1);
+}
+
+.altDestructive {
+  color: var(--neon-pink);
+  border-color: var(--neon-pink);
+}
+
+.altDestructive:hover,
+.altDestructive:focus-visible {
+  border-color: var(--neon-pink);
+  background: rgba(255, 45, 120, 0.1);
 }
 
 /* ── Destructive variant (delete / irreversible) ─────────────────────────────── */

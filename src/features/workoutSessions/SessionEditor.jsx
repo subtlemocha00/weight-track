@@ -14,7 +14,9 @@ import { SessionExerciseItem } from './SessionExerciseItem'
 import { AddExercisePanel } from '../routines/AddExercisePanel'
 import { getSupersetCount } from '../../utils/supersets'
 import { ElapsedTime } from './ElapsedTime'
-import { writeActiveWorkout } from '../../utils/activeWorkout'
+import { clearActiveWorkout, writeActiveWorkout } from '../../utils/activeWorkout'
+import { markSessionAbandoned } from '../../services/workoutSessions'
+import { CONFIRM_ALT } from '../../contexts/ConfirmModalContext'
 import { useConfirm } from '../../hooks/useConfirm'
 import { AppHeader } from '../../components/AppHeader'
 import styles from './SessionEditor.module.css'
@@ -97,18 +99,60 @@ export function SessionEditor({ initialSession }) {
     navigate('/home', { replace: true })
   }, [user, isCompleted, finishing, session, navigate, confirm])
 
-  const handleBack = useCallback(async () => {
-    if (isActive) {
-      const ok = await confirm({
-        title: 'Leave workout?',
-        message: 'Your progress is saved — resume from the home screen at any time.',
-        confirmLabel: 'Leave',
-        cancelLabel: 'Stay'
-      })
-      if (!ok) return
-    }
+  // Step out of the workout without ending it. The session stays live in the
+  // recovery copy, so the routine page it lands on offers Resume straight away.
+  // No confirmation: pressing Pause is already the deliberate act, and nothing
+  // is lost by it.
+  const handlePause = useCallback(() => {
     navigate(backTo, { replace: backReplace })
-  }, [isActive, navigate, confirm, backTo, backReplace])
+  }, [navigate, backTo, backReplace])
+
+  // Discard: the same two steps the home screen's recovery banner takes. The
+  // local copy goes first, so the workout stops being resumable even if the
+  // Firestore bookkeeping never lands.
+  const discardWorkout = useCallback(() => {
+    const sessionId = session.id
+    clearActiveWorkout()
+    if (user && sessionId) {
+      markSessionAbandoned(user.uid, sessionId).catch(() => {})
+    }
+    navigate('/home', { replace: true })
+  }, [session.id, user, navigate])
+
+  // Back ends the workout — Pause is what leaves it running. Three answers, so
+  // the prompt carries a third button: Save finishes exactly as the Finish
+  // button does, Discard throws the workout away, and dismissing (Cancel, ESC,
+  // the backdrop) stays put. Dismissal can only ever mean stay.
+  const handleBack = useCallback(async () => {
+    if (!isActive) {
+      navigate(backTo, { replace: backReplace })
+      return
+    }
+
+    const answer = await confirm({
+      title: 'End workout?',
+      message:
+        'Save this workout to your history, or discard it? Use Pause instead to leave it running.',
+      confirmLabel: 'Save',
+      altLabel: 'Discard',
+      altDestructive: true,
+      cancelLabel: 'Cancel'
+    })
+
+    if (answer === CONFIRM_ALT) {
+      discardWorkout()
+      return
+    }
+    if (answer) await handleFinish()
+  }, [
+    isActive,
+    navigate,
+    backTo,
+    backReplace,
+    confirm,
+    discardWorkout,
+    handleFinish
+  ])
 
   const handleAddExercise = useCallback((exercise) => {
     // Affects the active session only — the source routine is never touched here.
@@ -185,6 +229,16 @@ export function SessionEditor({ initialSession }) {
   return (
     <div className={styles.editor}>
       <AppHeader onBack={handleBack}>
+        {isActive && (
+          <button
+            type="button"
+            className={styles.pause}
+            onClick={handlePause}
+            title="Leave the workout running and go back to the routine"
+          >
+            ⏸ Pause
+          </button>
+        )}
         <button
           type="button"
           className={styles.finish}
