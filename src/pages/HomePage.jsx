@@ -4,15 +4,11 @@ import { useAuth } from '../hooks/useAuth'
 import { listRoutines } from '../services/routines'
 import {
   listCompletedSessions,
-  markSessionAbandoned,
-  startWorkout
+  markSessionAbandoned
 } from '../services/workoutSessions'
-import {
-  readActiveWorkout,
-  writeActiveWorkout,
-  clearActiveWorkout
-} from '../utils/activeWorkout'
+import { readActiveWorkout, clearActiveWorkout } from '../utils/activeWorkout'
 import { activeWorkoutPath } from '../features/workoutSessions/workoutNavigation'
+import { startWorkoutAndNavigate } from '../features/workoutSessions/startActiveWorkout'
 import { QuickRunForm } from '../features/runs/QuickRunForm'
 import styles from './HomePage.module.css'
 
@@ -124,13 +120,10 @@ export function HomePage() {
       setError(null)
       setStartingId(routine.id)
       try {
-        const session = await startWorkout(user.uid, routine)
-        // The routine route resolves the workout from the recovery copy, so it
-        // has to exist before we navigate. On the old /workout/:sessionId path
-        // this copy was written a moment later by SessionEditor's autosave;
-        // writing it here is the same helper, key, and object, just earlier.
-        writeActiveWorkout(session)
-        navigate(activeWorkoutPath(session))
+        // Creates the session, makes it the active workout, and opens it — in
+        // that order, which the routine route depends on. Shared with the
+        // routine editor's own Start so the two cannot drift.
+        await startWorkoutAndNavigate({ uid: user.uid, routine, navigate })
       } catch (err) {
         setError(err?.message || 'Failed to start workout.')
         setStartingId(null)

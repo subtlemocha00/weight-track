@@ -1,19 +1,16 @@
-import { startWorkout } from '../../services/workoutSessions'
-import { readActiveWorkout, writeActiveWorkout } from '../../utils/activeWorkout'
+import { readActiveWorkout } from '../../utils/activeWorkout'
+import { startActiveWorkout } from './startActiveWorkout'
 
 /**
  * Starting a workout from the routine route.
  *
- * Thin composition over the existing start mechanism — `startWorkout` still
- * snapshots the routine and writes the initial Firestore document, unchanged.
- * The one addition is writing the local recovery copy up front.
+ * The start itself lives in startActiveWorkout — shared with the home screen so
+ * the Firestore-then-recovery-copy ordering has a single implementation. What
+ * this module adds is the routine route's gate.
  *
- * Why that write belongs here: on the /workout/:sessionId path the copy is
- * created a moment later, by SessionEditor's autosave effect when it mounts.
- * The routine route can't wait for that — RoutineWorkoutContainer resolves the
- * session from localStorage to decide whether to mount SessionEditor at all, so
- * the copy has to exist before the URL flag is set. It is the same helper, the
- * same key, and the same session object the editor would write itself.
+ * It deliberately does not navigate. The route is already correct; only the
+ * query flag needs setting, and RoutineWorkoutContainer owns that so there
+ * stays exactly one path into workout mode.
  */
 
 /**
@@ -39,7 +36,5 @@ export function hasActiveWorkout() {
 export async function startRoutineWorkout(uid, routine) {
   if (hasActiveWorkout()) return null
 
-  const session = await startWorkout(uid, routine)
-  writeActiveWorkout(session)
-  return session
+  return startActiveWorkout(uid, routine)
 }
