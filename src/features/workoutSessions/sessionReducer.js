@@ -48,16 +48,26 @@ export function sessionReducer(state, action) {
           return {
             ...set,
             completed: nextCompleted,
-            timestamp: nextCompleted ? Date.now() : null
+            // The caller may supply the completion time, as FINISH already
+            // allows, so it can refer back to this set afterwards — the rest
+            // timer uses it to keep hold of the set that started it.
+            timestamp: nextCompleted ? action.timestamp ?? Date.now() : null
           }
         }
       )
 
-    case 'SET_EXERCISE_UNIT':
-      return updateExerciseAt(state, action.index, (exercise) => ({
-        ...exercise,
-        sets: exercise.sets.map((set) => ({ ...set, unit: action.unit }))
+    case 'SET_EXERCISE_UNIT': {
+      // Selecting the unit already in use changes nothing. Return the session
+      // itself rather than an identical copy, as the other cases do — a new
+      // object would autosave a recovery copy for an edit that never happened.
+      const exercise = state.exercises[action.index]
+      if (!exercise) return state
+      if (exercise.sets.every((set) => set.unit === action.unit)) return state
+      return updateExerciseAt(state, action.index, (current) => ({
+        ...current,
+        sets: current.sets.map((set) => ({ ...set, unit: action.unit }))
       }))
+    }
 
     case 'ADD_SET':
       // Session-only, like every other edit here. An extra set worked today

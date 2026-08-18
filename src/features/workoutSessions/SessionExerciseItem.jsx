@@ -2,6 +2,7 @@ import { memo, useCallback, useEffect, useState } from 'react'
 import { useSettings } from '../../hooks/useSettings'
 import { SessionSetRow, SessionSetRowHeader } from './SessionSetRow'
 import { RestTimer } from './RestTimer'
+import { findRestTimerOwner } from './restTimerOwner'
 import { SupersetControl } from '../../components/SupersetControl'
 import { WatchVideoButton } from '../exercises/WatchVideoButton'
 import { isSafeVideoUrl } from '../../services/exercises'
@@ -32,35 +33,37 @@ function SessionExerciseItemImpl({
   const timerEnabled = !readOnly && settings.restTimerEnabled
   const timerSeconds = settings.defaultRestSeconds
 
+  // Identified by the completion time of the set that started it, not by that
+  // set's position: sets can be removed mid-workout, and removing an earlier one
+  // shifts the rest down an index.
   const [restAfter, setRestAfter] = useState(null)
+  const restIndex = findRestTimerOwner(exercise.sets, restAfter?.timestamp ?? null)
 
   useEffect(() => {
     if (restAfter === null) return
-    if (!timerEnabled) {
-      setRestAfter(null)
-      return
-    }
-    const owningSet = exercise.sets[restAfter.index]
-    if (!owningSet || !owningSet.completed) {
+    // The set that was resting is gone — removed, or marked not-done again — or
+    // the timer has been switched off in settings.
+    if (!timerEnabled || restIndex === -1) {
       setRestAfter(null)
     }
-  }, [restAfter, timerEnabled, exercise.sets])
+  }, [restAfter, timerEnabled, restIndex])
 
   const handleToggleSetCompleted = useCallback(
     (setIndex) => {
-      const wasCompleted = exercise.sets[setIndex]?.completed
-      onToggleSetCompleted(setIndex)
+      const willBeCompleted = !exercise.sets[setIndex]?.completed
+      // One clock reading, used twice: it stamps the set as completed and is how
+      // the timer keeps hold of that set afterwards.
+      const timestamp = willBeCompleted ? Date.now() : null
+      onToggleSetCompleted(setIndex, timestamp)
 
-      const willBeCompleted = !wasCompleted
       const hasNextSet = setIndex < exercise.sets.length - 1
-
       if (willBeCompleted && timerEnabled && hasNextSet) {
-        setRestAfter({ index: setIndex, stamp: Date.now() })
-      } else if (!willBeCompleted && restAfter?.index === setIndex) {
-        setRestAfter(null)
+        setRestAfter({ timestamp })
       }
+      // Marking a set not-done needs no branch here: its timestamp is cleared,
+      // so the effect above stops finding it and ends the rest.
     },
-    [exercise.sets, onToggleSetCompleted, timerEnabled, restAfter]
+    [exercise.sets, onToggleSetCompleted, timerEnabled]
   )
 
   const handleRestDone = useCallback(() => setRestAfter(null), [])
@@ -183,9 +186,9 @@ function SessionExerciseItemImpl({
                 onToggleCompleted={() => handleToggleSetCompleted(setIndex)}
                 onRemove={() => onRemoveSet(setIndex)}
               />
-              {restAfter?.index === setIndex && (
+              {restIndex === setIndex && (
                 <RestTimer
-                  key={restAfter.stamp}
+                  key={restAfter.timestamp}
                   seconds={timerSeconds}
                   onDone={handleRestDone}
                 />

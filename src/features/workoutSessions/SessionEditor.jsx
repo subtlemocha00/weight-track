@@ -264,11 +264,12 @@ export function SessionEditor({ initialSession }) {
                   patch
                 })
               }
-              onToggleSetCompleted={(setIndex) =>
+              onToggleSetCompleted={(setIndex, timestamp) =>
                 dispatch({
                   type: 'TOGGLE_SET_COMPLETED',
                   exerciseIndex: index,
-                  setIndex
+                  setIndex,
+                  timestamp
                 })
               }
               onSetUnit={(unit) =>

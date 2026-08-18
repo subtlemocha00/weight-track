@@ -127,6 +127,91 @@ describe('REMOVE_SET', () => {
   })
 })
 
+describe('SET_EXERCISE_UNIT', () => {
+  it('applies the unit to every set of the target exercise only', () => {
+    const state = session()
+    const next = sessionReducer(state, { type: 'SET_EXERCISE_UNIT', index: 0, unit: 'kg' })
+
+    expect(next.exercises[0].sets.every((set) => set.unit === 'kg')).toBe(true)
+    // The other exercise is not rebuilt at all.
+    expect(next.exercises[1]).toBe(state.exercises[1])
+  })
+
+  it('keeps everything else on each set', () => {
+    const next = sessionReducer(session(), { type: 'SET_EXERCISE_UNIT', index: 0, unit: 'kg' })
+
+    expect(next.exercises[0].sets[0]).toEqual({
+      reps: 8,
+      weight: 185,
+      unit: 'kg',
+      completed: true,
+      timestamp: 1200
+    })
+  })
+
+  it('returns the same session when every set already uses that unit', () => {
+    // Selecting the active unit is a no-op, and a new object here would autosave
+    // a recovery copy for an edit that never happened.
+    const state = session()
+    expect(sessionReducer(state, { type: 'SET_EXERCISE_UNIT', index: 0, unit: 'lb' })).toBe(state)
+  })
+
+  it('still applies when only some sets already use that unit', () => {
+    const state = session()
+    state.exercises[0].sets[1].unit = 'kg'
+
+    const next = sessionReducer(state, { type: 'SET_EXERCISE_UNIT', index: 0, unit: 'kg' })
+
+    expect(next).not.toBe(state)
+    expect(next.exercises[0].sets.every((set) => set.unit === 'kg')).toBe(true)
+  })
+
+  it('ignores an out-of-range exercise', () => {
+    const state = session()
+    expect(sessionReducer(state, { type: 'SET_EXERCISE_UNIT', index: 9, unit: 'kg' })).toBe(state)
+  })
+})
+
+describe('TOGGLE_SET_COMPLETED', () => {
+  it('stamps the set with the completion time the caller supplies', () => {
+    // The rest timer needs to know which set it belongs to, so it supplies the
+    // same clock reading it keeps for itself.
+    const next = sessionReducer(session(), {
+      type: 'TOGGLE_SET_COMPLETED',
+      exerciseIndex: 0,
+      setIndex: 1,
+      timestamp: 7777
+    })
+
+    expect(next.exercises[0].sets[1].completed).toBe(true)
+    expect(next.exercises[0].sets[1].timestamp).toBe(7777)
+  })
+
+  it('stamps its own time when the caller supplies none', () => {
+    const before = Date.now()
+    const next = sessionReducer(session(), {
+      type: 'TOGGLE_SET_COMPLETED',
+      exerciseIndex: 0,
+      setIndex: 1
+    })
+
+    expect(next.exercises[0].sets[1].completed).toBe(true)
+    expect(next.exercises[0].sets[1].timestamp).toBeGreaterThanOrEqual(before)
+  })
+
+  it('clears the timestamp when a set is marked not done', () => {
+    const next = sessionReducer(session(), {
+      type: 'TOGGLE_SET_COMPLETED',
+      exerciseIndex: 0,
+      setIndex: 0,
+      timestamp: 7777
+    })
+
+    expect(next.exercises[0].sets[0].completed).toBe(false)
+    expect(next.exercises[0].sets[0].timestamp).toBe(null)
+  })
+})
+
 describe('session identity is never touched by set edits', () => {
   it('keeps id, routineId and status across add and remove', () => {
     const before = session()
