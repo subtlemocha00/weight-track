@@ -16,17 +16,30 @@ import { downloadRoutineExport } from './exportRoutine'
 import { AddExercisePanel } from './AddExercisePanel'
 import { RoutineExerciseItem } from './RoutineExerciseItem'
 import { routineReducer } from './routineReducer'
+import { resolveWorkoutControl } from './resolveWorkoutControl'
 import { getSupersetCount } from '../../utils/supersets'
 import styles from './RoutineEditor.module.css'
 
 /**
- * @param onWorkoutStarted called once a workout has been created and is live in
- *   the recovery copy, so the owner can switch the route into workout mode.
- *   Receives the routine state the workout was started from, which "Save &
- *   start" may have written after the route loaded. Omitted (e.g. by the
- *   new-routine page) means no Start action is offered.
+ * @param onEnterWorkout called when the route should show this routine's
+ *   workout — either one Start has just created and made live in the recovery
+ *   copy, or the live one Resume offered to go back into. The owner decides how
+ *   to get there; this editor never navigates into workout mode itself. Omitted
+ *   (e.g. by the new-routine page) means no workout action is offered at all.
+ * @param ownsActiveWorkout whether the live workout belongs to this routine,
+ *   resolved by the owner from the recovery copy it would mount. Turns the
+ *   workout action from Start into Resume.
+ * @param onRoutineSaved called with the routine as persisted, every time a save
+ *   succeeds. The owner keeps it because entering workout mode unmounts this
+ *   editor, and the copy the route loaded may by then be the older one.
  */
-export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
+export function RoutineEditor({
+  initialRoutine,
+  mode,
+  onEnterWorkout,
+  ownsActiveWorkout = false,
+  onRoutineSaved
+}) {
   const { user } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
@@ -53,9 +66,13 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
   const isNew = mode === 'new'
   const canSave = routine.name.trim().length > 0 && saveState.status !== 'saving'
   const supersetCount = getSupersetCount(routine.exercises)
-  // Start is offered only for a routine that exists in Firestore and only when
-  // the owner can act on it (the new-routine page passes no handler).
-  const canStartWorkout = !isNew && typeof onWorkoutStarted === 'function'
+  // A workout action is offered only for a routine that exists in Firestore and
+  // only when the owner can act on it (the new-routine page passes no handler).
+  // Which action it is depends on whether this routine already owns a live one.
+  const workoutControl = resolveWorkoutControl({
+    workoutActionsAvailable: !isNew && typeof onEnterWorkout === 'function',
+    ownsActiveWorkout
+  })
   const noExercises = routine.exercises.length === 0
 
   // Warn on browser close / refresh when there are unsaved changes
@@ -113,6 +130,9 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
       suppressDirty.current = false
       setIsDirty(false)
       setSaveState({ status: 'saved', message: 'Saved' })
+      // Tell the owner what is now persisted. It outlives this editor, which is
+      // unmounted whenever the route switches to the workout.
+      onRoutineSaved?.(saved)
       return saved
     } catch (err) {
       setSaveState({
@@ -121,7 +141,7 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
       })
       return null
     }
-  }, [user, routine])
+  }, [user, routine, onRoutineSaved])
 
   const handleSave = useCallback(async () => {
     if (!user) return
@@ -132,7 +152,7 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
   }, [user, saveCurrentRoutine, isNew, navigate])
 
   const handleStartWorkout = useCallback(async () => {
-    if (!user || isNew || starting || !onWorkoutStarted) return
+    if (!user || workoutControl !== 'start' || starting) return
 
     // Re-check at press time: the mount-time read can be stale if the workout
     // was finished or discarded in another tab.
@@ -177,11 +197,8 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
         return
       }
       // The session is live in the recovery copy — the owner resolves it from
-      // there, so there is a single path into workout mode. `source` goes with
-      // it because this editor is about to unmount: it holds the routine as
-      // saved, which is newer than the copy the route loaded whenever Start had
-      // to save first.
-      onWorkoutStarted(source)
+      // there, so there is a single path into workout mode.
+      onEnterWorkout()
     } catch (err) {
       setSaveState({
         status: 'error',
@@ -191,14 +208,37 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
     }
   }, [
     user,
-    isNew,
+    workoutControl,
     starting,
-    onWorkoutStarted,
+    onEnterWorkout,
     routine,
     isDirty,
     confirm,
     saveCurrentRoutine
   ])
+
+  // Resume is navigation, not a start: the session already exists in the
+  // recovery copy, so nothing is created, written or saved here — the owner just
+  // switches the route into workout mode and the existing session resolves.
+  const handleResumeWorkout = useCallback(async () => {
+    if (workoutControl !== 'resume') return
+
+    // Entering workout mode unmounts this editor, so unsaved routine edits would
+    // go with it. Resume must not save them either — it changes no routine — so
+    // it says what will happen and lets the user go back and Save first.
+    if (isDirty) {
+      const ok = await confirm({
+        title: 'Unsaved changes',
+        message:
+          'Resume your workout without saving these routine changes? They will be lost.',
+        confirmLabel: 'Resume',
+        cancelLabel: 'Keep editing'
+      })
+      if (!ok) return
+    }
+
+    onEnterWorkout()
+  }, [workoutControl, isDirty, confirm, onEnterWorkout])
 
   const handleDelete = useCallback(async () => {
     if (!user || isNew) return
@@ -307,7 +347,21 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
   return (
     <div className={styles.editor}>
       <AppHeader onBack={handleBack}>
-        {canStartWorkout && (
+        {/* One workout action, never two. Once this routine owns the live
+          * workout, Resume takes Start's place rather than sitting beside it —
+          * Start would be disabled anyway, and offering both suggests a second
+          * workout could be created. */}
+        {workoutControl === 'resume' && (
+          <button
+            type="button"
+            className={styles.startWorkout}
+            onClick={handleResumeWorkout}
+            title="Go back into your workout in progress"
+          >
+            ▶ Resume
+          </button>
+        )}
+        {workoutControl === 'start' && (
           <button
             type="button"
             className={styles.startWorkout}

@@ -18,6 +18,10 @@ import { RoutineEditor } from './RoutineEditor'
  * edits cannot leak into a session or the reverse. This container only decides
  * which one to render, and is the only place that mounts a running workout —
  * /workout/:sessionId now just redirects here.
+ *
+ * Because it already resolves the routine's live workout, it is also what tells
+ * the routine editor whether that workout exists — so Resume is decided from
+ * the same read that mounts the session, not from a second one.
  */
 export function RoutineWorkoutContainer({ routine }) {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -27,23 +31,26 @@ export function RoutineWorkoutContainer({ routine }) {
   // Resolution is a synchronous localStorage read (see resolveActiveWorkout),
   // so it can seed state directly and workout mode renders on the first pass —
   // no loading state, and no flash of edit mode over a live workout.
+  //
+  // Resolved whether or not the flag is set: in edit mode the answer is what
+  // decides between Start and Resume, and resolving it here keeps the editor
+  // from reading wt-active-workout a second time to ask the same question.
   const [activeSession, setActiveSession] = useState(() =>
-    workoutRequested ? resolveActiveWorkoutForRoutine(routineId) : null
+    resolveActiveWorkoutForRoutine(routineId)
   )
 
-  // The routine the running workout was started from, which may have been saved
-  // after this route loaded. Kept so leaving workout mode does not re-seed the
-  // editor from the older copy — see resolveEditorRoutine.
-  const [startedFrom, setStartedFrom] = useState(null)
+  // The newest saved state of this routine, when the editor has saved since the
+  // route loaded. Kept because entering workout mode unmounts the editor: without
+  // it, coming back out would re-seed from the older loaded copy — see
+  // resolveEditorRoutine.
+  const [savedRoutine, setSavedRoutine] = useState(null)
 
   // Re-resolve when the flag or the routine changes. Navigating between two
   // routines reuses this component, so without this a workout resolved for the
   // previous routine would linger. No async work is involved, so there is no
   // pending result to cancel.
   useEffect(() => {
-    const resolved = workoutRequested
-      ? resolveActiveWorkoutForRoutine(routineId)
-      : null
+    const resolved = resolveActiveWorkoutForRoutine(routineId)
     setActiveSession(resolved)
 
     // The flag asked for a workout that isn't there — a stale link, a finished
@@ -62,13 +69,16 @@ export function RoutineWorkoutContainer({ routine }) {
     }
   }, [workoutRequested, routineId, setSearchParams])
 
-  // Called by the editor once a workout exists in the recovery copy, with the
-  // routine state it was started from. Only the flag is set here — the effect
-  // above still does the resolving, so there is one path into workout mode
-  // whether the workout was just started, resumed from a link, or recovered
-  // after a refresh.
-  const enterWorkoutMode = useCallback((sourceRoutine) => {
-    if (sourceRoutine) setStartedFrom(sourceRoutine)
+  // Called by the editor when the route should show the workout — either one it
+  // has just created, or the live one it offered to resume. Only the flag is set
+  // here; the effect above still does the resolving, so there is one path into
+  // workout mode whether the workout was just started, resumed, opened from a
+  // link, or recovered after a refresh. Resume therefore creates nothing: it
+  // sets a query parameter and the existing session is resolved as usual.
+  //
+  // Replace, not push, so resuming adds no history entry — Back from the workout
+  // still leads out of the routine rather than back into it.
+  const enterWorkoutMode = useCallback(() => {
     setSearchParams(
       (prev) => {
         const next = new URLSearchParams(prev)
@@ -88,8 +98,10 @@ export function RoutineWorkoutContainer({ routine }) {
   return (
     <RoutineEditor
       mode="edit"
-      initialRoutine={resolveEditorRoutine(routine, startedFrom)}
-      onWorkoutStarted={enterWorkoutMode}
+      initialRoutine={resolveEditorRoutine(routine, savedRoutine)}
+      ownsActiveWorkout={Boolean(activeSession)}
+      onEnterWorkout={enterWorkoutMode}
+      onRoutineSaved={setSavedRoutine}
     />
   )
 }

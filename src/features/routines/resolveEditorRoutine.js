@@ -6,23 +6,24 @@
  * out of a workout mounts a fresh one — seeded, by default, from that original
  * load.
  *
- * That is wrong when the workout was started with "Save & start": the routine
- * was written to Firestore after the page loaded, so the loaded copy is now the
- * older version. Re-seeding from it shows the just-saved edits as missing and
- * lets the next Save write the older exercises back over them.
+ * That is wrong once the editor has saved: the routine was written to Firestore
+ * after the page loaded, so the loaded copy is now the older version. Re-seeding
+ * from it shows the saved edits as missing and lets the next Save write the older
+ * version back over them. It is reachable from both ways into workout mode —
+ * Start saving first ("Save & start"), and Save followed by Resume.
  *
- * The routine a workout was started from is therefore remembered and preferred.
- * Pure resolution — nothing here reads or writes anything.
+ * The newest saved copy is therefore remembered and preferred. Pure resolution —
+ * nothing here reads or writes anything.
  */
 
 /**
- * @param {object} loaded    the routine as fetched for this route
- * @param {object|null} startedFrom  the routine a workout was started from, if any
+ * @param {object} loaded  the routine as fetched for this route
+ * @param {object|null} saved  the newest state the editor has persisted, if any
  * @returns {object} the routine to seed the editor with
  */
-export function resolveEditorRoutine(loaded, startedFrom) {
+export function resolveEditorRoutine(loaded, saved) {
   // Only ever prefer it for the routine actually on screen. A remembered copy
   // from a different routine is not a newer version of this one.
-  if (startedFrom && loaded && startedFrom.id === loaded.id) return startedFrom
+  if (saved && loaded && saved.id === loaded.id) return saved
   return loaded
 }
