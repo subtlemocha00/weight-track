@@ -34,6 +34,18 @@
   transition: border-color 0.15s;
 }
 
+/* Second header row: duplicate/export/delete/save. Right-aligned to line up
+ * with the Start button on the row above, and wrapping rather than clipping if
+ * a label grows ("Duplicating…") on a narrow screen. */
+.secondaryActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 0;
+}
+
 /* Transient save/delete status, shown just below the header action bar. */
 .saveStatus {
   display: flex;

@@ -319,7 +319,23 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
             {starting ? '…' : '▶ Start'}
           </button>
         )}
-        {!isNew && (
+        {isNew && (
+          <button
+            type="button"
+            className={styles.save}
+            onClick={handleSave}
+            disabled={!canSave}
+          >
+            {saveState.status === 'saving' ? 'Saving…' : 'Save'}
+          </button>
+        )}
+      </AppHeader>
+
+      {/* Second header row. Back and Start share the row above — the actions
+        * that manage the routine itself sit here so neither row has to wrap.
+        * A new routine has none of these, so it keeps Save beside Back. */}
+      {!isNew && (
+        <div className={styles.secondaryActions}>
           <button
             type="button"
             className={styles.duplicate}
@@ -328,8 +344,6 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
           >
             {duplicating ? 'Duplicating…' : 'Duplicate'}
           </button>
-        )}
-        {!isNew && (
           <button
             type="button"
             className={styles.export}
@@ -338,8 +352,6 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
           >
             Export
           </button>
-        )}
-        {!isNew && (
           <button
             type="button"
             className={styles.delete}
@@ -348,16 +360,16 @@ export function RoutineEditor({ initialRoutine, mode, onWorkoutStarted }) {
           >
             {deleting ? 'Deleting…' : 'Delete'}
           </button>
-        )}
-        <button
-          type="button"
-          className={styles.save}
-          onClick={handleSave}
-          disabled={!canSave}
-        >
-          {saveState.status === 'saving' ? 'Saving…' : 'Save'}
-        </button>
-      </AppHeader>
+          <button
+            type="button"
+            className={styles.save}
+            onClick={handleSave}
+            disabled={!canSave}
+          >
+            {saveState.status === 'saving' ? 'Saving…' : 'Save'}
+          </button>
+        </div>
+      )}
 
       {saveState.message && (
         <div className={styles.saveStatus}>
