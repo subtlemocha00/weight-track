@@ -6,7 +6,8 @@ import {
   getDocs,
   orderBy,
   query,
-  setDoc
+  setDoc,
+  updateDoc
 } from 'firebase/firestore'
 import { firestore } from '../firebase'
 import { createRoutineDuplicate } from '../../features/routines/routineFactory'
@@ -44,6 +45,23 @@ export async function saveRoutine(uid, routine) {
   const { id, ...body } = payload
   await setDoc(routineDocRef(uid, id), body)
   return payload
+}
+
+/**
+ * Star or unstar a routine.
+ *
+ * A single-field update, not a saveRoutine: saveRoutine rewrites the whole
+ * document and stamps updatedAt, and starring is neither an edit to the routine
+ * nor a reason for it to jump up a list ordered by last edit. Writing only this
+ * field also means the caller needs no copy of the routine to write back, so a
+ * star pressed on the list can never overwrite an edit being made elsewhere with
+ * a stale one.
+ *
+ * The favourite lives on the routine document itself, so deleting a routine
+ * takes its favourite with it — there is nothing else to clean up.
+ */
+export async function setRoutineFavorite(uid, routineId, favorite) {
+  await updateDoc(routineDocRef(uid, routineId), { favorite: favorite === true })
 }
 
 export async function deleteRoutine(uid, routineId) {

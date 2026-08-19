@@ -208,6 +208,40 @@
   font-weight: 700;
 }
 
+/* Sits at the right edge of the row, outside the link. Sized for a thumb
+ * rather than for the glyph, since it is pressed next to a full-width tap
+ * target that opens the routine. */
+.star {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: -8px -6px -8px 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--t2);
+  transition: color 0.08s;
+}
+
+.star:hover,
+.star:focus-visible {
+  color: var(--neon-orange);
+}
+
+.star:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.starOn {
+  color: var(--neon-orange);
+}
+
 .navLink {
   display: flex;
   align-items: center;

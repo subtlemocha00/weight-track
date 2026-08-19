@@ -1,5 +1,15 @@
 import { describe, it, expect } from 'vitest'
-import { nextCopyName, createRoutineDuplicate } from './routineFactory'
+import {
+  createBlankRoutine,
+  nextCopyName,
+  createRoutineDuplicate
+} from './routineFactory'
+
+describe('createBlankRoutine', () => {
+  it('is not favourited', () => {
+    expect(createBlankRoutine().favorite).toBe(false)
+  })
+})
 
 describe('nextCopyName', () => {
   it('appends (Copy) to a plain name', () => {
@@ -76,6 +86,14 @@ describe('createRoutineDuplicate', () => {
     // Mutating the copy must not affect the original.
     expect(source.exercises[0].sets[0].reps).toBe(8)
     expect(source.exercises[0].name).toBe('Bench Press')
+  })
+
+  it('starts unfavourited even when the source is favourited', () => {
+    // A copy has none of the history that earned the original its star, and the
+    // two must not share favourite state.
+    const dup = createRoutineDuplicate({ ...source, favorite: true })
+    expect(dup.favorite).toBe(false)
+    expect(source.favorite).toBeUndefined()
   })
 
   it('tolerates malformed input (missing exercises)', () => {

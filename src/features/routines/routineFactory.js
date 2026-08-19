@@ -11,6 +11,7 @@ export function createBlankRoutine() {
     name: '',
     createdAt: now,
     updatedAt: now,
+    favorite: false,
     exercises: []
   }
 }
@@ -71,6 +72,8 @@ export function nextCopyName(name) {
  *   - new id (never the original's)
  *   - createdAt/updatedAt omitted → stamped to now by saveRoutine
  *   - any completion marker (e.g. lastCompleted) removed
+ *   - favorite reset to false: starring is a judgement about the routine you
+ *     have been using, and a copy has no history to have earned it
  *
  * Workout history/sessions live in their own collection and are never touched.
  * Tolerant of malformed input (missing/!array exercises → []).
@@ -86,6 +89,7 @@ export function createRoutineDuplicate(routine) {
 
   clone.id = newId()
   clone.name = nextCopyName(routine?.name)
+  clone.favorite = false
   if (!Array.isArray(clone.exercises)) clone.exercises = []
 
   return clone

@@ -1,7 +1,11 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
-import { listRoutines } from '../services/routines'
+import { listRoutines, setRoutineFavorite } from '../services/routines'
+import {
+  isFavorite,
+  orderRoutinesByFavorite
+} from '../features/routines/favoriteRoutines'
 import { listCompletedSessions } from '../services/workoutSessions'
 import { readActiveWorkout } from '../utils/activeWorkout'
 import { discardActiveWorkout } from '../features/workoutSessions/discardActiveWorkout'
@@ -50,6 +54,18 @@ export function HomePage() {
   const [error, setError] = useState(null)
   const [recoverySession, setRecoverySession] = useState(() => readActiveWorkout())
   const [showRunForm, setShowRunForm] = useState(false)
+  // Ids whose star write is still in flight. One star can't be pressed again
+  // until its own write lands, so two writes for the same routine can never
+  // race and settle in the wrong order.
+  const [pendingFavorites, setPendingFavorites] = useState(() => new Set())
+
+  // Favourites float to the top of the list as loaded — which is already
+  // ordered by last edit — so both groups keep that ordering. Derived at render
+  // rather than stored, so a star only has to flip one boolean.
+  const orderedRoutines = useMemo(
+    () => (routines === null ? null : orderRoutinesByFavorite(routines)),
+    [routines]
+  )
 
   useEffect(() => {
     if (!user) return
@@ -98,6 +114,48 @@ export function HomePage() {
       navigate(activeWorkoutPath(recoverySession))
     }
   }, [recoverySession, navigate])
+
+  // Starring is not an edit to the routine: it writes the one field and leaves
+  // updatedAt alone, so the routine keeps its place in the last-edit ordering
+  // and simply changes which group it is ordered within.
+  const handleToggleFavorite = useCallback(
+    async (routine) => {
+      if (!user || pendingFavorites.has(routine.id)) return
+      const next = !isFavorite(routine)
+
+      // Applied locally first so the star and the routine's position respond to
+      // the press. Only this field changes, so nothing else held about the
+      // routine can go stale behind it.
+      const setFavoriteLocally = (value) =>
+        setRoutines((prev) =>
+          prev
+            ? prev.map((item) =>
+                item.id === routine.id ? { ...item, favorite: value } : item
+              )
+            : prev
+        )
+
+      setFavoriteLocally(next)
+      setPendingFavorites((prev) => new Set(prev).add(routine.id))
+      setError(null)
+
+      try {
+        await setRoutineFavorite(user.uid, routine.id, next)
+      } catch (err) {
+        // Put it back. A star left showing a state Firestore never accepted
+        // would look saved right up until the next reload.
+        setFavoriteLocally(!next)
+        setError(err?.message || 'Could not update favourites.')
+      } finally {
+        setPendingFavorites((prev) => {
+          const remaining = new Set(prev)
+          remaining.delete(routine.id)
+          return remaining
+        })
+      }
+    },
+    [user, pendingFavorites]
+  )
 
   const handleDiscard = useCallback(() => {
     if (!recoverySession) return
@@ -161,11 +219,12 @@ export function HomePage() {
         </div>
       )}
 
-      {routines !== null && routines.length > 0 && (
+      {orderedRoutines !== null && orderedRoutines.length > 0 && (
         <ul className={styles.list}>
-          {routines.map((routine, i) => {
+          {orderedRoutines.map((routine, i) => {
             const exerciseCount = routine.exercises?.length ?? 0
             const accentClass = ACCENT_CLASSES[i % ACCENT_CLASSES.length]
+            const favorite = isFavorite(routine)
             return (
               <li key={routine.id} className={styles.row}>
                 <div className={`${styles.accentBar} ${styles[accentClass]}`} />
@@ -190,6 +249,25 @@ export function HomePage() {
                     times
                   </div>
                 </Link>
+                {/* A sibling of the link, never inside it, so pressing the star
+                  * cannot also open the routine. Filled vs outlined star, not
+                  * colour alone, carries the state visually; aria-pressed and
+                  * the label carry it for assistive tech. */}
+                <button
+                  type="button"
+                  className={`${styles.star} ${favorite ? styles.starOn : ''}`}
+                  onClick={() => handleToggleFavorite(routine)}
+                  disabled={pendingFavorites.has(routine.id)}
+                  aria-pressed={favorite}
+                  aria-label={
+                    favorite ? 'Remove from favourites' : 'Add to favourites'
+                  }
+                  title={
+                    favorite ? 'Remove from favourites' : 'Add to favourites'
+                  }
+                >
+                  <span aria-hidden="true">{favorite ? '★' : '☆'}</span>
+                </button>
               </li>
             )
           })}
