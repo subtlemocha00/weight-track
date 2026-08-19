@@ -115,7 +115,7 @@ function SessionExerciseItemImpl({
           aria-label="Remove exercise from workout"
           title="Remove"
         >
-          ✕
+          ×
         </button>
       </div>
 
