@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import { useAuth } from '../../hooks/useAuth'
 import { SessionEditor } from '../workoutSessions/SessionEditor'
+import { discardActiveWorkout } from '../workoutSessions/discardActiveWorkout'
 import { resolveActiveWorkoutForRoutine } from '../workoutSessions/resolveActiveWorkout'
 import { resolveEditorRoutine } from './resolveEditorRoutine'
 import { RoutineEditor } from './RoutineEditor'
@@ -24,6 +26,7 @@ import { RoutineEditor } from './RoutineEditor'
  * the same read that mounts the session, not from a second one.
  */
 export function RoutineWorkoutContainer({ routine }) {
+  const { user } = useAuth()
   const [searchParams, setSearchParams] = useSearchParams()
   const workoutRequested = searchParams.get('workout') === '1'
   const routineId = routine.id
@@ -89,6 +92,17 @@ export function RoutineWorkoutContainer({ routine }) {
     )
   }, [setSearchParams])
 
+  // Called by the editor when the user throws this routine's workout away. The
+  // discard itself is the shared one — identical to the home screen's banner —
+  // and clearing the resolved session here is what turns Resume back into Start
+  // without a reload. Only reachable in edit mode, where the workout flag is
+  // not set, so there is no stale ?workout=1 left behind to clean up.
+  const discardWorkout = useCallback(() => {
+    if (!activeSession) return
+    discardActiveWorkout(user?.uid, activeSession.id)
+    setActiveSession(null)
+  }, [activeSession, user])
+
   const mode = workoutRequested && activeSession ? 'workout' : 'edit'
 
   if (mode === 'workout') {
@@ -101,6 +115,7 @@ export function RoutineWorkoutContainer({ routine }) {
       initialRoutine={resolveEditorRoutine(routine, savedRoutine)}
       ownsActiveWorkout={Boolean(activeSession)}
       onEnterWorkout={enterWorkoutMode}
+      onDiscardWorkout={discardWorkout}
       onRoutineSaved={setSavedRoutine}
     />
   )

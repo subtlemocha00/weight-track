@@ -14,8 +14,8 @@ import { SessionExerciseItem } from './SessionExerciseItem'
 import { AddExercisePanel } from '../routines/AddExercisePanel'
 import { getSupersetCount } from '../../utils/supersets'
 import { ElapsedTime } from './ElapsedTime'
-import { clearActiveWorkout, writeActiveWorkout } from '../../utils/activeWorkout'
-import { markSessionAbandoned } from '../../services/workoutSessions'
+import { writeActiveWorkout } from '../../utils/activeWorkout'
+import { discardActiveWorkout } from './discardActiveWorkout'
 import { CONFIRM_ALT } from '../../contexts/ConfirmModalContext'
 import { useConfirm } from '../../hooks/useConfirm'
 import { AppHeader } from '../../components/AppHeader'
@@ -107,15 +107,8 @@ export function SessionEditor({ initialSession }) {
     navigate(backTo, { replace: backReplace })
   }, [navigate, backTo, backReplace])
 
-  // Discard: the same two steps the home screen's recovery banner takes. The
-  // local copy goes first, so the workout stops being resumable even if the
-  // Firestore bookkeeping never lands.
   const discardWorkout = useCallback(() => {
-    const sessionId = session.id
-    clearActiveWorkout()
-    if (user && sessionId) {
-      markSessionAbandoned(user.uid, sessionId).catch(() => {})
-    }
+    discardActiveWorkout(user?.uid, session.id)
     navigate('/home', { replace: true })
   }, [session.id, user, navigate])
 

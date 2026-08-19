@@ -2,11 +2,9 @@ import { useCallback, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { listRoutines } from '../services/routines'
-import {
-  listCompletedSessions,
-  markSessionAbandoned
-} from '../services/workoutSessions'
-import { readActiveWorkout, clearActiveWorkout } from '../utils/activeWorkout'
+import { listCompletedSessions } from '../services/workoutSessions'
+import { readActiveWorkout } from '../utils/activeWorkout'
+import { discardActiveWorkout } from '../features/workoutSessions/discardActiveWorkout'
 import { activeWorkoutPath } from '../features/workoutSessions/workoutNavigation'
 import { QuickRunForm } from '../features/runs/QuickRunForm'
 import styles from './HomePage.module.css'
@@ -103,13 +101,8 @@ export function HomePage() {
 
   const handleDiscard = useCallback(() => {
     if (!recoverySession) return
-    const sessionId = recoverySession.id
-    clearActiveWorkout()
+    discardActiveWorkout(user?.uid, recoverySession.id)
     setRecoverySession(null)
-    // Fire-and-forget: mark the orphaned Firestore doc as abandoned
-    if (user && sessionId) {
-      markSessionAbandoned(user.uid, sessionId).catch(() => {})
-    }
   }, [recoverySession, user])
 
   return (

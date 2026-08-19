@@ -29,6 +29,10 @@ import styles from './RoutineEditor.module.css'
  * @param ownsActiveWorkout whether the live workout belongs to this routine,
  *   resolved by the owner from the recovery copy it would mount. Turns the
  *   workout action from Start into Resume.
+ * @param onDiscardWorkout called when the user throws this routine's live
+ *   workout away. The owner does the discarding — it holds the session — and
+ *   re-renders with ownsActiveWorkout false. Only meaningful alongside
+ *   ownsActiveWorkout.
  * @param onRoutineSaved called with the routine as persisted, every time a save
  *   succeeds. The owner keeps it because entering workout mode unmounts this
  *   editor, and the copy the route loaded may by then be the older one.
@@ -38,6 +42,7 @@ export function RoutineEditor({
   mode,
   onEnterWorkout,
   ownsActiveWorkout = false,
+  onDiscardWorkout,
   onRoutineSaved
 }) {
   const { user } = useAuth()
@@ -256,6 +261,33 @@ export function RoutineEditor({
     onEnterWorkout()
   }, [workoutControl, isDirty, confirm, onEnterWorkout])
 
+  // Discard ends the workout and leaves the user here, on the routine. It is
+  // the home banner's Discard, reachable without first going home. Confirmed
+  // because it destroys logged sets with no undo and sits one tap from Resume —
+  // the banner's version is transient, this one lives in the header.
+  //
+  // Unsaved routine edits are untouched: discarding a session changes no
+  // routine, and nothing unmounts, so there is nothing to warn about.
+  const handleDiscardWorkout = useCallback(async () => {
+    if (workoutControl !== 'resume' || !onDiscardWorkout) return
+
+    const ok = await confirm({
+      title: 'Discard workout?',
+      message:
+        'Your workout in progress will be thrown away. Anything logged in it cannot be recovered.',
+      confirmLabel: 'Discard',
+      cancelLabel: 'Keep it',
+      destructive: true
+    })
+    if (!ok) return
+
+    onDiscardWorkout()
+    // That workout was the one blocking Start. Re-read rather than assume, so
+    // the button reflects what is actually there.
+    setWorkoutInProgress(hasActiveWorkout())
+    setSaveState({ status: 'idle', message: '' })
+  }, [workoutControl, onDiscardWorkout, confirm])
+
   const handleDelete = useCallback(async () => {
     if (!user || isNew) return
     const ok = await confirm({
@@ -367,6 +399,19 @@ export function RoutineEditor({
           * workout, Resume takes Start's place rather than sitting beside it —
           * Start would be disabled anyway, and offering both suggests a second
           * workout could be created. */}
+        {/* Discard sits where Pause sits inside the workout — left of the
+          * primary action — so the paused routine header and the running
+          * workout header read as the same bar with the middle slot swapped. */}
+        {workoutControl === 'resume' && onDiscardWorkout && (
+          <button
+            type="button"
+            className={styles.discardWorkout}
+            onClick={handleDiscardWorkout}
+            title="Throw away your workout in progress and stay here"
+          >
+            Discard
+          </button>
+        )}
         {workoutControl === 'resume' && (
           <button
             type="button"
