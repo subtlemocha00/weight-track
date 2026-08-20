@@ -10,7 +10,7 @@ export const DEFAULT_SETTINGS = {
 }
 
 /** Shortest countdown worth showing. Below it, rest is switched off instead. */
-export const REST_SECONDS_MIN = 5
+export const REST_SECONDS_MIN = 1
 export const REST_SECONDS_MAX = 600
 /**
  * No default rest: sets that carry no rest of their own get no timer. Sets
@@ -47,8 +47,8 @@ function withDefaults(partial) {
     ),
     themePreference:
       partial?.themePreference === 'light' ||
-      partial?.themePreference === 'dark' ||
-      partial?.themePreference === 'system'
+        partial?.themePreference === 'dark' ||
+        partial?.themePreference === 'system'
         ? partial.themePreference
         : DEFAULT_SETTINGS.themePreference
   }
