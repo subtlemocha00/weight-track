@@ -66,9 +66,11 @@ function SessionExerciseItemImpl({
       const timestamp = willBeCompleted ? Date.now() : null
       onToggleSetCompleted(setIndex, timestamp)
 
-      const hasNextSet = setIndex < exercise.sets.length - 1
+      // Every completed set gets its rest, the last one included — supersets
+      // and the next exercise follow it, so finishing an exercise is no reason
+      // to stop counting. Only a rest resolving to nothing stops it.
       const seconds = restSecondsFor(exercise.sets[setIndex])
-      if (willBeCompleted && hasNextSet && seconds > 0) {
+      if (willBeCompleted && seconds > 0) {
         setRestAfter({ timestamp })
       }
       // Marking a set not-done needs no branch here: its timestamp is cleared,
