@@ -552,25 +552,50 @@ Nothing beyond this is permitted in this phase.
 If any feature requires derived metrics or aggregation:
 * defer it to a future phase
 * do not implement it in Phase 5
-# ADDENDUM — Global Rest Timer Constraints
+# ADDENDUM — Rest Timer Constraints
 
 ## Rest Timer Philosophy
 
-The rest timer is intentionally lightweight and globally configured.
+The rest timer is intentionally lightweight.
 
 It exists ONLY to provide contextual rest visibility between sets.
 
 ---
 
-## Global Timer Rule
+## Rest Duration Rule
 
-The application uses ONE global user-configurable rest duration.
+SUPERSEDES the earlier global-only rule. Rest duration has two sources,
+resolved per set:
 
-The timer duration comes ONLY from:
+1. `set.restSeconds` — the rest typed against that set in its routine, used
+   exactly as written
+2. `settings.defaultRestSeconds` — the fallback, used ONLY for sets that carry
+   no rest of their own
 
-settings.defaultRestSeconds
+The specific value always wins. A rest written into a routine is a deliberate
+instruction and must never be overridden by the setting.
 
-Per-exercise or per-set timer customization is explicitly out of scope for the current architecture phase.
+A duration of 0 means no timer, from either source:
+
+* 0 on a set — no rest after that set, even though other sets rest
+* 0 in settings — no rest after any set that has none of its own
+
+There is NO global enable/disable flag. `restTimerEnabled` has been removed: a
+default of 0 says the same thing, and a set carrying its own rest ignored the
+flag anyway.
+
+Resolution lives in exactly ONE place:
+
+src/features/workoutSessions/restDuration.js
+
+No component may decide rest duration for itself.
+
+Still out of scope:
+
+* per-exercise rest fields (per-set is the only level that exists)
+* editing rest during a workout
+* multiple named timer presets
+* per-set timer sounds or notifications
 
 ---
 
@@ -578,18 +603,22 @@ Per-exercise or per-set timer customization is explicitly out of scope for the c
 
 The timer must:
 
-* appear inline between sets
+* appear inline beneath the completed set
+* appear after EVERY completed set, the last set of an exercise included
 * start immediately after set completion
 * disappear automatically at completion
 * remain local runtime state only
 
 The timer must NOT:
 
-* persist to Firestore
+* persist its countdown to Firestore
 * survive refresh
 * synchronize between devices
 * generate notifications
 * run in background contexts
+
+`set.restSeconds` is routine template data, not timer state. Persisting it is
+required; persisting a running countdown is not.
 
 ---
 
@@ -599,8 +628,8 @@ Settings are intentionally minimal.
 
 Allowed settings:
 * weight units
-* timer enable/disable
-* global timer duration
+* distance units
+* default rest duration (0 means no default rest)
 * theme preference
 
 Do NOT expand settings into:
@@ -632,3 +661,66 @@ NOT:
 * visual polish
 * advanced styling
 * animation systems
+
+# ADDENDUM — Workout Clock Constraints
+
+## Derived Time Rule
+
+Elapsed workout time is DERIVED on read, never stored as a running total.
+
+The session carries three fields:
+
+* `startedAt` — when the workout began
+* `pausedAt` — set while the clock is stopped, null otherwise
+* `pausedMs` — total time already banked from earlier pauses
+
+Resolution lives in exactly ONE place:
+
+src/features/workoutSessions/workoutClock.js
+
+No component may compute elapsed time for itself.
+
+---
+
+## Pause Rules
+
+* Pause stops the clock; Resume banks the span into `pausedMs`
+* Time spent PAUSED is subtracted from elapsed time
+* Time spent RUNNING is never subtracted — closing the app without pausing
+  leaves the clock going
+* A paused workout keeps its elapsed time on screen; it is frozen, not hidden
+* Entering a workout by any route resumes it, so a session on screen is never
+  left paused
+* Sessions written before these fields existed read as simply running
+
+---
+
+## Out Of Scope
+
+* stopwatch controls (start/stop/lap)
+* per-exercise or per-set timing records
+* background or notification-driven timers
+* changing history/stats duration, which remains `completedAt - startedAt`,
+  unless explicitly requested
+
+# ADDENDUM — Exercise Card Parity
+
+## Card Layout Rule
+
+The routine exercise card and the workout exercise card must present their
+blocks in the SAME order:
+
+Instructions → Unit → Sets → Add set → Superset → Swap → Notes
+
+Starting or resuming a workout must NOT reshuffle a card the user already
+knows. A block added to one card must be placed at the matching position in the
+other.
+
+---
+
+## Header Parity Rule
+
+Elapsed workout time sits at the right of the routine name's line — in the
+workout header while a workout runs, and in the routine name bar while it is
+paused. Entering or leaving a workout must not move the reading or change the
+page's height.
