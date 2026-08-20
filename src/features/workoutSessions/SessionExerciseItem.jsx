@@ -136,22 +136,6 @@ function SessionExerciseItemImpl({
           </details>
         )}
 
-        {!readOnly && (
-          <SupersetControl
-            supersetId={exercise.supersetId ?? null}
-            supersetCount={supersetCount}
-            onAssign={onAssignSuperset}
-          />
-        )}
-
-        {/* Swap sends the user to the Exercise Library to pick a replacement;
-            all logged sets/reps/weights/notes/superset are kept on return. */}
-        {!readOnly && typeof onSwap === 'function' && (
-          <button type="button" className={styles.swap} onClick={onSwap}>
-            Swap Exercise
-          </button>
-        )}
-
         <div className={styles.unitRow}>
           <span className={styles.unitLabel}>Unit</span>
           <div className={styles.unitToggle} role="group" aria-label="Weight unit">
@@ -202,6 +186,25 @@ function SessionExerciseItemImpl({
         {!readOnly && (
           <button type="button" className={styles.addSet} onClick={onAddSet}>
             + Add set
+          </button>
+        )}
+
+        {/* Superset and Swap sit below the sets, in the same order the routine
+            card puts them (see RoutineExerciseItem): starting or resuming a
+            workout must not reshuffle a card the user already knows. */}
+        {!readOnly && (
+          <SupersetControl
+            supersetId={exercise.supersetId ?? null}
+            supersetCount={supersetCount}
+            onAssign={onAssignSuperset}
+          />
+        )}
+
+        {/* Swap sends the user to the Exercise Library to pick a replacement;
+            all logged sets/reps/weights/notes/superset are kept on return. */}
+        {!readOnly && typeof onSwap === 'function' && (
+          <button type="button" className={styles.swap} onClick={onSwap}>
+            Swap Exercise
           </button>
         )}
 
