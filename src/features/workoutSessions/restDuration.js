@@ -10,9 +10,8 @@
  *   - 0 on a set     no timer after that set, even though others get one
  *   - 0 in settings  no timer after any set that has no rest of its own
  *
- * The settings toggle governs the fallback only. A set carrying its own rest
- * always gets its timer — turning the global timer off cannot silently discard
- * a time the user wrote into the routine.
+ * The setting governs the fallback only, so a set carrying its own rest always
+ * gets its timer whatever the setting says.
  */
 
 /** Is this a rest the user actually put on the set? */
@@ -24,12 +23,11 @@ function hasOwnRest(set) {
  * Rest for `set` in seconds, or 0 for no rest at all.
  *
  * @param {object} set      session set, which carries the routine's restSeconds
- * @param {object} settings user settings (restTimerEnabled, defaultRestSeconds)
+ * @param {object} settings user settings (defaultRestSeconds)
  * @returns {number} seconds to count down; 0 means show no timer
  */
 export function resolveRestSeconds(set, settings) {
   if (hasOwnRest(set)) return Math.trunc(set.restSeconds)
-  if (!settings?.restTimerEnabled) return 0
   const fallback = settings?.defaultRestSeconds
   return Number.isFinite(fallback) && fallback > 0 ? Math.trunc(fallback) : 0
 }

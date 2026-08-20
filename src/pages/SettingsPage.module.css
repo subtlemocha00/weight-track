@@ -81,19 +81,6 @@
   border-color: var(--neon-green);
 }
 
-.checkboxLabel {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.checkbox {
-  width: 18px;
-  height: 18px;
-  accent-color: var(--neon-green);
-  cursor: pointer;
-}
-
 .numberRow {
   display: flex;
   align-items: center;

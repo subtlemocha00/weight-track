@@ -4,7 +4,6 @@ import { firestore } from '../firebase'
 export const DEFAULT_SETTINGS = {
   weightUnit: 'lb',
   distanceUnit: 'km',
-  restTimerEnabled: true,
   defaultRestSeconds: 90,
   themePreference: 'system'
 }
@@ -23,6 +22,22 @@ function settingsDocRef(uid) {
 }
 
 /**
+ * The default rest a stored settings doc is asking for.
+ *
+ * `restTimerEnabled` used to switch the timer off independently of the
+ * duration; a duration of 0 says the same thing, so the flag is gone. A doc
+ * still carrying it off is read as the 0 it now means, rather than quietly
+ * turning that user's rests back on. The flag is not written back — the first
+ * save drops it.
+ */
+function restSecondsFrom(partial) {
+  if (partial?.restTimerEnabled === false) return 0
+  return Number.isFinite(partial?.defaultRestSeconds)
+    ? partial.defaultRestSeconds
+    : DEFAULT_SETTINGS.defaultRestSeconds
+}
+
+/**
  * Merge a Firestore payload with DEFAULT_SETTINGS so callers always receive
  * a fully-populated object even if older docs predate newer fields.
  */
@@ -36,15 +51,7 @@ function withDefaults(partial) {
       partial?.distanceUnit === 'km' || partial?.distanceUnit === 'mi'
         ? partial.distanceUnit
         : DEFAULT_SETTINGS.distanceUnit,
-    restTimerEnabled:
-      typeof partial?.restTimerEnabled === 'boolean'
-        ? partial.restTimerEnabled
-        : DEFAULT_SETTINGS.restTimerEnabled,
-    defaultRestSeconds: clampRestSeconds(
-      Number.isFinite(partial?.defaultRestSeconds)
-        ? partial.defaultRestSeconds
-        : DEFAULT_SETTINGS.defaultRestSeconds
-    ),
+    defaultRestSeconds: clampRestSeconds(restSecondsFrom(partial)),
     themePreference:
       partial?.themePreference === 'light' ||
         partial?.themePreference === 'dark' ||

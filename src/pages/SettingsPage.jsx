@@ -133,34 +133,13 @@ export function SettingsPage() {
           <span className={styles.cardLabel}>Rest Timer</span>
           <div className={styles.settingRow}>
             <div>
-              <div className={styles.settingLabel}>Countdown timer</div>
-              <div className={styles.settingSub}>
-                Show countdown after completing a set. Sets given a rest in
-                their routine always show one.
-              </div>
-            </div>
-            <label className={styles.checkboxLabel}>
-              <input
-                type="checkbox"
-                className={styles.checkbox}
-                checked={form.restTimerEnabled}
-                onChange={(e) =>
-                  setForm({ ...form, restTimerEnabled: e.target.checked })
-                }
-              />
-            </label>
-          </div>
-
-          <div className={styles.divider} />
-
-          <div className={styles.settingRow}>
-            <div>
               <div className={styles.settingLabel}>
                 Rest duration (0, or {REST_SECONDS_MIN}–{REST_SECONDS_MAX}s)
               </div>
               <div className={styles.settingSub}>
                 Used only for sets with no rest of their own. 0 means no timer
-                for those sets.
+                for those sets; sets given a rest in their routine always show
+                one.
               </div>
             </div>
             {/* Steps by one second: with a coarser step the browser rejects
@@ -176,7 +155,6 @@ export function SettingsPage() {
                 className={styles.numberInput}
                 value={restInput}
                 onChange={(e) => setRestInput(e.target.value)}
-                disabled={!form.restTimerEnabled}
               />
               <span className={styles.unit}>s</span>
             </div>
