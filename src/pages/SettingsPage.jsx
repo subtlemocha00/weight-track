@@ -6,6 +6,7 @@ import { useInstallPrompt } from '../hooks/useInstallPrompt'
 import {
   REST_SECONDS_MAX,
   REST_SECONDS_MIN,
+  REST_SECONDS_OFF,
   clampRestSeconds
 } from '../services/settings'
 import styles from './SettingsPage.module.css'
@@ -133,7 +134,10 @@ export function SettingsPage() {
           <div className={styles.settingRow}>
             <div>
               <div className={styles.settingLabel}>Countdown timer</div>
-              <div className={styles.settingSub}>Show countdown after completing a set</div>
+              <div className={styles.settingSub}>
+                Show countdown after completing a set. Sets given a rest in
+                their routine always show one.
+              </div>
             </div>
             <label className={styles.checkboxLabel}>
               <input
@@ -152,14 +156,18 @@ export function SettingsPage() {
           <div className={styles.settingRow}>
             <div>
               <div className={styles.settingLabel}>
-                Rest duration ({REST_SECONDS_MIN}–{REST_SECONDS_MAX}s)
+                Rest duration (0, or {REST_SECONDS_MIN}–{REST_SECONDS_MAX}s)
+              </div>
+              <div className={styles.settingSub}>
+                Used only for sets with no rest of their own. 0 means no timer
+                for those sets.
               </div>
             </div>
             <div className={styles.numberRow}>
               <input
                 type="number"
                 inputMode="numeric"
-                min={REST_SECONDS_MIN}
+                min={REST_SECONDS_OFF}
                 max={REST_SECONDS_MAX}
                 step="5"
                 className={styles.numberInput}

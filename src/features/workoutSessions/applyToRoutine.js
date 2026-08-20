@@ -3,9 +3,9 @@ import { DEFAULT_REPS, DEFAULT_UNIT } from '../routines/routineFactory'
 /**
  * Materialize a routine exercise from a session exercise that was added during
  * the workout (no routine counterpart). Session sets carry `weight`; routine
- * sets carry `targetWeight` and a `restSeconds` field, so the shapes are
- * translated here. restSeconds defaults to null (per-set rest is not edited
- * during a workout).
+ * sets carry `targetWeight`, so the shapes are translated here. Rest carries
+ * straight across: a session set added mid-workout inherits the rest of the set
+ * before it, and that is the rest the routine should keep.
  */
 function sessionExerciseToRoutineExercise(sessionExercise, order) {
   return {
@@ -16,7 +16,7 @@ function sessionExerciseToRoutineExercise(sessionExercise, order) {
       reps: set.reps ?? DEFAULT_REPS,
       targetWeight: set.weight ?? null,
       unit: set.unit ?? DEFAULT_UNIT,
-      restSeconds: null
+      restSeconds: set.restSeconds ?? null
     })),
     notes: sessionExercise.notes ?? '',
     supersetId: sessionExercise.supersetId ?? null
@@ -38,8 +38,8 @@ function sessionExerciseToRoutineExercise(sessionExercise, order) {
  *
  * Routine-only fields not edited during a workout (restSeconds, notes) are
  * preserved for exercises and sets that existed before the session. A set with
- * no counterpart in the routine has no such fields to keep, so it starts with
- * restSeconds unset.
+ * no counterpart in the routine has none to keep, so it takes the rest its
+ * session set was carrying.
  */
 export function applySessionToRoutine(routine, session) {
   const routineExercisesById = new Map(
@@ -67,7 +67,7 @@ export function applySessionToRoutine(routine, session) {
           reps: sessionSet.reps ?? DEFAULT_REPS,
           targetWeight: sessionSet.weight ?? null,
           unit: sessionSet.unit ?? DEFAULT_UNIT,
-          restSeconds: null
+          restSeconds: sessionSet.restSeconds ?? null
         }
       }
 

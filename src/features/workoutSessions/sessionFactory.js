@@ -14,6 +14,9 @@ export function createSessionSet() {
     reps: DEFAULT_REPS,
     weight: null,
     unit: DEFAULT_UNIT,
+    // No rest of its own, so the rest timer falls back to the user's setting
+    // (see restDuration). Sets seeded from a routine carry its value instead.
+    restSeconds: null,
     completed: false,
     timestamp: null
   }
@@ -36,6 +39,10 @@ export function createFollowOnSet(previousSet) {
     reps: previousSet.reps ?? DEFAULT_REPS,
     weight: previousSet.weight ?? null,
     unit: previousSet.unit ?? DEFAULT_UNIT,
+    // Carried for the same reason as `unit`: an extra set of an exercise the
+    // routine gives a 45s rest should rest for 45s too, not drop to the global
+    // default part-way down the card.
+    restSeconds: previousSet.restSeconds ?? null,
     completed: false,
     timestamp: null
   }
@@ -87,6 +94,10 @@ export function createSessionFromRoutine(routine) {
         reps: set.reps ?? 0,
         weight: set.targetWeight ?? null,
         unit: set.unit ?? 'lb',
+        // The routine's per-set rest comes along with the snapshot — it is what
+        // the rest timer counts down during the workout, ahead of the global
+        // setting. Blank stays blank, which is what defers to the setting.
+        restSeconds: set.restSeconds ?? null,
         completed: false,
         timestamp: null
       })),
