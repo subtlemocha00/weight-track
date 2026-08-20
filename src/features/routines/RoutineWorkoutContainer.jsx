@@ -114,6 +114,7 @@ export function RoutineWorkoutContainer({ routine }) {
       mode="edit"
       initialRoutine={resolveEditorRoutine(routine, savedRoutine)}
       ownsActiveWorkout={Boolean(activeSession)}
+      activeWorkout={activeSession}
       onEnterWorkout={enterWorkoutMode}
       onDiscardWorkout={discardWorkout}
       onRoutineSaved={setSavedRoutine}

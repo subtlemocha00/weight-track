@@ -14,6 +14,7 @@ import { SessionExerciseItem } from './SessionExerciseItem'
 import { AddExercisePanel } from '../routines/AddExercisePanel'
 import { getSupersetCount } from '../../utils/supersets'
 import { ElapsedTime } from './ElapsedTime'
+import { pauseSession, resumeSession } from './workoutClock'
 import { writeActiveWorkout } from '../../utils/activeWorkout'
 import { discardActiveWorkout } from './discardActiveWorkout'
 import { CONFIRM_ALT } from '../../contexts/ConfirmModalContext'
@@ -26,7 +27,12 @@ export function SessionEditor({ initialSession }) {
   const navigate = useNavigate()
   const { confirm } = useConfirm()
 
-  const [session, dispatch] = useReducer(sessionReducer, initialSession)
+  // Entering a workout restarts its clock. Every way back into a running
+  // workout mounts this editor, so resuming here covers Resume, the home
+  // screen's recovery banner, a bookmarked ?workout=1 link and a refresh alike
+  // — there is no path that could leave a session paused while it is on screen.
+  // A session that was not paused comes back unchanged.
+  const [session, dispatch] = useReducer(sessionReducer, initialSession, resumeSession)
   const [finishing, setFinishing] = useState(false)
   const [error, setError] = useState(null)
   // Loaded so the add-exercise picker can search the user's custom library in
@@ -103,9 +109,15 @@ export function SessionEditor({ initialSession }) {
   // recovery copy, so the routine page it lands on offers Resume straight away.
   // No confirmation: pressing Pause is already the deliberate act, and nothing
   // is lost by it.
+  // Stopping the clock is written straight to the recovery copy rather than
+  // dispatched: navigating unmounts this editor in the same commit, so the
+  // autosave effect would never run for a state change made here. The routine
+  // page then resolves the paused session from storage and shows the frozen
+  // elapsed time beside Resume.
   const handlePause = useCallback(() => {
+    writeActiveWorkout(pauseSession(session))
     navigate(backTo, { replace: backReplace })
-  }, [navigate, backTo, backReplace])
+  }, [session, navigate, backTo, backReplace])
 
   const discardWorkout = useCallback(() => {
     discardActiveWorkout(user?.uid, session.id)
@@ -248,10 +260,7 @@ export function SessionEditor({ initialSession }) {
             {session.routineName || 'Workout'}
           </span>
           <span className={styles.subline}>
-            <ElapsedTime
-              startedAt={session.startedAt}
-              completedAt={session.completedAt}
-            />
+            <ElapsedTime session={session} />
             {isCompleted && ' · completed'}
           </span>
         </div>

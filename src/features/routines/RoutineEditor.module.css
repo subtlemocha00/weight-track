@@ -77,6 +77,19 @@
   box-shadow: none;
 }
 
+/* Elapsed time of this routine's live workout, shown in the header beside
+ * Resume. Typographically the workout header's own timer (see
+ * SessionEditor.module.css .subline) so the same reading looks the same in
+ * both places; not a button, so it takes no border or padding of its own. */
+.workoutElapsed {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 11px;
+  color: var(--neon-green);
+  font-family: 'Space Mono', monospace;
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
 /* Matches the home screen's Start button so the action reads the same in both
  * places (see HomePage.module.css .start). */
 .startWorkout {

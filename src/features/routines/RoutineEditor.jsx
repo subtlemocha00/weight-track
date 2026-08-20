@@ -17,6 +17,8 @@ import { AddExercisePanel } from './AddExercisePanel'
 import { RoutineExerciseItem } from './RoutineExerciseItem'
 import { routineReducer } from './routineReducer'
 import { resolveWorkoutControl } from './resolveWorkoutControl'
+import { ElapsedTime } from '../workoutSessions/ElapsedTime'
+import { isPaused } from '../workoutSessions/workoutClock'
 import { getSupersetCount } from '../../utils/supersets'
 import styles from './RoutineEditor.module.css'
 
@@ -29,6 +31,9 @@ import styles from './RoutineEditor.module.css'
  * @param ownsActiveWorkout whether the live workout belongs to this routine,
  *   resolved by the owner from the recovery copy it would mount. Turns the
  *   workout action from Start into Resume.
+ * @param activeWorkout that live session itself, when there is one, so the
+ *   header can show how long it has been running. Read for its clock only —
+ *   this editor never writes to a session.
  * @param onDiscardWorkout called when the user throws this routine's live
  *   workout away. The owner does the discarding — it holds the session — and
  *   re-renders with ownsActiveWorkout false. Only meaningful alongside
@@ -42,6 +47,7 @@ export function RoutineEditor({
   mode,
   onEnterWorkout,
   ownsActiveWorkout = false,
+  activeWorkout = null,
   onDiscardWorkout,
   onRoutineSaved
 }) {
@@ -402,6 +408,24 @@ export function RoutineEditor({
         {/* Discard sits where Pause sits inside the workout — left of the
           * primary action — so the paused routine header and the running
           * workout header read as the same bar with the middle slot swapped. */}
+        {/* A paused workout keeps its elapsed time on screen — the clock is
+          * stopped, not thrown away, so the figure here is exactly what the
+          * workout header showed when Pause was pressed and it will carry on
+          * from there when Resume is. Sits ahead of the actions, where the
+          * workout header keeps the same reading. */}
+        {workoutControl === 'resume' && activeWorkout && (
+          <span
+            className={styles.workoutElapsed}
+            title={
+              isPaused(activeWorkout)
+                ? 'Your workout is paused at this time'
+                : 'Your workout is still running'
+            }
+          >
+            {isPaused(activeWorkout) && '⏸ '}
+            <ElapsedTime session={activeWorkout} />
+          </span>
+        )}
         {workoutControl === 'resume' && onDiscardWorkout && (
           <button
             type="button"
@@ -458,7 +482,6 @@ export function RoutineEditor({
       )}
 
       <label className={styles.nameField}>
-        <span className={styles.nameLabel}>Routine name</span>
         <input
           className={styles.nameInput}
           type="text"
@@ -484,56 +507,56 @@ export function RoutineEditor({
           {routine.exercises.map((exercise, index) => {
             const resolved = resolveExerciseById(exercise.exerciseId, customExercises)
             return (
-            <RoutineExerciseItem
-              key={`${exercise.exerciseId}-${index}`}
-              exercise={exercise}
-              index={index}
-              isFirst={index === 0}
-              isLast={index === routine.exercises.length - 1}
-              supersetCount={supersetCount}
-              instructions={resolved?.instructions ?? []}
-              videoUrl={resolved?.videoUrl ?? null}
-              onRemove={() => dirtyDispatch({ type: 'REMOVE_EXERCISE', index })}
-              onMoveUp={() =>
-                dirtyDispatch({ type: 'MOVE_EXERCISE', from: index, to: index - 1 })
-              }
-              onMoveDown={() =>
-                dirtyDispatch({ type: 'MOVE_EXERCISE', from: index, to: index + 1 })
-              }
-              onAddSet={() => dirtyDispatch({ type: 'ADD_SET', index })}
-              onRemoveSet={(setIndex) =>
-                dirtyDispatch({
-                  type: 'REMOVE_SET',
-                  exerciseIndex: index,
-                  setIndex
-                })
-              }
-              onUpdateSet={(setIndex, patch) =>
-                dirtyDispatch({
-                  type: 'UPDATE_SET',
-                  exerciseIndex: index,
-                  setIndex,
-                  patch
-                })
-              }
-              onUpdateNotes={(notes) =>
-                dirtyDispatch({ type: 'UPDATE_EXERCISE_NOTES', index, notes })
-              }
-              onAssignSuperset={(supersetId) =>
-                dirtyDispatch({ type: 'ASSIGN_SUPERSET', index, supersetId })
-              }
-              onSwap={() => handleSwapExercise(index)}
-              onUpdateAllUnits={(unit) =>
-                exercise.sets.forEach((_, setIndex) =>
+              <RoutineExerciseItem
+                key={`${exercise.exerciseId}-${index}`}
+                exercise={exercise}
+                index={index}
+                isFirst={index === 0}
+                isLast={index === routine.exercises.length - 1}
+                supersetCount={supersetCount}
+                instructions={resolved?.instructions ?? []}
+                videoUrl={resolved?.videoUrl ?? null}
+                onRemove={() => dirtyDispatch({ type: 'REMOVE_EXERCISE', index })}
+                onMoveUp={() =>
+                  dirtyDispatch({ type: 'MOVE_EXERCISE', from: index, to: index - 1 })
+                }
+                onMoveDown={() =>
+                  dirtyDispatch({ type: 'MOVE_EXERCISE', from: index, to: index + 1 })
+                }
+                onAddSet={() => dirtyDispatch({ type: 'ADD_SET', index })}
+                onRemoveSet={(setIndex) =>
+                  dirtyDispatch({
+                    type: 'REMOVE_SET',
+                    exerciseIndex: index,
+                    setIndex
+                  })
+                }
+                onUpdateSet={(setIndex, patch) =>
                   dirtyDispatch({
                     type: 'UPDATE_SET',
                     exerciseIndex: index,
                     setIndex,
-                    patch: { unit }
+                    patch
                   })
-                )
-              }
-            />
+                }
+                onUpdateNotes={(notes) =>
+                  dirtyDispatch({ type: 'UPDATE_EXERCISE_NOTES', index, notes })
+                }
+                onAssignSuperset={(supersetId) =>
+                  dirtyDispatch({ type: 'ASSIGN_SUPERSET', index, supersetId })
+                }
+                onSwap={() => handleSwapExercise(index)}
+                onUpdateAllUnits={(unit) =>
+                  exercise.sets.forEach((_, setIndex) =>
+                    dirtyDispatch({
+                      type: 'UPDATE_SET',
+                      exerciseIndex: index,
+                      setIndex,
+                      patch: { unit }
+                    })
+                  )
+                }
+              />
             )
           })}
         </div>

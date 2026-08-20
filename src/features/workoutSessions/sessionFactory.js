@@ -74,6 +74,11 @@ export function createSessionFromRoutine(routine) {
     startedAt: Date.now(),
     completedAt: null,
     status: 'in_progress',
+    // Pause bookkeeping, read by workoutClock: `pausedAt` is set while the
+    // clock is stopped, `pausedMs` is the time already banked from earlier
+    // pauses. A fresh workout is running and has banked nothing.
+    pausedAt: null,
+    pausedMs: 0,
     exercises: routine.exercises.map((exercise, index) => ({
       exerciseId: exercise.exerciseId,
       name: exercise.name,
