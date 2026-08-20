@@ -9,6 +9,7 @@
 }
 
 .nameField {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -77,17 +78,29 @@
   box-shadow: none;
 }
 
-/* Elapsed time of this routine's live workout, shown in the header beside
- * Resume. Typographically the workout header's own timer (see
- * SessionEditor.module.css .subline) so the same reading looks the same in
- * both places; not a button, so it takes no border or padding of its own. */
+/* Elapsed time of this routine's live workout, sitting at the right of the
+ * name bar on the name's own line — the same place the running workout's
+ * header keeps it, so entering or leaving a workout doesn't move the reading
+ * or change the page's height. Overlaid on the input rather than placed beside
+ * it: the name field is the bar, and the input reserves the room below.
+ * Typography matches the workout header's timer (SessionEditor.module.css
+ * .subline) so the same figure looks the same in both places. */
 .workoutElapsed {
-  flex-shrink: 0;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   white-space: nowrap;
   font-size: 11px;
   color: var(--neon-green);
   font-family: 'Space Mono', monospace;
   text-shadow: 0 0 10px var(--neon-green);
+}
+
+/* Keeps a long routine name from running under the timer. Applied only while
+ * the timer is there. */
+.nameInputTimed {
+  padding-right: 88px;
 }
 
 /* Matches the home screen's Start button so the action reads the same in both

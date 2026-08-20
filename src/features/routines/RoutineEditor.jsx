@@ -89,6 +89,11 @@ export function RoutineEditor({
     ownsActiveWorkout
   })
   const noExercises = routine.exercises.length === 0
+  // Shown on the same terms Resume is: this routine owns a live workout, so
+  // there is a clock worth reading. The input reserves room for it only then,
+  // rather than carrying a permanent gap for a workout that isn't running.
+  const showWorkoutElapsed = workoutControl === 'resume' && Boolean(activeWorkout)
+  const nameInputTimedClass = `${styles.nameInput} ${styles.nameInputTimed}`
 
   useEffect(() => {
     latestRoutine.current = routine
@@ -408,24 +413,6 @@ export function RoutineEditor({
         {/* Discard sits where Pause sits inside the workout — left of the
           * primary action — so the paused routine header and the running
           * workout header read as the same bar with the middle slot swapped. */}
-        {/* A paused workout keeps its elapsed time on screen — the clock is
-          * stopped, not thrown away, so the figure here is exactly what the
-          * workout header showed when Pause was pressed and it will carry on
-          * from there when Resume is. Sits ahead of the actions, where the
-          * workout header keeps the same reading. */}
-        {workoutControl === 'resume' && activeWorkout && (
-          <span
-            className={styles.workoutElapsed}
-            title={
-              isPaused(activeWorkout)
-                ? 'Your workout is paused at this time'
-                : 'Your workout is still running'
-            }
-          >
-            {isPaused(activeWorkout) && '⏸ '}
-            <ElapsedTime session={activeWorkout} />
-          </span>
-        )}
         {workoutControl === 'resume' && onDiscardWorkout && (
           <button
             type="button"
@@ -481,9 +468,14 @@ export function RoutineEditor({
         </div>
       )}
 
+      {/* The routine's name bar doubles as the workout's when this routine owns
+        * a live one: elapsed time sits at the right of it, on the name's line,
+        * exactly where the running workout's own header keeps it. A paused
+        * workout keeps the figure on screen — the clock is stopped, not thrown
+        * away — so it reads the same before Pause and after. */}
       <label className={styles.nameField}>
         <input
-          className={styles.nameInput}
+          className={showWorkoutElapsed ? nameInputTimedClass : styles.nameInput}
           type="text"
           value={routine.name}
           onChange={(e) => dirtyDispatch({ type: 'SET_NAME', name: e.target.value })}
@@ -491,6 +483,19 @@ export function RoutineEditor({
           maxLength={80}
           autoFocus={isNew}
         />
+        {showWorkoutElapsed && (
+          <span
+            className={styles.workoutElapsed}
+            title={
+              isPaused(activeWorkout)
+                ? 'Your workout is paused at this time'
+                : 'Your workout is still running'
+            }
+          >
+            {isPaused(activeWorkout) && '⏸ '}
+            <ElapsedTime session={activeWorkout} />
+          </span>
+        )}
       </label>
 
       <AddExercisePanel
