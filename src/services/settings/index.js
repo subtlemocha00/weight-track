@@ -9,7 +9,7 @@ export const DEFAULT_SETTINGS = {
   themePreference: 'system'
 }
 
-/** Shortest countdown worth showing. Below it, rest is switched off instead. */
+/** Shortest countdown that can be set. Below it there is only 0 — no rest. */
 export const REST_SECONDS_MIN = 1
 export const REST_SECONDS_MAX = 600
 /**
@@ -57,10 +57,10 @@ function withDefaults(partial) {
 /**
  * Bring a typed rest duration into range.
  *
- * 0 is a real setting, not a rejected one: it means no default rest. Anything
- * else is a countdown, so it is held at or above REST_SECONDS_MIN — a 2-second
- * rest is a mistyped number, not an intention. Unreadable input falls back to
- * the default rather than silently switching rest off.
+ * 0 is a real setting, not a rejected one: it means no default rest. Any other
+ * value is a countdown and is kept as typed, from one second up to the maximum.
+ * Unreadable input falls back to the default rather than silently switching
+ * rest off.
  */
 export function clampRestSeconds(value) {
   // A cleared input is not a request for 0 — it is no answer at all.

@@ -163,13 +163,16 @@ export function SettingsPage() {
                 for those sets.
               </div>
             </div>
+            {/* Steps by one second: with a coarser step the browser rejects
+                anything off the grid (47s) as a step mismatch and blocks the
+                save. */}
             <div className={styles.numberRow}>
               <input
                 type="number"
                 inputMode="numeric"
                 min={REST_SECONDS_OFF}
                 max={REST_SECONDS_MAX}
-                step="5"
+                step="1"
                 className={styles.numberInput}
                 value={restInput}
                 onChange={(e) => setRestInput(e.target.value)}
