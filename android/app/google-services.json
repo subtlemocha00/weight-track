@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "346851246817",
+    "project_id": "weighttrack-a666c",
+    "storage_bucket": "weighttrack-a666c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346851246817:android:47cff96627d4d30d666da0",
+        "android_client_info": {
+          "package_name": "com.weighttrack.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346851246817-1dsqa0mobf259b3aodktj408s8qt159o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACWuanNi-V3NiDhvrnlSyS2lvEn15MmW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346851246817-1dsqa0mobf259b3aodktj408s8qt159o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
