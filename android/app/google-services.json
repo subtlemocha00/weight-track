@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "346851246817-rj2qb2ubl8ku0agin1nksqe96aadaqmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.weighttrack.app",
+            "certificate_hash": "83c3e19832f235463a70ea29e932c49b6d884ed8"
+          }
+        },
+        {
           "client_id": "346851246817-1dsqa0mobf259b3aodktj408s8qt159o.apps.googleusercontent.com",
           "client_type": 3
         }
