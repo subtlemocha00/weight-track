@@ -274,17 +274,10 @@ export function SessionEditor({ initialSession }) {
 
       {error && <div className={styles.error}>{error}</div>}
 
-      {isActive && (
-        <AddExercisePanel
-          onAdd={handleAddExercise}
-          customExercises={customExercises}
-        />
-      )}
-
       {session.exercises.length === 0 ? (
         <div className={styles.empty}>
           {isActive
-            ? 'No exercises yet. Use the panel above to add some.'
+            ? 'No exercises yet. Use the panel below to add some.'
             : 'This workout has no exercises to log.'}
         </div>
       ) : (
@@ -337,6 +330,16 @@ export function SessionEditor({ initialSession }) {
             )
           })}
         </div>
+      )}
+
+      {/* Below the exercises, the position it holds on the routine page too
+          (see RoutineEditor): starting or resuming a workout must not move the
+          picker any more than it reorders a card. */}
+      {isActive && (
+        <AddExercisePanel
+          onAdd={handleAddExercise}
+          customExercises={customExercises}
+        />
       )}
     </div>
   )

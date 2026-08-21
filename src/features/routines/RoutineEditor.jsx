@@ -498,14 +498,9 @@ export function RoutineEditor({
         )}
       </label>
 
-      <AddExercisePanel
-        onAdd={handleAddExercise}
-        customExercises={customExercises}
-      />
-
       {routine.exercises.length === 0 ? (
         <div className={styles.empty}>
-          No exercises yet. Use the panel above to add some.
+          No exercises yet. Use the panel below to add some.
         </div>
       ) : (
         <div className={styles.exercises}>
@@ -566,6 +561,15 @@ export function RoutineEditor({
           })}
         </div>
       )}
+
+      {/* Adding exercises comes after the list it adds to, in the one place it
+        * sits whether the routine is being edited or its workout is running
+        * (see SessionEditor) — the exercises are what the page is for, and the
+        * picker is a long panel to scroll past to reach them. */}
+      <AddExercisePanel
+        onAdd={handleAddExercise}
+        customExercises={customExercises}
+      />
 
       {/* Routine management lives at the foot of the page: Back and the workout
         * action are what the header is for, and these are what you reach for
