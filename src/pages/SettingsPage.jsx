@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { useAuth } from '../hooks/useAuth'
 import { AppHeader } from '../components/AppHeader'
 import { useSettings } from '../hooks/useSettings'
-import { useInstallPrompt } from '../hooks/useInstallPrompt'
 import {
   REST_SECONDS_MAX,
   REST_SECONDS_MIN,
@@ -14,7 +13,6 @@ import styles from './SettingsPage.module.css'
 export function SettingsPage() {
   const { user, signOut } = useAuth()
   const { settings, isLoading, loadError, updateSettings } = useSettings()
-  const { canInstall, showIOSGuide, isInstalled, triggerInstall } = useInstallPrompt()
 
   const [form, setForm] = useState(settings)
   const [restInput, setRestInput] = useState(String(settings.defaultRestSeconds))
