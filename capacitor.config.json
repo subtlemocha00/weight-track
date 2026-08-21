@@ -2,5 +2,11 @@
   "appId": "com.weighttrack.app",
   "appName": "WeightTrack",
   "webDir": "dist",
-  "backgroundColor": "#07070f"
+  "backgroundColor": "#07070f",
+  "plugins": {
+    "FirebaseAuthentication": {
+      "skipNativeAuth": true,
+      "providers": ["google.com"]
+    }
+  }
 }
